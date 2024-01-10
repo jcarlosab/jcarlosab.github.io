@@ -122,8 +122,6 @@ const inicio = () => {
         document.getElementById("count").innerHTML = 0;
         document.getElementById("puntos").innerHTML = 0;
         document.getElementById("win").style.visibility = "hidden";
-        audio.muted = false;
-        mute.style.textDecoration = "";
         reiniciar.removeEventListener('click', reiniciarJuego);
         mute.removeEventListener('click', silenciarJuego);
         reglas.removeEventListener('click', reglasJuego);
