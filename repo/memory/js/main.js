@@ -49,12 +49,9 @@ const inicio = () => {
     listaCartas = desordenar(listaCartas);
     let tablero = new Tablero(listaCartas);
     
-    tablero.cartas.forEach(carta => {
+    tablero.cartas.forEach(() => {
         const divCarta = document.createElement("div");
         divCarta.setAttribute("data-valor", aux);
-        divCarta.addEventListener('click', () => {
-            
-        });
         divTablero.appendChild(divCarta);
         aux++;
     });
@@ -119,7 +116,6 @@ const inicio = () => {
                 carta1.girada = false;
                 carta2.girada = false;
             }
-            console.log(contador);
             if (tablero.aciertos == tablero.cartas.length / 2) {
                 const puntosTotales = 9000;
                 let penalizacion = contador <= 15 ? 0 : (contador - 15) * 250;

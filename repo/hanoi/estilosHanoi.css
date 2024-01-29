@@ -1,0 +1,65 @@
+body {
+    font-family: Times New Roman;
+}
+
+h1 {
+    text-align: center;
+    color: #303036;
+    margin-top: 30px;
+}
+
+.contenido {
+    bottom: 10%;
+    width: 100%;
+    border-style: none;
+}
+
+#nube, #monitor, #torres {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #303036;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#nube {
+    margin-top: 50px;
+    height: 60px;
+    border-style: none;
+    padding-top: 40px;
+}
+
+#t1,#t2,#t3 {
+    display: inline-block;
+    top: 30%;
+    width: 150px;
+    height: 150px;
+    border-style: none;
+    background-color: #30BCED;
+    border-radius: 10px / 30px;
+}
+
+#monitor {
+    height: 50px;
+    color: #DEE2D6;
+    padding-top: 30px;
+    font-size: 1.2em;
+}
+
+.ficha {
+    border-width: 2px;
+    height: 20px;
+    background-color: #DEE2D6;
+    border-radius: 20% / 20%;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+}
+
+.contenidoTorre {
+    padding-top: 1px;
+}

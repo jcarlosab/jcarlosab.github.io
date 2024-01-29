@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+
+<head>
+    <title>Torres de Hanoi</title>
+    <meta charset="utf-8">
+    <LINK href="estilosHanoi.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="hanoi.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+
+<body onload="iniciar()">
+    <h1>Torres de Hanoi</h1>
+    <div class="contenido">
+        <div id="nube"></div>
+        <div id="torres">
+        <div id="t1" class="contenidoTorre" onclick="mover(0)">
+        </div>
+        <div id="t2" class="contenidoTorre" onclick="mover(1)">
+        </div>
+        <div id="t3" class="contenidoTorre" onclick="mover(2)">
+        </div>
+        </div>
+        <div id="monitor"></div>
+    </div>
+</body>
+
+</html>
