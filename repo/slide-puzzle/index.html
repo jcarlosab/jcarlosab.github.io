@@ -8,10 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 
 <body onload="init()">
-    <div id="win" class="popup">GANASTE!</div>
     <div id="inicio" class="popup">
         <h1>Slide Puzzle</h1>
         <p>Selecciona un puzzle:</p>
@@ -23,18 +25,26 @@
             <p>Medio</p>
             <div class="opcion4" data-value="D" data-grid="4" data-format="jpg"></div>
         </div>
+        <div class="atribuciones">
+            <div>Imagen de <a href="https://pixabay.com/es/users/pikurā-17746921/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7512994">Pikurā</a> en <a href="https://pixabay.com/es//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7512994">Pixabay</a></div>
+            <div>Imagen de <a href="https://pixabay.com/es/users/xelriz-14820749/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7503729">Fuadi</a> en <a href="https://pixabay.com/es//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7503729">Pixabay</a></div>
+            <div>Imagen de <a href="https://pixabay.com/es/users/patolenin-991181/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6926428">Patricio González</a> en <a href="https://pixabay.com/es//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6926428">Pixabay</a></div>
+            <div>Imagen de <a href="https://pixabay.com/es/users/vogue0987-13058963/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8279653">Vogue0987</a> en <a href="https://pixabay.com/es//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8279653">Pixabay</a></div>
+            <div>Sound Effect by <a href="https://pixabay.com/es/users/floraphonic-38928062/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=184021">floraphonic</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=184021">Pixabay</a></div>
+        </div>
     </div>
-    <div id="puzzle"></div>
-    <div>
-        <div>Imagen de <a href="https://pixabay.com/es/users/pikurā-17746921/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7512994">Pikurā</a> en <a href="https://pixabay.com/es//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7512994">Pixabay</a></div>
-        <div>Imagen de <a href="https://pixabay.com/es/users/xelriz-14820749/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7503729">Fuadi</a> en <a href="https://pixabay.com/es//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7503729">Pixabay</a></div>
-        <div>Imagen de <a href="https://pixabay.com/es/users/patolenin-991181/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6926428">Patricio González</a> en <a href="https://pixabay.com/es//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6926428">Pixabay</a></div>
-        <div>Imagen de <a href="https://pixabay.com/es/users/vogue0987-13058963/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8279653">Vogue0987</a> en <a href="https://pixabay.com/es//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8279653">Pixabay</a></div>
-        <div>Sound Effect by <a href="https://pixabay.com/es/users/floraphonic-38928062/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=184021">floraphonic</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=184021">Pixabay</a></div>
+    
+
     </div>
-    <audio id="audio" controls>
-        <source type="audio/wav" src="assets/sonido/infographic-swipe-1-184021.mp3">
-    </audio>
+    <div class="container hidden">
+        <h3>Tiempo: <span class="contador">0</span></h3>
+        <div>Pause<div>
+        <div id="puzzle"></div>
+        <div>Reset<div>
+        <audio id="audio" controls>
+            <source type="audio/wav" src="assets/sonido/infographic-swipe-1-184021.mp3">
+        </audio>
+    </div>
     <script src="js/main.js"></script>
 </body>
 
