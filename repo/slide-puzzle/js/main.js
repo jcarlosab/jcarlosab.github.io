@@ -46,6 +46,7 @@ const seleccionarPuzzle = (event) => {
         const valor = event.target.getAttribute('data-value');
         const grid = parseInt(event.target.getAttribute('data-grid'));
         const formato = event.target.getAttribute('data-format');
+        const idPuzzle = document.querySelector("#puzzle");
         limpiarPuzzle();
         document.querySelector('#inicio').classList.add('hidden');
         document.querySelector('.container').classList.remove('hidden');
