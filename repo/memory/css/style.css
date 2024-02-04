@@ -69,8 +69,11 @@ h1 {
     width: 25%;
     text-align: justify;
     color: orange;
-    padding: 10px 20px;
-    margin: 10px 10px;
+    margin-top: 10px;
+}
+
+.info-extra > div {
+    padding: 10px;
 }
 
 .popup {
@@ -156,27 +159,15 @@ a:hover {
     text-shadow: 0 1px 2px rgba(255,255,255,0.8);
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-    body {
-        font-size: xx-large;
-    }
-
-    .contador {
-        font-size: larger;
-    }
+@media only screen and (max-width: 600px) {
 
     .info-extra {
-        width: 50%;
-    }
-
-    ul {
-        margin: 35px;
+        width: 100%;
     }
 
     .popup {
         width: 100%;
         height: 100%;
-        font-size: larger;
         padding: 10%;
     }
 
@@ -185,11 +176,11 @@ a:hover {
     }
 
     .cartas-disponibles img {
-        width: 150px;
+        width: 80px;
     }
 
     h2 {
-        margin-top: 100px;
+        margin-top: 55px;
     }
     
     .cerrar {
@@ -198,12 +189,11 @@ a:hover {
     }
     
     #tablero div {
-        width: 250px;
-        height: 250px;
+        width: 100px;
+        height: 100px;
     }
 
-    .info div{
-        height: 100px;
-        font-size: larger;
+    .info {
+        display: block;
     }
 }

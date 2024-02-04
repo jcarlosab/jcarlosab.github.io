@@ -66,9 +66,7 @@ body {
 }
 
 
-#audio{
-    display: none
-}
+#audio { display: none }
 
 .atribuciones {
     font-family: 'Roboto', sans-serif;
@@ -84,84 +82,16 @@ h3 {
     margin: 30px;
 }
 
+.casilla img{
+    width: 100%;
+}
+
 .hidden { display: none !important; }
 
 .disabled { filter: brightness(0.4); }
 
-
-#win {
-    /*Centrar el texto*/
-    display: none;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    /*--------------------*/
-    color: #02c39a;
-    font-size: 80px;    
-    position: absolute;
-    width: 600px;
-    height: 600px;
-    background-color: rgba(94, 103, 107, 0.6);
-    right: calc(50% - 300px);
-    top: 120px;
+@media only screen and (max-width: 600px) {
+    .puzzles {
+        max-width: 100%;
+    }
 }
-
-#info {
-    position: absolute;
-    width: 200px;
-    right: calc(50% - 100px);
-    top: 750px;
-}
-
-.btnInicio, .btnPausar {
-    text-align: center;
-    font-size: 40px;
-}
-
-.btnInicio:hover, .btnPausar:hover{
-    text-shadow: 2px 2px #5e676b;
-}
-
-a {
-    text-decoration: none;
-    color: #02c39a;
-    font-weight: bold;
-}
-
-.cronometro {
-    position: absolute;
-    width: 250px;
-    text-align: center;
-    top: calc(0% + 40px);
-    right: calc(50% - 125px);
-    color: #028090;
-    font-size: 60px;
-}
-
-table {
-    margin: auto;
-    border-collapse: separate;
-    border-spacing: 0px;
-    width: 600px;
-    height: 600px;
-}
-
-td {
-    background-image: url(../assets/imagenes/house-7512994_640.png);
-    box-shadow: 5px 5px 5px 5px rgba(94, 103, 107, 0.8);
-}
-
-.hueco {
-    visibility: hidden;
-}
-
-#pausar {
-    width: 600px;
-    height: 600px;
-    position: absolute;
-    right: calc(50% - 300px);
-    top: 120px;
-    display: none;
-    background-color: rgba(94, 103, 107, 0.2);
-}
-
