@@ -104,7 +104,6 @@ const moverPieza = (event) => {
 
 const comprobar = () => {
     let vacio = buscarPosVacia();
-    let arrayPiezas = ["1","2","3","4","5","6","7","8"];
     let valores = '';
     if (document.querySelector("#puzzle").lastChild.getAttribute('data-value') == vacio.getAttribute('data-value')) {
         valores = Array.from (document.querySelectorAll('.pieza')).map (e => e.dataset.imgvalue);
