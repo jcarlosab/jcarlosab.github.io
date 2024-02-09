@@ -13,7 +13,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     </head>
 
-    <body onload="init()">
+    <body>
         <div id="inicio" class="popup">
             <h1>Slide Puzzle</h1>
             <p>Selecciona un puzzle:</p>
@@ -33,18 +33,24 @@
                 <div>Sound Effect by <a href="https://pixabay.com/es/users/floraphonic-38928062/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=184021">floraphonic</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=184021">Pixabay</a></div>
             </div>
         </div>
-        
 
-        </div>
         <div class="container hidden">
-            <h3>Tiempo: <span class="contador">0</span></h3>
-            <div>Pause<div>
+            <div class="info">
+                <div>
+                    <p>Tiempo: <span class="contador">0</span></p>
+                </div>
+                <div class="align-right">
+                    <div class="buttom"><p>Reset</p></div>
+                </div>
+            </div>
             <div id="puzzle"></div>
-            <div>Reset<div>
             <audio id="audio" controls>
                 <source type="audio/wav" src="assets/sonido/infographic-swipe-1-184021.mp3">
             </audio>
         </div>
+
+        <div class="aviso hidden"></div>
+
         <script src="js/main.js"></script>
     </body>
 </html>

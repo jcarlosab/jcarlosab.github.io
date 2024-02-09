@@ -33,29 +33,38 @@ class Puzzle {
     }
 }
 
+const divPuzzle = document.querySelector('#puzzle');
+const container = document.querySelector('.container');
+const inicio = document.querySelector('#inicio');
+const aviso = document.querySelector('.aviso');
+let countdownTimer = "";
+
 const init = () => {
     const puzzles = document.querySelector('.puzzles');
-    const idPuzzle = document.querySelector("#puzzle");
+    const reset = document.querySelector('.buttom');
     puzzles.addEventListener('click', seleccionarPuzzle);
-    idPuzzle.addEventListener('click', moverPieza);
+    divPuzzle.addEventListener('click', moverPieza);
+    reset.addEventListener('click', limpiarPuzzle);
 }
 
 const seleccionarPuzzle = (event) => {
     if(event.target.tagName.toLowerCase() === 'div' && event.target.className != 'puzzles') {
         let arrayPiezas = [1,2,3,4,5,6,7,8,''];
+        let puzzle = {}; 
         const valor = event.target.getAttribute('data-value');
         const grid = parseInt(event.target.getAttribute('data-grid'));
         const formato = event.target.getAttribute('data-format');
-        const idPuzzle = document.querySelector("#puzzle");
-        limpiarPuzzle();
-        document.querySelector('#inicio').classList.add('hidden');
-        document.querySelector('.container').classList.remove('hidden');
+        inicio.classList.add('hidden');
+        container.classList.remove('hidden');
         if (grid == 4) {
             arrayPiezas = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,''];
-            idPuzzle.style.gridTemplateColumns = "repeat(4, 1fr)";
-            idPuzzle.style.gridTemplateRows = "repeat(4, 1fr)";
+            divPuzzle.classList.add('grid-4x4');
+            divPuzzle.classList.remove('grid-3x3');
+        } else {
+            divPuzzle.classList.remove('grid-4x4');
+            divPuzzle.classList.add('grid-3x3');
         }
-        const puzzle = new Puzzle(valor, formato, arrayPiezas, grid, 90);
+        puzzle = new Puzzle(valor, formato, arrayPiezas, grid, 90);
         puzzle.inicializarPuzzle();
         cronometro();
     }
@@ -81,11 +90,9 @@ const moverPieza = (event) => {
         let valor = 0;
         let vacio = buscarPosVacia();
         valor = parseInt(vacio.getAttribute('data-value')) - parseInt(elemento.getAttribute('data-value'));
-        //El valor nos indicará el eje y dirección a mover la ficha (10/-10 eje y) (1/-1 eje x) 
         if (valor == -1 || valor == 1 || valor == 10 || valor == -10) {
             audio.play();
             let copia = elemento.childNodes[0];
-            console.log(copia);
             if(copia != undefined) {
                 vacio.appendChild(copia);
                 comprobar();
@@ -97,54 +104,51 @@ const moverPieza = (event) => {
 
 const comprobar = () => {
     let vacio = buscarPosVacia();
-    let arrayPiezas = [1,2,3,4,5,6,7,8,''];
+    let arrayPiezas = ["1","2","3","4","5","6","7","8"];
     let valores = '';
     if (document.querySelector("#puzzle").lastChild.getAttribute('data-value') == vacio.getAttribute('data-value')) {
         valores = Array.from (document.querySelectorAll('.pieza')).map (e => e.dataset.imgvalue);
-        console.log(JSON.stringify(valores));
-        console.log(JSON.stringify(arrayPiezas));
-        console.log(JSON.stringify(arrayPiezas) === JSON.stringify(valores));
-    }
-}
-
-const silenciarJuego = () => {
-    const audio = document.getElementById("audio");
-    if (audio.muted) {
-        audio.muted = false;
-        //mute.style.textDecoration = "";
-    } else {
-        audio.muted = true;
-        //mute.style.textDecoration = "line-through";
+        if ('["1","2","3","4","5","6","7","8"]' === JSON.stringify(valores) || '["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15"]' === JSON.stringify(valores)) {
+            clearInterval(countdownTimer);
+            divPuzzle.removeEventListener('click', moverPieza);
+            divPuzzle.classList.add('disabled');
+            mostrarAviso('¡Has ganado!');
+        } 
     }
 }
 
 const cronometro = () => {
     let segundos = 120;
     const contador = document.querySelector('.contador');
-    const puzzle = document.querySelector('#puzzle');
     function decrementSeconds() {
         contador.innerText = --segundos;
         if (segundos == 0) {
             clearInterval(countdownTimer);
-            puzzle.removeEventListener('click', moverPieza);
-            puzzle.classList.add('disabled')
-            contador.innerText = "¡Se acabó el tiempo!"; //muestra un mensaje final
+            divPuzzle.removeEventListener('click', moverPieza);
+            divPuzzle.classList.add('disabled');
+            contador.innerText = "¡Se acabó el tiempo!";
+            mostrarAviso('¡Has perdido!');
         }
     }
-    let countdownTimer = setInterval(decrementSeconds, 1000);
+    countdownTimer = setInterval(decrementSeconds, 1000);
     contador.innerHTML = segundos.toString();
 }
 
+const mostrarAviso = (texto) => {
+    aviso.classList.remove('hidden');
+    aviso.innerHTML = texto;
+}
+
 const limpiarPuzzle = () => {
-    const eliminarNodos = document.getElementById("puzzle");
-    while (eliminarNodos.hasChildNodes()) {
-        eliminarNodos.removeChild(eliminarNodos.firstChild);
+    while (divPuzzle.hasChildNodes()) {
+        divPuzzle.removeChild(divPuzzle.firstChild);
     }
+    container.classList.add('hidden');
+    inicio.classList.remove('hidden');
+    divPuzzle.classList.remove('disabled')
+    aviso.classList.add('hidden');
+    clearInterval(countdownTimer);
+    init();
 }
 
-
-/*Pausar juego*/
-function pausar(valor) {
-    //TODO
-}
-
+init();

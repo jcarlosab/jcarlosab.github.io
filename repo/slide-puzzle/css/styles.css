@@ -5,8 +5,7 @@ body {
 
 #puzzle {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+
     grid-gap: 1px;
     width: fit-content;
     margin: 100px auto;
@@ -14,11 +13,34 @@ body {
     border: solid 4px orange;
 }
 
+.grid-3x3 {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.grid-4x4 {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
 .popup { 
     text-align: center;
     color: orange;
     font-size: x-large;
 }
+
+.aviso {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0,0,0,.9);
+    border-radius: 3px;
+    color: orange;
+    font-size: 50px;
+    padding: 20px;
+}  
 
 .puzzles {
     display: flex;
@@ -65,7 +87,6 @@ body {
     background: url(../assets/imagenes/pirate-8279653_640.jpg);
 }
 
-
 #audio { display: none }
 
 .atribuciones {
@@ -73,13 +94,40 @@ body {
     text-align: left;
     font-size: 15px;
     margin: 40px;
-    background-color: rgba(255, 255, 255, .1);
     padding: 20px;
 }
 
-h3 {
-    font-size: xx-large;
-    margin: 30px;
+.atribuciones a {
+    color: white;
+}
+
+.info {
+    display: flex;
+    margin: auto 20px;
+}
+
+.align-right {
+    text-align: right;
+    text-align: -webkit-right;
+}
+
+.info > div {
+    width: 50%;
+}
+
+.buttom {
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+    transition: box-shadow 500ms ease;
+}
+
+.buttom:hover {
+    box-shadow: 0 0 0 3px orange;
+}
+
+.info p {
+    font-size: 30px;
 }
 
 .casilla img{
