@@ -1,12 +1,10 @@
-# 🧑‍💻 Hola, soy @jcarlosab
-
-## 🚀 Proyectos principales
+# Proyectos principales
 
 | Proyecto | Descripción | Tecnologías | Demo |
 |---------|-------------|-------------|------|
 | [task-points-app](https://github.com/jcarlosab/task-points-app) | Planificación ágil con cartas tipo poker | React, Socket.io | [🌐 Vercel](#) |
 
-## 🧪 Zona de pruebas
+# Zona de pruebas
 
 | Proyecto | Descripción | Tecnologías | Demo |
 |---------|-------------|-------------|------|
