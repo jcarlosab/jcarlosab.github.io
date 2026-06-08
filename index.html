@@ -3,20 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEYLAND-YUTANI // CREW INTERFACE</title>
+    <title>JCARLOS-AB // CREW INTERFACE</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- LOADING SCREEN -->
     <div class="loading-screen" id="loading-screen">
         <div class="loading-content">
-            <div class="loading-logo">
-                <div class="weyland-logo">
-                    <span class="logo-ring"></span>
-                    <span class="logo-ring ring-2"></span>
-                    <span class="logo-ring ring-3"></span>
-                    <span class="logo-core">W</span>
-                </div>
+            <div class="weyland-logo">
+                <span class="logo-ring"></span>
+                <span class="logo-ring ring-2"></span>
+                <span class="logo-ring ring-3"></span>
+                <span class="logo-core">⬡</span>
             </div>
             <div class="loading-bar-container">
                 <div class="loading-bar" id="loading-bar"></div>
@@ -29,10 +27,9 @@
     <div class="crt-overlay">
         <div class="scanlines"></div>
         <div class="vignette"></div>
-        <div class="flicker"></div>
     </div>
 
-    <!-- HEX GRID BACKGROUND -->
+    <!-- HEX GRID -->
     <div class="hex-grid-bg"></div>
 
     <!-- MAIN INTERFACE -->
@@ -40,318 +37,252 @@
         <!-- HEADER -->
         <header class="sys-header">
             <div class="header-brand">
-                <div class="brand-mark">
-                    <span class="brand-hex"></span>
-                    <span class="brand-text">WEYLAND-YUTANI CORP</span>
-                </div>
-                <span class="header-divider">|</span>
-                <span class="header-subtitle">CREW INTERFACE TERMINAL v3.7.1</span>
+                <span class="brand-hex"></span>
+                <span class="brand-text">JCARLOS-AB</span>
             </div>
             <div class="header-status">
                 <span class="status-dot"></span>
-                <span class="status-label">SYS:NOMINAL</span>
-                <span class="header-divider">|</span>
                 <span class="header-date" id="header-date"></span>
             </div>
         </header>
 
-        <!-- HERO SECTION -->
-        <section class="hero-section" id="hero">
-            <div class="hero-grid">
-                <div class="hero-content">
-                    <div class="hero-tag">
-                        <span class="tag-bracket">[</span>
-                        <span class="tag-text">CREW IDENTIFICATION</span>
-                        <span class="tag-bracket">]</span>
-                    </div>
-                    <h1 class="hero-name">
-                        <span class="name-line name-first" id="name-reveal">JOSE CARLOS</span>
-                        <span class="name-line name-last" id="name-reveal-last">ANTON BARROS</span>
-                    </h1>
-                    <div class="hero-role">
-                        <span class="role-prefix">►</span>
-                        <span class="role-text typewriter" id="role-typewriter"></span>
-                        <span class="role-cursor">█</span>
-                    </div>
-                    <div class="hero-meta">
-                        <div class="meta-item">
-                            <span class="meta-label">ORIGIN</span>
-                            <span class="meta-value">Galicia, España</span>
+        <!-- SCREENS -->
+        <div class="screens-wrapper">
+
+            <!-- SCREEN 0: HERO -->
+            <section class="screen active" data-index="0">
+                <div class="screen-center">
+                    <div class="hero-layout">
+                        <div class="hero-text">
+                            <div class="hero-tag">[ IDENTIFICATION ]</div>
+                            <h1 class="hero-name">
+                                <span class="name-line">JOSE CARLOS</span>
+                                <span class="name-line name-accent">ANTON BARROS</span>
+                            </h1>
+                            <div class="hero-role">
+                                <span class="role-prefix">►</span>
+                                <span class="role-text" id="role-typewriter"></span>
+                                <span class="role-cursor">█</span>
+                            </div>
+                            <div class="hero-meta">
+                                <div class="meta-row">
+                                    <span class="meta-label">ORIGIN</span>
+                                    <span class="meta-value">Galicia, España</span>
+                                </div>
+                                <div class="meta-row">
+                                    <span class="meta-label">EXPERIENCE</span>
+                                    <span class="meta-value" id="experience-display">...</span>
+                                </div>
+                                <div class="meta-row">
+                                    <span class="meta-label">STATUS</span>
+                                    <span class="meta-value meta-active"><span class="pulse-dot"></span> AVAILABLE</span>
+                                </div>
+                            </div>
+                            <a href="#" class="hero-cta" id="cta-access">ACCESS SYSTEMS ▼</a>
+                            <div class="swipe-hint">
+                                <span class="swipe-arrow">←</span>
+                                <span class="swipe-text">SWIPE</span>
+                                <span class="swipe-arrow">→</span>
+                            </div>
                         </div>
-                        <div class="meta-item">
-                            <span class="meta-label">EXPERIENCE</span>
-                            <span class="meta-value" id="experience-display">计算中...</span>
-                        </div>
-                        <div class="meta-item">
-                            <span class="meta-label">STATUS</span>
-                            <span class="meta-value meta-active"><span class="pulse-dot"></span> AVAILABLE</span>
+
+                        <!-- RADAR NAV -->
+                        <div class="radar" id="radar">
+                            <canvas id="radar-canvas" width="320" height="320"></canvas>
+                            <div class="radar-blips">
+                                <button class="blip" data-screen="1">
+                                    <span class="blip-dot"></span>
+                                    <span class="blip-label">ABOUT</span>
+                                </button>
+                                <button class="blip" data-screen="2">
+                                    <span class="blip-dot"></span>
+                                    <span class="blip-label">PROJECTS</span>
+                                </button>
+                                <button class="blip" data-screen="3">
+                                    <span class="blip-dot"></span>
+                                    <span class="blip-label">CONTACT</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="hero-visual">
-                    <div class="motion-tracker">
-                        <div class="tracker-ring"></div>
-                        <div class="tracker-ring ring-2"></div>
-                        <div class="tracker-ring ring-3"></div>
-                        <div class="tracker-sweep"></div>
-                        <div class="tracker-blip blip-1"></div>
-                        <div class="tracker-blip blip-2"></div>
-                        <div class="tracker-blip blip-3"></div>
-                        <div class="tracker-center">
-                            <span class="tracker-label">TARGET</span>
-                        </div>
+            </section>
+
+            <!-- SCREEN 1: MANIFEST + SPECS -->
+            <section class="screen" data-index="1">
+                <div class="screen-scroll">
+                    <div class="section-title-bar">
+                        <h2 class="section-name">ABOUT</h2>
+                        <span class="section-rule"></span>
+                        <span class="section-tag">PROFILE</span>
                     </div>
-                </div>
-            </div>
-            <div class="hero-scroll-indicator">
-                <span class="scroll-text">SCROLL TO ACCESS</span>
-                <span class="scroll-arrow">▼</span>
-            </div>
-        </section>
-
-        <!-- ABOUT SECTION -->
-        <section class="content-section" id="about">
-            <div class="section-frame">
-                <div class="frame-corner corner-tl"></div>
-                <div class="frame-corner corner-tr"></div>
-                <div class="frame-corner corner-bl"></div>
-                <div class="frame-corner corner-br"></div>
-
-                <div class="section-header">
-                    <span class="section-index">01</span>
-                    <h2 class="section-title">CREW MANIFEST</h2>
-                    <span class="section-line"></span>
-                    <span class="section-status-tag">CLASSIFIED</span>
-                </div>
-
-                <div class="section-body">
-                    <div class="manifest-grid">
+                    <div class="manifest-content">
                         <div class="manifest-avatar">
-                            <div class="avatar-frame">
-                                <div class="avatar-placeholder">
-                                    <span class="avatar-icon">◈</span>
-                                </div>
-                                <div class="avatar-scan-line"></div>
+                            <div class="avatar-box">
+                                <span class="avatar-glyph">◈</span>
+                                <div class="avatar-scan"></div>
                             </div>
-                            <div class="avatar-id">
-                                <span class="id-label">CREW ID</span>
-                                <span class="id-value">WY-7742-JC</span>
-                            </div>
+                            <span class="avatar-id">JC-1992-AB</span>
                         </div>
-                        <div class="manifest-info">
-                            <p class="manifest-bio typewriter-block" id="bio-typewriter"></p>
-                            <div class="manifest-details">
-                                <div class="detail-row">
-                                    <span class="detail-key">// ASSIGNMENT:</span>
-                                    <span class="detail-val">Full Stack Developer</span>
-                                </div>
-                                <div class="detail-row">
-                                    <span class="detail-key">// SPECIALIZATION:</span>
-                                    <span class="detail-val">Magnolia CMS</span>
-                                </div>
-                                <div class="detail-row">
-                                    <span class="detail-key">// CLEARANCE:</span>
-                                    <span class="detail-val detail-high">LEVEL 5 - FULL ACCESS</span>
-                                </div>
+                        <div class="manifest-text">
+                            <p class="bio-text" id="bio-typewriter"></p>
+                            <div class="bio-details">
+                                <div class="detail"><span class="dk">// ASSIGNMENT:</span> <span class="dv">Full Stack Developer</span></div>
+                                <div class="detail"><span class="dk">// SPECIALIZATION:</span> <span class="dv">Magnolia CMS</span></div>
+                                <div class="detail"><span class="dk">// CLEARANCE:</span> <span class="dv dv-accent">LEVEL 5 - FULL ACCESS</span></div>
                             </div>
                         </div>
                     </div>
+
+                    <div class="section-title-bar" style="margin-top:32px">
+                        <h2 class="section-name">SKILLS</h2>
+                        <span class="section-rule"></span>
+                        <span class="section-tag">EXPERIENCE</span>
+                    </div>
+                    <div class="diag-list">
+                        <div class="diag-row" data-level="95"><span class="dn">JAVA</span><span class="dp">95%</span><div class="db"><div class="df" style="--fw:95%"></div></div><span class="ds">OPTIMAL</span></div>
+                        <div class="diag-row" data-level="95"><span class="dn">MAGNOLIA CMS</span><span class="dp">95%</span><div class="db"><div class="df" style="--fw:95%"></div></div><span class="ds">OPTIMAL</span></div>
+                        <div class="diag-row" data-level="95"><span class="dn">HTML / CSS</span><span class="dp">95%</span><div class="db"><div class="df" style="--fw:95%"></div></div><span class="ds">OPTIMAL</span></div>
+                        <div class="diag-row" data-level="90"><span class="dn">JAVASCRIPT</span><span class="dp">90%</span><div class="db"><div class="df" style="--fw:90%"></div></div><span class="ds">OPTIMAL</span></div>
+                        <div class="diag-row" data-level="90"><span class="dn">FREEMARKER</span><span class="dp">90%</span><div class="db"><div class="df" style="--fw:90%"></div></div><span class="ds">OPTIMAL</span></div>
+                        <div class="diag-row" data-level="85"><span class="dn">YAML</span><span class="dp">85%</span><div class="db"><div class="df" style="--fw:85%"></div></div><span class="ds">NOMINAL</span></div>
+                        <div class="diag-row" data-level="85"><span class="dn">REACT</span><span class="dp">85%</span><div class="db"><div class="df" style="--fw:85%"></div></div><span class="ds">NOMINAL</span></div>
+                        <div class="diag-row" data-level="75"><span class="dn">NODE.JS</span><span class="dp">75%</span><div class="db"><div class="df" style="--fw:75%"></div></div><span class="ds">STABLE</span></div>
+                        <div class="diag-row" data-level="70"><span class="dn">NEXT.JS</span><span class="dp">70%</span><div class="db"><div class="df" style="--fw:70%"></div></div><span class="ds">STABLE</span></div>
+                        <div class="diag-row" data-level="50"><span class="dn">PYTHON</span><span class="dp">50%</span><div class="db"><div class="df" style="--fw:50%"></div></div><span class="ds">LEARNING</span></div>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- SKILLS SECTION -->
-        <section class="content-section" id="skills">
-            <div class="section-frame">
-                <div class="frame-corner corner-tl"></div>
-                <div class="frame-corner corner-tr"></div>
-                <div class="frame-corner corner-bl"></div>
-                <div class="frame-corner corner-br"></div>
-
-                <div class="section-header">
-                    <span class="section-index">02</span>
-                    <h2 class="section-title">SYSTEM DIAGNOSTICS</h2>
-                    <span class="section-line"></span>
-                    <span class="section-status-tag">UPGRADEABLE</span>
+            <!-- SCREEN 2: PROJECTS -->
+            <section class="screen" data-index="2">
+                <div class="screen-scroll">
+                    <div class="section-title-bar">
+                        <h2 class="section-name">PROJECTS</h2>
+                        <span class="section-rule"></span>
+                        <span class="section-tag">7 FILES</span>
+                    </div>
+                    <div class="projects-grid">
+                        <article class="project-card">
+                            <div class="pc-top"><span class="pc-id">LOG-001</span><span class="pc-status ok">ACCESS</span></div>
+                            <h3 class="pc-name">RETRO KODES</h3>
+                            <p class="pc-desc">Explorador de códigos y trucos para videojuegos retro. Base de datos JSON con búsqueda por plataforma.</p>
+                            <div class="pc-tags"><span>Next.js</span><span>React</span><span>JSON</span></div>
+                            <a href="https://www.retrokodes.es" target="_blank" class="pc-link">◉ ACCESS</a>
+                        </article>
+                        <article class="project-card">
+                            <div class="pc-top"><span class="pc-id">LOG-002</span><span class="pc-status warn">⚠ NO ACCESS</span></div>
+                            <h3 class="pc-name">RETRO M3U ORGANIZER</h3>
+                            <p class="pc-desc">Generador de archivos .m3u para juegos multidisco de PSX, Saturn y Dreamcast.</p>
+                            <div class="pc-tags"><span>Python</span><span>Tkinter</span></div>
+                            <a href="https://github.com/jcarlosab/retro-m3u-organizer" target="_blank" class="pc-link">◉ GITHUB</a>
+                        </article>
+                        <article class="project-card">
+                            <div class="pc-top"><span class="pc-id">LOG-003</span><span class="pc-status warn">⚠ NO ACCESS</span></div>
+                            <h3 class="pc-name">CHEAT VAULT</h3>
+                            <p class="pc-desc">Herramienta para crear y gestionar bases de datos JSON de códigos de trucos.</p>
+                            <div class="pc-tags"><span>Python</span><span>JSON</span></div>
+                            <a href="https://github.com/jcarlosab/app-cheat-vault" target="_blank" class="pc-link">◉ GITHUB</a>
+                        </article>
+                        <article class="project-card">
+                            <div class="pc-top"><span class="pc-id">LOG-004</span><span class="pc-status ok">ACCESS</span></div>
+                            <h3 class="pc-name">MEMORY</h3>
+                            <p class="pc-desc">Juego de memoria con tarjetas retro. Diseños pixel art y puntuación por tiempo.</p>
+                            <div class="pc-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+                            <a href="https://jcarlosab.github.io/repo/memory" target="_blank" class="pc-link">◉ ACCESS</a>
+                        </article>
+                        <article class="project-card">
+                            <div class="pc-top"><span class="pc-id">LOG-005</span><span class="pc-status ok">ACCESS</span></div>
+                            <h3 class="pc-name">SLIDE PUZZLE</h3>
+                            <p class="pc-desc">Juego de deslizar piezas para formar una imagen. Múltiples dificultades.</p>
+                            <div class="pc-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+                            <a href="https://jcarlosab.github.io/repo/slide-puzzle" target="_blank" class="pc-link">◉ ACCESS</a>
+                        </article>
+                        <article class="project-card">
+                            <div class="pc-top"><span class="pc-id">LOG-006</span><span class="pc-status warn">⚠ NO ACCESS</span></div>
+                            <h3 class="pc-name">EMPTY WALLET</h3>
+                            <p class="pc-desc">App para gestión de finanzas personales y control de gastos.</p>
+                            <div class="pc-tags"><span>React</span><span>Vite</span></div>
+                            <a href="https://github.com/jcarlosab/web-empty-wallet" target="_blank" class="pc-link">◉ GITHUB</a>
+                        </article>
+                        <article class="project-card">
+                            <div class="pc-top"><span class="pc-id">LOG-007</span><span class="pc-status ok">ACCESS</span></div>
+                            <h3 class="pc-name">TERMINUS</h3>
+                            <p class="pc-desc">Space shooter ambientado en el universo TERMINUS. Esquiva asteroides y naves enemigas.</p>
+                            <div class="pc-tags"><span>HTML</span><span>CSS</span><span>Canvas</span></div>
+                            <a href="repo/terminus/index.html" target="_blank" class="pc-link">◉ ACCESS</a>
+                        </article>
+                    </div>
                 </div>
+            </section>
 
-                <div class="section-body">
-                    <div class="diagnostics-grid">
-                        <div class="diag-item" data-level="95">
-                            <div class="diag-header">
-                                <span class="diag-name">JAVA</span>
-                                <span class="diag-percent">95%</span>
-                            </div>
-                            <div class="diag-bar">
-                                <div class="diag-fill" style="--fill-width: 95%"></div>
-                                <div class="diag-glow"></div>
-                            </div>
-                            <div class="diag-status">OPTIMAL</div>
+            <!-- SCREEN 3: CONTACT -->
+            <section class="screen" data-index="3">
+                <div class="screen-center">
+                    <div class="contact-wrap">
+                        <div class="section-title-bar">
+                            <h2 class="section-name">CONTACT</h2>
+                            <span class="section-rule"></span>
+                            <span class="section-tag">GET IN TOUCH</span>
                         </div>
-                        <div class="diag-item" data-level="95">
-                            <div class="diag-header">
-                                <span class="diag-name">MAGNOLIA CMS</span>
-                                <span class="diag-percent">95%</span>
-                            </div>
-                            <div class="diag-bar">
-                                <div class="diag-fill" style="--fill-width: 95%"></div>
-                                <div class="diag-glow"></div>
-                            </div>
-                            <div class="diag-status">OPTIMAL</div>
-                        </div>
-                        <div class="diag-item" data-level="95">
-                            <div class="diag-header">
-                                <span class="diag-name">HTML / CSS</span>
-                                <span class="diag-percent">95%</span>
-                            </div>
-                            <div class="diag-bar">
-                                <div class="diag-fill" style="--fill-width: 95%"></div>
-                                <div class="diag-glow"></div>
-                            </div>
-                            <div class="diag-status">OPTIMAL</div>
-                        </div>
-                        <div class="diag-item" data-level="90">
-                            <div class="diag-header">
-                                <span class="diag-name">JAVASCRIPT</span>
-                                <span class="diag-percent">90%</span>
-                            </div>
-                            <div class="diag-bar">
-                                <div class="diag-fill" style="--fill-width: 90%"></div>
-                                <div class="diag-glow"></div>
-                            </div>
-                            <div class="diag-status">OPTIMAL</div>
-                        </div>
-                        <div class="diag-item" data-level="90">
-                            <div class="diag-header">
-                                <span class="diag-name">FREEMARKER (FTL)</span>
-                                <span class="diag-percent">90%</span>
-                            </div>
-                            <div class="diag-bar">
-                                <div class="diag-fill" style="--fill-width: 90%"></div>
-                                <div class="diag-glow"></div>
-                            </div>
-                            <div class="diag-status">OPTIMAL</div>
-                        </div>
-                        <div class="diag-item" data-level="85">
-                            <div class="diag-header">
-                                <span class="diag-name">YAML</span>
-                                <span class="diag-percent">85%</span>
-                            </div>
-                            <div class="diag-bar">
-                                <div class="diag-fill" style="--fill-width: 85%"></div>
-                                <div class="diag-glow"></div>
-                            </div>
-                            <div class="diag-status">NOMINAL</div>
-                        </div>
-                        <div class="diag-item" data-level="85">
-                            <div class="diag-header">
-                                <span class="diag-name">REACT</span>
-                                <span class="diag-percent">85%</span>
-                            </div>
-                            <div class="diag-bar">
-                                <div class="diag-fill" style="--fill-width: 85%"></div>
-                                <div class="diag-glow"></div>
-                            </div>
-                            <div class="diag-status">NOMINAL</div>
-                        </div>
-                        <div class="diag-item" data-level="75">
-                            <div class="diag-header">
-                                <span class="diag-name">NODE.JS</span>
-                                <span class="diag-percent">75%</span>
-                            </div>
-                            <div class="diag-bar">
-                                <div class="diag-fill" style="--fill-width: 75%"></div>
-                                <div class="diag-glow"></div>
-                            </div>
-                            <div class="diag-status">STABLE</div>
-                        </div>
-                        <div class="diag-item" data-level="70">
-                            <div class="diag-header">
-                                <span class="diag-name">NEXT.JS</span>
-                                <span class="diag-percent">70%</span>
-                            </div>
-                            <div class="diag-bar">
-                                <div class="diag-fill" style="--fill-width: 70%"></div>
-                                <div class="diag-glow"></div>
-                            </div>
-                            <div class="diag-status">STABLE</div>
-                        </div>
-                        <div class="diag-item" data-level="50">
-                            <div class="diag-header">
-                                <span class="diag-name">PYTHON</span>
-                                <span class="diag-percent">50%</span>
-                            </div>
-                            <div class="diag-bar">
-                                <div class="diag-fill" style="--fill-width: 50%"></div>
-                                <div class="diag-glow"></div>
-                            </div>
-                            <div class="diag-status">LEARNING</div>
+                        <div class="contact-cards">
+                            <a href="mailto:josecarlos.dev@outlook.es" class="ccard" target="_blank">
+                                <span class="ccard-icon">✉</span>
+                                <div class="ccard-body">
+                                    <span class="ccard-label">EMAIL</span>
+                                    <span class="ccard-value">josecarlos.dev@outlook.es</span>
+                                </div>
+                                <span class="ccard-arrow">→</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/jose-carlos-anton-barros-b90b82233" class="ccard" target="_blank">
+                                <span class="ccard-icon">◆</span>
+                                <div class="ccard-body">
+                                    <span class="ccard-label">LINKEDIN</span>
+                                    <span class="ccard-value">/in/jose-carlos-anton-barros</span>
+                                </div>
+                                <span class="ccard-arrow">→</span>
+                            </a>
+                            <a href="https://github.com/jcarlosab" class="ccard" target="_blank">
+                                <span class="ccard-icon">⬡</span>
+                                <div class="ccard-body">
+                                    <span class="ccard-label">GITHUB</span>
+                                    <span class="ccard-value">/jcarlosab</span>
+                                </div>
+                                <span class="ccard-arrow">→</span>
+                            </a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
-        <!-- CONTACT SECTION -->
-        <section class="content-section" id="contact">
-            <div class="section-frame">
-                <div class="frame-corner corner-tl"></div>
-                <div class="frame-corner corner-tr"></div>
-                <div class="frame-corner corner-bl"></div>
-                <div class="frame-corner corner-br"></div>
-
-                <div class="section-header">
-                    <span class="section-index">03</span>
-                    <h2 class="section-title">OPEN CHANNEL</h2>
-                    <span class="section-line"></span>
-                    <span class="section-status-tag">ENCRYPTED</span>
-                </div>
-
-                <div class="section-body">
-                    <div class="contact-grid">
-                        <a href="mailto:josecarlos.dev@outlook.es" class="contact-card" target="_blank">
-                            <div class="contact-icon">✉</div>
-                            <div class="contact-info">
-                                <span class="contact-label">EMAIL</span>
-                                <span class="contact-value">josecarlos.dev@outlook.es</span>
-                            </div>
-                            <span class="contact-arrow">→</span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/jose-carlos-anton-barros-b90b82233" class="contact-card" target="_blank">
-                            <div class="contact-icon">◆</div>
-                            <div class="contact-info">
-                                <span class="contact-label">LINKEDIN</span>
-                                <span class="contact-value">/in/jose-carlos-anton-barros</span>
-                            </div>
-                            <span class="contact-arrow">→</span>
-                        </a>
-                        <a href="https://github.com/jcarlosab" class="contact-card" target="_blank">
-                            <div class="contact-icon">⬡</div>
-                            <div class="contact-info">
-                                <span class="contact-label">GITHUB</span>
-                                <span class="contact-value">/jcarlosab</span>
-                            </div>
-                            <span class="contact-arrow">→</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!-- BOTTOM NAV -->
+        <nav class="bottom-nav" id="bottom-nav">
+            <button class="bn-item active" data-screen="0">
+                <span class="bn-icon">⬡</span>
+                <span class="bn-text">HOME</span>
+            </button>
+            <button class="bn-item" data-screen="1">
+                <span class="bn-icon">◈</span>
+                <span class="bn-text">ABOUT</span>
+            </button>
+            <button class="bn-item" data-screen="2">
+                <span class="bn-icon">▣</span>
+                <span class="bn-text">PROJECTS</span>
+            </button>
+            <button class="bn-item" data-screen="3">
+                <span class="bn-icon">◉</span>
+                <span class="bn-text">CONTACT</span>
+            </button>
+        </nav>
 
         <!-- FOOTER -->
         <footer class="sys-footer">
-            <div class="footer-grid">
-                <span class="footer-item">WEYLAND-YUTANI CORP © 2026</span>
-                <span class="footer-divider">|</span>
-                <span class="footer-item">TERMINAL v3.7.1</span>
-                <span class="footer-divider">|</span>
-                <span class="footer-item">ALL SYSTEMS NOMINAL</span>
-            </div>
-            <div class="footer-warning">
-                <span class="warning-stripe"></span>
-                <span class="warning-text">AUTHORIZED PERSONNEL ONLY</span>
-                <span class="warning-stripe"></span>
-            </div>
+            <span>JCARLOSAB©2026</span>
+            <span class="footer-sep">|</span>
+            <span>josecarlos.dev@outlook.es</span>
+            <span class="footer-sep">|</span>
+            <span>ALL SYSTEMS NOMINAL</span>
         </footer>
     </div>
 

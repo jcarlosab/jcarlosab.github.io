@@ -1,300 +1,374 @@
 /**
  * WEYLAND-YUTANI CREW INTERFACE
- * Interactive portfolio with loading screen, typewriter effects,
- * scroll animations, and motion tracker
+ * Radar navigation + screen system + swipe + transitions
  */
 
-// ============================================
-// CONFIGURATION
-// ============================================
-const CONFIG = {
-    loadingDuration: 2800,
-    typewriterSpeed: 35,
-    bioText: 'Desarrollador Full Stack especializado en Magnolia CMS, trabajando a diario con Java, YAML, FreeMarker (FTL), JavaScript, HTML y CSS. Experiencia también en React, Next.js, Node.js y Python para proyectos personales.',
+const CFG = {
+    loadTime: 2400,
+    typeSpeed: 35,
     roleText: 'FULL STACK DEVELOPER',
     roleSpeed: 60,
+    bioText: 'Desarrollador Full Stack especializado en Magnolia CMS, trabajando a diario con Java, YAML, FreeMarker (FTL), JavaScript, HTML y CSS. Experiencia también en React, Next.js, Node.js y Python para proyectos personales.',
     startDate: new Date('2017-11-01'),
-    scrollThreshold: 0.15,
+    swipeThreshold: 50,
+    swipeCooldown: 600,
 };
 
-// ============================================
-// DOM ELEMENTS
-// ============================================
-const $ = (sel) => document.querySelector(sel);
-const $$ = (sel) => document.querySelectorAll(sel);
+const $ = (s) => document.querySelector(s);
+const $$ = (s) => document.querySelectorAll(s);
+
+let currentScreen = 0;
+const totalScreens = 4;
+let wheelCooldown = false;
+let swipeCooldown = false;
+let transitioning = false;
 
 // ============================================
-// INITIALIZATION
+// BOOT
 // ============================================
 document.addEventListener('DOMContentLoaded', () => {
-    initLoadingScreen();
-});
-
-function initLoadingScreen() {
-    const loadingBar = $('#loading-bar');
-    const loadingText = $('#loading-text');
-    const loadingScreen = $('#loading-screen');
-    const interfaceEl = $('#interface');
+    const bar = $('#loading-bar');
+    const txt = $('#loading-text');
+    const loadScreen = $('#loading-screen');
+    const iface = $('#interface');
 
     const stages = [
-        { progress: 15, text: 'LOADING KERNEL...' },
-        { progress: 35, text: 'INITIALIZING SUBSYSTEMS...' },
-        { progress: 55, text: 'CALIBRATING SENSORS...' },
-        { progress: 75, text: 'ESTABLISHING UPLINK...' },
-        { progress: 90, text: 'AUTHENTICATING CREW...' },
-        { progress: 100, text: 'SYSTEM READY' },
+        [15, 'LOADING KERNEL...'],
+        [40, 'INITIALIZING SUBSYSTEMS...'],
+        [65, 'CALIBRATING SENSORS...'],
+        [85, 'ESTABLISHING UPLINK...'],
+        [100, 'SYSTEM READY'],
     ];
 
-    let currentStage = 0;
-
-    function advanceStage() {
-        if (currentStage >= stages.length) {
+    let i = 0;
+    function tick() {
+        if (i >= stages.length) {
             setTimeout(() => {
-                loadingScreen.classList.add('hidden');
-                interfaceEl.classList.add('visible');
-                initAllSystems();
-            }, 400);
+                loadScreen.classList.add('hidden');
+                iface.classList.add('visible');
+                boot();
+            }, 300);
             return;
         }
-
-        const stage = stages[currentStage];
-        loadingBar.style.width = stage.progress + '%';
-        loadingText.textContent = stage.text;
-        currentStage++;
-
-        setTimeout(advanceStage, CONFIG.loadingDuration / stages.length);
+        bar.style.width = stages[i][0] + '%';
+        txt.textContent = stages[i][1];
+        i++;
+        setTimeout(tick, CFG.loadTime / stages.length);
     }
+    setTimeout(tick, 200);
+});
 
-    setTimeout(advanceStage, 300);
-}
-
-function initAllSystems() {
-    initDateDisplay();
-    initTypewriterRole();
-    initTypewriterBio();
+function boot() {
+    initNav();
+    initSwipe();
+    initRadar();
+    initDate();
+    initRole();
     initExperience();
-    initScrollAnimations();
-    initSkillBars();
-    initContactCards();
+    initCTA();
 }
 
 // ============================================
-// DATE DISPLAY
+// NAVIGATION
 // ============================================
-function initDateDisplay() {
-    const dateEl = $('#header-date');
-    if (!dateEl) return;
+function initNav() {
+    $$('.bn-item').forEach(b => {
+        b.addEventListener('click', () => goTo(+b.dataset.screen));
+    });
 
-    function updateDate() {
-        const now = new Date();
-        const y = now.getFullYear();
-        const m = String(now.getMonth() + 1).padStart(2, '0');
-        const d = String(now.getDate()).padStart(2, '0');
-        const h = String(now.getHours()).padStart(2, '0');
-        const min = String(now.getMinutes()).padStart(2, '0');
-        const s = String(now.getSeconds()).padStart(2, '0');
-        dateEl.textContent = `${y}.${m}.${d} // ${h}:${min}:${s}`;
-    }
+    $$('.blip').forEach(b => {
+        b.addEventListener('click', () => goTo(+b.dataset.screen));
+    });
 
-    updateDate();
-    setInterval(updateDate, 1000);
-}
+    document.addEventListener('keydown', e => {
+        if (e.key === 'ArrowDown' || e.key === 'PageDown') { e.preventDefault(); goTo(currentScreen + 1); }
+        else if (e.key === 'ArrowUp' || e.key === 'PageUp') { e.preventDefault(); goTo(currentScreen - 1); }
+        else if (e.key === 'Home') { e.preventDefault(); goTo(0); }
+        else if (e.key === 'End') { e.preventDefault(); goTo(totalScreens - 1); }
+    });
 
-// ============================================
-// TYPEWRITER EFFECTS
-// ============================================
-function initTypewriterRole() {
-    const el = $('#role-typewriter');
-    if (!el) return;
-
-    let i = 0;
-    const text = CONFIG.roleText;
-
-    function type() {
-        if (i < text.length) {
-            el.textContent += text.charAt(i);
-            i++;
-            setTimeout(type, CONFIG.roleSpeed + Math.random() * 30);
+    $('.screens-wrapper').addEventListener('wheel', e => {
+        const scroll = e.target.closest('.screen-scroll');
+        if (scroll) {
+            if (e.deltaY < 0 && scroll.scrollTop > 0) return;
+            if (e.deltaY > 0 && scroll.scrollTop + scroll.clientHeight < scroll.scrollHeight - 2) return;
         }
-    }
-
-    setTimeout(type, 800);
+        if (wheelCooldown) return;
+        wheelCooldown = true;
+        setTimeout(() => wheelCooldown = false, 800);
+        if (e.deltaY > 0) goTo(currentScreen + 1);
+        else if (e.deltaY < 0) goTo(currentScreen - 1);
+    }, { passive: true });
 }
 
-function initTypewriterBio() {
-    const el = $('#bio-typewriter');
-    if (!el) return;
+// ============================================
+// TOUCH SWIPE
+// ============================================
+function initSwipe() {
+    const wrapper = $('.screens-wrapper');
+    let startX = 0;
+    let startY = 0;
+    let tracking = false;
 
-    let i = 0;
-    const text = CONFIG.bioText;
-
-    function type() {
-        if (i < text.length) {
-            el.textContent += text.charAt(i);
-            i++;
-            setTimeout(type, CONFIG.typewriterSpeed + Math.random() * 40);
+    wrapper.addEventListener('touchstart', e => {
+        // Ignore if inside scrollable area with scroll
+        const scroll = e.target.closest('.screen-scroll');
+        if (scroll && scroll.scrollHeight > scroll.clientHeight + 4) {
+            const atTop = scroll.scrollTop <= 0;
+            const atBot = scroll.scrollTop + scroll.clientHeight >= scroll.scrollHeight - 2;
+            // If scrollable and not at boundary, let native scroll handle it
+            if (!atTop && !atBot) return;
         }
+
+        startX = e.touches[0].clientX;
+        startY = e.touches[0].clientY;
+        tracking = true;
+    }, { passive: true });
+
+    wrapper.addEventListener('touchend', e => {
+        if (!tracking) return;
+        tracking = false;
+
+        const dx = e.changedTouches[0].clientX - startX;
+        const dy = e.changedTouches[0].clientY - startY;
+
+        // Only trigger if horizontal movement dominates
+        if (Math.abs(dx) < CFG.swipeThreshold || Math.abs(dy) > Math.abs(dx)) return;
+        if (swipeCooldown || transitioning) return;
+
+        if (dx < 0) goTo(currentScreen + 1);  // swipe left → next
+        else goTo(currentScreen - 1);          // swipe right → prev
+    }, { passive: true });
+}
+
+// ============================================
+// SCREEN TRANSITIONS
+// ============================================
+function goTo(idx) {
+    if (idx < 0 || idx >= totalScreens || idx === currentScreen || transitioning) return;
+
+    const direction = idx > currentScreen ? 1 : -1;
+    const oldScreen = $(`.screen[data-index="${currentScreen}"]`);
+    const newScreen = $(`.screen[data-index="${idx}"]`);
+
+    transitioning = true;
+    swipeCooldown = true;
+
+    // Outgoing
+    if (oldScreen) {
+        oldScreen.classList.add(direction > 0 ? 'slide-out-left' : 'slide-out-right');
     }
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                setTimeout(type, 400);
-                observer.disconnect();
-            }
+    setTimeout(() => {
+        // Hide old, show new
+        if (oldScreen) {
+            oldScreen.classList.remove('active', 'slide-out-left', 'slide-out-right');
+        }
+
+        currentScreen = idx;
+
+        if (newScreen) {
+            newScreen.classList.add('active', direction > 0 ? 'slide-in-right' : 'slide-in-left');
+            // Clean入场 class after animation
+            setTimeout(() => {
+                newScreen.classList.remove('slide-in-right', 'slide-in-left');
+                transitioning = false;
+            }, 350);
+        } else {
+            transitioning = false;
+        }
+
+        activateNav();
+    }, 300);
+
+    setTimeout(() => { swipeCooldown = false; }, CFG.swipeCooldown);
+}
+
+function activateNav() {
+    $$('.bn-item').forEach(b => b.classList.remove('active'));
+    const btn = $(`.bn-item[data-screen="${currentScreen}"]`);
+    if (btn) btn.classList.add('active');
+
+    const screen = $(`.screen[data-index="${currentScreen}"]`);
+    if (!screen) return;
+
+    // Diagnostics (screen 1)
+    if (currentScreen === 1) {
+        screen.querySelectorAll('.diag-row').forEach((r, i) => {
+            setTimeout(() => {
+                r.classList.add('visible');
+                r.querySelector('.df')?.classList.add('animated');
+            }, i * 60);
         });
-    }, { threshold: 0.3 });
-
-    observer.observe(el);
+        initBio();
+    }
 }
 
 // ============================================
-// EXPERIENCE CALCULATOR
+// RADAR CANVAS
+// ============================================
+function initRadar() {
+    const canvas = $('#radar-canvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    const W = canvas.width;
+    const H = canvas.height;
+    const cx = W / 2;
+    const cy = H / 2;
+    const R = Math.min(cx, cy) - 10;
+
+    let angle = 0;
+
+    function draw() {
+        ctx.clearRect(0, 0, W, H);
+
+        // Rings
+        for (let i = 1; i <= 3; i++) {
+            ctx.beginPath();
+            ctx.arc(cx, cy, R * (i / 3), 0, Math.PI * 2);
+            ctx.strokeStyle = 'rgba(0,255,136,0.08)';
+            ctx.lineWidth = 1;
+            ctx.stroke();
+        }
+
+        // Cross lines
+        ctx.strokeStyle = 'rgba(0,255,136,0.05)';
+        ctx.beginPath();
+        ctx.moveTo(cx, cy - R); ctx.lineTo(cx, cy + R);
+        ctx.moveTo(cx - R, cy); ctx.lineTo(cx + R, cy);
+        ctx.stroke();
+
+        // Sweep
+        const sweepGrad = ctx.createConicGradient(-angle, cx, cy);
+        sweepGrad.addColorStop(0, 'rgba(0,255,136,0.18)');
+        sweepGrad.addColorStop(0.08, 'rgba(0,255,136,0)');
+        sweepGrad.addColorStop(1, 'rgba(0,255,136,0)');
+
+        ctx.beginPath();
+        ctx.arc(cx, cy, R, 0, Math.PI * 2);
+        ctx.fillStyle = sweepGrad;
+        ctx.fill();
+
+        // Sweep line
+        ctx.beginPath();
+        ctx.moveTo(cx, cy);
+        ctx.lineTo(cx + Math.cos(-angle) * R, cy + Math.sin(-angle) * R);
+        ctx.strokeStyle = 'rgba(0,255,136,0.5)';
+        ctx.lineWidth = 1.5;
+        ctx.stroke();
+
+        // Center dot
+        ctx.beginPath();
+        ctx.arc(cx, cy, 3, 0, Math.PI * 2);
+        ctx.fillStyle = '#00ff88';
+        ctx.fill();
+
+        angle += 0.012;
+        requestAnimationFrame(draw);
+    }
+
+    draw();
+    positionBlips();
+}
+
+function positionBlips() {
+    const radar = $('#radar');
+    if (!radar) return;
+    const W = radar.offsetWidth;
+    const H = radar.offsetHeight;
+    const cx = W / 2;
+    const cy = H / 2;
+    const R = Math.min(cx, cy) * 0.72;
+
+    const blips = $$('.blip');
+    const angles = [-Math.PI / 2, Math.PI / 2, Math.PI]; // top, bottom, left
+
+    blips.forEach((b, i) => {
+        const a = angles[i];
+        const x = cx + Math.cos(a) * R;
+        const y = cy + Math.sin(a) * R;
+        b.style.left = x + 'px';
+        b.style.top = y + 'px';
+    });
+}
+
+// ============================================
+// DATE
+// ============================================
+function initDate() {
+    const el = $('#header-date');
+    if (!el) return;
+    function upd() {
+        const n = new Date();
+        const p = v => String(v).padStart(2, '0');
+        el.textContent = `${n.getFullYear()}.${p(n.getMonth()+1)}.${p(n.getDate())} // ${p(n.getHours())}:${p(n.getMinutes())}:${p(n.getSeconds())}`;
+    }
+    upd();
+    setInterval(upd, 1000);
+}
+
+// ============================================
+// TYPEWRITER ROLE
+// ============================================
+let roleDone = false;
+function initRole() {
+    const el = $('#role-typewriter');
+    if (!el || roleDone) return;
+    roleDone = true;
+    let i = 0;
+    (function type() {
+        if (i < CFG.roleText.length) {
+            el.textContent += CFG.roleText.charAt(i++);
+            setTimeout(type, CFG.roleSpeed + Math.random() * 30);
+        }
+    })();
+}
+
+// ============================================
+// TYPEWRITER BIO
+// ============================================
+let bioDone = false;
+function initBio() {
+    const el = $('#bio-typewriter');
+    if (!el || bioDone) return;
+    bioDone = true;
+    let i = 0;
+    (function type() {
+        if (i < CFG.bioText.length) {
+            el.textContent += CFG.bioText.charAt(i++);
+            setTimeout(type, CFG.typeSpeed + Math.random() * 40);
+        }
+    })();
+}
+
+// ============================================
+// EXPERIENCE
 // ============================================
 function initExperience() {
     const el = $('#experience-display');
     if (!el) return;
-
     function calc() {
         const now = new Date();
-        let years = now.getFullYear() - CONFIG.startDate.getFullYear();
-        let months = now.getMonth() - CONFIG.startDate.getMonth();
-
-        if (months < 0) {
-            years--;
-            months += 12;
-        }
-
-        if (years > 0) {
-            el.textContent = `${years} year${years !== 1 ? 's' : ''} and ${months} month${months !== 1 ? 's' : ''}`;
-        } else {
-            el.textContent = `${months} month${months !== 1 ? 's' : ''}`;
-        }
+        let y = now.getFullYear() - CFG.startDate.getFullYear();
+        let m = now.getMonth() - CFG.startDate.getMonth();
+        if (m < 0) { y--; m += 12; }
+        el.textContent = y > 0
+            ? `${y} year${y!==1?'s':''} and ${m} month${m!==1?'s':''}`
+            : `${m} month${m!==1?'s':''}`;
     }
-
     calc();
-    setInterval(calc, 1000 * 60 * 60);
+    setInterval(calc, 3600000);
 }
 
 // ============================================
-// SCROLL ANIMATIONS
+// CTA
 // ============================================
-function initScrollAnimations() {
-    const sections = $$('.section-frame');
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            }
+function initCTA() {
+    const el = $('#cta-access');
+    if (el) {
+        el.addEventListener('click', e => {
+            e.preventDefault();
+            goTo(3);
         });
-    }, {
-        threshold: CONFIG.scrollThreshold,
-        rootMargin: '0px 0px -50px 0px',
-    });
-
-    sections.forEach((section) => observer.observe(section));
-}
-
-// ============================================
-// SKILL BARS ANIMATION
-// ============================================
-function initSkillBars() {
-    const items = $$('.diag-item');
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                const item = entry.target;
-                const fill = item.querySelector('.diag-fill');
-
-                setTimeout(() => {
-                    item.classList.add('visible');
-                    if (fill) fill.classList.add('animated');
-                }, 100);
-
-                observer.unobserve(item);
-            }
-        });
-    }, {
-        threshold: 0.2,
-        rootMargin: '0px 0px -30px 0px',
-    });
-
-    items.forEach((item) => observer.observe(item));
-}
-
-// ============================================
-// CONTACT CARDS INTERACTION
-// ============================================
-function initContactCards() {
-    const cards = $$('.contact-card');
-
-    cards.forEach((card) => {
-        card.addEventListener('mouseenter', () => {
-            playHoverSound();
-        });
-
-        card.addEventListener('click', (e) => {
-            playClickSound();
-        });
-    });
-}
-
-// ============================================
-// WEB AUDIO - Synthesized Sounds
-// ============================================
-let audioCtx = null;
-
-function getAudioContext() {
-    if (!audioCtx) {
-        try {
-            audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-        } catch (e) {
-            return null;
-        }
     }
-    return audioCtx;
-}
-
-function playHoverSound() {
-    const ctx = getAudioContext();
-    if (!ctx) return;
-
-    const osc = ctx.createOscillator();
-    const gain = ctx.createGain();
-
-    osc.connect(gain);
-    gain.connect(ctx.destination);
-
-    osc.type = 'sine';
-    osc.frequency.setValueAtTime(600, ctx.currentTime);
-    osc.frequency.exponentialRampToValueAtTime(800, ctx.currentTime + 0.08);
-
-    gain.gain.setValueAtTime(0.04, ctx.currentTime);
-    gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.08);
-
-    osc.start(ctx.currentTime);
-    osc.stop(ctx.currentTime + 0.08);
-}
-
-function playClickSound() {
-    const ctx = getAudioContext();
-    if (!ctx) return;
-
-    const osc = ctx.createOscillator();
-    const gain = ctx.createGain();
-
-    osc.connect(gain);
-    gain.connect(ctx.destination);
-
-    osc.type = 'square';
-    osc.frequency.setValueAtTime(1200, ctx.currentTime);
-    osc.frequency.exponentialRampToValueAtTime(200, ctx.currentTime + 0.12);
-
-    gain.gain.setValueAtTime(0.06, ctx.currentTime);
-    gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.12);
-
-    osc.start(ctx.currentTime);
-    osc.stop(ctx.currentTime + 0.12);
 }
