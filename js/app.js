@@ -6,7 +6,7 @@
 const CFG = {
     loadTime: 2400,
     typeSpeed: 35,
-    roleText: 'FULL STACK DEVELOPER',
+    roleText: 'DESARROLLADOR FULL STACK',
     roleSpeed: 60,
     bioText: 'Desarrollador Full Stack especializado en Magnolia CMS, trabajando a diario con Java, YAML, FreeMarker (FTL), JavaScript, HTML y CSS. Experiencia también en React, Next.js, Node.js y Python para proyectos personales.',
     startDate: new Date('2017-11-01'),
@@ -33,11 +33,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const iface = $('#interface');
 
     const stages = [
-        [15, 'LOADING KERNEL...'],
-        [40, 'INITIALIZING SUBSYSTEMS...'],
-        [65, 'CALIBRATING SENSORS...'],
-        [85, 'ESTABLISHING UPLINK...'],
-        [100, 'SYSTEM READY'],
+        [15, 'CARGANDO NÚCLEO...'],
+        [40, 'INICIALIZANDO SUBSISTEMAS...'],
+        [65, 'CALIBRANDO SENSORES...'],
+        [85, 'ESTABLECIENDO UPLINK...'],
+        [100, 'SISTEMA LISTO'],
     ];
 
     let i = 0;
@@ -353,8 +353,8 @@ function initExperience() {
         let m = now.getMonth() - CFG.startDate.getMonth();
         if (m < 0) { y--; m += 12; }
         el.textContent = y > 0
-            ? `${y} year${y!==1?'s':''} and ${m} month${m!==1?'s':''}`
-            : `${m} month${m!==1?'s':''}`;
+            ? `${y} año${y!==1?'s':''} y ${m} mes${m!==1?'es':''}`
+            : `${m} mes${m!==1?'es':''}`;
     }
     calc();
     setInterval(calc, 3600000);

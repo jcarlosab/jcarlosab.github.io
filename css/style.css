@@ -544,6 +544,8 @@ button { font-family:inherit; cursor:pointer; }
 
     .bn-item { padding:6px 10px; }
     .bn-text { display:none; }
+
+    .sys-footer { display:none; }
 }
 
 @media (max-width: 480px) {
