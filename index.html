@@ -1,23 +1,360 @@
-<html lang="es-ES">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Indice</title>
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="container">
-            <h1>Proyectos</h1>
-            <ul>
-                <li><a href="https://jcarlosab.github.io/repo/memory/">Memory</a></li>
-                <li><a href="https://jcarlosab.github.io/repo/slide-puzzle/">Slide Puzzle</a></li>
-                <!--<li><a href="https://jcarlosab.github.io/repo/hanoi/">Hanoi</a></li>
-                <li><a href="https://jcarlosab.github.io/repo/pong/">Pong</a></li> -->
-                <li>...</li>
-            <ul>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEYLAND-YUTANI // CREW INTERFACE</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- LOADING SCREEN -->
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <div class="weyland-logo">
+                    <span class="logo-ring"></span>
+                    <span class="logo-ring ring-2"></span>
+                    <span class="logo-ring ring-3"></span>
+                    <span class="logo-core">W</span>
+                </div>
+            </div>
+            <div class="loading-bar-container">
+                <div class="loading-bar" id="loading-bar"></div>
+            </div>
+            <p class="loading-text" id="loading-text">INITIALIZING SYSTEM...</p>
         </div>
-    </body>
+    </div>
+
+    <!-- CRT OVERLAY -->
+    <div class="crt-overlay">
+        <div class="scanlines"></div>
+        <div class="vignette"></div>
+        <div class="flicker"></div>
+    </div>
+
+    <!-- HEX GRID BACKGROUND -->
+    <div class="hex-grid-bg"></div>
+
+    <!-- MAIN INTERFACE -->
+    <div class="interface" id="interface">
+        <!-- HEADER -->
+        <header class="sys-header">
+            <div class="header-brand">
+                <div class="brand-mark">
+                    <span class="brand-hex"></span>
+                    <span class="brand-text">WEYLAND-YUTANI CORP</span>
+                </div>
+                <span class="header-divider">|</span>
+                <span class="header-subtitle">CREW INTERFACE TERMINAL v3.7.1</span>
+            </div>
+            <div class="header-status">
+                <span class="status-dot"></span>
+                <span class="status-label">SYS:NOMINAL</span>
+                <span class="header-divider">|</span>
+                <span class="header-date" id="header-date"></span>
+            </div>
+        </header>
+
+        <!-- HERO SECTION -->
+        <section class="hero-section" id="hero">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-tag">
+                        <span class="tag-bracket">[</span>
+                        <span class="tag-text">CREW IDENTIFICATION</span>
+                        <span class="tag-bracket">]</span>
+                    </div>
+                    <h1 class="hero-name">
+                        <span class="name-line name-first" id="name-reveal">JOSE CARLOS</span>
+                        <span class="name-line name-last" id="name-reveal-last">ANTON BARROS</span>
+                    </h1>
+                    <div class="hero-role">
+                        <span class="role-prefix">►</span>
+                        <span class="role-text typewriter" id="role-typewriter"></span>
+                        <span class="role-cursor">█</span>
+                    </div>
+                    <div class="hero-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">ORIGIN</span>
+                            <span class="meta-value">Galicia, España</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">EXPERIENCE</span>
+                            <span class="meta-value" id="experience-display">计算中...</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">STATUS</span>
+                            <span class="meta-value meta-active"><span class="pulse-dot"></span> AVAILABLE</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="motion-tracker">
+                        <div class="tracker-ring"></div>
+                        <div class="tracker-ring ring-2"></div>
+                        <div class="tracker-ring ring-3"></div>
+                        <div class="tracker-sweep"></div>
+                        <div class="tracker-blip blip-1"></div>
+                        <div class="tracker-blip blip-2"></div>
+                        <div class="tracker-blip blip-3"></div>
+                        <div class="tracker-center">
+                            <span class="tracker-label">TARGET</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-scroll-indicator">
+                <span class="scroll-text">SCROLL TO ACCESS</span>
+                <span class="scroll-arrow">▼</span>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section class="content-section" id="about">
+            <div class="section-frame">
+                <div class="frame-corner corner-tl"></div>
+                <div class="frame-corner corner-tr"></div>
+                <div class="frame-corner corner-bl"></div>
+                <div class="frame-corner corner-br"></div>
+
+                <div class="section-header">
+                    <span class="section-index">01</span>
+                    <h2 class="section-title">CREW MANIFEST</h2>
+                    <span class="section-line"></span>
+                    <span class="section-status-tag">CLASSIFIED</span>
+                </div>
+
+                <div class="section-body">
+                    <div class="manifest-grid">
+                        <div class="manifest-avatar">
+                            <div class="avatar-frame">
+                                <div class="avatar-placeholder">
+                                    <span class="avatar-icon">◈</span>
+                                </div>
+                                <div class="avatar-scan-line"></div>
+                            </div>
+                            <div class="avatar-id">
+                                <span class="id-label">CREW ID</span>
+                                <span class="id-value">WY-7742-JC</span>
+                            </div>
+                        </div>
+                        <div class="manifest-info">
+                            <p class="manifest-bio typewriter-block" id="bio-typewriter"></p>
+                            <div class="manifest-details">
+                                <div class="detail-row">
+                                    <span class="detail-key">// ASSIGNMENT:</span>
+                                    <span class="detail-val">Full Stack Developer</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-key">// SPECIALIZATION:</span>
+                                    <span class="detail-val">Magnolia CMS</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-key">// CLEARANCE:</span>
+                                    <span class="detail-val detail-high">LEVEL 5 - FULL ACCESS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section class="content-section" id="skills">
+            <div class="section-frame">
+                <div class="frame-corner corner-tl"></div>
+                <div class="frame-corner corner-tr"></div>
+                <div class="frame-corner corner-bl"></div>
+                <div class="frame-corner corner-br"></div>
+
+                <div class="section-header">
+                    <span class="section-index">02</span>
+                    <h2 class="section-title">SYSTEM DIAGNOSTICS</h2>
+                    <span class="section-line"></span>
+                    <span class="section-status-tag">UPGRADEABLE</span>
+                </div>
+
+                <div class="section-body">
+                    <div class="diagnostics-grid">
+                        <div class="diag-item" data-level="95">
+                            <div class="diag-header">
+                                <span class="diag-name">JAVA</span>
+                                <span class="diag-percent">95%</span>
+                            </div>
+                            <div class="diag-bar">
+                                <div class="diag-fill" style="--fill-width: 95%"></div>
+                                <div class="diag-glow"></div>
+                            </div>
+                            <div class="diag-status">OPTIMAL</div>
+                        </div>
+                        <div class="diag-item" data-level="95">
+                            <div class="diag-header">
+                                <span class="diag-name">MAGNOLIA CMS</span>
+                                <span class="diag-percent">95%</span>
+                            </div>
+                            <div class="diag-bar">
+                                <div class="diag-fill" style="--fill-width: 95%"></div>
+                                <div class="diag-glow"></div>
+                            </div>
+                            <div class="diag-status">OPTIMAL</div>
+                        </div>
+                        <div class="diag-item" data-level="95">
+                            <div class="diag-header">
+                                <span class="diag-name">HTML / CSS</span>
+                                <span class="diag-percent">95%</span>
+                            </div>
+                            <div class="diag-bar">
+                                <div class="diag-fill" style="--fill-width: 95%"></div>
+                                <div class="diag-glow"></div>
+                            </div>
+                            <div class="diag-status">OPTIMAL</div>
+                        </div>
+                        <div class="diag-item" data-level="90">
+                            <div class="diag-header">
+                                <span class="diag-name">JAVASCRIPT</span>
+                                <span class="diag-percent">90%</span>
+                            </div>
+                            <div class="diag-bar">
+                                <div class="diag-fill" style="--fill-width: 90%"></div>
+                                <div class="diag-glow"></div>
+                            </div>
+                            <div class="diag-status">OPTIMAL</div>
+                        </div>
+                        <div class="diag-item" data-level="90">
+                            <div class="diag-header">
+                                <span class="diag-name">FREEMARKER (FTL)</span>
+                                <span class="diag-percent">90%</span>
+                            </div>
+                            <div class="diag-bar">
+                                <div class="diag-fill" style="--fill-width: 90%"></div>
+                                <div class="diag-glow"></div>
+                            </div>
+                            <div class="diag-status">OPTIMAL</div>
+                        </div>
+                        <div class="diag-item" data-level="85">
+                            <div class="diag-header">
+                                <span class="diag-name">YAML</span>
+                                <span class="diag-percent">85%</span>
+                            </div>
+                            <div class="diag-bar">
+                                <div class="diag-fill" style="--fill-width: 85%"></div>
+                                <div class="diag-glow"></div>
+                            </div>
+                            <div class="diag-status">NOMINAL</div>
+                        </div>
+                        <div class="diag-item" data-level="85">
+                            <div class="diag-header">
+                                <span class="diag-name">REACT</span>
+                                <span class="diag-percent">85%</span>
+                            </div>
+                            <div class="diag-bar">
+                                <div class="diag-fill" style="--fill-width: 85%"></div>
+                                <div class="diag-glow"></div>
+                            </div>
+                            <div class="diag-status">NOMINAL</div>
+                        </div>
+                        <div class="diag-item" data-level="75">
+                            <div class="diag-header">
+                                <span class="diag-name">NODE.JS</span>
+                                <span class="diag-percent">75%</span>
+                            </div>
+                            <div class="diag-bar">
+                                <div class="diag-fill" style="--fill-width: 75%"></div>
+                                <div class="diag-glow"></div>
+                            </div>
+                            <div class="diag-status">STABLE</div>
+                        </div>
+                        <div class="diag-item" data-level="70">
+                            <div class="diag-header">
+                                <span class="diag-name">NEXT.JS</span>
+                                <span class="diag-percent">70%</span>
+                            </div>
+                            <div class="diag-bar">
+                                <div class="diag-fill" style="--fill-width: 70%"></div>
+                                <div class="diag-glow"></div>
+                            </div>
+                            <div class="diag-status">STABLE</div>
+                        </div>
+                        <div class="diag-item" data-level="50">
+                            <div class="diag-header">
+                                <span class="diag-name">PYTHON</span>
+                                <span class="diag-percent">50%</span>
+                            </div>
+                            <div class="diag-bar">
+                                <div class="diag-fill" style="--fill-width: 50%"></div>
+                                <div class="diag-glow"></div>
+                            </div>
+                            <div class="diag-status">LEARNING</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="content-section" id="contact">
+            <div class="section-frame">
+                <div class="frame-corner corner-tl"></div>
+                <div class="frame-corner corner-tr"></div>
+                <div class="frame-corner corner-bl"></div>
+                <div class="frame-corner corner-br"></div>
+
+                <div class="section-header">
+                    <span class="section-index">03</span>
+                    <h2 class="section-title">OPEN CHANNEL</h2>
+                    <span class="section-line"></span>
+                    <span class="section-status-tag">ENCRYPTED</span>
+                </div>
+
+                <div class="section-body">
+                    <div class="contact-grid">
+                        <a href="mailto:josecarlos.dev@outlook.es" class="contact-card" target="_blank">
+                            <div class="contact-icon">✉</div>
+                            <div class="contact-info">
+                                <span class="contact-label">EMAIL</span>
+                                <span class="contact-value">josecarlos.dev@outlook.es</span>
+                            </div>
+                            <span class="contact-arrow">→</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jose-carlos-anton-barros-b90b82233" class="contact-card" target="_blank">
+                            <div class="contact-icon">◆</div>
+                            <div class="contact-info">
+                                <span class="contact-label">LINKEDIN</span>
+                                <span class="contact-value">/in/jose-carlos-anton-barros</span>
+                            </div>
+                            <span class="contact-arrow">→</span>
+                        </a>
+                        <a href="https://github.com/jcarlosab" class="contact-card" target="_blank">
+                            <div class="contact-icon">⬡</div>
+                            <div class="contact-info">
+                                <span class="contact-label">GITHUB</span>
+                                <span class="contact-value">/jcarlosab</span>
+                            </div>
+                            <span class="contact-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="sys-footer">
+            <div class="footer-grid">
+                <span class="footer-item">WEYLAND-YUTANI CORP © 2026</span>
+                <span class="footer-divider">|</span>
+                <span class="footer-item">TERMINAL v3.7.1</span>
+                <span class="footer-divider">|</span>
+                <span class="footer-item">ALL SYSTEMS NOMINAL</span>
+            </div>
+            <div class="footer-warning">
+                <span class="warning-stripe"></span>
+                <span class="warning-text">AUTHORIZED PERSONNEL ONLY</span>
+                <span class="warning-stripe"></span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
 </html>
