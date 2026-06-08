@@ -66,6 +66,7 @@ function boot() {
     initRole();
     initExperience();
     initCTA();
+    initHeaderBrand();
 }
 
 // ============================================
@@ -370,5 +371,16 @@ function initCTA() {
             e.preventDefault();
             goTo(3);
         });
+    }
+}
+
+// ============================================
+// HEADER BRAND → HOME
+// ============================================
+function initHeaderBrand() {
+    const el = $('#header-brand');
+    if (el) {
+        el.addEventListener('click', () => goTo(0));
+        el.addEventListener('keydown', e => { if (e.key === 'Enter') goTo(0); });
     }
 }
