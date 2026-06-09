@@ -161,7 +161,7 @@ button { font-family:inherit; cursor:pointer; }
 }
 
 .screen-center {
-    height:100%; display:flex; align-items:center; justify-content:center;
+    height:100%; width:100%; display:flex; align-items:center; justify-content:center;
     padding:24px 20px;
 }
 
@@ -457,7 +457,7 @@ button { font-family:inherit; cursor:pointer; }
 /* ============================================
    CONTACT
    ============================================ */
-.contact-wrap { width:100%; max-width:1000px; margin:0 auto; }
+.contact-wrap { flex:1; max-width:1000px; }
 
 .contact-cards { display:flex; flex-direction:column; gap:10px; }
 
