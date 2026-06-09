@@ -457,7 +457,7 @@ button { font-family:inherit; cursor:pointer; }
 /* ============================================
    CONTACT
    ============================================ */
-.contact-wrap { width:100%; max-width:1000px; }
+.contact-wrap { width:100%; max-width:1000px; margin:0 auto; }
 
 .contact-cards { display:flex; flex-direction:column; gap:10px; }
 
