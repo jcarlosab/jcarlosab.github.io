@@ -1,0 +1,67 @@
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Memory</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="icon" href="assets/imagenes/pixel-art-7520176_640.png">
+    </head>
+    <body onload="inicio()">
+        <div id="win" class="popup">
+            <h2>Fin partida</h2>
+            <h3>Total: &nbsp;<span id="total">0</span></h3>
+            <p>Puntuación por parejas: 9 x 1000 = 9000.</p>
+            <p>Penalización por movimientos extra: &nbsp;<span id="movimientos">0</span></p>
+            <div class="boton boton-reset">
+                <span class="material-symbols-outlined">refresh</span>
+            </div>
+        </div>
+        <div id="instrucciones" class="popup">
+            <div class="cerrar">X</div>
+            <h2>Reglas</h2>
+            <ul>
+                <li>Cada pareja suma 1000 puntos (Max. 9000).</li>
+                <li>La puntuación se mantiene hasta el movimiento 15.</li>
+                <li>Apartir del movimiento 15, cada movimiento extra se penaliza con -250 puntos.</li>
+            </ul>
+            <div class="cartas-disponibles">
+                <p>Cartas:</p>
+                <img src="assets/imagenes/pixel-7272046_640.png">
+                <img src="assets/imagenes/pixel-art-7280236_640.png">
+                <img src="assets/imagenes/pixel-art-7280889_640.png">
+                <img src="assets/imagenes/pixel-art-7284052_640.png">
+                <img src="assets/imagenes/pixel-art-7284060_640.png">
+                <img src="assets/imagenes/shop-7285838_640.png">
+                <img src="assets/imagenes/store-7274767_640.png">
+                <img src="assets/imagenes/store-7289198_640.png">
+                <img src="assets/imagenes/store-7289202_640.png">
+            </div>
+        </div>
+        <h1>Encuentra las parejas</h1>
+        <div class="contador">Movimientos:&nbsp;<span id="count">0</span></div>
+        <div class="panel">
+            <div id="tablero">
+            </div>
+            <div class="info">
+                <div id="reiniciar" class="boton" onclick="reiniciarJuego()">Reiniciar</div>
+                <div id="mute" class="boton">Mute</div>
+                <div id="reglas" class="boton">Reglas</div>
+            </div>
+        </div>
+        <div class="info-extra">
+            <div>
+                <div>Sound Effect from <a href="https://pixabay.com/sound-effects/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=39351">Pixabay</a></div>
+                <div>Imagenes de <a href="https://pixabay.com/es/users/pikurā-17746921/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7280889">Pikurā</a> en <a href="https://pixabay.com/es//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7280889">Pixabay</a></div>
+            </div>    
+        </div>
+        <audio id="audio" controls>
+            <source type="audio/wav" src="assets/correct-choice-43861.mp3">
+        </audio>
+        <script src="js/main.js"></script>
+    </body>
+</html>

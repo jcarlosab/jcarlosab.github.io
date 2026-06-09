@@ -1,0 +1,78 @@
+[
+    {
+        "name": "Dreamcast",
+        "file": "dreamcast.json"
+    },
+    {
+        "name": "MegaDrive",
+        "file": "megadrive.json"
+    },
+    {
+        "name": "NES",
+        "file": "nes.json"
+    },
+    {
+        "name": "Nintendo 64",
+        "file": "nintendo-64.json"
+    },
+    {
+        "name": "PlayStation",
+        "file": "playstation.json"
+    },
+    {
+        "name": "PlayStation 2",
+        "file": "playstation-2.json"
+    },
+    {
+        "name": "Saturn",
+        "file": "saturn.json"
+    },
+    {
+        "name": "SNES",
+        "file": "snes.json"
+    },
+    {
+        "name": "PSP",
+        "file": "psp.json"
+    },
+    {
+        "name": "Xbox",
+        "file": "xbox.json"
+    },
+    {
+        "name": "GameCube",
+        "file": "gamecube.json"
+    },
+    {
+        "name": "GBA",
+        "file": "gba.json"
+    },
+    {
+        "name": "GBC",
+        "file": "gbc.json"
+    },
+    {
+        "name": "GB",
+        "file": "gb.json"
+    },
+    {
+        "name": "Nintendo DS",
+        "file": "nintendo-ds.json"
+    },
+    {
+        "name": "Game Gear",
+        "file": "game-gear.json"
+    },
+    {
+        "name": "Master System",
+        "file": "master-system.json"
+    },
+    {
+        "name": "Neo Geo CD",
+        "file": "neo-geo-cd.json"
+    },
+    {
+        "name": "Nintendo 3DS",
+        "file": "nintendo-3ds.json"
+    }
+]

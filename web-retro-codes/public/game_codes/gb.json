@@ -1,0 +1,332 @@
+{
+    "Tetris": [
+        {
+            "name": "Sin música",
+            "description": "Al empezar la partida.",
+            "code": "Start",
+            "type": "code"
+        },
+        {
+            "name": "Pantalla de título alternativa",
+            "description": "Al encender la consola.",
+            "code": "A + Start",
+            "type": "code"
+        }
+    ],
+    "Super Mario Land 2: 6 Golden Coins": [
+        {
+            "name": "Modo Debug",
+            "description": "En la pantalla de título pulsa Select 16 veces.",
+            "code": "Select x16",
+            "type": "code"
+        }
+    ],
+    "Kirby's Dream Land": [
+        {
+            "name": "Modo Extra",
+            "description": "En la pantalla de título: Arriba, A, Select.",
+            "code": "↑ + A + Select",
+            "type": "code"
+        },
+        {
+            "name": "Configuración de Vidas/Salud",
+            "description": "En la pantalla de título: Abajo, B, Select.",
+            "code": "↓ + B + Select",
+            "type": "code"
+        }
+    ],
+    "Pokémon Red/Blue": [
+        {
+            "name": "Glitch de MissingNo.",
+            "description": "Ver al anciano en Viridian City, volar a Cinnabar Island, surfear en la orilla derecha.",
+            "code": "",
+            "type": "action"
+        }
+    ],
+    "The Legend of Zelda: Link's Awakening": [
+        {
+            "name": "Robar en la tienda",
+            "description": "Coge un objeto, da vueltas alrededor del tendero hasta que no te mire y sal por la puerta. Te llamarán 'THIEF' por el resto del juego.",
+            "code": "",
+            "type": "action"
+        }
+    ],
+    "Metroid II: Return of Samus": [
+        {
+            "name": "Finales alternativos",
+            "description": "Completa el juego en menos de 3 o 5 horas para ver diferentes imágenes de Samus.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Donkey Kong (1994)": [
+        {
+            "name": "Selección de Nivel",
+            "description": "En el título: Arriba, Arriba, Abajo, Abajo, Izquierda, Derecha, Izquierda, Derecha, B, A, Select.",
+            "code": "↑↑↓↓←→←→ B A Select",
+            "type": "code"
+        }
+    ],
+    "Dr. Mario": [
+        {
+            "name": "Velocidad Hi",
+            "description": "Completa el juego en velocidad High nivel 20.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Gargoyle's Quest": [
+        {
+            "name": "Maximizar estats (Password)",
+            "description": "Usa el password en algunos slots de la pantalla de password.",
+            "code": "E E E E",
+            "type": "password"
+        }
+    ],
+    "Donkey Kong Land": [
+        {
+            "name": "Vidas Extra",
+            "description": "En la pantalla de selección de archivo, pulsa Arriba en la cruz direccional.",
+            "code": "",
+            "type": "action"
+        }
+    ],
+    "Super Mario Land": [
+        {
+            "name": "Selección de Nivel",
+            "description": "Termina el juego dos veces (aparecerá una selección de nivel tras los créditos de la segunda vuelta).",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Operation C": [
+        {
+            "name": "10 Vidas",
+            "description": "En la pantalla de título presiona: Arriba x4, Abajo x4, Izquierda x4, Derecha x4, B, A, Start.",
+            "code": "↑x4, ↓x4, ←x4, →x4, B, A, Start",
+            "type": "code"
+        }
+    ],
+    "Teenage Mutant Ninja Turtles: Fall of the Foot Clan": [
+        {
+            "name": "Recuperar Energía (Konami Code)",
+            "description": "Pausa el juego y pulsa: Arriba, Arriba, Abajo, Abajo, Izquierda, Derecha, Izquierda, Derecha, B, A.",
+            "code": "↑, ↑, ↓, ↓, ←, →, ←, →, B, A",
+            "type": "code"
+        }
+    ],
+    "Battle Arena Toshinden": [
+        {
+            "name": "Desbloquear jefes y secretos",
+            "description": "Cuando Ellis baila tras el logo de Takara.",
+            "code": "↑, ↓, A, B, →, ←, A, B",
+            "type": "code"
+        },
+        {
+            "name": "Modo Scorcher",
+            "description": "En el logo de Takara, pulsa Select 3 veces.",
+            "code": "Select x3",
+            "type": "code"
+        }
+    ],
+    "The King of Fighters '95": [
+        {
+            "name": "Desbloquear Jefes (Saisyu y Rugal)",
+            "description": "En el logo de Takara, pulsa Select 3 veces. Oirás un sonido.",
+            "code": "Select x3 (Logo Takara)",
+            "type": "code"
+        },
+        {
+            "name": "Desbloquear a Nakoruru",
+            "description": "En el logo de Takara, pulsa Select 20 veces.",
+            "code": "Select x20 (Logo Takara)",
+            "type": "code"
+        }
+    ],
+    "Samurai Shodown": [
+        {
+            "name": "Jugar como Jueces (Kuroko/Hikyaku)",
+            "description": "Durante la intro, cuando aparezca Haohmaru, pulsa Select 3 veces rápidamente.",
+            "code": "Select x3 (Intro Haohmaru)",
+            "type": "code"
+        }
+    ],
+    "Disney's Aladdin": [
+        {
+            "name": "Saltar Nivel",
+            "description": "Pausa el juego y pulsa: A, B, B, A, A, B, B, A.",
+            "code": "Pausa: A, B, B, A, A, B, B, A",
+            "type": "code"
+        }
+    ],
+    "Killer Instinct": [
+        {
+            "name": "Jugar como Eyedol",
+            "description": "En la selección de VS, mantén Derecha y pulsa Select, Start, B, A.",
+            "code": "Mantener →, luego Select, Start, B, A",
+            "type": "code"
+        }
+    ],
+    "Wario Land: Super Mario Land 3": [
+        {
+            "name": "Modo Debug",
+            "description": "Pausa el juego y pulsa Select 16 veces. Aparecerá un cursor en los números para editarlos.",
+            "code": "Pausa + Select x16",
+            "type": "code"
+        }
+    ],
+    "Street Fighter II": [
+        {
+            "name": "Mismo Personaje en Vs.",
+            "description": "Inicia una partida de dos jugadores. Pausa, escribe '7 Kids' (teclado imaginario/código) o intenta el truco de Select dependiendo de la versión. (Nota: El truco '7 Kids' es peculiar, a veces basta con resetear).",
+            "code": "",
+            "type": "action"
+        }
+    ],
+    "DuckTales": [
+        {
+            "name": "Rellenar Vida (Cuesta $3,000,000)",
+            "description": "Si tienes más de 3.000.000$, pausa el juego y pulsa Select para rellenar tu vida.",
+            "code": "Pausa + Select",
+            "type": "code"
+        }
+    ],
+    "Pokémon Yellow": [
+        {
+            "name": "Conseguir los 3 iniciales (Bulbasaur, Charmander, Squirtle)",
+            "description": "A diferencia de Red/Blue, obtienes a Pikachu como inicial. Consigue a Bulbasaur en Ciudad Celeste (Cerulean), Charmander en Ruta 24 y Squirtle en Pueblo Paleta (después de tener 10 Pokémon en el Pokedex).",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Pikachu Surf",
+            "description": "Gana el minijuego de Pokémon Surf en la Playa Fuchsia (con Pokémon Surf del estadio de Pokémon) para ver a Pikachu surfeando.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Mew dos (Mewtwo) en Isla Canela (Cinnabar)",
+            "description": "Completa la Liga Pokémon, luego ve a la Mansión de Isla Canela. Encuentra la Poké Ball de Mewtwo al final de la cueva.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Final Fantasy Adventure": [
+        {
+            "name": "Aumentar DR (Poder de Ataque)",
+            "description": "En las cercanías de la ciudad de Wendel, equipa la Llave del Sabio y ve hacia la cascada. Encuentra el cofre del objeto 'Sword Power Up'.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Segundo final (bueno)",
+            "description": "Antes de derrotar al jefe final, asegúrate de tener el objeto 'Hada' para liberar a la heroína y ver el final bueno.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Kirby's Dream Land 2": [
+        {
+            "name": "Modo Fácil / Normal",
+            "description": "En la pantalla de título para alternar entre Fácil (1 hp de daño) y Normal (3 hp de daño).",
+            "code": "Select",
+            "type": "code"
+        },
+        {
+            "name": "Desbloquear el Rainbow Drop",
+            "description": "Consigue todos los 7 Rainbow Drops de los niveles para desbloquear el nivel final y el enfrentamiento contra Dark Matter.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Aventura con los compañeros",
+            "description": "Recoge las 7 estrellas para desbloquear el poder de Rick (hamster), Coo (búho) y Kine (pez) como compañeros.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Donkey Kong Land 2": [
+        {
+            "name": "50 Vidas",
+            "description": "En la pantalla de titulo, pulsa.",
+            "code": "↑, ↑, ↓, ↓, ←, →, ←, →, B, A, Select, Start",
+            "type": "code"
+        },
+        {
+            "name": "Seleccion de nivel",
+            "description": "En la pantalla de seleccion de archivo, pulsa.",
+            "code": "↑, ↓, ↑, ↓, →, ←, →, ←, B, A",
+            "type": "code"
+        }
+    ],
+    "Mega Man II": [
+        {
+            "name": "Seleccion de jefes (Password)",
+            "description": "Introduce el password: A1 B2 C3 D4 E5 F6 (en las ranuras correspondientes de cada jefe).",
+            "code": "Password estandar de seleccion",
+            "type": "code"
+        },
+        {
+            "name": "Tanque de energia",
+            "description": "Consigue el Energy Tank en el nivel de Metal Man y usalo desde el menu de pausa para recuperar toda la vida.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Mega Man V": [
+        {
+            "name": "Seleccion de nivel (Password)",
+            "description": "Para la selección de nivel.",
+            "code": "TERRY",
+            "type": "code"
+        },
+        {
+            "name": "Todas las armas (Password)",
+            "description": "Introduce.",
+            "code": "FIGHT",
+            "type": "password"
+        }
+    ],
+    "Final Fantasy Legend II": [
+        {
+            "name": "Mejora de estadisticas (Glitch)",
+            "description": "Usa objetos de 'stat boost' en la pantalla de inventario. Si usas 99 de un objeto, las estadisticas pueden aumentar mas alla del limite normal.",
+            "code": "",
+            "type": "action"
+        },
+        {
+            "name": "Armadura secreta (Muramasa)",
+            "description": "Compra la espada Muramasa en el mundo de la espada. Causa dano masivo pero reduce HP a 1 en cada uso.",
+            "code": "",
+            "type": "action"
+        }
+    ],
+    "Pokemon Pinball": [
+        {
+            "name": "Atrapar a Mew (Evento especial)",
+            "description": "Alcanza una puntuacion de 10 billones en el modo de juego para tener la oportunidad de atrapar a Mew en la tabla de pinball.",
+            "code": "",
+            "type": "action"
+        },
+        {
+            "name": "Evolucion en el pinball",
+            "description": "Captura al Pokemon base varias veces en la misma partida para que aparezca su evolucion en la tabla.",
+            "code": "",
+            "type": "action"
+        }
+    ],
+    "Trip World": [
+        {
+            "name": "Vidas extra secretas",
+            "description": "En el nivel 1-2, salta sobre la plataforma oculta en la esquina superior derecha para encontrar un premio de vidas.",
+            "code": "",
+            "type": "action"
+        },
+        {
+            "name": "Ataque especial de cola",
+            "description": "Manten presionado B para cargar el ataque de cola de Yakopoo. Suelta para liberar un poderoso golpe.",
+            "code": "Mantener B, soltar",
+            "type": "code"
+        }
+    ]
+}

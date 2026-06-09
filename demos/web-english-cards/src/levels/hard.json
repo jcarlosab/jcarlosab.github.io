@@ -1,0 +1,404 @@
+{
+    "title": "Difícil",
+    "icon": "🦞",
+    "words": [
+        {
+            "word": "meticuloso",
+            "translation": ["meticulous"],
+            "description": "Showing great attention to detail; very careful and precise.",
+            "type": "adjective"
+        },
+        {
+            "word": "escaramuza",
+            "translation": ["skirmish"],
+            "description": "An episode of irregular or unpremeditated fighting, especially between small or outlying parts of armies or fleets.",
+            "type": "noun"
+        },
+        {
+            "word": "perseverancia",
+            "translation": ["perseverance"],
+            "description": "Persistence in doing something despite difficulty or delay in achieving success.",
+            "type": "noun"
+        },
+        {
+            "word": "inefable",
+            "translation": ["ineffable"],
+            "description": "Too great or extreme to be expressed or described in words.",
+            "type": "adjective"
+        },
+        {
+            "word": "efímero",
+            "translation": ["ephemeral"],
+            "description": "Lasting for a very short time.",
+            "type": "adjective"
+        },
+        {
+            "word": "melancolía",
+            "translation": ["melancholy"],
+            "description": "A feeling of pensive sadness, typically with no obvious cause.",
+            "type": "noun"
+        },
+        {
+            "word": "circunspecto",
+            "translation": ["circumspect"],
+            "description": "Wary and unwilling to take risks.",
+            "type": "adjective"
+        },
+        {
+            "word": "disyuntiva",
+            "translation": ["dilemma"],
+            "description": "A situation in which a difficult choice has to be made between two or more alternatives, especially equally undesirable ones.",
+            "type": "noun"
+        },
+        {
+            "word": "fastidioso",
+            "translation": ["fastidious"],
+            "description": "Very attentive to and concerned about accuracy and detail.",
+            "type": "adjective"
+        },
+        {
+            "word": "indulgencia",
+            "translation": ["indulgence"],
+            "description": "The action or fact of indulging.",
+            "type": "noun"
+        },
+        {
+            "word": "idiosincrasia",
+            "translation": ["idiosyncrasy"],
+            "description": "A mode of behavior or way of thought peculiar to an individual.",
+            "type": "noun"
+        },
+        {
+            "word": "contemplativo",
+            "translation": ["contemplative"],
+            "description": "Expressing or involving prolonged thought.",
+            "type": "adjective"
+        },
+        {
+            "word": "complaciente",
+            "translation": ["complacent"],
+            "description": "Showing smug or uncritical satisfaction with oneself or one's achievements.",
+            "type": "adjective"
+        },
+        {
+            "word": "intransigente",
+            "translation": ["intransigent"],
+            "description": "Unwilling or refusing to change one's views or to agree about something.",
+            "type": "adjective"
+        },
+        {
+            "word": "sagaz",
+            "translation": ["shrewd"],
+            "description": "Having or showing sharp powers of judgment; astute.",
+            "type": "adjective"
+        },
+        {
+            "word": "profuso",
+            "translation": ["profuse"],
+            "description": "Exuberantly plentiful; abundant.",
+            "type": "adjective"
+        },
+        {
+            "word": "incipiente",
+            "translation": ["incipient"],
+            "description": "In an initial stage; beginning to happen or develop.",
+            "type": "adjective"
+        },
+        {
+            "word": "parsimonioso",
+            "translation": ["parsimonious"],
+            "description": "Unwilling to spend money or use resources; stingy or frugal.",
+            "type": "adjective"
+        },
+        {
+            "word": "obstinado",
+            "translation": ["obstinate"],
+            "description": "Stubbornly refusing to change one's opinion or chosen course of action, despite attempts to persuade one to do so.",
+            "type": "adjective"
+        },
+        {
+            "word": "ambivalente",
+            "translation": ["ambivalent"],
+            "description": "Having mixed feelings or contradictory ideas about something or someone.",
+            "type": "adjective"
+        },
+        {
+            "word": "conciliante",
+            "translation": ["conciliatory"],
+            "description": "Intended or likely to placate or pacify.",
+            "type": "adjective"
+        },
+        {
+            "word": "apático",
+            "translation": ["apathetic"],
+            "description": "Showing or feeling no interest, enthusiasm, or concern.",
+            "type": "adjective"
+        },
+        {
+            "word": "epifanía",
+            "translation": ["epiphany"],
+            "description": "A moment of sudden revelation or insight.",
+            "type": "noun"
+        },
+        {
+            "word": "resiliencia",
+            "translation": ["resilience"],
+            "description": "The capacity to recover quickly from difficulties; toughness.",
+            "type": "noun"
+        },
+        {
+            "word": "perplejo",
+            "translation": ["perplexed"],
+            "description": "Completely baffled; very puzzled.",
+            "type": "adjective"
+        },
+        {
+            "word": "inequívoco",
+            "translation": ["unequivocal"],
+            "description": "Leaving no doubt; unambiguous.",
+            "type": "adjective"
+        },
+        {
+            "word": "transitorio",
+            "translation": ["transitory"],
+            "description": "Not permanent.",
+            "type": "adjective"
+        },
+        {
+            "word": "efervescente",
+            "translation": ["effervescent"],
+            "description": "Vivacious and enthusiastic.",
+            "type": "adjective"
+        },
+        {
+            "word": "idóneo",
+            "translation": ["suitable", "appropriate"],
+            "description": "Well suited for a particular purpose or situation.",
+            "type": "adjective"
+        },
+        {
+            "word": "discrepancia",
+            "translation": ["discrepancy"],
+            "description": "A lack of compatibility or similarity between two or more facts.",
+            "type": "noun"
+        },
+        {
+            "word": "elocuencia",
+            "translation": ["eloquence"],
+            "description": "Fluent or persuasive speaking or writing.",
+            "type": "noun"
+        },
+        {
+            "word": "vehemente",
+            "translation": ["vehement"],
+            "description": "Showing strong feeling; forceful, passionate, or intense.",
+            "type": "adjective"
+        },
+        {
+            "word": "discurrir",
+            "translation": ["think up", "devise"],
+            "description": "Form a mental image of something; imagine.",
+            "type": "verb",
+            "tense": "present"
+        },
+        {
+            "word": "postergar",
+            "translation": ["postpone"],
+            "description": "Cause or arrange for (something) to take place at a time later than that first scheduled.",
+            "type": "verb",
+            "tense": "present"
+        },
+        {
+            "word": "furtivo",
+            "translation": ["furtive"],
+            "description": "Attempting to avoid notice or attention, typically because of guilt or a belief that discovery would lead to trouble; secretive.",
+            "type": "adjective"
+        },
+        {
+            "word": "conciso",
+            "translation": ["concise"],
+            "description": "Giving a lot of information clearly and in a few words; brief but comprehensive.",
+            "type": "adjective"
+        },
+        {
+            "word": "eludir",
+            "translation": ["evade", "avoid"],
+            "description": "Escape from or avoid (a danger, enemy, or pursuer), typically in a skillful or cunning way.",
+            "type": "verb",
+            "tense": "present"
+        },
+        {
+            "word": "predecir",
+            "translation": ["predict"],
+            "description": "Say or estimate that (a specified thing) will happen in the future or will be a consequence of something.",
+            "type": "verb",
+            "tense": "present"
+        },
+        {
+            "word": "dilucidar",
+            "translation": ["elucidate"],
+            "description": "Make (something) clear; explain.",
+            "type": "verb",
+            "tense": "present"
+        },
+        {
+            "word": "convergir",
+            "translation": ["converge"],
+            "description": "Come together from different directions so as eventually to meet.",
+            "type": "verb",
+            "tense": "present"
+        },
+        {
+            "word": "divergir",
+            "translation": ["diverge"],
+            "description": "Separate from another route, especially a main one, and go in a different direction.",
+            "type": "verb",
+            "tense": "present"
+        },
+        {
+            "word": "inadvertido",
+            "translation": ["unnoticed"],
+            "description": "Not noticed.",
+            "type": "adjective"
+        },
+        {
+            "word": "inescrutable",
+            "translation": ["inscrutable"],
+            "description": "Impossible to understand or interpret.",
+            "type": "adjective"
+        },
+        {
+            "word": "intransigente",
+            "translation": ["intransigent"],
+            "description": "Unwilling or refusing to change one's views or to agree about something.",
+            "type": "adjective"
+        },
+        {
+            "word": "anacrónico",
+            "translation": ["anachronistic"],
+            "description": "Belonging to a period other than that being portrayed.",
+            "type": "adjective"
+        },
+        {
+            "word": "imprescindible",
+            "translation": ["indispensable"],
+            "description": "Absolutely necessary.",
+            "type": "adjective"
+        },
+        {
+            "word": "incisivo",
+            "translation": ["incisive"],
+            "description": "Intelligently analytical and clear-thinking.",
+            "type": "adjective"
+        },
+        {
+            "word": "frugal",
+            "translation": ["frugal"],
+            "description": "Sparing or economical with regard to money or food.",
+            "type": "adjective"
+        },
+        {
+            "word": "elocuente",
+            "translation": ["eloquent"],
+            "description": "Fluent or persuasive in speaking or writing.",
+            "type": "adjective"
+        },
+        {
+            "word": "verosímil",
+            "translation": ["plausible"],
+            "description": "Seeming reasonable or probable.",
+            "type": "adjective"
+        },
+        {
+            "word": "imperturbable",
+            "translation": ["imperturbable"],
+            "description": "Unable to be upset or excited; calm.",
+            "type": "adjective"
+        },
+        {
+            "word": "tenaz",
+            "translation": ["tenacious"],
+            "description": "Tending to keep a firm hold of something; clinging or adhering closely.",
+            "type": "adjective"
+        },
+        {
+            "word": "diseminado",
+            "translation": ["disseminated"],
+            "description": "Spread or disperse (something, especially information) widely.",
+            "type": "adjective"
+        },
+        {
+            "word": "ambigüedad",
+            "translation": ["ambiguity"],
+            "description": "The quality of being open to more than one interpretation; inexactness.",
+            "type": "noun"
+        },
+        {
+            "word": "conciliación",
+            "translation": ["conciliation"],
+            "description": "The action of stopping someone from being angry; placation.",
+            "type": "noun"
+        },
+        {
+            "word": "resiliencia",
+            "translation": ["resilience"],
+            "description": "The capacity to recover quickly from difficulties; toughness.",
+            "type": "noun"
+        },
+        {
+            "word": "efímero",
+            "translation": ["ephemeral"],
+            "description": "Lasting for a very short time.",
+            "type": "adjective"
+        },
+        {
+            "word": "sagaz",
+            "translation": ["shrewd"],
+            "description": "Having or showing sharp powers of judgment; astute.",
+            "type": "adjective"
+        },
+        {
+            "word": "parsimonioso",
+            "translation": ["parsimonious"],
+            "description": "Unwilling to spend money or use resources; stingy or frugal.",
+            "type": "adjective"
+        },
+        {
+            "word": "disyuntiva",
+            "translation": ["dilemma"],
+            "description": "A situation in which a difficult choice has to be made between two or more alternatives, especially equally undesirable ones.",
+            "type": "noun"
+        },
+        {
+            "word": "complaciente",
+            "translation": ["complacent"],
+            "description": "Showing smug or uncritical satisfaction with oneself or one's achievements.",
+            "type": "adjective"
+        },
+        {
+            "word": "conciso",
+            "translation": ["concise"],
+            "description": "Giving a lot of information clearly and in a few words; brief but comprehensive.",
+            "type": "adjective"
+        },
+        {
+            "word": "furtivo",
+            "translation": ["furtive"],
+            "description": "Attempting to avoid notice or attention, typically because of guilt or a belief that discovery would lead to trouble; secretive.",
+            "type": "adjective"
+        },
+        {
+            "word": "ambivalente",
+            "translation": ["ambivalent"],
+            "description": "Having mixed feelings or contradictory ideas about something or someone.",
+            "type": "adjective"
+        },
+        {
+            "word": "sagaz",
+            "translation": ["shrewd"],
+            "description": "Having or showing sharp powers of judgment; astute.",
+            "type": "adjective"
+        }
+    ]
+}
+  

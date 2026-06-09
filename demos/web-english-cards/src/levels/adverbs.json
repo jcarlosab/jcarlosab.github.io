@@ -1,0 +1,97 @@
+{
+    "title": "Adverbios",
+    "icon": "🟧",
+    "words": [
+        {
+            "word": "rápidamente",
+            "translation": ["quickly", "rapidly"],
+            "description": "At a high speed; with great speed.",
+            "type": "adverb"
+        },
+        {
+            "word": "lentamente",
+            "translation": ["slowly"],
+            "description": "At a slow speed; not quickly.",
+            "type": "adverb"
+        },
+        {
+            "word": "bien",
+            "translation": ["well"],
+            "description": "In a good or satisfactory way.",
+            "type": "adverb"
+        },
+        {
+            "word": "mal",
+            "translation": ["badly"],
+            "description": "In a way that is not correct or appropriate.",
+            "type": "adverb"
+        },
+        {
+            "word": "pronto",
+            "translation": ["soon"],
+            "description": "In or after a short time.",
+            "type": "adverb"
+        },
+        {
+            "word": "tarde",
+            "translation": ["late"],
+            "description": "After the expected, proper, or usual time.",
+            "type": "adverb"
+        },
+        {
+            "word": "siempre",
+            "translation": ["always"],
+            "description": "At all times; on all occasions.",
+            "type": "adverb"
+        },
+        {
+            "word": "nunca",
+            "translation": ["never"],
+            "description": "At no time in the past or future; on no occasion; not ever.",
+            "type": "adverb"
+        },
+        {
+            "word": "ahora",
+            "translation": ["now"],
+            "description": "At the present time or moment.",
+            "type": "adverb"
+        },
+        {
+            "word": "aquí",
+            "translation": ["here"],
+            "description": "In, at, or to this place or position.",
+            "type": "adverb"
+        },
+        {
+            "word": "allí",
+            "translation": ["there"],
+            "description": "In, at, or to that place or position.",
+            "type": "adverb"
+        },
+        {
+            "word": "cerca",
+            "translation": ["near"],
+            "description": "At or to a short distance away.",
+            "type": "adverb"
+        },
+        {
+            "word": "lejos",
+            "translation": ["far"],
+            "description": "At, to, or by a great distance; a long way off; at or to a remote point in time.",
+            "type": "adverb"
+        },
+        {
+            "word": "dentro",
+            "translation": ["inside"],
+            "description": "In or into the interior of.",
+            "type": "adverb"
+        },
+        {
+            "word": "fuera",
+            "translation": ["outside"],
+            "description": "On or to the exterior of.",
+            "type": "adverb"
+        }
+    ]
+}
+  

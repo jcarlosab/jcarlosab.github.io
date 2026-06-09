@@ -1,0 +1,97 @@
+{
+    "title": "Comida",
+    "icon": "🍚",
+    "words": [
+        {
+            "word": "pan",
+            "translation": ["bread"],
+            "description": "A food made of flour, water, and yeast or another leavening agent, mixed together and baked.",
+            "type": "noun"
+        },
+        {
+            "word": "manzana",
+            "translation": ["apple"],
+            "description": "The round fruit of a tree of the rose family, which typically has thin green or red skin and crisp flesh.",
+            "type": "noun"
+        },
+        {
+            "word": "leche",
+            "translation": ["milk"],
+            "description": "A white liquid produced by the mammary glands of mammals.",
+            "type": "noun"
+        },
+        {
+            "word": "carne",
+            "translation": ["meat"],
+            "description": "The flesh of an animal (especially a mammal) as food.",
+            "type": "noun"
+        },
+        {
+            "word": "pescado",
+            "translation": ["fish"],
+            "description": "A limbless cold-blooded vertebrate animal with gills and fins and living wholly in water.",
+            "type": "noun"
+        },
+        {
+            "word": "huevo",
+            "translation": ["egg"],
+            "description": "An oval or round object laid by a female bird, reptile, fish, or invertebrate, usually containing a developing embryo.",
+            "type": "noun"
+        },
+        {
+            "word": "arroz",
+            "translation": ["rice"],
+            "description": "A swamp grass which is widely cultivated as a source of food, especially in Asia.",
+            "type": "noun"
+        },
+        {
+            "word": "verdura",
+            "translation": ["vegetable"],
+            "description": "A plant or part of a plant used as food.",
+            "type": "noun"
+        },
+        {
+            "word": "fruta",
+            "translation": ["fruit"],
+            "description": "The sweet and fleshy product of a tree or other plant that contains seed and can be eaten as food.",
+            "type": "noun"
+        },
+        {
+            "word": "azúcar",
+            "translation": ["sugar"],
+            "description": "A sweet crystalline substance obtained from various plants, especially sugar cane and sugar beet, consisting essentially of sucrose.",
+            "type": "noun"
+        },
+        {
+            "word": "sal",
+            "translation": ["salt"],
+            "description": "A white crystalline substance which gives seawater its characteristic taste and is used for seasoning or preserving food.",
+            "type": "noun"
+        },
+        {
+            "word": "pasta",
+            "translation": ["pasta"],
+            "description": "A dish originally from Italy consisting of dough made from durum wheat and water, extruded or stamped into various shapes and typically cooked in boiling water.",
+            "type": "noun"
+        },
+        {
+            "word": "pollo",
+            "translation": ["chicken"],
+            "description": "A domestic fowl kept for its eggs or meat, especially a young one.",
+            "type": "noun"
+        },
+        {
+            "word": "mantequilla",
+            "translation": ["butter"],
+            "description": "A pale yellow edible fatty substance made by churning cream and used as a spread or in cooking.",
+            "type": "noun"
+        },
+        {
+            "word": "queso",
+            "translation": ["cheese"],
+            "description": "A food made from the pressed curds of milk.",
+            "type": "noun"
+        }
+    ]
+}
+  

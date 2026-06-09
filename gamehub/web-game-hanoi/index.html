@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Torres de Hanoi</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="index.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Torres de Hanoi</h1>
+    <div class="contenido">
+        <div id="nube"></div>
+        <div id="torres">
+            <div id="t1" class="contenidoTorre" onclick="mover(0)"></div>
+            <div id="t2" class="contenidoTorre" onclick="mover(1)"></div>
+            <div id="t3" class="contenidoTorre" onclick="mover(2)"></div>
+        </div>
+        <div id="monitor"></div>
+        <div id="info">
+            <span id="movimientos">Movimientos: 0</span>
+            <button id="btnReiniciar" onclick="reiniciar()">Reiniciar</button>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Runner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="bg-far" class="bg-layer"></div>
+        <div id="bg-mid" class="bg-layer"></div>
+        <div id="speed-lines"></div>
+
+        <div id="level-indicator">NIVEL <span id="level">1</span></div>
+        <div id="hud">
+            <span id="score">0</span>
+            <span id="high-score">BEST: 0</span>
+        </div>
+        <div id="controls-hint">P: Pausa | SPACE: Saltar</div>
+
+        <div id="ground-container">
+            <div id="ground"></div>
+            <div id="ground-lines"></div>
+        </div>
+
+        <div id="player"></div>
+
+        <div id="overlay">
+            <h1>NEON RUNNER</h1>
+            <p class="subtitle">¡Sobrevive tanto como puedas!</p>
+            <div class="score-display" id="final-score"></div>
+            <div class="high-score-display" id="final-high-score"></div>
+            <p class="instruction">[ PRESIONA ESPACIO ]</p>
+        </div>
+
+        <!-- Pause Menu -->
+        <div id="pause-menu" class="hidden">
+            <h2>PAUSA</h2>
+            <div class="pause-info">
+                <p><span class="key">ESPACIO</span> - Saltar / Doble salto</p>
+                <p><span class="key">P</span> - Pausa</p>
+            </div>
+            <div class="powerups-info">
+                <h3>POWERUPS (Buenos)</h3>
+                <div class="powerup-item">
+                    <div class="powerup-icon icon-star"></div>
+                    <div class="powerup-desc">
+                        <strong>INMORTAL</strong>
+                        <span>Reduce velocidad y te protege de impactos</span>
+                    </div>
+                </div>
+                <div class="powerup-item">
+                    <div class="powerup-icon icon-shield"></div>
+                    <div class="powerup-desc">
+                        <strong>ESCUDO</strong>
+                        <span>Protege contra un impacto</span>
+                    </div>
+                </div>
+                <div class="powerup-item">
+                    <div class="powerup-icon icon-coin"></div>
+                    <div class="powerup-desc">
+                        <strong>PUNTOS</strong>
+                        <span>Puntos extra durante su duración</span>
+                    </div>
+                </div>
+                <div class="powerup-item">
+                    <div class="powerup-icon icon-slowmo"></div>
+                    <div class="powerup-desc">
+                        <strong>CÁMARA LENTA</strong>
+                        <span>Reduce drasticamente la velocidad del juego</span>
+                    </div>
+                </div>
+                <h3 class="penalty-header">PENALIZACIONES (Malos)</h3>
+                <div class="powerup-item penalty">
+                    <div class="powerup-icon icon-boost"></div>
+                    <div class="powerup-desc">
+                        <strong>BOOST</strong>
+                        <span>Acelera el juego temporalmente</span>
+                    </div>
+                </div>
+                <div class="powerup-item penalty">
+                    <div class="powerup-icon icon-gravity"></div>
+                    <div class="powerup-desc">
+                        <strong>GRAVEDAD</strong>
+                        <span>Aumenta la gravedad, saltos más bajos</span>
+                    </div>
+                </div>
+            </div>
+            <p class="instruction">[ PRESIONA P O ESPACIO ]</p>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

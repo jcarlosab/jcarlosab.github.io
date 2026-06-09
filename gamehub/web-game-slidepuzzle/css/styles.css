@@ -1,0 +1,145 @@
+body {
+    background-color: #293241;
+    font-family: "Honk", system-ui;
+}
+
+#puzzle {
+    display: grid;
+
+    grid-gap: 1px;
+    width: fit-content;
+    margin: 100px auto;
+    background-color: rgba(255, 255, 255, .1);
+    border: solid 4px orange;
+}
+
+.grid-3x3 {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.grid-4x4 {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.popup { 
+    text-align: center;
+    color: orange;
+    font-size: x-large;
+}
+
+.aviso {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0,0,0,.9);
+    border-radius: 3px;
+    color: orange;
+    font-size: 50px;
+    padding: 20px;
+}  
+
+.puzzles {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 50%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 3px;
+    padding-bottom: 40px;
+}
+
+.puzzles div {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    margin: 20px;
+    transition: box-shadow 500ms ease;
+}
+
+.puzzles p {
+    margin: 20px 30px;
+    text-align: left;
+    width: 100%;
+}
+
+.puzzles div:hover {
+    box-shadow: 0 0 0 3px orange;
+}
+
+.opcion1 {
+    background: url(../assets/imagenes/house-7512994_640.png);
+}
+
+.opcion2 {
+    background: url(../assets/imagenes/octopus-7503729_640.png);
+}
+
+.opcion3 {
+    background: url(../assets/imagenes/woman-6926428_640.jpg);
+}
+
+.opcion4 {
+    background: url(../assets/imagenes/pirate-8279653_640.jpg);
+}
+
+#audio { display: none }
+
+.atribuciones {
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    font-size: 15px;
+    margin: 40px;
+    padding: 20px;
+}
+
+.atribuciones a {
+    color: white;
+}
+
+.info {
+    display: flex;
+    margin: auto 20px;
+}
+
+.align-right {
+    text-align: right;
+    text-align: -webkit-right;
+}
+
+.info > div {
+    width: 50%;
+}
+
+.buttom {
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+    transition: box-shadow 500ms ease;
+}
+
+.buttom:hover {
+    box-shadow: 0 0 0 3px orange;
+}
+
+.info p {
+    font-size: 30px;
+}
+
+.casilla img{
+    width: 100%;
+}
+
+.hidden { display: none !important; }
+
+.disabled { filter: brightness(0.4); }
+
+@media only screen and (max-width: 600px) {
+    .puzzles {
+        max-width: 100%;
+    }
+}

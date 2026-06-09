@@ -1,0 +1,709 @@
+/* ============================================
+   CSS RESET & BASE STYLES
+   ============================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    background: #0a0a0f;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    user-select: none;
+}
+
+/* ============================================
+   GAME CONTAINER
+   ============================================ */
+#game-container {
+    width: 800px;
+    height: 400px;
+    background: linear-gradient(180deg, #0a0a1a 0%, #1a1a2e 50%, #0d0d1a 100%);
+    border: 3px solid #00ffff;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 
+        0 0 30px rgba(0, 255, 255, 0.4),
+        inset 0 0 80px rgba(0, 0, 0, 0.6);
+}
+
+/* ============================================
+   BACKGROUND LAYERS (PARALLAX)
+   ============================================ */
+.bg-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+#bg-far {
+    opacity: 0.3;
+}
+
+#bg-mid {
+    opacity: 0.5;
+}
+
+.star {
+    position: absolute;
+    background: #ffffff;
+    border-radius: 50%;
+}
+
+/* ============================================
+   GROUND WITH SCROLLING EFFECT
+   ============================================ */
+#ground-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+}
+
+#ground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(180deg, #ff00ff 0%, #aa00aa 50%, #880088 100%);
+    border-top: 4px solid #ff66ff;
+    box-shadow: 
+        0 -5px 30px rgba(255, 0, 255, 0.6),
+        inset 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+#ground-lines {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 200%;
+    height: 4px;
+    background: repeating-linear-gradient(
+        90deg,
+        transparent 0px,
+        transparent 30px,
+        rgba(255, 255, 255, 0.4) 30px,
+        rgba(255, 255, 255, 0.4) 32px,
+        transparent 32px,
+        transparent 60px
+    );
+}
+
+/* ============================================
+   PLAYER (NEON SQUARE)
+   ============================================ */
+#player {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 60px;
+    left: 80px;
+    background: #00ff00;
+    border-radius: 6px;
+    box-shadow: 
+        0 0 20px #00ff00,
+        0 0 40px rgba(0, 255, 0, 0.6),
+        0 0 60px rgba(0, 255, 0, 0.3),
+        inset 0 0 15px rgba(255, 255, 255, 0.4);
+    z-index: 10;
+}
+
+#player::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 12px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+#player::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    width: 20px;
+    height: 4px;
+    background: linear-gradient(90deg, rgba(0, 255, 0, 0), rgba(0, 255, 0, 0.6));
+    transform: translateY(-50%);
+    border-radius: 2px;
+}
+
+.player-running {
+    animation: playerBob 0.1s ease-in-out infinite;
+}
+
+@keyframes playerBob {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-2px); }
+}
+
+.player-jumping {
+    animation: none;
+}
+
+/* ============================================
+   PLAYER PARTICLES
+   ============================================ */
+.particle {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 5;
+}
+
+/* ============================================
+   OBSTACLES
+   ============================================ */
+.obstacle {
+    position: absolute;
+    bottom: 60px;
+    background: linear-gradient(180deg, #ff4444 0%, #cc0000 50%, #990000 100%);
+    border-radius: 4px;
+    box-shadow: 
+        0 0 15px #ff3333,
+        0 0 30px rgba(255, 0, 0, 0.5),
+        inset 0 5px 10px rgba(255, 255, 255, 0.2);
+    z-index: 8;
+}
+
+.obstacle.triangle {
+    background: none;
+    box-shadow: none;
+    width: 0 !important;
+    height: 0 !important;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid #ff3333;
+    filter: drop-shadow(0 0 15px #ff3333);
+}
+
+.obstacle.tall {
+    border-radius: 0 0 8px 8px;
+}
+
+.obstacle.wide {
+    height: 35px !important;
+}
+
+@keyframes obstaclePulse {
+    0%, 100% { filter: drop-shadow(0 0 10px #ff3333) brightness(1); }
+    50% { filter: drop-shadow(0 0 20px #ff3333) brightness(1.2); }
+}
+
+.obstacle.active {
+    animation: obstaclePulse 0.5s ease-in-out infinite;
+}
+
+/* ============================================
+   HUD (SCORE & HIGH SCORE)
+   ============================================ */
+#hud {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    text-align: right;
+    z-index: 20;
+}
+
+#score {
+    color: #00ffff;
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 0 0 15px #00ffff;
+    display: block;
+}
+
+#high-score {
+    color: #ff00ff;
+    font-size: 14px;
+    text-shadow: 0 0 10px #ff00ff;
+    display: block;
+    margin-top: 5px;
+}
+
+#level-indicator {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    color: #ffff00;
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #ffff00;
+    z-index: 20;
+}
+
+#controls-hint {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 12px;
+    z-index: 20;
+}
+
+/* ============================================
+   OVERLAY (START/GAME OVER)
+   ============================================ */
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    backdrop-filter: blur(5px);
+}
+
+#overlay.hidden {
+    display: none;
+}
+
+#overlay h1 {
+    font-size: 56px;
+    color: #00ffff;
+    text-shadow: 
+        0 0 30px #00ffff,
+        0 0 60px rgba(0, 255, 255, 0.6),
+        0 0 90px rgba(0, 255, 255, 0.3);
+    margin-bottom: 15px;
+    letter-spacing: 6px;
+    animation: titleGlow 2s ease-in-out infinite;
+}
+
+@keyframes titleGlow {
+    0%, 100% { 
+        text-shadow: 
+            0 0 30px #00ffff,
+            0 0 60px rgba(0, 255, 255, 0.6);
+    }
+    50% { 
+        text-shadow: 
+            0 0 40px #00ffff,
+            0 0 80px rgba(0, 255, 255, 0.8),
+            0 0 100px rgba(0, 255, 255, 0.4);
+    }
+}
+
+#overlay .subtitle {
+    color: #ff00ff;
+    font-size: 18px;
+    margin-bottom: 25px;
+    text-shadow: 0 0 15px #ff00ff;
+}
+
+#overlay .score-display {
+    color: #ffff00;
+    font-size: 32px;
+    margin: 15px 0;
+    text-shadow: 0 0 20px #ffff00;
+}
+
+#overlay .high-score-display {
+    color: #ff00ff;
+    font-size: 18px;
+    text-shadow: 0 0 15px #ff00ff;
+}
+
+#overlay .instruction {
+    color: #00ff00;
+    font-size: 18px;
+    margin-top: 40px;
+    animation: pulse 1s ease-in-out infinite;
+    text-shadow: 0 0 15px #00ff00;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.7; transform: scale(0.98); }
+}
+
+/* ============================================
+   SPEED LINES EFFECT
+   ============================================ */
+#speed-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 50;
+}
+
+#speed-lines.active {
+    animation: speedLinesFlash 0.3s ease-out;
+}
+
+@keyframes speedLinesFlash {
+    0% { opacity: 0.8; }
+    100% { opacity: 0; }
+}
+
+.speed-line {
+    position: absolute;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+    animation: speedLineMove 0.2s linear;
+}
+
+@keyframes speedLineMove {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100px); }
+}
+
+/* ============================================
+   POWERUPS
+   ============================================ */
+.powerup {
+    position: absolute;
+    bottom: 60px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    z-index: 9;
+    animation: powerupPulse 0.5s ease-in-out infinite;
+}
+
+.powerup.star {
+    background: linear-gradient(135deg, #ffff00 0%, #ffaa00 100%);
+    box-shadow: 0 0 15px #ffff00, 0 0 30px rgba(255, 170, 0, 0.5);
+}
+
+.powerup.shield {
+    background: linear-gradient(135deg, #00ffff 0%, #0088ff 100%);
+    box-shadow: 0 0 15px #00ffff, 0 0 30px rgba(0, 136, 255, 0.5);
+}
+
+.powerup.clock {
+    background: linear-gradient(135deg, #ff00ff 0%, #ff66ff 100%);
+    box-shadow: 0 0 15px #ff00ff, 0 0 30px rgba(255, 102, 255, 0.5);
+}
+
+.powerup.coin {
+    background: linear-gradient(135deg, #ffd700 0%, #ffaa00 100%);
+    box-shadow: 0 0 15px #ffd700, 0 0 30px rgba(255, 170, 0, 0.5);
+    border-radius: 0;
+    border-radius: 4px;
+}
+
+.powerup.slowmo {
+    background: linear-gradient(135deg, #8844ff 0%, #4422aa 100%);
+    box-shadow: 0 0 15px #8844ff, 0 0 30px rgba(136, 68, 255, 0.5);
+}
+
+.powerup.boost {
+    background: linear-gradient(135deg, #ff4444 0%, #aa2222 100%);
+    box-shadow: 0 0 15px #ff4444, 0 0 30px rgba(255, 68, 68, 0.5);
+}
+
+.powerup.gravity {
+    background: linear-gradient(135deg, #ff8800 0%, #aa4400 100%);
+    box-shadow: 0 0 15px #ff8800, 0 0 30px rgba(255, 136, 0, 0.5);
+}
+
+@keyframes powerupPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+#powerup-indicator {
+    position: absolute;
+    bottom: 110px;
+    left: 80px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 20;
+    display: none;
+}
+
+#powerup-indicator.active {
+    display: block;
+    animation: indicatorPulse 0.3s ease-in-out infinite;
+}
+
+#powerup-indicator.star {
+    background: rgba(255, 170, 0, 0.8);
+    color: #000;
+}
+
+#powerup-indicator.shield {
+    background: rgba(0, 255, 255, 0.8);
+    color: #000;
+}
+
+#powerup-indicator.clock {
+    background: rgba(255, 0, 255, 0.8);
+    color: #fff;
+}
+
+#powerup-indicator.coin {
+    background: rgba(255, 215, 0, 0.8);
+    color: #000;
+}
+
+#powerup-indicator.slowmo {
+    background: rgba(136, 68, 255, 0.8);
+    color: #fff;
+}
+
+#powerup-indicator.boost {
+    background: rgba(255, 68, 68, 0.8);
+    color: #fff;
+}
+
+#powerup-indicator.gravity {
+    background: rgba(255, 136, 0, 0.8);
+    color: #000;
+}
+
+@keyframes indicatorPulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+/* ============================================
+   PAUSE MENU
+   ============================================ */
+#pause-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+    padding: 20px;
+}
+
+#pause-menu.hidden {
+    display: none;
+}
+
+#pause-menu h2 {
+    font-size: 48px;
+    color: #00ffff;
+    text-shadow: 0 0 30px #00ffff, 0 0 60px rgba(0, 255, 255, 0.6);
+    margin-bottom: 25px;
+    letter-spacing: 8px;
+}
+
+.pause-info {
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.pause-info p {
+    margin: 8px 0;
+}
+
+.pause-info .key {
+    background: #ff00ff;
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-weight: bold;
+    box-shadow: 0 0 10px #ff00ff;
+}
+
+.powerups-info {
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid #00ffff;
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 450px;
+    margin-bottom: 15px;
+    max-height: 220px;
+    overflow-y: auto;
+}
+
+.powerups-info::-webkit-scrollbar {
+    width: 6px;
+}
+
+.powerups-info::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+}
+
+.powerups-info::-webkit-scrollbar-thumb {
+    background: #00ffff;
+    border-radius: 3px;
+}
+
+.powerups-info h3 {
+    color: #ffff00;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px #ffff00;
+    letter-spacing: 4px;
+}
+
+.powerups-info h3.penalty-header {
+    color: #ff4444;
+    margin-top: 20px;
+}
+
+.powerup-item {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    padding: 8px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+}
+
+.powerup-item.penalty {
+    border-left: 3px solid #ff4444;
+    background: rgba(255, 0, 0, 0.1);
+}
+
+.powerup-icon {
+    width: 36px;
+    height: 36px;
+    margin-right: 15px;
+    min-width: 36px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-star {
+    background: linear-gradient(135deg, #ffff00 0%, #ffaa00 100%);
+    box-shadow: 0 0 10px #ffff00, 0 0 20px rgba(255, 170, 0, 0.5);
+}
+
+.icon-shield {
+    background: linear-gradient(135deg, #00ffff 0%, #0088ff 100%);
+    box-shadow: 0 0 10px #00ffff, 0 0 20px rgba(0, 136, 255, 0.5);
+}
+
+.icon-coin {
+    background: linear-gradient(135deg, #ffd700 0%, #ffaa00 100%);
+    box-shadow: 0 0 10px #ffd700, 0 0 20px rgba(255, 170, 0, 0.5);
+}
+
+.icon-slowmo {
+    background: linear-gradient(135deg, #8844ff 0%, #4422aa 100%);
+    box-shadow: 0 0 10px #8844ff, 0 0 20px rgba(136, 68, 255, 0.5);
+}
+
+.icon-boost {
+    background: linear-gradient(135deg, #ff4444 0%, #aa2222 100%);
+    box-shadow: 0 0 10px #ff4444, 0 0 20px rgba(255, 68, 68, 0.5);
+}
+
+.icon-gravity {
+    background: linear-gradient(135deg, #ff8800 0%, #aa4400 100%);
+    box-shadow: 0 0 10px #ff8800, 0 0 20px rgba(255, 136, 0, 0.5);
+}
+
+.powerup-desc {
+    display: flex;
+    flex-direction: column;
+}
+
+.powerup-desc strong {
+    color: #00ffff;
+    font-size: 14px;
+    text-shadow: 0 0 8px #00ffff;
+}
+
+.powerup-desc span {
+    color: #aaaaaa;
+    font-size: 12px;
+}
+
+.powerups-info h3.penalty-header {
+    color: #ff4444;
+    margin-top: 15px;
+}
+
+.powerup-item.penalty {
+    border-left: 3px solid #ff4444;
+}
+
+.powerup-item.penalty .powerup-icon {
+    filter: grayscale(0.3);
+}
+
+/* Player gravity effect */
+#player.gravity-active {
+    transform: scaleY(0.7);
+    transform-origin: bottom center;
+    box-shadow: 
+        0 0 20px #ff8800,
+        0 0 40px rgba(255, 136, 0, 0.6),
+        0 0 60px rgba(255, 136, 0, 0.3),
+        inset 0 0 15px rgba(255, 255, 255, 0.4);
+}
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+/* Player shield effect */
+#player.shield-active {
+    box-shadow: 
+        0 0 20px #00ffff,
+        0 0 40px rgba(0, 255, 255, 0.6),
+        0 0 60px rgba(0, 255, 255, 0.3),
+        0 0 80px #00ffff,
+        inset 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+@media (max-width: 850px) {
+    #game-container {
+        width: 95vw;
+        height: calc(95vw * 0.5);
+        max-height: 400px;
+    }
+
+    #overlay h1 {
+        font-size: 36px;
+    }
+
+    #overlay .subtitle {
+        font-size: 14px;
+    }
+
+    #score {
+        font-size: 22px;
+    }
+}

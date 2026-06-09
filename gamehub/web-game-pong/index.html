@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Pong</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="index.js" defer></script>
+</head>
+
+<body>
+    <div id="rotar-pantalla">
+        <div class="rotar-contenido">
+            <span class="rotar-icono">📱</span>
+            <p>Gira tu telefono</p>
+            <p class="rotar-sub">para jugar en horizontal</p>
+        </div>
+    </div>
+
+    <div id="pantalla-inicio">
+        <h1>PONG</h1>
+        <p class="subtitulo">Primer jugador en 10 puntos gana</p>
+        <button id="btnStart" onclick="game.iniciar()">START</button>
+    </div>
+
+    <div id="contador">
+        <div id="j1"><h1>0</h1></div>
+        <div id="j2"><h1>0</h1></div>
+    </div>
+    <div id="campo" class="campo">
+        <div id="jugador" class="tab"></div>
+        <div id="ia" class="tab"></div>
+        <div id="pelota" class="pelota"></div>
+    </div>
+    <div id="monitor"></div>
+    <div id="controles">
+        <div class="controles-grupo">
+            <div class="controles-teclado">
+                <p class="titulo-controles">Teclado</p>
+                <div class="teclas-fila">
+                    <span class="tecla">W</span>
+                    <span class="tecla-label">Arriba</span>
+                </div>
+                <div class="teclas-fila">
+                    <span class="tecla">S</span>
+                    <span class="tecla-label">Abajo</span>
+                </div>
+            </div>
+            <div class="controles-touch">
+                <p class="titulo-controles">Movil</p>
+                <p class="touch-info">Desliza arriba/abajo<br>en la pantalla</p>
+            </div>
+        </div>
+        <div class="velocidad-badge">
+            <span class="velocidad-icono">⚡</span>
+            <span id="velocidad-info">Velocidad: 1</span>
+        </div>
+    </div>
+</body>
+
+</html>

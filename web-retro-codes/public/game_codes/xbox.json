@@ -1,0 +1,340 @@
+{
+    "Halo: Combat Evolved": [
+        {
+            "name": "Final Secreto",
+            "description": "Completa el último nivel de la campaña en dificultad Legendaria para ver un final alternativo.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Munición Infinita (Calavera Bandanna)",
+            "description": "En la misión 'El Cartógrafo Silencioso', encuentra la calavera Bandanna encima del túnel de seguridad. Salta con granada para cogerla.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Grunt Durmiente",
+            "description": "En el nivel 'Sala de Control', tras vencer a los enemigos con el tanque, ve al final del último túnel. En el lado izquierdo de la cueva encontrarás un Grunt dormido.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Halo 2": [
+        {
+            "name": "Trucos con Banshee",
+            "description": "En un Banshee: Mantén A + Stick Izq. Abajo (Backflip). Mantén A + Stick Izq. Izq/Der (Barrel Roll). Mantén Abajo + A (Loop).",
+            "code": "A + Stick / ↓ + A",
+            "type": "code"
+        },
+        {
+            "name": "Camuflaje Infinito (Calavera Envidia)",
+            "description": "Consigue la Calavera Envidia, pasa un punto de control con camuflaje activo. Reinicia al último punto de control. Guarda y sal. Apaga la Xbox. Al recargar tendrás camuflaje infinito.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Mapa Multijugador Foundation",
+            "description": "Completa el modo un jugador en cualquier dificultad.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Fable: The Lost Chapters": [
+        {
+            "name": "Dormir Gratis",
+            "description": "Intenta dormir en una casa. Cuando aparezca la advertencia, pulsa sí y corre rápidamente fuera de la casa mientras la pantalla se oscurece. No te multarán.",
+            "code": "",
+            "type": "action"
+        },
+        {
+            "name": "Experiencia Infinita",
+            "description": "Durante la pelea con Jack of Blades, usa el Escudo Físico y muchas pociones de voluntad. Los esbirros sueltan pociones. Ataca y recarga voluntad indefinidamente.",
+            "code": "",
+            "type": "action"
+        }
+    ],
+    "Star Wars: Knights of the Old Republic": [
+        {
+            "name": "Voces Agudas o Graves",
+            "description": "Conecta un mando en el puerto 4. Mantén Blanco (agudo) o Negro (grave) durante el juego.",
+            "code": "Mando 4: Blanco / Negro",
+            "type": "code"
+        },
+        {
+            "name": "Cámara Libre",
+            "description": "Pausa, ve a Mensajes. Pulsa X, Izquierda, A, X. Comprueba 'Feedback' para ver 'Punch it, Chewie!'. Sal de pausa y pulsa R.",
+            "code": "Pausa: X, ←, A, X",
+            "type": "code"
+        }
+    ],
+    "Ninja Gaiden Black": [
+        {
+            "name": "Traje Clásico (Ryuken)",
+            "description": "Completa el juego en dificultad Muy Difícil.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Ninja Gaiden Arcade",
+            "description": "Completa el juego o entrega 50 Escarabajos a Muramasa en dificultad Ninja Dog.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Pantalla de Título Alternativa",
+            "description": "Guarda en dificultad Ninja Dog. Carga y para resetear y ver a Ayane en el título.",
+            "code": "Start + Back",
+            "type": "code"
+        }
+    ],
+    "Burnout 3: Takedown": [
+        {
+            "name": "Salida Rápida",
+            "description": "Mantén el acelerador y toca el freno hasta que las ruedas humeen. Suelta y acelera de nuevo entre el '1' y el 'Go'.",
+            "code": "",
+            "type": "action"
+        },
+        {
+            "name": "Cambiar Canción",
+            "description": "Durante el juego.",
+            "code": "Blanco + Negro",
+            "type": "code"
+        },
+        {
+            "name": "Coches Assassin",
+            "description": "Consigue 15, 30, 60, 100 o 150 Takedowns.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Grand Theft Auto: San Andreas": [
+        {
+            "name": "Salud, Armadura y $250k",
+            "description": "Durante el juego: RB, RT, LB, A, Izquierda, Abajo, Derecha, Arriba, Izquierda, Abajo, Derecha, Arriba.",
+            "code": "RB, RT, LB, A, ←, ↓, →, ↑, ←, ↓, →, ↑",
+            "type": "code"
+        },
+        {
+            "name": "Munición Infinita",
+            "description": "Durante el juego: LB, RB, X, RB, Izquierda, RT, RB, Izquierda, X, Abajo, LB, LB.",
+            "code": "LB, RB, X, RB, ←, RT, RB, ←, X, ↓, LB, LB",
+            "type": "code"
+        },
+        {
+            "name": "Pack de Armas 1",
+            "description": "RB, RT, LB, RT, Izquierda, Abajo, Derecha, Arriba, Izquierda, Abajo, Derecha, Arriba.",
+            "code": "RB, RT, LB, RT, ←, ↓, →, ↑, ←, ↓, →, ↑",
+            "type": "code"
+        },
+        {
+            "name": "Coches Voladores",
+            "description": "Arriba, Abajo, LB, RB, LB, Derecha, Izquierda, LB, Izquierda.",
+            "code": "↑, ↓, LB, RB, LB, →, ←, LB, ←",
+            "type": "code"
+        }
+    ],
+    "SoulCalibur II": [
+        {
+            "name": "Desbloquear a Yoshimitsu",
+            "description": "Completa el capítulo 2 en el modo Maestro de Armas.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Desbloquear a Cervantes",
+            "description": "Completa el capítulo 3 en el modo Maestro de Armas.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Traje Alternativo",
+            "description": "En la selección de personaje, resalta un luchador y pulsa Guardia (o Y).",
+            "code": "Guardia / Y",
+            "type": "code"
+        }
+    ],
+    "Dead or Alive 3": [
+        {
+            "name": "Desbloquear a Ein",
+            "description": "Termina el modo Historia con todos. En los créditos, ve a Survival con Hayate, consigue ranking y pon nombre 'EIN'.",
+            "code": "Nombre: EIN",
+            "type": "code"
+        },
+        {
+            "name": "Traje Escolar de Kasumi",
+            "description": "Completa el modo ejercicio (entrenamiento) con Kasumi.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Peinado Alternativo de Kasumi",
+            "description": "En la selección, pulsa A (coleta), X (pelo largo) o Y (pelo suelto).",
+            "code": "A / X / Y",
+            "type": "code"
+        }
+    ],
+    "Project Gotham Racing 2": [
+        {
+            "name": "Minijuego Geometry Wars",
+            "description": "En el garaje, pulsa Y (modo caminar), acércate a la máquina arcade a la derecha y pulsa A.",
+            "code": "Garaje: Y, luego A en arcade",
+            "type": "code"
+        },
+        {
+            "name": "Coche Giratorio (Porsche 959)",
+            "description": "Con Porsche 959 (transmisión manual): Acelera hasta el tope de 1ª marcha, gira fuerte a la izquierda, suelta gas, pon marcha atrás y acelera.",
+            "code": "",
+            "type": "action"
+        },
+        {
+            "name": "Desbloquear TVR Cerbera Speed 12",
+            "description": "Completa el Desafío Kudos en Platino.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Jade Empire": [
+        {
+            "name": "Modo Maestro de Jade",
+            "description": "Completa el juego para desbloquear la dificultad más alta.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Tom Clancy's Splinter Cell: Chaos Theory": [
+        {
+            "name": "Munición Infinita",
+            "description": "Durante el juego, pausa e introduce.",
+            "code": "L, R, Blanco, Negro, X, Y",
+            "type": "code"
+        }
+    ],
+    "The Elder Scrolls III: Morrowind": [
+        {
+            "name": "Alquimia infinita",
+            "description": "Compra ingredientes baratos y crea pociones. Véndelas para ganar dinero y subir tu habilidad de alquimia rápidamente.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Casco de Oro de Vivec",
+            "description": "Completa las misiones del templo de Vivec para conseguir el casco de oro, una pieza de armadura única.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Anillo de Habilidades de Mentor",
+            "description": "Ve a la torre de Tel Fyr y habla con Divayth Fyr. Completa su misión para recibir el anillo de habilidades.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Fable": [
+        {
+            "name": "Armadura de plateada (Will User\\'s Armor)",
+            "description": "Compra la armadura de Will User en la tienda de Bowerstone South despues de completar ciertas misiones de magia.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Espada de la Eternidad (Sword of Aeons)",
+            "description": "Al final del juego, elige la opcion de matar a tu hermana para recibir la Sword of Aeons, el arma mas poderosa.",
+            "code": "",
+            "type": "action"
+        }
+    ],
+    "Ninja Gaiden": [
+        {
+            "name": "Armadura de Samurai (Disfraz)",
+            "description": "Completa el juego en dificultad Muy Dificil para desbloquear el traje de samurai clasico.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Arma de la Luna Creciente (Dabilahro)",
+            "description": "Encuentra la espada Dabilahro en el nivel del Barco Pirata. Es el arma mas lenta pero mas poderosa del juego.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Prince of Persia: The Sands of Time": [
+        {
+            "name": "Desbloquear traje original",
+            "description": "Completa el juego para desbloquear el traje original de Prince of Persia.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Desbloquear modo de batalla",
+            "description": "Completa el juego al 100% para desbloquear el modo de batalla.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Final alternativo",
+            "description": "Recoge todos los frutos de la vida para ver un final extendido.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Star Wars: Battlefront": [
+        {
+            "name": "Desbloquar todos los modos",
+            "description": "Completa la campaña galáctica para desbloquear todos los modos multijugador.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Desbloquar soldado imperial",
+            "description": "Completa 10 misiones de la campaña.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Armas extra",
+            "description": "Alcanza el rango de General para desbloquar el rifle de francotirador y el lanzacohetes.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Doom 3": [
+        {
+            "name": "Modo invencible",
+            "description": "En la consola (~), escribe:",
+            "code": "god",
+            "type": "code"
+        },
+        {
+            "name": "Todas las armas",
+            "description": "En la consola:",
+            "code": "give all",
+            "type": "code"
+        },
+        {
+            "name": "Munición infinita",
+            "description": "En la consola:",
+            "code": "give ammo",
+            "type": "code"
+        }
+    ],
+    "Need for Speed: Most Wanted": [
+        {
+            "name": "Desbloquar BMW M3 GTR",
+            "description": "Completa el modo Carrera para desbloquar el BMW M3 GTR.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Policía infiltrado (Bounty)",
+            "description": "Alcanza 5,000,000 de Bounty para desbloquar el modo de policía.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Desbloquar todos los autos",
+            "description": "Derrota a los 15 Blacklist Rivals.",
+            "code": "",
+            "type": "unlock"
+        }
+    ]
+}

@@ -1,0 +1,67 @@
+{
+  "title": "Ropa",
+  "icon": "👕",
+  "words": [
+      {
+        "word": "camisa",
+        "translation": ["shirt"],
+        "description": "A garment for the upper body made of cotton or a similar fabric, with a collar and sleeves, and buttons down the front.",
+        "type": "noun"
+      },
+      {
+        "word": "pantalones",
+        "translation": ["pants", "trousers"],
+        "description": "An outer garment covering the body from the waist to the ankles, with a separate part for each leg.",
+        "type": "noun"
+      },
+      {
+        "word": "zapatos",
+        "translation": ["shoes"],
+        "description": "A covering for the foot, typically made of leather, having a sturdy sole and not reaching above the ankle.",
+        "type": "noun"
+      },
+      {
+        "word": "chaqueta",
+        "translation": ["jacket"],
+        "description": "An outer garment extending either to the waist or the hips, typically having sleeves and a fastening down the front.",
+        "type": "noun"
+      },
+      {
+        "word": "sombrero",
+        "translation": ["hat"],
+        "description": "A shaped covering for the head worn for warmth, as a fashion item, or as part of a uniform.",
+        "type": "noun"
+      },
+      {
+        "word": "bufanda",
+        "translation": ["scarf"],
+        "description": "A length of fabric worn around the neck or head.",
+        "type": "noun"
+      },
+      {
+        "word": "guantes",
+        "translation": ["gloves"],
+        "description": "A covering for the hand worn for protection against cold or dirt and typically having separate parts for each finger and the thumb.",
+        "type": "noun"
+      },
+      {
+        "word": "falda",
+        "translation": ["skirt"],
+        "description": "A woman's outer garment fastened around the waist and hanging down around the legs.",
+        "type": "noun"
+      },
+      {
+        "word": "calcetines",
+        "translation": ["socks"],
+        "description": "A garment for the foot and lower part of the leg, typically knitted from wool, cotton, or nylon.",
+        "type": "noun"
+      },
+      {
+        "word": "vestido",
+        "translation": ["dress"],
+        "description": "A one-piece garment for a woman or girl that covers the body and extends down over the legs.",
+        "type": "noun"
+      }
+    ]
+  }
+  

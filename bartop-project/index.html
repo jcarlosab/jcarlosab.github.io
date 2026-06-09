@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bartop - Memoria de Proyecto</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>BARTOP</h1>
+        <p class="tagline">Memoria de Proyecto — Máquina Recreativa</p>
+        <nav class="nav">
+            <a href="#inicio">Inicio</a>
+            <a href="#descripcion">Descripción</a>
+            <a href="#materiales">Materiales</a>
+            <a href="#desarrollo">Desarrollo</a>
+            <a href="#galeria">Galería</a>
+            <a href="#planos">Planos</a>
+            <a href="#circuito">Circuito</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="inicio">
+            <p class="section-title">01 — Introducción</p>
+            <h2 class="section-heading">Una máquina recreativa construida desde cero</h2>
+            <div class="intro-grid">
+                <div class="intro-text">
+                    <p>
+                        Este proyecto consiste en el diseño y construcción de una máquina recreativa tipo bartop 
+                        utilizando una Raspberry Pi 4 como unidad central. El objetivo era crear una máquina 
+                        funcional aprovechando componentes reciclados y material disponible.
+                    </p>
+                    <p>
+                        Para el diseño se emplearon herramientas como LibreCalc para planos técnicos, 
+                        SketchUp y Blender para los modelos 3D. El sistema operativo elegido para la 
+                        emulación es Batocera v40.
+                    </p>
+                    <div class="specs-row">
+                        <div class="spec">
+                            <span class="spec-value">RPI 4</span>
+                            <span class="spec-label">Procesador</span>
+                        </div>
+                        <div class="spec">
+                            <span class="spec-value">15,6"</span>
+                            <span class="spec-label">Pantalla</span>
+                        </div>
+                        <div class="spec">
+                            <span class="spec-value">8</span>
+                            <span class="spec-label">Botones</span>
+                        </div>
+                        <div class="spec">
+                            <span class="spec-value">201€</span>
+                            <span class="spec-label">Coste aprox.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro-image">
+                    <img src="assets/modelos/prototipos.png" alt="Prototipo 3D de la máquina bartop">
+                </div>
+            </div>
+        </section>
+
+        <section id="materiales">
+            <p class="section-title">02 — Materiales</p>
+            <h2 class="section-heading">Listado de componentes</h2>
+            <div class="recycle-banner">
+                <span>♻</span>
+                <span>Este proyecto utiliza materiales reciclados: pantalla de portátil y madera</span>
+            </div>
+            <div class="table-container">
+                <table class="retro-table">
+                    <thead>
+                        <tr>
+                            <th>Artículo</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Raspberry Pi 4</td><td class="price">60,00 €</td></tr>
+                        <tr><td>Fuente de alimentación</td><td class="price">14,00 €</td></tr>
+                        <tr><td>Regulador voltaje 12V a 5V</td><td class="price">2,60 €</td></tr>
+                        <tr><td>Placa controlador LCD</td><td class="price">13,00 €</td></tr>
+                        <tr class="recycled-row">
+                            <td>Pantalla 15,6" (portátil) <span class="recycle-tag">RECICLADA</span></td>
+                            <td class="price">—</td>
+                        </tr>
+                        <tr><td>Amplificador</td><td class="price">7,48 €</td></tr>
+                        <tr><td>Altavoces × 2 uds</td><td class="price">10,00 €</td></tr>
+                        <tr><td>Pulsadores Sanwa × 8 uds</td><td class="price">14,00 €</td></tr>
+                        <tr><td>Palanca Sanwa</td><td class="price">30,00 €</td></tr>
+                        <tr><td>Cable terminal × 8</td><td class="price">1,00 €</td></tr>
+                        <tr><td>Pulsador (coin)</td><td class="price">5,00 €</td></tr>
+                        <tr><td>Pulsadores (start, select, reset, on)</td><td class="price">9,00 €</td></tr>
+                        <tr><td>Controlador USB</td><td class="price">5,00 €</td></tr>
+                        <tr><td>Cables varios (jack, HDMI, USB-C, etc.)</td><td class="price">12,00 €</td></tr>
+                        <tr class="recycled-row">
+                            <td>Madera <span class="recycle-tag">RECICLADA</span></td>
+                            <td class="price">—</td>
+                        </tr>
+                        <tr><td>Conector AC</td><td class="price">3,50 €</td></tr>
+                        <tr><td>Pegatinas</td><td class="price">15,00 €</td></tr>
+                    </tbody>
+                    <tfoot>
+                        <tr class="total-row">
+                            <td><strong>Importe total (aprox.)</strong></td>
+                            <td class="price"><strong>201,58 €</strong></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+
+        <section id="desarrollo">
+            <p class="section-title">03 — Desarrollo</p>
+            <h2 class="section-heading">Proceso de construcción</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Fase 1 — Diseño</div>
+                    <div class="timeline-title">Diseño de planos y modelos 3D</div>
+                    <div class="timeline-text">
+                        Se realizaron los planos técnicos con LibreCalc y se crearon prototipos en 3D 
+                        con SketchUp y Blender para definir las dimensiones y la estructura de la máquina.
+                    </div>
+                    <div class="timeline-photos">
+                        <img src="assets/imagenes/boceto_0.png" alt="Boceto inicial">
+                        <img src="assets/imagenes/boceto_1.png" alt="Boceto detallado">
+                        <img src="assets/modelos/prototipos.png" alt="Prototipos 3D">
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Fase 2 — Estructura</div>
+                    <div class="timeline-title">Corte y montaje de la estructura de madera</div>
+                    <div class="timeline-text">
+                        Se cortó y ensambló la estructura de madera reciclada siguiendo los planos. 
+                        Se prepararon los huecos para la pantalla, los controles y los altavoces.
+                    </div>
+                    <div class="timeline-photos">
+                        <img src="assets/imagenes/fotos/20201107_114338721_iOS.jpg" alt="Corte de madera">
+                        <img src="assets/imagenes/fotos/20201107_130646569_iOS.jpg" alt="Montaje estructura">
+                        <img src="assets/imagenes/fotos/20201107_142256163_iOS.jpg" alt="Estructura montada">
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Fase 3 — Electrónica</div>
+                    <div class="timeline-title">Instalación de componentes electrónicos</div>
+                    <div class="timeline-text">
+                        Montaje de la Raspberry Pi 4, controlador LCD, amplificador, pulsadores y palanca. 
+                        Cables y conexiones según el diagrama de circuito.
+                    </div>
+                    <div class="timeline-photos">
+                        <img src="assets/imagenes/fotos/20201128_113541033_iOS.jpg" alt="Componentes">
+                        <img src="assets/imagenes/fotos/20201205_185305034_iOS.jpg" alt="Cableado">
+                        <img src="assets/imagenes/fotos/20201212_195814714_iOS.jpg" alt="Electrónica montada">
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Fase 4 — Acabado</div>
+                    <div class="timeline-title">Pegatinas y puesta a punto</div>
+                    <div class="timeline-text">
+                        Aplicación de pegatinas decorativas, instalación del sistema Batocera v40 
+                        y ajuste de controles y sonido.
+                    </div>
+                    <div class="timeline-photos">
+                        <img src="assets/imagenes/fotos/20201223_165519388_iOS.jpg" alt="Pegatinas">
+                        <img src="assets/imagenes/fotos/20210116_123437004_iOS.jpg" alt="Resultado final">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria">
+            <p class="section-title">04 — Galería</p>
+            <h2 class="section-heading">Fotos del proyecto</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="assets/imagenes/fotos/20201107_140354977_iOS.jpg" alt="Proceso de construcción">
+                    <div class="gallery-caption">Corte de piezas</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/imagenes/fotos/20201107_173931040_iOS.jpg" alt="Montaje">
+                    <div class="gallery-caption">Ensamblaje</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/imagenes/fotos/20201107_181036752_iOS.jpg" alt="Estructura">
+                    <div class="gallery-caption">Estructura base</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/imagenes/fotos/20201213_001657619_iOS.jpg" alt="Electrónica">
+                    <div class="gallery-caption">Montaje electrónico</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/imagenes/fotos/20201213_185128250_iOS.jpg" alt="Controles">
+                    <div class="gallery-caption">Instalación controles</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/imagenes/fotos/20201220_163812270_iOS.jpg" alt="Pantalla">
+                    <div class="gallery-caption">Pantalla montada</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/imagenes/fotos/20201223_165519388_iOS.jpg" alt="Pegatinas">
+                    <div class="gallery-caption">Aplicación pegatinas</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/imagenes/fotos/20201227_130456117_iOS.jpg" alt="Progreso">
+                    <div class="gallery-caption">Fase avanzada</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/imagenes/fotos/20210116_123437004_iOS.jpg" alt="Resultado final">
+                    <div class="gallery-caption">Resultado final</div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="planos">
+            <p class="section-title">05 — Planos</p>
+            <h2 class="section-heading">Diseño técnico</h2>
+            <div class="planos-grid">
+                <div class="plano-card">
+                    <img src="assets/planos/cad_bartop_v2.png" alt="Plano CAD" class="plano-img">
+                    <div class="plano-info">
+                        <h3>Vista general CAD</h3>
+                        <p>Plano técnico con cotas y dimensiones</p>
+                        <div class="download-links">
+                            <a href="assets/planos/cad_bartop_final.dxf" download class="download-btn">DESCARGAR DXF</a>
+                            <a href="assets/planos/cad_bartop_final.pdf" download class="download-btn">DESCARGAR PDF</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="plano-card">
+                    <img src="assets/planos/lateral_1.png" alt="Vista lateral" class="plano-img">
+                    <div class="plano-info">
+                        <h3>Vista lateral</h3>
+                        <p>Perfil derecho de la estructura</p>
+                        <a href="assets/planos/lateral_1.png" download class="download-btn">DESCARGAR PNG</a>
+                    </div>
+                </div>
+                <div class="plano-card">
+                    <img src="assets/planos/lateral_2.png" alt="Vista lateral inversa" class="plano-img">
+                    <div class="plano-info">
+                        <h3>Vista lateral inversa</h3>
+                        <p>Perfil izquierdo de la estructura</p>
+                        <a href="assets/planos/lateral_2.png" download class="download-btn">DESCARGAR PNG</a>
+                    </div>
+                </div>
+                <div class="plano-card">
+                    <img src="assets/planos/cad_bartop_v2.png" alt="Documentación completa" class="plano-img">
+                    <div class="plano-info">
+                        <h3>Documentación completa</h3>
+                        <p>Plano mergeado con toda la información</p>
+                        <div class="download-links">
+                            <a href="assets/planos/bartop_info_v.3.0_merge.pdf" download class="download-btn">DESCARGAR PDF v3.0</a>
+                            <a href="assets/planos/botonera.pdf" download class="download-btn">BOTONERA PDF</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="circuito">
+            <p class="section-title">06 — Circuito</p>
+            <h2 class="section-heading">Diagrama electrónico</h2>
+            <div class="circuito-info-full">
+                <h3>Esquema de conexiones</h3>
+                <p>
+                    Diagrama con las conexiones de todos los componentes: Raspberry Pi 4, 
+                    placa controlador LCD, amplificador de audio, pulsadores Sanwa, 
+                    palanca y sistema de alimentación.
+                </p>
+            </div>
+        </section>
+
+        <section id="aplicaciones">
+            <p class="section-title">07 — Herramientas</p>
+            <h2 class="section-heading">Aplicaciones utilizadas</h2>
+            <div class="apps-grid">
+                <div class="app-card">
+                    <div class="app-icon">📊</div>
+                    <h3>LibreCalc</h3>
+                    <p>Planos y cálculos</p>
+                </div>
+                <div class="app-card">
+                    <div class="app-icon">🎨</div>
+                    <h3>SketchUp</h3>
+                    <p>Modelado 3D</p>
+                </div>
+                <div class="app-card">
+                    <div class="app-icon">🧊</div>
+                    <h3>Blender</h3>
+                    <p>Render 3D</p>
+                </div>
+                <div class="app-card">
+                    <div class="app-icon">🎮</div>
+                    <h3>Batocera v40</h3>
+                    <p>Sistema arcade</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p><strong>Bartop</strong> — Memoria de Proyecto</p>
+        <p>Raspberry Pi 4 · Batocera v40 · Materiales reciclados</p>
+        <p><a href="https://github.com/jcarlosab/doc-bartop" target="_blank" class="github-link">GitHub → jcarlosab/doc-bartop</a></p>
+    </footer>
+
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close">&times;</button>
+        <img src="" alt="Vista ampliada" class="lightbox-img">
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+{
+    "Sonic the Hedgehog": [
+        {
+            "name": "Selección de nivel",
+            "description": "En la pantalla de título:",
+            "code": "↑, ↑, ↓, ↓, ↑, ↑, ↓, ↓",
+            "type": "code"
+        },
+        {
+            "name": "Vidas infinitas",
+            "description": "En la pantalla de título:",
+            "code": "↓, ↓, ↑, ↑, ←, →, ←, →",
+            "type": "code"
+        }
+    ],
+    "Sonic the Hedgehog 2": [
+        {
+            "name": "Selección de nivel",
+            "description": "En la pantalla de título:",
+            "code": "↑, C, ↓, C, ←, C, →, C",
+            "type": "code"
+        },
+        {
+            "name": "Vidas infinitas",
+            "description": "Durante el juego, pausa y pulsa:",
+            "code": "↑, ↑, ↓, ↓, A, B, C",
+            "type": "code"
+        }
+    ],
+    "Shinobi": [
+        {
+            "name": "Selección de nivel",
+            "description": "En la pantalla de título:",
+            "code": "↑, ↑, ↓, ↓, ←, →, ←, →, 2",
+            "type": "code"
+        },
+        {
+            "name": "9 vidas",
+            "description": "En la pantalla de título:",
+            "code": "↑, ↓, ←, →, 1, 2, 1, 2",
+            "type": "code"
+        }
+    ],
+    "Streets of Rage": [
+        {
+            "name": "10 vidas",
+            "description": "En la pantalla de título:",
+            "code": "↑, ↑, ↓, ↓, ←, →, ←, →, 1",
+            "type": "code"
+        },
+        {
+            "name": "Selección de nivel",
+            "description": "En la pantalla de título:",
+            "code": "↑, ↓, ←, →, ↑, ↓, ←, →, 2",
+            "type": "code"
+        }
+    ],
+    "The Lucky Dime Caper Starring Donald Duck": [
+        {
+            "name": "Vidas extra",
+            "description": "Durante el juego, pausa y pulsa:",
+            "code": "↑, ↑, ↓, ↓, A, B",
+            "type": "code"
+        }
+    ]
+}

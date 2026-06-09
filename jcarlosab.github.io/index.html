@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <title>JCARLOS-AB // CREW INTERFACE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- LOADING SCREEN -->
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-content">
+            <div class="weyland-logo">
+                <span class="logo-ring"></span>
+                <span class="logo-ring ring-2"></span>
+                <span class="logo-ring ring-3"></span>
+                <span class="logo-core">⬡</span>
+            </div>
+            <div class="loading-bar-container">
+                <div class="loading-bar" id="loading-bar"></div>
+            </div>
+            <p class="loading-text" id="loading-text">INICIALIZANDO SISTEMA...</p>
+        </div>
+    </div>
+
+    <!-- CRT OVERLAY -->
+    <div class="crt-overlay">
+        <div class="scanlines"></div>
+        <div class="vignette"></div>
+    </div>
+
+    <!-- HEX GRID -->
+    <div class="hex-grid-bg"></div>
+
+    <!-- MAIN INTERFACE -->
+    <div class="interface" id="interface">
+        <!-- HEADER -->
+        <header class="sys-header">
+            <div class="header-brand" id="header-brand" role="button" tabindex="0">
+                <span class="brand-hex"></span>
+                <span class="brand-text">JCARLOS-AB</span>
+            </div>
+            <div class="header-status">
+                <span class="status-dot"></span>
+                <span class="header-date" id="header-date"></span>
+            </div>
+        </header>
+
+        <!-- SCREENS -->
+        <div class="screens-wrapper">
+
+            <!-- SCREEN 0: HERO -->
+            <section class="screen active" data-index="0">
+                <div class="screen-center">
+                    <div class="hero-layout">
+                        <div class="hero-text">
+                            <div class="hero-tag">[ IDENTIFICATION ]</div>
+                            <h1 class="hero-name">
+                                <span class="name-line">JOSE CARLOS</span>
+                                <span class="name-line name-accent">ANTON BARROS</span>
+                            </h1>
+                            <div class="hero-role">
+                                <span class="role-prefix">►</span>
+                                <span class="role-text" id="role-typewriter"></span>
+                                <span class="role-cursor">█</span>
+                            </div>
+                            <div class="hero-meta">
+                                <div class="meta-row">
+                                    <span class="meta-label">ORIGEN</span>
+                                    <span class="meta-value">Galicia, España</span>
+                                </div>
+                                <div class="meta-row">
+                                    <span class="meta-label">EXPERIENCIA</span>
+                                    <span class="meta-value" id="experience-display">...</span>
+                                </div>
+                            </div>
+                            <div class="swipe-hint">
+                                <span class="swipe-arrow">←</span>
+                                <span class="swipe-text">DESLIZA</span>
+                                <span class="swipe-arrow">→</span>
+                            </div>
+                        </div>
+
+                        <!-- RADAR NAV -->
+                        <div class="radar" id="radar">
+                            <canvas id="radar-canvas" width="320" height="320"></canvas>
+                            <div class="radar-blips">
+                                <button class="blip" data-screen="1">
+                                    <span class="blip-dot"></span>
+                                    <span class="blip-label">SOBRE MÍ</span>
+                                </button>
+                                <button class="blip" data-screen="2">
+                                    <span class="blip-dot"></span>
+                                    <span class="blip-label">PROYECTOS</span>
+                                </button>
+                                <button class="blip" data-screen="3">
+                                    <span class="blip-dot"></span>
+                                    <span class="blip-label">CONTACTO</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SCREEN 1: MANIFEST + SPECS -->
+            <section class="screen" data-index="1">
+                <div class="screen-scroll">
+                    <div class="section-title-bar">
+                        <h2 class="section-name">SOBRE MÍ</h2>
+                        <span class="section-rule"></span>
+                        <span class="section-tag">PERFIL</span>
+                    </div>
+                    <div class="manifest-content">
+                        <div class="manifest-avatar">
+                            <div class="avatar-box">
+                                <span class="avatar-glyph">◈</span>
+                                <div class="avatar-scan"></div>
+                            </div>
+                            <span class="avatar-id">JC-1992-AB</span>
+                        </div>
+                        <div class="manifest-text">
+                            <p class="bio-text" id="bio-typewriter"></p>
+                            <div class="bio-details">
+                                <div class="detail"><span class="dk">// CARGO:</span> <span class="dv">Desarrollador Senior</span></div>
+                                <div class="detail"><span class="dk">// ESPECIALIZACIÓN:</span> <span class="dv">Magnolia CMS</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-title-bar" style="margin-top:32px">
+                        <h2 class="section-name">SKILLS</h2>
+                        <span class="section-rule"></span>
+                        <span class="section-tag">EXPERIENCIA</span>
+                    </div>
+                    <div class="diag-list">
+                        <div class="diag-row" data-level="95"><span class="dn">JAVA</span><span class="dp">95%</span><div class="db"><div class="df" style="--fw:95%"></div></div><span class="ds">ÓPTIMO</span></div>
+                        <div class="diag-row" data-level="95"><span class="dn">MAGNOLIA CMS</span><span class="dp">95%</span><div class="db"><div class="df" style="--fw:95%"></div></div><span class="ds">ÓPTIMO</span></div>
+                        <div class="diag-row" data-level="95"><span class="dn">HTML / CSS</span><span class="dp">95%</span><div class="db"><div class="df" style="--fw:95%"></div></div><span class="ds">ÓPTIMO</span></div>
+                        <div class="diag-row" data-level="90"><span class="dn">JAVASCRIPT</span><span class="dp">90%</span><div class="db"><div class="df" style="--fw:90%"></div></div><span class="ds">ÓPTIMO</span></div>
+                        <div class="diag-row" data-level="90"><span class="dn">FREEMARKER</span><span class="dp">90%</span><div class="db"><div class="df" style="--fw:90%"></div></div><span class="ds">ÓPTIMO</span></div>
+                        <div class="diag-row" data-level="85"><span class="dn">YAML</span><span class="dp">85%</span><div class="db"><div class="df" style="--fw:85%"></div></div><span class="ds">NOMINAL</span></div>
+                        <div class="diag-row" data-level="85"><span class="dn">REACT</span><span class="dp">85%</span><div class="db"><div class="df" style="--fw:85%"></div></div><span class="ds">NOMINAL</span></div>
+                        <div class="diag-row" data-level="75"><span class="dn">NODE.JS</span><span class="dp">75%</span><div class="db"><div class="df" style="--fw:75%"></div></div><span class="ds">ESTABLE</span></div>
+                        <div class="diag-row" data-level="70"><span class="dn">NEXT.JS</span><span class="dp">70%</span><div class="db"><div class="df" style="--fw:70%"></div></div><span class="ds">ESTABLE</span></div>
+                        <div class="diag-row" data-level="50"><span class="dn">PYTHON</span><span class="dp">50%</span><div class="db"><div class="df" style="--fw:50%"></div></div><span class="ds">APRENDIZAJE</span></div>
+                        <div class="diag-row" data-level="75"><span class="dn">IA</span><span class="dp">75%</span><div class="db"><div class="df" style="--fw:75%"></div></div><span class="ds">ESTABLE</span></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SCREEN 2: PROJECTS -->
+            <section class="screen" data-index="2">
+                <div class="screen-scroll">
+                    <div class="section-title-bar">
+                        <h2 class="section-name">PROYECTOS</h2>
+                        <span class="section-rule"></span>
+                        <span class="section-tag">11 ARCHIVOS</span>
+                    </div>
+                    <div class="project-filters">
+                        <button class="pf-item active" data-filter="all">TODOS</button>
+                        <button class="pf-item" data-filter="juego">JUEGOS</button>
+                        <button class="pf-item" data-filter="herramienta">HERRAMIENTAS</button>
+                        <button class="pf-item" data-filter="web">WEBS</button>
+                        <button class="pf-item" data-filter="hardware">HARDWARE</button>
+                    </div>
+                    <div class="projects-grid">
+                        <article class="project-card" data-category="juego">
+                            <h3 class="pc-name">GAMEHUB</h3>
+                            <p class="pc-desc">Hub centralizado de todos mis juegos retro. Explora y accede a cada título desde un único panel.</p>
+                            <div class="pc-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+                            <a href="#" target="_blank" class="pc-link">◉ GITHUB</a>
+                        </article>
+                        <article class="project-card" data-category="juego">
+                            <h3 class="pc-name">TERMINUS</h3>
+                            <p class="pc-desc">Space shooter ambientado en el universo TERMINUS. Esquiva asteroides y naves enemigas.</p>
+                            <div class="pc-tags"><span>HTML</span><span>CSS</span><span>Canvas</span><span>IA</span></div>
+                            <a href="#" target="_blank" class="pc-link">◉ ACCESO</a>
+                        </article>
+                        <article class="project-card" data-category="herramienta">
+                            <h3 class="pc-name">LINK VIEWER</h3>
+                            <p class="pc-desc">Plugin para gestionar y previsualizar enlaces de forma rápida y sencilla.</p>
+                            <div class="pc-tags"><span>Plugin</span></div>
+                            <a href="#" target="_blank" class="pc-link">◉ GITHUB</a>
+                        </article>
+                        <article class="project-card" data-category="herramienta">
+                            <h3 class="pc-name">IMG TO COMIC</h3>
+                            <p class="pc-desc">Plugin que transforma imágenes en estilo cómic con un solo clic.</p>
+                            <div class="pc-tags"><span>Plugin</span></div>
+                            <a href="#" target="_blank" class="pc-link">◉ GITHUB</a>
+                        </article>
+                        <article class="project-card" data-category="hardware">
+                            <h3 class="pc-name">BARTOP PROJECT</h3>
+                            <p class="pc-desc">Proyecto de bartop arcade. Construcción completa desde cero con hardware y software.</p>
+                            <div class="pc-tags"><span>Hardware</span><span>Retro</span></div>
+                            <a href="#" target="_blank" class="pc-link">◉ GITHUB</a>
+                        </article>
+                        <article class="project-card" data-category="web">
+                            <h3 class="pc-name">WEB RETRO CODES</h3>
+                            <p class="pc-desc">Explorador de códigos y trucos para videojuegos retro. Base de datos JSON con búsqueda por plataforma.</p>
+                            <div class="pc-tags"><span>Next.js</span><span>React</span><span>JSON</span></div>
+                            <a href="#" target="_blank" class="pc-link">◉ ACCESO</a>
+                        </article>
+                        <article class="project-card" data-category="web">
+                            <h3 class="pc-name">WEB EMPTY WALLET</h3>
+                            <p class="pc-desc">App para gestión de finanzas personales y control de gastos.</p>
+                            <div class="pc-tags"><span>React</span><span>Vite</span></div>
+                            <a href="#" target="_blank" class="pc-link">◉ ACCESO</a>
+                        </article>
+                        <article class="project-card" data-category="herramienta">
+                            <h3 class="pc-name">RETRO M3U ORGANIZER</h3>
+                            <p class="pc-desc">Generador de archivos .m3u para juegos multidisco de PSX, Saturn y Dreamcast.</p>
+                            <div class="pc-tags"><span>Python</span><span>Tkinter</span></div>
+                            <a href="https://github.com/jcarlosab/retro-m3u-organizer" target="_blank" class="pc-link">◉ GITHUB</a>
+                        </article>
+                        <article class="project-card" data-category="herramienta">
+                            <h3 class="pc-name">CHEAT VAULT</h3>
+                            <p class="pc-desc">Herramienta para crear y gestionar bases de datos JSON de códigos de trucos.</p>
+                            <div class="pc-tags"><span>Python</span><span>JSON</span></div>
+                            <a href="https://github.com/jcarlosab/app-cheat-vault" target="_blank" class="pc-link">◉ GITHUB</a>
+                        </article>
+                        <article class="project-card" data-category="juego">
+                            <h3 class="pc-name">MEMORY</h3>
+                            <p class="pc-desc">Juego de memoria con tarjetas retro. Diseños pixel art y puntuación por tiempo.</p>
+                            <div class="pc-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+                            <a href="https://jcarlosab.github.io/repo/memory" target="_blank" class="pc-link">◉ ACCESO</a>
+                        </article>
+                        <article class="project-card" data-category="juego">
+                            <h3 class="pc-name">SLIDE PUZZLE</h3>
+                            <p class="pc-desc">Juego de deslizar piezas para formar una imagen. Múltiples dificultades.</p>
+                            <div class="pc-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+                            <a href="https://jcarlosab.github.io/repo/slide-puzzle" target="_blank" class="pc-link">◉ ACCESO</a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SCREEN 3: CONTACT -->
+            <section class="screen" data-index="3">
+                <div class="screen-scroll">
+                    <div class="contact-wrap">
+                        <div class="section-title-bar">
+                            <h2 class="section-name">CONTACTO</h2>
+                        </div>
+                        <div class="contact-cards">
+                            <a href="mailto:josecarlos.dev@outlook.es" class="ccard" target="_blank">
+                                <span class="ccard-icon">✉</span>
+                                <div class="ccard-body">
+                                    <span class="ccard-label">EMAIL</span>
+                                    <span class="ccard-value">josecarlos.dev@outlook.es</span>
+                                </div>
+                                <span class="ccard-arrow">→</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/jose-carlos-anton-barros-b90b82233" class="ccard" target="_blank">
+                                <span class="ccard-icon">◆</span>
+                                <div class="ccard-body">
+                                    <span class="ccard-label">LINKEDIN</span>
+                                    <span class="ccard-value">/in/jose-carlos-anton-barros</span>
+                                </div>
+                                <span class="ccard-arrow">→</span>
+                            </a>
+                            <a href="https://github.com/jcarlosab" class="ccard" target="_blank">
+                                <span class="ccard-icon">⬡</span>
+                                <div class="ccard-body">
+                                    <span class="ccard-label">GITHUB</span>
+                                    <span class="ccard-value">/jcarlosab</span>
+                                </div>
+                                <span class="ccard-arrow">→</span>
+                            </a>
+                            <a href="https://x.com/jcabarros" class="ccard" target="_blank">
+                                <span class="ccard-icon">𝕏</span>
+                                <div class="ccard-body">
+                                    <span class="ccard-label">X (TWITTER)</span>
+                                    <span class="ccard-value">@jcabarros</span>
+                                </div>
+                                <span class="ccard-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- BOTTOM NAV -->
+        <nav class="bottom-nav" id="bottom-nav">
+            <button class="bn-item active" data-screen="0">
+                <span class="bn-icon">⬡</span>
+                <span class="bn-text">INICIO</span>
+            </button>
+            <button class="bn-item" data-screen="1">
+                <span class="bn-icon">◈</span>
+                <span class="bn-text">SOBRE MÍ</span>
+            </button>
+            <button class="bn-item" data-screen="2">
+                <span class="bn-icon">▣</span>
+                <span class="bn-text">PROYECTOS</span>
+            </button>
+            <button class="bn-item" data-screen="3">
+                <span class="bn-icon">◉</span>
+                <span class="bn-text">CONTACTO</span>
+            </button>
+        </nav>
+
+        <!-- FOOTER -->
+        <footer class="sys-footer">
+            <span>© 2026 Jose Carlos Antón Barros.</span>
+        </footer>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

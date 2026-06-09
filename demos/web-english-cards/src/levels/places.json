@@ -1,0 +1,133 @@
+{
+    "title": "Lugares",
+    "icon": "🌴",
+    "words": [
+        {
+            "word": "museo",
+            "translation": ["museum"],
+            "description": "A building in which objects of historical, scientific, artistic, or cultural interest are stored and exhibited.",
+            "type": "noun"
+        },
+        {
+            "word": "parque",
+            "translation": ["park"],
+            "description": "A large public green area in a town, used for recreation.",
+            "type": "noun"
+        },
+        {
+            "word": "playa",
+            "translation": ["beach"],
+            "description": "A pebbly or sandy shore, especially by the ocean between high- and low-water marks.",
+            "type": "noun"
+        },
+        {
+            "word": "biblioteca",
+            "translation": ["library"],
+            "description": "A building or room containing collections of books, periodicals, and sometimes films and recorded music for people to read, borrow, or refer to.",
+            "type": "noun"
+        },
+        {
+            "word": "teatro",
+            "translation": ["theater"],
+            "description": "A building or outdoor area in which plays and other dramatic performances are given.",
+            "type": "noun"
+        },
+        {
+            "word": "restaurante",
+            "translation": ["restaurant"],
+            "description": "A place where people pay to sit and eat meals that are cooked and served on the premises.",
+            "type": "noun"
+        },
+        {
+            "word": "cine",
+            "translation": ["cinema"],
+            "description": "A theater where films are shown for public entertainment.",
+            "type": "noun"
+        },
+        {
+            "word": "supermercado",
+            "translation": ["supermarket"],
+            "description": "A large self-service store selling foods and household goods.",
+            "type": "noun"
+        },
+        {
+            "word": "aeropuerto",
+            "translation": ["airport"],
+            "description": "A complex of runways and buildings for the takeoff, landing, and maintenance of civil aircraft, with facilities for passengers.",
+            "type": "noun"
+        },
+        {
+            "word": "estación",
+            "translation": ["station"],
+            "description": "A place on a railway line where trains regularly stop so that passengers can get on or off.",
+            "type": "noun"
+        },
+        {
+            "word": "iglesia",
+            "translation": ["church"],
+            "description": "A building used for public Christian worship.",
+            "type": "noun"
+        },
+        {
+            "word": "hospital",
+            "translation": ["hospital"],
+            "description": "An institution providing medical and surgical treatment and nursing care for sick or injured people.",
+            "type": "noun"
+        },
+        {
+            "word": "hotel",
+            "translation": ["hotel"],
+            "description": "An establishment providing accommodations, meals, and other services for travelers and tourists.",
+            "type": "noun"
+        },
+        {
+            "word": "escuela",
+            "translation": ["school"],
+            "description": "An institution for educating children.",
+            "type": "noun"
+        },
+        {
+            "word": "universidad",
+            "translation": ["university"],
+            "description": "An educational institution designed for instruction, examination, or both, of students in many branches of advanced learning, conferring degrees in various faculties, and often embodying colleges and similar institutions.",
+            "type": "noun"
+        },
+        {
+            "word": "mercado",
+            "translation": ["market"],
+            "description": "A regular gathering of people for the purchase and sale of provisions, livestock, and other commodities.",
+            "type": "noun"
+        },
+        {
+            "word": "gimnasio",
+            "translation": ["gym"],
+            "description": "A room or building equipped for gymnastics, games, and other physical exercise.",
+            "type": "noun"
+        },
+        {
+            "word": "biblioteca",
+            "translation": ["library"],
+            "description": "A building or room containing collections of books, periodicals, and sometimes films and recorded music for people to read, borrow, or refer to.",
+            "type": "noun"
+        },
+        {
+            "word": "cafetería",
+            "translation": ["cafe"],
+            "description": "A small restaurant selling light meals and drinks.",
+            "type": "noun"
+        },
+        {
+            "word": "tienda",
+            "translation": ["shop"],
+            "description": "A building or part of a building where goods or services are sold; a store.",
+            "type": "noun"
+        },
+        {
+            "word": "zoológico",
+            "translation": ["zoo"],
+            "description": "A facility with usually indoor and outdoor settings where living, typically wild animals are kept especially for public exhibition.",
+            "type": "noun"
+        }
+    ]
+}
+  

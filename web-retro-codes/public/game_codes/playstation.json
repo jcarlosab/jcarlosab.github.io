@@ -1,0 +1,1218 @@
+{
+    "Battle Arena Toshinden": [
+        {
+            "name": "Jugar como Gaia",
+            "description": "Desbloquea al personaje Gaia. En la pantalla de título, introduce la combinación. Si lo haces correctamente, oirás la palabra 'Fight'. Luego, en la pantalla de selección de personajes, mantén destacado a Eiji, pulsa el botón direccional superior y presiona cualquier botón de ataque.",
+            "code": "↓, ↓, ←, ←, □",
+            "type": "code"
+        }
+    ],
+    "Battle Arena Toshinden 3": [
+        {
+            "name": "Personaje aleatorio",
+            "description": "Selecciona un personaje aleatorio. Pulsa los botones de hombro simultáneamente en la pantalla de selección de personajes.",
+            "code": "L1 + L2 + R1 + R2",
+            "type": "code"
+        }
+    ],
+    "Bichos": [
+        {
+            "name": "Vidas ilimitadas",
+            "description": "Obtén vidas ilimitadas. En el menú principal, mantén pulsado el botón de hombro derecho y pulsa los botones de acción en el orden correcto.",
+            "code": "R1 + X ○ L2",
+            "type": "code"
+        }
+    ],
+    "Bloody Roar": [
+        {
+            "name": "Modo Cabezón",
+            "description": "Mantén pulsado L2 mientras seleccionas el personaje para activar este modo.",
+            "code": "L2 + Selección de personaje",
+            "type": "code"
+        },
+        {
+            "name": "Modo Pequeñín",
+            "description": "Mantén pulsado R2 mientras seleccionas el personaje para activar este modo.",
+            "code": "R2 + Selección de personaje",
+            "type": "code"
+        },
+        {
+            "name": "Repeticiones de cámara infinitas",
+            "description": "Al eliminar a tu contrincante, durante el final de los combates para activar repeticiones infinitas.",
+            "code": "△",
+            "type": "action"
+        },
+        {
+            "category": "Menú de opciones especiales",
+            "list": [
+                {
+                    "name": "Alice diferente",
+                    "description": "Se desbloquea al terminar el juego con Alice en nivel seis de dificultad sin continuar.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Modo brazos grandes",
+                    "description": "Se desbloquea al terminar el juego con Yugo.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Modo de transformaciones",
+                    "description": "Se desbloquea al terminar el juego con Alice.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Modo difícil",
+                    "description": "Se desbloquea al terminar 10 rounds en modo Survival.",
+                    "code": "Superar 10 rounds en Survival",
+                    "type": "code"
+                },
+                {
+                    "name": "Modo especial de imágenes",
+                    "description": "Se desbloquea al eliminar todos los personajes del cuadro de dificultad en el menú de opciones.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Modo sin defensa",
+                    "description": "Se desbloquea al terminar el juego con Long.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Modo sin música",
+                    "description": "Se desbloquea al terminar el juego con Mitsuko.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Modo sin sonido",
+                    "description": "Se desbloquea al terminar el juego con Fox.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Opción Extra",
+                    "description": "Se desbloquea al terminar el juego sin continuar.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Recuperación de vida",
+                    "description": "Se desbloquea al terminar el juego con Bakuryu.",
+                    "code": "",
+                    "type": "unlock"
+                }
+            ]
+        }
+    ],
+    "Croc 2": [
+        {
+            "name": "Cristales infinitos",
+            "description": "Obtén cristales infinitos. En la pantalla de título, mantén pulsado el botón de hombro izquierdo y pulsa los botones en el orden correcto. Durante el juego, mantén pulsado el botón de hombro derecho y pulsa el botón de acción para añadir 100 cristales a tu inventario.",
+            "code": "L1 + □ □ ○ ↓ ← → ← →",
+            "type": "code"
+        }
+    ],
+    "Dead Or Alive": [
+        {
+            "name": "Ayane",
+            "description": "Desbloquea al personaje Ayane. Consigue todas las vestimentas del juego: 14 para cada personaje femenino, 5 para cada personaje masculino y 3 para Raidou.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Raidou",
+            "description": "Desbloquea al personaje Raidou. Completa el juego con las configuraciones predeterminadas de cada luchador.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Dragon Ball Final Bout": [
+        {
+            "name": "Añadir luchadores",
+            "description": "Para conseguir nuevos personajes presiona, en la pantalla de título.",
+            "code": "DERECHA, IZQUIERDA, ABAJO, ARRIBA, DERECHA, IZQUIERDA, ABAJO, ARRIBA.",
+            "type": "code"
+        },
+        {
+            "name": "Goku nivel 4",
+            "description": "Tras hacer el truco de los seis luchadores.",
+            "code": "5 veces TRIANGULO y 9 veces X, version americana pulsa TRIANGULO 5 veces y CUADRADO 9 veces",
+            "type": "action"
+        }
+    ],
+    "Dragon Ball Z: Ultimate Battle 22": [
+        {
+            "name": "Añadir personajes",
+            "description": "En la pantalla de presentación pulsa.",
+            "code": "↑, △, ↓, X, ←, L1, →, R2",
+            "type": "code"
+        }
+    ],
+    "Ehrgeiz": [
+        {
+            "name": "Alternar la ropa",
+            "description": "Mientras seleccionas a un guerrero en la modalidad Arcade.",
+            "code": "Arriba",
+            "type": "action"
+        },
+        {
+            "category": "Personajes secretos",
+            "list": [
+                {
+                    "name": "Clair Andrews",
+                    "description": "Completa la modalidad Arcade usando una guerrera.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Django",
+                    "description": "Completa la modalidad Arcade usando los ocho personajes regulares que no pertenecen a Final Fantasy VII.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Kouji Masuda",
+                    "description": "Completa la modalidad Arcade usando un guerrero.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Vincent Valentine",
+                    "description": "Completa la modalidad Arcade como Tifa.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Yuffie Kisaragi",
+                    "description": "Completa la modalidad Arcade como Cloud.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Zack",
+                    "description": "Completa la modalidad Arcade usando todos los personajes de Final Fantasy VII.",
+                    "code": "",
+                    "type": "unlock"
+                }
+            ]
+        }
+    ],
+    "Fatal Fury: Wild Ambition": [
+        {
+            "name": "Nueva apariencia para Geese",
+            "description": "Destaca a Geese en la pantalla de selección de personaje, manten pulsado start.",
+            "code": "Círculo / X (negro) · Triángulo+Cuadrado (marrón)",
+            "type": "code"
+        },
+        {
+            "name": "Final alternativo Geese",
+            "description": "Termina el juego con la vestimenta alternativa de Geese.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Final alternativo Billy",
+            "description": "Termina el juego con su otra vestimenta.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Jugar con Mr. Karate",
+            "description": "Termina el juego sin perder un solo round y sin continue.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Juhar con Duck King",
+            "description": "Termina el juego con todos los personajes.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Medievil 2": [
+        {
+            "name": "Menú de trucos",
+            "description": "Este menú te permitirá acceder a nuevas opciones, como volverte invencible, incrementar tu cabeza. etc. La nueva opción saldrá en el menú de pausa.",
+            "code": "Manten pulsado L2 y pulsa los siguientes botones en este orden: Triángulo, Círculo, Triángulo, Círculo, Círculo, Triángulo, Izquierda, Círculo, Arriba, Abajo, Derecha, Círculo, Izquierda, Izquierda, Triángulo, Derecha, Círculo, Izquierda, Izquierda, Triángulo, Círculo, Abajo, Círculo, Círculo, Derecha.",
+            "type": "code"
+        }
+    ],
+    "Tekken": [
+        {
+            "category": "Desbloquear personajes / extras",
+            "list": [
+                {
+                    "name": "Devil Kazuya",
+                    "description": "Consigue puntuación perfecta en el mini-juego de Galaga (aparece cuando se carga el juego) para desbloquear Devil Kazuya. :contentReference[oaicite:3]{index=3}.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Heihachi",
+                    "description": "Completa el modo Arcade sin continuar (0 continues) con cualquier personaje para desbloquear a Heihachi. :contentReference[oaicite:2]{index=2}.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Sub-Jefes",
+                    "description": "Derrota un sub-jefe durante el modo Arcade para desbloquearlo. Cada personaje tiene un sub-jefe específico. Continúes sí se permiten. :contentReference[oaicite:1]{index=1}.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Trajes alternativos",
+                    "description": "En la pantalla de selección de personaje, presiona □ + △ para traje 1, o X + ○ para traje 2. :contentReference[oaicite:4]{index=4}.",
+                    "code": "□+△ (traje 1) / X+○ (traje 2)",
+                    "type": "code"
+                }
+            ]
+        }
+    ],
+    "Tekken 2": [
+        {
+            "category": "Desbloqueables / extras",
+            "list": [
+                {
+                    "name": "Angel",
+                    "description": "Derrota al Devil con Kazuya, luego para seleccionar Angel.",
+                    "code": "Punch",
+                    "type": "code"
+                },
+                {
+                    "name": "Anna",
+                    "description": "Completa el juego con Nina.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Armor King",
+                    "description": "Completa el juego con King.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Baek",
+                    "description": "Completa el Modo Arcade con Law.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Bruce",
+                    "description": "Completa el Modo Arcade con Lei.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Devil",
+                    "description": "Derrota al Devil usando a Kazuya, luego para seleccionar Devil.",
+                    "code": "Kick",
+                    "type": "code"
+                },
+                {
+                    "name": "Ganryu",
+                    "description": "Completa el juego con Michelle.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Kazuya",
+                    "description": "Después de desbloquear todos los sub-jefes, derro‐ta al Devil con cualquiera de ellos para desbloquearlo.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Kuma",
+                    "description": "Completa el Modo Arcade con Paul.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Kunimitsu",
+                    "description": "Completa el Modo Arcade con Yoshimitsu.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Lee",
+                    "description": "Completa el Modo Arcade con Heihachi.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "P. Jack (Prototype Jack)",
+                    "description": "Completa el Modo Arcade con Jack-2.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Roger y Alex",
+                    "description": "En el tercer combate del Modo Arcade, vence cuando te quede aproximadamente el 5 % de vida. Luego aparecerás contra Roger o Alex, y tras vencerlos podrás seleccionarlos.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Wang Jinrey",
+                    "description": "Completa el juego con Jun.",
+                    "code": "",
+                    "type": "unlock"
+                }
+            ]
+        },
+        {
+            "category": "Trucos visuales / efectos especiales",
+            "list": [
+                {
+                    "name": "Animaciones de victoria",
+                    "description": "Tras ganar un round, en el replay pulsa □, ○, ×, △ para que el personaje haga distintas poses de victoria.",
+                    "code": "□ / ○ / × / △",
+                    "type": "code"
+                },
+                {
+                    "name": "Colores diferentes",
+                    "description": "Al elegir personaje para cambiar los colores alternativos.",
+                    "code": "Start",
+                    "type": "code"
+                },
+                {
+                    "name": "Modo Big Head (Cabeza grande)",
+                    "description": "En la pantalla de selección hasta que comience el combate.",
+                    "code": "Select",
+                    "type": "code"
+                },
+                {
+                    "name": "Modo Sky",
+                    "description": "Desbloquea todos los personajes, luego durante la selección hasta que empiece el combate.",
+                    "code": "Select + ↑",
+                    "type": "code"
+                },
+                {
+                    "name": "Modo Wire Frame",
+                    "description": "Desbloquea todos los personajes, luego durante la selección hasta que inicie la pelea. Aparecerás en forma de “huesos” o malla.",
+                    "code": "L1 + L2",
+                    "type": "code"
+                },
+                {
+                    "name": "Personaje gordo (Plump Size)",
+                    "description": "Antes de la pantalla VS hasta que empiece. El personaje aparecerá más voluminoso.",
+                    "code": "Select",
+                    "type": "code"
+                }
+            ]
+        }
+    ],
+    "Tekken 3": [
+        {
+            "category": "Desbloquear personajes",
+            "list": [
+                {
+                    "name": "Anna Williams",
+                    "description": "Completa el modo Arcade con cinco personajes diferentes.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Bryan Fury",
+                    "description": "Completa el modo Arcade con seis personajes diferentes.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Doctor Boskonovitch (Dr. B)",
+                    "description": "Completa Tekken Force 4 veces, luego derrota a Dr. B cuando aparezca; estará seleccionable en todos los modos.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Gon",
+                    "description": "Gana Arcade usando Doctor Boskonovitch, o desbloquea Tekken Ball Mode y derrota a Gon allí para desbloquearlo; también puede aparecer si permites que el oponente te deje en 5 % de salud en los rounds 4-7 en Arcade en dificultad Fácil, luego derrotarle.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Gun Jack",
+                    "description": "Completa el modo Arcade con tres personajes diferentes.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Heihachi",
+                    "description": "Completa el modo Arcade con siete personajes diferentes.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Julia Chang",
+                    "description": "Completa el modo Arcade con dos personajes diferentes.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Kuma",
+                    "description": "Completa el modo Arcade una vez.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Mokujin",
+                    "description": "Completa el modo Arcade con cuatro personajes diferentes.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Ogre",
+                    "description": "Completa el modo Arcade con ocho personajes diferentes.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Panda",
+                    "description": "En pantalla de selección, resalta Kuma y pulsa ○ o ×.",
+                    "code": "○ / ×",
+                    "type": "code"
+                },
+                {
+                    "name": "Tiger (Eddy variante)",
+                    "description": "Derrota Arcade Mode con todos los personajes desbloqueables y originales; luego selecciona Eddy y en pantalla de selección.",
+                    "code": "Start",
+                    "type": "unlock"
+                },
+                {
+                    "name": "True Ogre",
+                    "description": "Completa el modo Arcade con nueve personajes diferentes.",
+                    "code": "",
+                    "type": "unlock"
+                }
+            ]
+        },
+        {
+            "category": "Modos / extras desbloqueables",
+            "list": [
+                {
+                    "name": "Tekken Ball Mode",
+                    "description": "Derrota el modo Arcade con todos los personajes originales y desbloqueables para que aparezca Tekken Ball Mode.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Theatre Mode",
+                    "description": "Desbloquea todos los personajes (incluyendo los ocultos) y ve sus finales; entonces aparecerán las opciones de «Disc» y «Sound» bajo Theatre Mode.",
+                    "code": "",
+                    "type": "unlock"
+                }
+            ]
+        },
+        {
+            "category": "Trajes / atuendos alternativos",
+            "list": [
+                {
+                    "name": "Disfraz de cebra de Anna",
+                    "description": "Juega como Anna 25 veces. Luego selecciónala y para su traje de cebra.",
+                    "code": "Start",
+                    "type": "code"
+                },
+                {
+                    "name": "Disfraz escolar de Jin",
+                    "description": "Usa a Jin 50 veces. Luego, en selección de personaje cuando esté resaltado.",
+                    "code": "Start",
+                    "type": "code"
+                },
+                {
+                    "name": "Disfraz escolar de Xiaoyu",
+                    "description": "Usa a Xiaoyu 50 veces. Luego, en selección de personaje cuando esté resaltado.",
+                    "code": "Start",
+                    "type": "code"
+                },
+                {
+                    "name": "Top sin mangas de Jack",
+                    "description": "Juega como Jack 10 veces, luego selecciónalo y para el atuendo especial.",
+                    "code": "Start",
+                    "type": "code"
+                }
+            ]
+        },
+        {
+            "category": "Trucos visuales / curiosos",
+            "list": [
+                {
+                    "name": "Fondo escolar",
+                    "description": "Si desbloqueas los uniformes escolares de Jin o Xiaoyu, luego en Versus-2 jugadores, selecciona Jin o Xiaoyu manteniendo △ al oponente seleccionar.",
+                    "code": "Arriba",
+                    "type": "code"
+                },
+                {
+                    "name": "Posiciones de victoria alternativas",
+                    "description": "Tras ganar un round, durante la repetición mantén pulsado uno de los botones de patada para ver una pose alternativa; si mantienes un botón de puñetazo verás la pose normal.",
+                    "code": "□ / △ / ○ / ╳ o botones de puñetazo",
+                    "type": "code"
+                },
+                {
+                    "name": "Sonido especial de Mokujin",
+                    "description": "En la imagen de Mokujin en la selección de personajes, mantén pulsado ↓ hasta que comience el combate para que Mokujin suene como bloque de madera.",
+                    "code": "↓",
+                    "type": "code"
+                }
+            ]
+        }
+    ],
+    "Tobal 2": [
+        {
+            "category": "Desbloquear personajes",
+            "list": [
+                {
+                    "name": "Emperor Udan",
+                    "description": "Completa el juego en dificultad difícil.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Mark the Devil",
+                    "description": "Véncelo en el último piso de la Pirámide Antigua.",
+                    "code": "",
+                    "type": "action"
+                },
+                {
+                    "name": "Mufu",
+                    "description": "Completa el juego en dificultad fácil.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Nork",
+                    "description": "Completa el juego en dificultad normal.",
+                    "code": "",
+                    "type": "unlock"
+                }
+            ]
+        },
+        {
+            "category": "Trucos visuales y de cámara",
+            "list": [
+                {
+                    "name": "Cambiar atuendo alternativo",
+                    "description": "En la selección de personaje, mantén pulsado ↑ y pulsa △ para elegir un traje diferente.",
+                    "code": "↑ + △",
+                    "type": "code"
+                },
+                {
+                    "name": "Cambiar tamaño de personaje",
+                    "description": "En la pantalla de selección de personaje Pulsa R2 para aumentar o L2 para disminuir el tamaño.",
+                    "code": "L2 + R2 + △",
+                    "type": "code"
+                },
+                {
+                    "name": "Trajes transparentes",
+                    "description": "En modo entrenamiento, pausa el juego y ajusta los valores de color con X o △ para hacer el traje transparente.",
+                    "code": "Start → X / △ (ajuste de color)",
+                    "type": "code"
+                }
+            ]
+        },
+        {
+            "category": "Animaciones y extras en combate",
+            "list": [
+                {
+                    "name": "Baile durante la repetición",
+                    "description": "Durante el replay, mantén pulsado ↑ o → junto a L2 y suéltalo justo antes de que termine para que el personaje baile.",
+                    "code": "↑ / → + L2",
+                    "type": "code"
+                },
+                {
+                    "name": "Mover los ojos del personaje",
+                    "description": "Durante la pose de victoria, usa el pad direccional para mover los ojos del personaje.",
+                    "code": "↑, ↓, ←, →",
+                    "type": "code"
+                },
+                {
+                    "name": "Practicar con monstruos no capturados",
+                    "description": "En modo práctica, resalta un monstruo aún no capturado y para practicar con él.",
+                    "code": "○ + ↓",
+                    "type": "code"
+                },
+                {
+                    "name": "Repetir discurso de victoria",
+                    "description": "Después del discurso para oírlo de nuevo.",
+                    "code": "L2 + ←",
+                    "type": "code"
+                }
+            ]
+        }
+    ],
+    "Tobal No. 1": [
+        {
+            "category": "Modos de cámara / ajustes visuales",
+            "list": [
+                {
+                    "name": "Cambiar ángulo de cámara",
+                    "description": "En la pantalla de selección de personaje hasta que comience el combate.",
+                    "code": "L2 + R2",
+                    "type": "code"
+                }
+            ]
+        },
+        {
+            "category": "Trucos dentro del combate",
+            "list": [
+                {
+                    "name": "Suicidio de Hom",
+                    "description": "Durante el combate, pulsa Abajo + R1 + L1 para que Hom quede KO automáticamente.",
+                    "code": "↓ + R1 + L1",
+                    "type": "code"
+                }
+            ]
+        },
+        {
+            "category": "Desbloquear personajes / contenido oculto",
+            "list": [
+                {
+                    "name": "Mufu",
+                    "description": "Completa la segunda quest en el modo Quest.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Snork",
+                    "description": "Completa la primera quest en el modo Quest.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Tori Robo",
+                    "description": "Completa la cuarta quest en el modo Quest.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Udan",
+                    "description": "Completa la tercera quest en el modo Quest.",
+                    "code": "",
+                    "type": "unlock"
+                }
+            ]
+        },
+        {
+            "category": "Estética / variaciones",
+            "list": [
+                {
+                    "name": "Trajes alternativos",
+                    "description": "Mantén pulsado ↑ en la selección de personaje para variar el traje.",
+                    "code": "↑",
+                    "type": "code"
+                }
+            ]
+        }
+    ],
+    "Twisted Metal": [
+        {
+            "name": "Warehouse",
+            "description": "Nivel 2.",
+            "code": "○, △, □, ○, ○",
+            "type": "code"
+        },
+        {
+            "name": "Freeway",
+            "description": "Nivel 3.",
+            "code": "×, □, □, ○, △",
+            "type": "code"
+        },
+        {
+            "name": "River Park",
+            "description": "Nivel 4.",
+            "code": "×, △, □, ○, □",
+            "type": "code"
+        },
+        {
+            "name": "Assault on Cyburbia",
+            "description": "Nivel 5.",
+            "code": "×, □, △, △, △",
+            "type": "code"
+        },
+        {
+            "name": "Rooftop Combat",
+            "description": "Nivel 6.",
+            "code": "□, △, ×, ○, ×",
+            "type": "code"
+        }
+    ],
+    "Yu-Gi-Oh! Forbidden Memories": [
+        {
+            "category": "Códigos de cartas",
+            "list": [
+                {
+                    "name": "Arena Mística",
+                    "description": "Desbloquea la carta Arena Mística (500 estrellas). Ve al menú de Password e introduce el código.",
+                    "code": "32751480",
+                    "type": "password"
+                },
+                {
+                    "name": "Dragón de Aqua",
+                    "description": "Desbloquea la carta Dragón de Aqua (700 estrellas). Ve al menú de Password e introduce el código.",
+                    "code": "86164529",
+                    "type": "password"
+                },
+                {
+                    "name": "Dragón de Trueno de Cabezas Gemelas",
+                    "description": "Desbloquea la carta Dragón de Trueno de Cabezas Gemelas (1900 estrellas). Ve al menú de Password e introduce el código.",
+                    "code": "54752875",
+                    "type": "password"
+                },
+                {
+                    "name": "Dragón Kaiser",
+                    "description": "Desbloquea la carta Dragón Kaiser (900 estrellas). Ve al menú de Password e introduce el código.",
+                    "code": "94566432",
+                    "type": "password"
+                },
+                {
+                    "name": "Jirai Gumo",
+                    "description": "Desbloquea la carta Jirai Gumo (80 estrellas). Ve al menú de Password e introduce el código.",
+                    "code": "94773007",
+                    "type": "password"
+                },
+                {
+                    "name": "Seiyaryu",
+                    "description": "Desbloquea la carta Seiyaryu (1700 estrellas). Ve al menú de Password e introduce el código.",
+                    "code": "06740720",
+                    "type": "password"
+                }
+            ]
+        },
+        {
+            "name": "Ventajas Estrella Guardiana I",
+            "description": "Sección de ventajas de estrellas guardianas.",
+            "code": "☉ → ☽ → ♀ → ☿ → ☉",
+            "type": "code"
+        },
+        {
+            "name": "Ventajas Estrella Guardiana II",
+            "description": "Sección de ventajas de estrellas guardianas.",
+            "code": "♂ → ♃ → ♄ → ☉ → ♇ → ♆ → ♂",
+            "type": "code"
+        }
+    ],
+    "Metal Gear Solid": [
+        {
+            "name": "Bandana (Munición Infinita)",
+            "description": "Completa el juego y resiste la tortura de Ocelot. Salvarás a Meryl y obtendrás la Bandana.",
+            "code": "Final Meryl",
+            "type": "code"
+        },
+        {
+            "name": "Camuflaje Óptico (Stealth)",
+            "description": "Completa el juego y ríndete en la tortura de Ocelot. Otacon te dará el traje al final.",
+            "code": "Final Otacon",
+            "type": "code"
+        }
+    ],
+    "Spyro the Dragon": [
+        {
+            "name": "99 Vidas",
+            "description": "En el inventario, pulsa: R2, L2, R2, L2, Arriba, Arriba, Arriba, Arriba, Círculo.",
+            "code": "R2, L2, R2, L2, U, U, U, U, O",
+            "type": "code"
+        }
+    ],
+    "Castlevania: Symphony of the Night": [
+        {
+            "name": "Comenzar como Richter Belmont",
+            "description": "En la pantalla de título, introduce como nombre.",
+            "code": "RICHTER",
+            "type": "code"
+        },
+        {
+            "name": "Comenzar con suerte alta (Luck Mode)",
+            "description": "En la pantalla de título, introduce como nombre.",
+            "code": "AXEARMOR",
+            "type": "code"
+        },
+        {
+            "name": "Jugar como Maria Renard",
+            "description": "Completa el juego una vez y comienza una nueva partida con el nombre.",
+            "code": "MARIA",
+            "type": "code"
+        },
+        {
+            "name": "Spellbook de Alucard",
+            "description": "Consigue el objeto 'Spellbook' en la Biblioteca. Luego pulsa: Arriba, Abajo, Abajo, Arriba + □ o △ para lanzar magia.",
+            "code": "Spellbook + ↑, ↓, ↓, ↑ + □/△",
+            "type": "code"
+        },
+        {
+            "name": "Duplicar objetos (Glitch de la libra)",
+            "description": "Ve al inventario, selecciona 'Libra' (balanza) y úsala en cualquier objeto. Se duplicará mientras tengas la Libra equipada.",
+            "code": "",
+            "type": "action"
+        }
+    ],
+    "Crash Bandicoot": [
+        {
+            "name": "99 Vidas",
+            "description": "En la pantalla de título, mantén R1 + R2 + L1 + L2 y pulsa Abajo, Abajo, Abajo, Derecha.",
+            "code": "R1+R2+L1+L2 + ↓, ↓, ↓, →",
+            "type": "code"
+        },
+        {
+            "name": "Selección de nivel",
+            "description": "En la pantalla de título, mantén R1 + R2 + L1 + L2 y pulsa Cuadrado, Abajo, Círculo, Arriba.",
+            "code": "R1+R2+L1+L2 + □, ↓, ○, ↑",
+            "type": "code"
+        },
+        {
+            "name": "Niveles de bonificación",
+            "description": "Rompe todas las cajas de un nivel (incluyendo las de interrogación) para conseguir una gema.",
+            "code": "",
+            "type": "action"
+        }
+    ],
+    "Resident Evil 2": [
+        {
+            "category": "Desbloquear modos / extras",
+            "list": [
+                {
+                    "name": "Modo Hunk (4th Survivor)",
+                    "description": "Completa el juego con Leon A y Claire B (o viceversa) con rango A o B.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Modo Tofu",
+                    "description": "Completa el modo Hunk para desbloquear el modo Tofu (peleas con un bloque de tofu).",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Lanzacohetes Infinito (Extreme Battle)",
+                    "description": "Completa el modo Extreme Battle con todos los personajes.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Trajes alternativos (Leon y Claire)",
+                    "description": "Completa el juego una vez en cada escenario (A y B). Inicia una partida nueva y aparecerá la opción de traje.",
+                    "code": "",
+                    "type": "unlock"
+                }
+            ]
+        },
+        {
+            "name": "Código de la armería (RPD)",
+            "description": "En la comisaría RPD, la caja fuerte del despacho del oeste se abre con: izquierda 9, derecha 15, izquierda 7.",
+            "code": "← 9, → 15, ← 7",
+            "type": "code"
+        }
+    ],
+    "Final Fantasy VII": [
+        {
+            "name": "Materia Kujata (Roba todo)",
+            "description": "Consigue la Materia Kujata en el Templo de los Antiguos. Cuando la equipes, ataca con 'Roba todo' para obtener objetos raros.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Invocación Knights of the Round",
+            "description": "Cría un Chocobo Dorado (Golden Chocobo) y llévalo a la Isla Gélida (Gelnika). Consigue la materia en la cueva secreta.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Parque de atracciones Gold Saucer",
+            "description": "Consigue GP en la sala de juegos del Gold Saucer para ganar premios raros, incluida la Materia Fuente de Sabiduría.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Máximo nivel (Glitch del W-Item)",
+            "description": "Consigue la Materia W-Item. Al usarla, selecciona el primer objeto que quieras duplicar y cancela el segundo. Se duplicará el primero.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Gran Turismo 2": [
+        {
+            "name": "Desbloquear todos los circuitos",
+            "description": "Completa todas las licencias con medalla de oro para desbloquear todos los circuitos en todos los modos.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Coche secreto de policía",
+            "description": "Gana la copa GT World Cup para desbloquear el coche de policía de Tokyo.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Crédito extra (fácil)",
+            "description": "En el modo Simulación, vende los coches que ganas en las copas para acumular créditos rápidamente.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Crash Bandicoot 2: Cortex Strikes Back": [
+        {
+            "name": "Saltar nivel",
+            "description": "Pausa el juego y pulsa.",
+            "code": "↑, ↑, ↓, ↓, L1, R1, L1, R1, □, ○",
+            "type": "code"
+        },
+        {
+            "name": "99 Vidas",
+            "description": "Pausa el juego y pulsa.",
+            "code": "R1, R1, L1, L1, ↑, ↓, ↑, ↓, □, x",
+            "type": "code"
+        },
+        {
+            "name": "Niveles secretos de la sala de juegos",
+            "description": "En la sala de juegos (maquina arcade), juega a los niveles especiales para conseguir gemas de colores.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Crash Bandicoot 3: Warped": [
+        {
+            "name": "Desbloquear el nivel final (Secret Warp Room)",
+            "description": "Consigue todas las gemas de colores y todos los cristales para desbloquear la sala secreta.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "99 Vidas",
+            "description": "En la pantalla de titulo, pulsa: L1, R1, L1, R1, ↑x4, ↓x4.",
+            "code": "L1, R1, L1, R1, ↑, ↑, ↑, ↑, ↓, ↓, ↓, ↓",
+            "type": "code"
+        },
+        {
+            "name": "Traje de piel",
+            "description": "En la pantalla de seleccion de nivel, pulsa.",
+            "code": "L1, R1, L1, L1, R1, ↓, →, ↑, △",
+            "type": "code"
+        }
+    ],
+    "Spyro 2: Ripto's Rage": [
+        {
+            "name": "99 Vidas",
+            "description": "En el menu de pausa, pulsa.",
+            "code": "L1, R1, L1, R1, ↑, ↓, ↑, ↓, L1, R1",
+            "type": "code"
+        },
+        {
+            "name": "Todos los talismanes",
+            "description": "En el menu de pausa, pulsa.",
+            "code": "R1, R1, L1, L1, ↑, ↓, ↑, ↓, R1, R1",
+            "type": "code"
+        },
+        {
+            "name": "Modo de vuelo infinito",
+            "description": "Completa todos los mundos al 100% para desbloquear el vuelo infinito en los niveles.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Final Fantasy VIII": [
+        {
+            "name": "Card Mod (Convertir cartas en objetos)",
+            "description": "Usa la habilidad Card Mod de Quetzalcoatl para convertir cartas Triple Triad en objetos raros y magias.",
+            "code": "",
+            "type": "action"
+        },
+        {
+            "name": "Invocacion Eden",
+            "description": "Consigue Eden en el Deep Sea Research Center. Resuelve el puzzle de los tornillos para abrir el cofre.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Lionheart (Espada maxima de Squall)",
+            "description": "Consigue los materiales: 4 Pulse Ammo, 4 Dragon Fangs, 12 Adamantine para mejorar el arma de Squall a Lionheart.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Pupu (Card minijuego)",
+            "description": "En el Hotel de Timber, usa el comando Card en el muneco de nieve Pupu para obtener su carta (rara).",
+            "code": "",
+            "type": "action"
+        }
+    ],
+    "Resident Evil 3: Nemesis": [
+        {
+            "name": "Desbloquear epilogo (Epilogue Files)",
+            "description": "Completa el juego en cualquier dificultad para leer los archivos epilogo.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Traje de mercenario (Mercenaries Mode)",
+            "description": "Completa el juego una vez para desbloquear el modo Mercenarios.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Municion infinita (Assault Rifle)",
+            "description": "Completa el juego en dificultad Dificil con rango A para desbloquear el rifle de asalto con municion infinita.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Silent Hill": [
+        {
+            "name": "Final alternativo (Good+)",
+            "description": "Salva a Cybil y usa el Aglaophotis con ella antes del jefe final.",
+            "code": "",
+            "type": "action"
+        },
+        {
+            "name": "Final de perro (Dog Ending)",
+            "description": "En el segundo viaje, usa el objeto 'Dog Key' en la perrera de la cafeteria para ver el final comico.",
+            "code": "",
+            "type": "action"
+        },
+        {
+            "name": "Modo Extras (Gallery, etc.)",
+            "description": "Completa el juego una vez para desbloquear el menu de extras con galeria de arte y sonidos.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Suikoden II": [
+        {
+            "name": "Reclutar a Clive (108 estrellas)",
+            "description": "El tiempo limite para reclutar a Clive es antes de liberar el castillo. Habla con el en la posada de Two River.",
+            "code": "",
+            "type": "action"
+        },
+        {
+            "name": "Final verdadero",
+            "description": "Recluta a las 108 estrellas del destino antes del enfrentamiento final.",
+            "code": "",
+            "type": "action"
+        },
+        {
+            "name": "Duplicar objetos (glitch)",
+            "description": "Pon un objeto en la caja de almacenamiento, abre el inventario de otro personaje y rapido para duplicar.",
+            "code": "Select",
+            "type": "glitch"
+        }
+    ],
+    "Tony Hawk's Pro Skater 2": [
+        {
+            "name": "Desbloquear a Officer Dick",
+            "description": "Completa el modo Carrera con todos los personajes.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Codigo de dinero",
+            "description": "En el menu principal, pulsa.",
+            "code": "↑, ↓, ←, →, ↑, ↓, ←, →, △, ○",
+            "type": "code"
+        },
+        {
+            "name": "Desbloquear el Hangar (nivel oculto)",
+            "description": "Completa todos los objetivos del primer nivel.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Tomb Raider": [
+        {
+            "name": "Nivel de Croft Manor",
+            "description": "Al comienzo del juego, explora la mansion Croft para encontrar armas escondidas y secretos.",
+            "code": "",
+            "type": "action"
+        },
+        {
+            "name": "Pistolas ilimitadas",
+            "description": "Las pistolas de Lara nunca se quedan sin municion.",
+            "code": "",
+            "type": "action"
+        },
+        {
+            "name": "Niveles extra desbloqueables",
+            "description": "Completa el juego una vez para desbloquear el nivel 'La Tumba de la Reina'.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Ape Escape": [
+        {
+            "name": "Desbloquear todos los gadgets",
+            "description": "Completa las fases del juego para conseguir todos los gadgets: Red Electrica, Super Combate, Cuchara de Radio, Control de Monos, etc.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Mono especial (Mono espectaculo)",
+            "description": "Captura todos los monos de cada fase para desbloquear la pantalla de trofeos y fotos especiales.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Minijuego de carreras",
+            "description": "Captura al menos 100 monos para desbloquear el minijuego de carreras de monos.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Chrono Cross": [
+        {
+            "name": "Reclutar personajes (45+ personajes)",
+            "description": "Hay mas de 45 personajes reclutables. Cada decision en el juego afecta a quien puedes reclutar.",
+            "code": "",
+            "type": "action"
+        },
+        {
+            "name": "Final verdadero",
+            "description": "Recluta a todos los personajes posibles y usa el objeto Chrono Cross en el jefe final.",
+            "code": "",
+            "type": "action"
+        },
+        {
+            "name": "Resurreccion de Miguel (New Game+)",
+            "description": "Comienza un New Game+ despues de completar el juego para conservar elementos y niveles.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Parasite Eve": [
+        {
+            "name": "Modo New Game+ (EX Game)",
+            "description": "Completa el juego una vez (cualquier final) para comenzar un EX Game conservando armas, niveles y objetos.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Final alternativo (75 Misiones)",
+            "description": "Completa las 77 misiones del Chrysler Building para ver el final especial de la torre.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Arma secreta (Super Tool)",
+            "description": "En el modo EX Game, ve al edificio de la policia y recoge la Super Tool en el sotano.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Vagrant Story": [
+        {
+            "name": "Desbloquear New Game+",
+            "description": "Completa el juego una vez para comenzar un New Game+ conservando armas y objetos.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Mazmorra optional (El Santuario)",
+            "description": "Completa el 100% de los mapas para desbloquear el Santuario con objetos exclusivos.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Arma final (Damascythe)",
+            "description": "Combina objetos raros en la herreria para crear la espada Damascythe, el arma mas poderosa.",
+            "code": "",
+            "type": "action"
+        }
+    ]
+}

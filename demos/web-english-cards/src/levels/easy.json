@@ -1,0 +1,510 @@
+{
+  "title": "Fácil",
+  "icon": "🦐",
+  "words": [
+      {
+        "word": "casa",
+        "translation": ["house", "home"],
+        "description": "A building for human habitation, especially one that is lived in by a family or small group of people.",
+        "type": "noun"
+      },
+      {
+        "word": "perro",
+        "translation": ["dog"],
+        "description": "A domesticated carnivorous mammal that typically has a long snout.",
+        "type": "noun"
+      },
+      {
+        "word": "gato",
+        "translation": ["cat"],
+        "description": "A small domesticated carnivorous mammal with soft fur.",
+        "type": "noun"
+      },
+      {
+        "word": "amar",
+        "translation": ["love"],
+        "description": "Feel a deep romantic or sexual attachment to someone.",
+        "type": "verb",
+        "tense": "present"
+      },
+      {
+        "word": "comer",
+        "translation": ["eat"],
+        "description": "Put food into the mouth, chew, and swallow it.",
+        "type": "verb",
+        "tense": "present"
+      },
+      {
+        "word": "beber",
+        "translation": ["drink"],
+        "description": "Take liquid into the mouth and swallow.",
+        "type": "verb",
+        "tense": "present"
+      },
+      {
+        "word": "feliz",
+        "translation": ["happy"],
+        "description": "Feeling or showing pleasure or contentment.",
+        "type": "adjective"
+      },
+      {
+        "word": "triste",
+        "translation": ["sad"],
+        "description": "Feeling or showing sorrow; unhappy.",
+        "type": "adjective"
+      },
+      {
+        "word": "grande",
+        "translation": ["big", "large"],
+        "description": "Of considerable or relatively great size, extent, or capacity.",
+        "type": "adjective"
+      },
+      {
+        "word": "pequeño",
+        "translation": ["small", "little"],
+        "description": "Of a size that is less than normal or usual.",
+        "type": "adjective"
+      },
+      {
+        "word": "agua",
+        "translation": ["water"],
+        "description": "A colorless, transparent, odorless liquid that forms the seas, lakes, rivers, and rain and is the basis of the fluids of living organisms.",
+        "type": "noun"
+      },
+      {
+        "word": "pan",
+        "translation": ["bread"],
+        "description": "Food made of flour, water, and yeast or another leavening agent, mixed together and baked.",
+        "type": "noun"
+      },
+      {
+        "word": "leche",
+        "translation": ["milk"],
+        "description": "An opaque white fluid rich in fat and protein, secreted by female mammals for the nourishment of their young.",
+        "type": "noun"
+      },
+      {
+        "word": "sol",
+        "translation": ["sun"],
+        "description": "The star around which the earth orbits.",
+        "type": "noun"
+      },
+      {
+        "word": "luna",
+        "translation": ["moon"],
+        "description": "The natural satellite of the earth, visible (chiefly at night) by reflected light from the sun.",
+        "type": "noun"
+      },
+      {
+        "word": "día",
+        "translation": ["day"],
+        "description": "A period of twenty-four hours as a unit of time, reckoned from one midnight to the next, corresponding to a rotation of the earth on its axis.",
+        "type": "noun"
+      },
+      {
+        "word": "noche",
+        "translation": ["night"],
+        "description": "The period of darkness in each twenty-four hours; the time from sunset to sunrise.",
+        "type": "noun"
+      },
+      {
+        "word": "amarillo",
+        "translation": ["yellow"],
+        "description": "Of the color between green and orange in the spectrum, a primary subtractive color complementary to blue; colored like ripe lemons or egg yolks.",
+        "type": "adjective"
+      },
+      {
+        "word": "verde",
+        "translation": ["green"],
+        "description": "Of the color between blue and yellow in the spectrum; colored like grass or emeralds.",
+        "type": "adjective"
+      },
+      {
+        "word": "rojo",
+        "translation": ["red"],
+        "description": "Of a color at the end of the spectrum next to orange and opposite violet.",
+        "type": "adjective"
+      },
+      {
+        "word": "azul",
+        "translation": ["blue"],
+        "description": "Of a color intermediate between green and violet, as of the sky or sea on a sunny day.",
+        "type": "adjective"
+      },
+      {
+        "word": "blanco",
+        "translation": ["white"],
+        "description": "Of the color of milk or fresh snow, due to the reflection of most wavelengths of visible light; the opposite of black.",
+        "type": "adjective"
+      },
+      {
+        "word": "negro",
+        "translation": ["black"],
+        "description": "Of the very darkest color owing to the absence of or complete absorption of light; the opposite of white.",
+        "type": "adjective"
+      },
+      {
+        "word": "nube",
+        "translation": ["cloud"],
+        "description": "A visible mass of condensed water vapor floating in the atmosphere, typically high above the ground.",
+        "type": "noun"
+      },
+      {
+        "word": "lluvia",
+        "translation": ["rain"],
+        "description": "Moisture condensed from the atmosphere that falls visibly in separate drops.",
+        "type": "noun"
+      },
+      {
+        "word": "nieve",
+        "translation": ["snow"],
+        "description": "Atmospheric water vapor frozen into ice crystals and falling in light white flakes or lying on the ground as a white layer.",
+        "type": "noun"
+      },
+      {
+        "word": "cielo",
+        "translation": ["sky", "heaven"],
+        "description": "The region of the atmosphere and outer space seen from the earth.",
+        "type": "noun"
+      },
+      {
+        "word": "tierra",
+        "translation": ["earth", "ground"],
+        "description": "The third planet from the sun; the planet on which we live.",
+        "type": "noun"
+      },
+      {
+        "word": "aire",
+        "translation": ["air"],
+        "description": "The invisible gaseous substance surrounding the earth, a mixture mainly of oxygen and nitrogen.",
+        "type": "noun"
+      },
+      {
+        "word": "fuego",
+        "translation": ["fire"],
+        "description": "Combustion or burning, in which substances combine chemically with oxygen from the air and typically give out bright light, heat, and smoke.",
+        "type": "noun"
+      },
+      {
+        "word": "mesa",
+        "translation": ["table"],
+        "description": "A piece of furniture with a flat top and one or more legs, providing a level surface on which objects may be placed.",
+        "type": "noun"
+      },
+      {
+        "word": "silla",
+        "translation": ["chair"],
+        "description": "A separate seat for one person, typically with a back and four legs.",
+        "type": "noun"
+      },
+      {
+        "word": "puerta",
+        "translation": ["door"],
+        "description": "A movable barrier used to open and close an entrance.",
+        "type": "noun"
+      },
+      {
+        "word": "ventana",
+        "translation": ["window"],
+        "description": "An opening in the wall or roof of a building or vehicle that is fitted with glass or other transparent material.",
+        "type": "noun"
+      },
+      {
+        "word": "libro",
+        "translation": ["book"],
+        "description": "A written or printed work consisting of pages glued or sewn together along one side and bound in covers.",
+        "type": "noun"
+      },
+      {
+        "word": "papel",
+        "translation": ["paper"],
+        "description": "Material manufactured in thin sheets from the pulp of wood or other fibrous substances, used for writing, drawing, or printing on, or as wrapping material.",
+        "type": "noun"
+      },
+      {
+        "word": "pluma",
+        "translation": ["feather", "pen"],
+        "description": "A bird's feather used as an ornament or for writing with ink.",
+        "type": "noun"
+      },
+      {
+        "word": "lapiz",
+        "translation": ["pencil"],
+        "description": "An instrument for writing or drawing, consisting of a thin stick of graphite or a similar substance enclosed in a long thin piece of wood or fixed in a metal or plastic case.",
+        "type": "noun"
+      },
+      {
+        "word": "ciudad",
+        "translation": ["city"],
+        "description": "A large town.",
+        "type": "noun"
+      },
+      {
+        "word": "pueblo",
+        "translation": ["town", "village"],
+        "description": "A small town or village.",
+        "type": "noun"
+      },
+      {
+        "word": "país",
+        "translation": ["country"],
+        "description": "A nation with its own government, occupying a particular territory.",
+        "type": "noun"
+      },
+      {
+        "word": "amigo",
+        "translation": ["friend"],
+        "description": "A person whom one knows and with whom one has a bond of mutual affection.",
+        "type": "noun"
+      },
+      {
+        "word": "familia",
+        "translation": ["family"],
+        "description": "A group consisting of two parents and their children living together as a unit.",
+        "type": "noun"
+      },
+      {
+        "word": "madre",
+        "translation": ["mother"],
+        "description": "A woman in relation to a child or children to whom she has given birth.",
+        "type": "noun"
+      },
+      {
+        "word": "padre",
+        "translation": ["father"],
+        "description": "A man in relation to his child or children.",
+        "type": "noun"
+      },
+      {
+        "word": "hijo",
+        "translation": ["son"],
+        "description": "A boy or man in relation to either or both of his parents.",
+        "type": "noun"
+      },
+      {
+        "word": "hija",
+        "translation": ["daughter"],
+        "description": "A girl or woman in relation to either or both of her parents.",
+        "type": "noun"
+      },
+      {
+        "word": "hermano",
+        "translation": ["brother"],
+        "description": "A son of the same parents as another person; a male sibling.",
+        "type": "noun"
+      },
+      {
+        "word": "hermana",
+        "translation": ["sister"],
+        "description": "A daughter of the same parents as another person; a female sibling.",
+        "type": "noun"
+      },
+      {
+        "word": "escuela",
+        "translation": ["school"],
+        "description": "An institution for educating children.",
+        "type": "noun"
+      },
+      {
+        "word": "maestro",
+        "translation": ["teacher", "master"],
+        "description": "A person who teaches others, especially in a school.",
+        "type": "noun"
+      },
+      {
+        "word": "niño",
+        "translation": ["boy", "child"],
+        "description": "A young human being below the age of puberty or below the legal age of majority.",
+        "type": "noun"
+      },
+      {
+        "word": "niña",
+        "translation": ["girl"],
+        "description": "A female child.",
+        "type": "noun"
+      },
+      {
+        "word": "jugar",
+        "translation": ["play"],
+        "description": "Engage in activity for enjoyment and recreation rather than a serious or practical purpose.",
+        "type": "verb",
+        "tense": "present"
+      },
+      {
+        "word": "correr",
+        "translation": ["run"],
+        "description": "Move at a speed faster than a walk, never having both or all the feet on the ground at the same time.",
+        "type": "verb",
+        "tense": "present"
+      },
+      {
+        "word": "saltar",
+        "translation": ["jump"],
+        "description": "Move suddenly and quickly in a specified direction.",
+        "type": "verb",
+        "tense": "present"
+      },
+      {
+        "word": "nadar",
+        "translation": ["swim"],
+        "description": "Propel oneself through water using the limbs.",
+        "type": "verb",
+        "tense": "present"
+      },
+      {
+        "word": "dormir",
+        "translation": ["sleep"],
+        "description": "Be in a state of sleep.",
+        "type": "verb",
+        "tense": "present"
+      },
+      {
+        "word": "despertar",
+        "translation": ["wake up"],
+        "description": "Stop sleeping; become awake.",
+        "type": "verb",
+        "tense": "present"
+      },
+      {
+        "word": "comprar",
+        "translation": ["buy"],
+        "description": "Obtain in exchange for payment.",
+        "type": "verb",
+        "tense": "present"
+      },
+      {
+        "word": "vender",
+        "translation": ["sell"],
+        "description": "Give something to someone else in exchange for money.",
+        "type": "verb",
+        "tense": "present"
+      },
+      {
+        "word": "venir",
+        "translation": ["come"],
+        "description": "Move or travel toward or into a place.",
+        "type": "verb",
+        "tense": "present"
+      },
+      {
+        "word": "ir",
+        "translation": ["go"],
+        "description": "Move from one place to another; travel.",
+        "type": "verb",
+        "tense": "present"
+      },
+      {
+        "word": "estar",
+        "translation": ["be"],
+        "description": "Exist; be present.",
+        "type": "verb",
+        "tense": "present"
+      },
+      {
+        "word": "ser",
+        "translation": ["be"],
+        "description": "Exist; have the quality of being.",
+        "type": "verb",
+        "tense": "present"
+      },
+      {
+        "word": "hablar",
+        "translation": ["speak", "talk"],
+        "description": "Use language in order to express thoughts, feelings, or ideas.",
+        "type": "verb",
+        "tense": "present"
+      },
+      {
+        "word": "escuchar",
+        "translation": ["listen"],
+        "description": "Give one's attention to a sound.",
+        "type": "verb",
+        "tense": "present"
+      },
+      {
+        "word": "ver",
+        "translation": ["see"],
+        "description": "Perceive with the eyes.",
+        "type": "verb",
+        "tense": "present"
+      },
+      {
+        "word": "mirar",
+        "translation": ["look at"],
+        "description": "Direct one's gaze in a specified direction.",
+        "type": "verb",
+        "tense": "present"
+      },
+      {
+        "word": "leer",
+        "translation": ["read"],
+        "description": "Look at and comprehend the meaning of written or printed matter by interpreting the characters or symbols of which it is composed.",
+        "type": "verb",
+        "tense": "present"
+      },
+      {
+        "word": "escribir",
+        "translation": ["write"],
+        "description": "Mark (letters, words, or other symbols) on a surface, typically paper, with a pen, pencil, or similar implement.",
+        "type": "verb",
+        "tense": "present"
+      },
+      {
+        "word": "aprender",
+        "translation": ["learn"],
+        "description": "Gain or acquire knowledge of or skill in (something) by study, experience, or being taught.",
+        "type": "verb",
+        "tense": "present"
+      },
+      {
+        "word": "enseñar",
+        "translation": ["teach"],
+        "description": "Show or explain to (someone) how to do something.",
+        "type": "verb",
+        "tense": "present"
+      },
+      {
+        "word": "trabajar",
+        "translation": ["work"],
+        "description": "Engage in activity involving mental or physical effort done in order to achieve a purpose or result.",
+        "type": "verb",
+        "tense": "present"
+      },
+      {
+        "word": "descansar",
+        "translation": ["rest"],
+        "description": "Cease work or movement in order to relax, refresh oneself, or recover strength.",
+        "type": "verb",
+        "tense": "present"
+      },
+      {
+        "word": "correr",
+        "translation": ["run"],
+        "description": "Move at a speed faster than a walk, never having both or all the feet on the ground at the same time.",
+        "type": "verb",
+        "tense": "present"
+      },
+      {
+        "word": "saltar",
+        "translation": ["jump"],
+        "description": "Move suddenly and quickly in a specified direction.",
+        "type": "verb",
+        "tense": "present"
+      },
+      {
+        "word": "nadar",
+        "translation": ["swim"],
+        "description": "Propel oneself through water using the limbs.",
+        "type": "verb",
+        "tense": "present"
+      },
+      {
+        "word": "jugar",
+        "translation": ["play"],
+        "description": "Engage in activity for enjoyment and recreation rather than a serious or practical purpose.",
+        "type": "verb",
+        "tense": "present"
+      }
+    ]
+  }
+  

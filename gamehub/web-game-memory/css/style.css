@@ -1,0 +1,199 @@
+:root {
+    --main-bg-color: #0d1b2a;
+    --title-color: #e0e1dd;
+    --text-color: #e0e1dd;
+    --card-border-color: #e0e1dd;
+    --card-border-color-hover: #778da9;
+}
+
+#audio{
+    display: none
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    display: flex;
+    margin: 10px auto;
+}
+
+#tablero {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1500px;
+    justify-content: center;
+    margin: auto;
+}
+
+#tablero div {
+    background-size: cover;
+    border-radius: 8px;
+    width: 200px;
+    height: 200px;
+    background-image: url(../assets/imagenes/pixel-art-7520176_640.png);
+    border: 3px solid var(--card-border-color);
+    font-size: 30px;
+    text-align: center;
+    margin: 10px;
+}
+
+#tablero div:hover {
+    border: 3px solid var(--card-border-color-hover);
+}
+
+body {
+    font-family: 'Pixelify Sans', sans-serif;
+    background-color: var(--main-bg-color);
+}
+
+h1 {
+    color: var(--title-color);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contador {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: large;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.info-extra {
+    background-color: rgba(0,0,0,.6);
+    border-radius: 4px;
+    width: 25%;
+    text-align: justify;
+    color: orange;
+    margin-top: 10px;
+}
+
+.info-extra > div {
+    padding: 10px;
+}
+
+.popup {
+    visibility: hidden;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 600px;
+    height: 400px;
+    background-color: rgba(0,0,0,.9);
+    border-radius: 8px;
+    color: orange;
+    font-size: x-large;
+    padding: 10px;
+}  
+
+.cerrar {
+    margin-right: 15px;
+    float: right;
+    cursor: pointer;
+}
+
+.cerrar:hover {
+    text-shadow: 0 1px 2px rgba(255,255,255,0.8);
+}
+
+ul {
+    margin: 20px;
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+}
+
+.popup p, h3 {
+    font-family: 'Oswald', sans-serif;
+}
+
+ul li {
+    list-style: square;
+}
+
+.cartas-disponibles p {
+    font-family: 'Oswald', sans-serif;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.cartas-disponibles img {
+    width: 48px;
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(360deg, #233c56, #0d1b2a);
+    border-radius: 8px;
+    box-shadow: 0 0 1px 1px rgba(0,0,0,.4), 0 0 0 2px #dadcd7, inset 2px 2px 2px rgba(0,0,0,.7);
+    width: 200px;
+    height: 50px;
+    color: var(--text-color);
+    margin: 20px;
+    cursor: pointer;
+    font-size: large;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-shadow: 0 1px 3px rgb(255, 255, 255);
+}
+
+.boton-reset {
+    color: orange;
+    width: auto;
+}
+
+.boton:hover {
+    text-shadow: 0 1px 2px rgba(255,255,255,0.8);
+}
+
+@media only screen and (max-width: 600px) {
+
+    .info-extra {
+        width: 100%;
+    }
+
+    .popup {
+        width: 100%;
+        height: 100%;
+        padding: 10%;
+    }
+
+    .cartas-disponibles {
+        margin: 20px;
+    }
+
+    .cartas-disponibles img {
+        width: 80px;
+    }
+
+    h2 {
+        margin-top: 55px;
+    }
+    
+    .cerrar {
+        margin-right: 40px;
+        margin-top: 20px;
+    }
+    
+    #tablero div {
+        width: 100px;
+        height: 100px;
+    }
+
+    .info {
+        display: block;
+    }
+}

@@ -1,0 +1,410 @@
+{
+  "title": "Medio",
+  "icon": "🦀",
+  "words": [
+      {
+        "word": "temprano",
+        "translation": ["early"],
+        "description": "Near the beginning of a particular time or period.",
+        "type": "adjective"
+      },
+        {
+        "word": "tarde",
+        "translation": ["late"],
+        "description": "Later than usual or than expected.",
+        "type": "adjective"
+        },
+        {
+        "word": "encender",
+        "translation": ["turn on", "light"],
+        "description": "Switch on (an electric light).",
+        "type": "verb",
+        "tense": "present"
+        },
+        {
+        "word": "apagar",
+        "translation": ["turn off", "extinguish"],
+        "description": "Cause (a fire or light) to cease to burn or shine.",
+        "type": "verb",
+        "tense": "present"
+        },
+        {
+        "word": "fácil",
+        "translation": ["easy"],
+        "description": "Achieved without great effort; presenting few difficulties.",
+        "type": "adjective"
+        },
+        {
+        "word": "difícil",
+        "translation": ["difficult", "hard"],
+        "description": "Needing much effort or skill to accomplish, deal with, or understand.",
+        "type": "adjective"
+        },
+        {
+        "word": "rápido",
+        "translation": ["fast", "quick"],
+        "description": "Moving or capable of moving at high speed.",
+        "type": "adjective"
+        },
+        {
+        "word": "lento",
+        "translation": ["slow"],
+        "description": "Moving or operating, or designed to do so, only at a low speed; not quick or fast.",
+        "type": "adjective"
+        },
+        {
+        "word": "alto",
+        "translation": ["tall", "high"],
+        "description": "Of great or more than average height, especially (with reference to an object) relative to width.",
+        "type": "adjective"
+        },
+        {
+        "word": "bajo",
+        "translation": ["short", "low"],
+        "description": "Of less than average height from top to bottom or to the top from the ground.",
+        "type": "adjective"
+        },
+        {
+        "word": "amable",
+        "translation": ["kind", "friendly"],
+        "description": "Having or showing a friendly, generous, and considerate nature.",
+        "type": "adjective"
+        },
+        {
+        "word": "cruel",
+        "translation": ["cruel"],
+        "description": "Willfully causing pain or suffering to others, or feeling no concern about it.",
+        "type": "adjective"
+        },
+        {
+        "word": "felicidad",
+        "translation": ["happiness"],
+        "description": "The state of being happy.",
+        "type": "noun"
+        },
+        {
+        "word": "tristeza",
+        "translation": ["sadness"],
+        "description": "The condition or quality of being sad.",
+        "type": "noun"
+        },
+        {
+        "word": "esperanza",
+        "translation": ["hope"],
+        "description": "A feeling of expectation and desire for a certain thing to happen.",
+        "type": "noun"
+        },
+        {
+        "word": "desesperación",
+        "translation": ["despair"],
+        "description": "The complete loss or absence of hope.",
+        "type": "noun"
+        },
+        {
+        "word": "descubrir",
+        "translation": ["discover"],
+        "description": "Find (something or someone) unexpectedly or in the course of a search.",
+        "type": "verb",
+        "tense": "present"
+        },
+        {
+        "word": "ocultar",
+        "translation": ["hide", "conceal"],
+        "description": "Keep from sight; hide.",
+        "type": "verb",
+        "tense": "present"
+        },
+        {
+        "word": "aprender",
+        "translation": ["learn"],
+        "description": "Gain or acquire knowledge of or skill in (something) by study, experience, or being taught.",
+        "type": "verb",
+        "tense": "present"
+        },
+        {
+        "word": "enseñar",
+        "translation": ["teach"],
+        "description": "Show or explain to (someone) how to do something.",
+        "type": "verb",
+        "tense": "present"
+        },
+        {
+        "word": "perder",
+        "translation": ["lose"],
+        "description": "Be deprived of or cease to have or retain (something).",
+        "type": "verb",
+        "tense": "present"
+        },
+        {
+        "word": "ganar",
+        "translation": ["win", "earn"],
+        "description": "Be successful or victorious in (a contest or conflict).",
+        "type": "verb",
+        "tense": "present"
+        },
+        {
+        "word": "música",
+        "translation": ["music"],
+        "description": "Vocal or instrumental sounds (or both) combined in such a way as to produce beauty of form, harmony, and expression of emotion.",
+        "type": "noun"
+        },
+        {
+        "word": "canción",
+        "translation": ["song"],
+        "description": "A short poem or other set of words set to music or meant to be sung.",
+        "type": "noun"
+        },
+        {
+        "word": "película",
+        "translation": ["movie", "film"],
+        "description": "A story or event recorded by a camera as a set of moving images and shown in a theater or on television; a motion picture.",
+        "type": "noun"
+        },
+        {
+        "word": "libro",
+        "translation": ["book"],
+        "description": "A written or printed work consisting of pages glued or sewn together along one side and bound in covers.",
+        "type": "noun"
+        },
+        {
+        "word": "historia",
+        "translation": ["story", "history"],
+        "description": "An account of imaginary or real people and events told for entertainment.",
+        "type": "noun"
+        },
+        {
+        "word": "revista",
+        "translation": ["magazine"],
+        "description": "A periodical publication containing articles and illustrations, typically covering a particular subject or area of interest.",
+        "type": "noun"
+        },
+        {
+        "word": "periódico",
+        "translation": ["newspaper"],
+        "description": "A printed publication (usually issued daily or weekly) consisting of folded unstapled sheets and containing news, articles, advertisements, and correspondence.",
+        "type": "noun"
+        },
+        {
+        "word": "artículo",
+        "translation": ["article"],
+        "description": "A particular item or object, typically one of a specified type.",
+        "type": "noun"
+        },
+        {
+        "word": "escritor",
+        "translation": ["writer"],
+        "description": "A person who writes books, stories, or articles as a job or regular occupation.",
+        "type": "noun"
+        },
+        {
+        "word": "poeta",
+        "translation": ["poet"],
+        "description": "A person who writes poems.",
+        "type": "noun"
+        },
+        {
+        "word": "actor",
+        "translation": ["actor"],
+        "description": "A person whose profession is acting on the stage, in movies, or on television.",
+        "type": "noun"
+        },
+        {
+        "word": "actriz",
+        "translation": ["actress"],
+        "description": "A female actor.",
+        "type": "noun"
+        },
+        {
+        "word": "pintor",
+        "translation": ["painter"],
+        "description": "An artist who paints pictures.",
+        "type": "noun"
+        },
+        {
+        "word": "escultor",
+        "translation": ["sculptor"],
+        "description": "An artist who makes sculptures.",
+        "type": "noun"
+        },
+        {
+        "word": "médico",
+        "translation": ["doctor"],
+        "description": "A qualified practitioner of medicine; a physician.",
+        "type": "noun"
+        },
+        {
+        "word": "enfermera",
+        "translation": ["nurse"],
+        "description": "A person trained to care for the sick or infirm, especially in a hospital.",
+        "type": "noun"
+        },
+        {
+        "word": "ingeniero",
+        "translation": ["engineer"],
+        "description": "A person who designs, builds, or maintains engines, machines, or structures.",
+        "type": "noun"
+        },
+        {
+        "word": "arquitecto",
+        "translation": ["architect"],
+        "description": "A person who designs buildings and in many cases also supervises their construction.",
+        "type": "noun"
+        },
+        {
+        "word": "abogado",
+        "translation": ["lawyer"],
+        "description": "A person who practices or studies law; an attorney or a counselor.",
+        "type": "noun"
+        },
+        {
+        "word": "juez",
+        "translation": ["judge"],
+        "description": "A public officer appointed to decide cases in a law court.",
+        "type": "noun"
+        },
+        {
+        "word": "profesor",
+        "translation": ["professor"],
+        "description": "A teacher of the highest rank in a college or university.",
+        "type": "noun"
+        },
+        {
+        "word": "científico",
+        "translation": ["scientist"],
+        "description": "A person who is studying or has expert knowledge of one or more of the natural or physical sciences.",
+        "type": "noun"
+        },
+        {
+        "word": "investigador",
+        "translation": ["researcher"],
+        "description": "A person who carries out academic or scientific research.",
+        "type": "noun"
+        },
+        {
+        "word": "chef",
+        "translation": ["chef"],
+        "description": "A professional cook, typically the chief cook in a restaurant or hotel.",
+        "type": "noun"
+        },
+        {
+        "word": "cocinero",
+        "translation": ["cook"],
+        "description": "A person who prepares and cooks food, especially as a job or in a specified way.",
+        "type": "noun"
+        },
+        {
+        "word": "piloto",
+        "translation": ["pilot"],
+        "description": "A person who operates the flying controls of an aircraft.",
+        "type": "noun"
+        },
+        {
+        "word": "bombero",
+        "translation": ["firefighter"],
+        "description": "A person whose job is to extinguish fires.",
+        "type": "noun"
+        },
+        {
+        "word": "policía",
+        "translation": ["police officer"],
+        "description": "A person who is a member of a police force.",
+        "type": "noun"
+        },
+        {
+        "word": "soldado",
+        "translation": ["soldier"],
+        "description": "A person who serves in an army.",
+        "type": "noun"
+        },
+        {
+        "word": "carpintero",
+        "translation": ["carpenter"],
+        "description": "A person who makes and repairs wooden objects and structures.",
+        "type": "noun"
+        },
+        {
+        "word": "electricista",
+        "translation": ["electrician"],
+        "description": "A person who installs and maintains electrical equipment.",
+        "type": "noun"
+        },
+        {
+        "word": "fontanero",
+        "translation": ["plumber"],
+        "description": "A person who installs and repairs the pipes and fittings of water supply, sanitation, or heating systems.",
+        "type": "noun"
+        },
+        {
+        "word": "mecánico",
+        "translation": ["mechanic"],
+        "description": "A person who repairs and maintains machinery.",
+        "type": "noun"
+        },
+        {
+        "word": "panadero",
+        "translation": ["baker"],
+        "description": "A person who makes bread and cakes, especially commercially.",
+        "type": "noun"
+        },
+        {
+        "word": "pescador",
+        "translation": ["fisherman"],
+        "description": "A person who catches fish for a living or for sport.",
+        "type": "noun"
+        },
+        {
+        "word": "granjero",
+        "translation": ["farmer"],
+        "description": "A person who owns or manages a farm.",
+        "type": "noun"
+        },
+        {
+        "word": "cantante",
+        "translation": ["singer"],
+        "description": "A person who sings, especially professionally.",
+        "type": "noun"
+        },
+        {
+        "word": "músico",
+        "translation": ["musician"],
+        "description": "A person who plays a musical instrument, especially as a profession, or is musically talented.",
+        "type": "noun"
+        },
+        {
+        "word": "bailarín",
+        "translation": ["dancer"],
+        "description": "A person who dances or whose profession is dancing.",
+        "type": "noun"
+        },
+        {
+        "word": "escritor",
+        "translation": ["writer"],
+        "description": "A person who has written a particular text.",
+        "type": "noun"
+        },
+        {
+        "word": "pintura",
+        "translation": ["painting"],
+        "description": "The action or skill of using paint, either in a picture or as decoration.",
+        "type": "noun"
+        },
+        {
+        "word": "escultura",
+        "translation": ["sculpture"],
+        "description": "The art of making two- or three-dimensional representative or abstract forms, especially by carving stone or wood or by casting metal or plaster.",
+        "type": "noun"
+        },
+        {
+        "word": "poesía",
+        "translation": ["poetry"],
+        "description": "Literary work in which the expression of feelings and ideas is given intensity by the use of distinctive style and rhythm; poems collectively or as a genre of literature.",
+        "type": "noun"
+        },
+        {
+        "word": "novela",
+        "translation": ["novel"],
+        "description": "A fictitious prose narrative of book length, typically representing character and action with some degree of realism.",
+        "type": "noun"
+        }
+    ]
+}

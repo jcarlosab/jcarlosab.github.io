@@ -1,0 +1,600 @@
+:root {
+    /* Nintendo */
+    --nes-color: #D22D27;
+    --snes-color: #4B1C6C;
+    --n64-color: #00A651;
+    --gamecube-color: #3D3D96;
+    --gb-color: #8BAC0F;
+    --gbc-color: #7F5DAA;
+    --gba-color: #4A3C8C;
+
+    /* Sega */
+    --megadrive-color: #000000;
+    --saturn-color: #1A4AC5;
+    --dc-color: #FF6600;
+
+    /* Sony */
+    --ps1-color: #BEBEBE;
+    --ps2-color: #003791;
+    --psp-color: #000000;
+
+    /* Xbox */
+    --xbox-color: #9BCB3B;
+
+    /* Atari */
+    --atari-color: #FF6A13;
+
+    /* New platforms */
+    --nds-color: #7BA0B8;
+    --game-gear-color: #1E90D0;
+    --master-system-color: #C41E3A;
+    --neo-geo-cd-color: #C8102E;
+    --nintendo-3ds-color: #0ABAB5;
+
+    /* Generales */
+    --gameboy-color: #8BAC0F;
+    --nintendo-red: #e60012;
+
+    /* Fuente */
+    --mono: var(--font-departure-mono), monospace;
+
+    /* Theme Variables - Light (Default) */
+    --bg-body: #f1f1f1;
+    --bg-card: #f1f1f1;
+    --bg-card-hover: #d4a84b;
+    --bg-card-active: #3a3a3a;
+    --bg-tag: #e0e0e0;
+    --bg-tag-hover: #c0c0c0;
+    --bg-tag-active: #343434;
+    --bg-badge: #343434;
+    --bg-code: #0a0a0a;
+    --bg-input: #ffffff;
+
+    --text-main: #000000;
+    --text-muted: #555555;
+    --text-inverse: #ffffff;
+    --text-placeholder: #777777;
+
+    --border-color: #cccccc;
+}
+
+[data-theme='dark'] {
+    --bg-body: #121212;
+    --bg-card: #1e1e1e;
+    --bg-card-active: #505050;
+    --bg-tag: #2d2d2d;
+    --bg-tag-hover: #3d3d3d;
+    --bg-tag-active: #e0e0e0;
+    --bg-badge: #555555;
+    --bg-code: #5c3a4a;
+    --bg-input: #1e1e1e;
+
+    --text-main: #e0e0e0;
+    --text-muted: #aaaaaa;
+    --text-inverse: #121212;
+    --text-placeholder: #888888;
+
+    --border-color: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* App.css Content Merged */
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+    background: var(--bg-body);
+    color: var(--text-main);
+    margin: 0;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 2rem;
+}
+
+.logo {
+    font-family: var(--mono);
+    font-size: 2rem;
+    text-align: left;
+    padding: 1rem;
+}
+
+.theme-toggle {
+    background: none;
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+    color: var(--text-main);
+}
+
+.theme-toggle:hover {
+    background-color: var(--bg-tag-hover);
+}
+
+/* SEARCH + TAGS */
+.search-container {
+    display: flex;
+    place-content: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+.search-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-input);
+    color: var(--text-main);
+}
+
+.tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    place-content: center;
+    padding: 0 1rem;
+}
+
+.tag {
+    background-color: var(--bg-tag);
+    color: var(--text-main);
+    padding: 0.25rem 0.5rem;
+    transition: background-color 0.3s;
+    border-left: solid 0.5rem #7e7e7e;
+    cursor: pointer;
+}
+
+.tag-dreamcast {
+    border-left-color: var(--dc-color);
+}
+
+.tag-playstation {
+    border-left-color: var(--ps1-color);
+}
+
+.tag-playstation-2 {
+    border-left-color: var(--ps2-color);
+}
+
+.tag-snes {
+    border-left-color: var(--snes-color);
+}
+
+.tag-nintendo-64 {
+    border-left-color: var(--n64-color);
+}
+
+.tag-psp {
+    border-left-color: var(--psp-color);
+}
+
+.tag-saturn {
+    border-left-color: var(--saturn-color);
+}
+
+.tag-megadrive {
+    border-left-color: var(--megadrive-color);
+}
+
+.tag-gb {
+    border-left-color: var(--gb-color);
+}
+
+.tag-nes {
+    border-left-color: var(--nes-color);
+}
+
+.tag-xbox {
+    border-left-color: var(--xbox-color);
+}
+
+.tag-gamecube {
+    border-left-color: var(--gamecube-color);
+}
+
+.tag-gba {
+    border-left-color: var(--gba-color);
+}
+
+.tag-gbc {
+    border-left-color: var(--gbc-color);
+}
+
+.tag-gb {
+    border-left-color: var(--gb-color);
+}
+
+.tag-nintendo-ds {
+    border-left-color: var(--nds-color);
+}
+
+.tag-game-gear {
+    border-left-color: var(--game-gear-color);
+}
+
+.tag-master-system {
+    border-left-color: var(--master-system-color);
+}
+
+.tag-neo-geo-cd {
+    border-left-color: var(--neo-geo-cd-color);
+}
+
+.tag-nintendo-3ds {
+    border-left-color: var(--nintendo-3ds-color);
+}
+
+.tag:hover {
+    background-color: var(--bg-tag-hover);
+}
+
+.tag.active {
+    background-color: var(--bg-tag-active);
+    color: var(--text-inverse);
+}
+
+/* FIN SEARCH + TAGS */
+
+/* BLOQUES DE JUEGOS */
+.no-results,
+.loading {
+    font-family: var(--mono);
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--text-muted);
+    margin-top: 2rem;
+}
+
+.game-block {
+    border-top: solid 1px var(--border-color);
+}
+
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    align-items: baseline;
+    gap: .75rem;
+}
+
+.game-title {
+    font-family: var(--mono);
+    font-size: 1.5rem;
+    margin: .5rem 0;
+}
+
+.badge {
+    background-color: var(--bg-badge);
+    color: #ffffff;
+    padding: .25rem .5rem;
+    font-size: .75rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.badge-dreamcast {
+    background-color: color-mix(in srgb, var(--dc-color), black 30%);
+}
+
+.badge-playstation {
+    background-color: color-mix(in srgb, var(--ps1-color), black 50%);
+}
+
+.badge-playstation-2 {
+    background-color: color-mix(in srgb, var(--ps2-color), black 30%);
+}
+
+.badge-psp {
+    background-color: color-mix(in srgb, var(--psp-color), black 30%);
+}
+
+.badge-snes {
+    background-color: color-mix(in srgb, var(--snes-color), black 30%);
+}
+
+.badge-nintendo-64 {
+    background-color: color-mix(in srgb, var(--n64-color), black 30%);
+}
+
+.badge-saturn {
+    background-color: color-mix(in srgb, var(--saturn-color), black 30%);
+}
+
+.badge-megadrive {
+    background-color: color-mix(in srgb, var(--megadrive-color), black 30%);
+}
+
+.badge-gb {
+    background-color: color-mix(in srgb, var(--gb-color), black 40%);
+}
+
+.badge-nes {
+    background-color: color-mix(in srgb, var(--nes-color), black 30%);
+}
+
+.badge-xbox {
+    background-color: color-mix(in srgb, var(--xbox-color), black 50%);
+}
+
+.badge-gamecube {
+    background-color: color-mix(in srgb, var(--gamecube-color), black 30%);
+}
+
+.badge-gba {
+    background-color: color-mix(in srgb, var(--gba-color), black 30%);
+}
+
+.badge-gbc {
+    background-color: color-mix(in srgb, var(--gbc-color), black 30%);
+}
+
+.badge-gb {
+    background-color: color-mix(in srgb, var(--gb-color), black 30%);
+}
+
+.badge-nintendo-ds {
+    background-color: color-mix(in srgb, var(--nds-color), black 30%);
+}
+
+.badge-game-gear {
+    background-color: color-mix(in srgb, var(--game-gear-color), black 30%);
+}
+
+.badge-master-system {
+    background-color: color-mix(in srgb, var(--master-system-color), black 30%);
+}
+
+.badge-neo-geo-cd {
+    background-color: color-mix(in srgb, var(--neo-geo-cd-color), black 30%);
+}
+
+.badge-nintendo-3ds {
+    background-color: color-mix(in srgb, var(--nintendo-3ds-color), black 30%);
+}
+
+.list-cards {
+    line-height: 1.5rem;
+}
+
+.badge-type {
+    display: inline-block;
+    font-size: 0.55rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 1px 5px;
+    border-radius: 3px;
+    margin-right: 5px;
+    vertical-align: middle;
+    line-height: 1.2;
+}
+.badge-code { background: #3498db; color: #fff; }
+.badge-password { background: #9b59b6; color: #fff; }
+.badge-unlock { background: #2ecc71; color: #fff; }
+.badge-glitch { background: #e67e22; color: #fff; }
+.badge-action { background: #95a5a6; color: #fff; }
+
+.card-title {
+    cursor: pointer;
+    padding: .25rem;
+    color: var(--text-main);
+}
+
+.card-title:hover {
+    color: var(--bg-card-hover);
+    text-decoration: underline;
+}
+
+.card-title.active {
+    background-color: var(--bg-card-active);
+    color: var(--text-inverse);
+    transition: background-color 0.5s ease, color 0.2s ease;
+}
+
+.card-title::before {
+    font-family: var(--mono);
+    font-size: 1.25rem;
+    content: "▷";
+    display: inline-block;
+    transition: transform 0.3s;
+    width: 1.5rem;
+    text-align: center;
+}
+
+.card-title.active::before {
+    transform: rotate(90deg);
+}
+
+.card-content {
+    padding: 0.5rem 1rem;
+}
+
+.card-description {
+    margin: 0.5rem 0;
+    color: var(--text-muted);
+}
+
+.card-code {
+    background-color: var(--bg-body);
+    padding: 0.75rem;
+    font-family: var(--mono);
+    word-break: break-all;
+    color: var(--text-main);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    position: relative;
+    background-image: repeating-linear-gradient(
+        0deg,
+        transparent 0px,
+        transparent 2px,
+        rgba(128, 128, 128, 0.06) 2px,
+        rgba(128, 128, 128, 0.06) 3px
+    );
+}
+
+/* FIN BLOQUES DE JUEGOS */
+
+.highlight {
+    background-color: #ffd700;
+    color: #000;
+    font-weight: bold;
+    border-radius: 2px;
+    padding: 0 2px;
+}
+
+.loading-more {
+    text-align: center;
+    color: var(--text-muted);
+    font-family: var(--mono);
+    font-size: 0.9rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid var(--border-color);
+    border-top-color: var(--nintendo-red);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* KONAMI CODE EASTER EGG */
+.logo.konami-mode {
+    animation: konami-pulse 1s ease-in-out infinite, rainbow-text 3s linear infinite;
+    text-shadow: 0 0 20px #ff00ff, 0 0 40px #00ffff;
+}
+
+.konami-lives {
+    display: inline-block;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    color: #ffd700;
+    font-family: var(--mono);
+    animation: pulse-lives 0.8s ease-in-out infinite;
+    text-shadow: 0 0 10px #ffd700;
+}
+
+@keyframes konami-pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes pulse-lives {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+}
+
+@keyframes rainbow-text {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+body.konami-activated {
+    animation: konami-flash 0.5s ease-in-out 4;
+}
+
+@keyframes konami-flash {
+
+    0%,
+    100% {
+        background-color: var(--bg);
+    }
+
+    50% {
+        background-color: #4a148c;
+    }
+}
+
+.app:has(.logo.konami-mode) .badge {
+    box-shadow: 0 0 10px rgba(249, 68, 86, 0.6), 0 0 40px rgba(255, 0, 0, 0.3);
+    border: 1px solid rgba(255, 0, 21, 0.5);
+    transition: all 0.3s ease;
+}
+
+/* SCROLL TO TOP */
+.scroll-to-top {
+    font-family: var(--mono);
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: var(--nes-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s, transform 0.3s, background-color 0.3s;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll-to-top:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    background-color: color-mix(in srgb, var(--nes-color), black 10%);
+}

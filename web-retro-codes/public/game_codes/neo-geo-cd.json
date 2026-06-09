@@ -1,0 +1,84 @@
+{
+    "Metal Slug": [
+        {
+            "name": "30 vidas",
+            "description": "En la pantalla de título:",
+            "code": "↑, ↑, ↓, ↓, ←, →, ←, →, A, B, C, D",
+            "type": "code"
+        },
+        {
+            "name": "Modo Caridad (munición infinita)",
+            "description": "En la pantalla de título:",
+            "code": "C, B, A, D, C, B, A, D",
+            "type": "code"
+        },
+        {
+            "name": "Selección de nivel",
+            "description": "En la pantalla de título:",
+            "code": "↑, ↓, ↑, ↓, A, B, C, D",
+            "type": "code"
+        }
+    ],
+    "The King of Fighters '97": [
+        {
+            "name": "Jugar como Orochi",
+            "description": "En la pantalla de selección, resalta a Yashiro, Shermie o Chris y pulsa Start.",
+            "code": "Start sobre Yashiro/Shermie/Chris",
+            "type": "code"
+        },
+        {
+            "name": "Equipo de Orochi completo",
+            "description": "Selecciona el equipo Orochi manteniendo Start.",
+            "code": "Start en la selección de equipo",
+            "type": "code"
+        },
+        {
+            "name": "Modo Final Boss",
+            "description": "Completa el juego con el equipo Orochi para desbloquear a Orochi definitivo.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Samurai Shodown IV": [
+        {
+            "name": "Jugar como Zankuro",
+            "description": "En la pantalla de selección, resalta a Haohmaru y pulsa:",
+            "code": "↑, ↑, ↓, ↓, ←, →, ←, →, A, B, C",
+            "type": "code"
+        },
+        {
+            "name": "Jugar como Kuroko",
+            "description": "En la pantalla de selección, resalta a Nakoruru y pulsa:",
+            "code": "↓, ↓, ↑, ↑, →, ←, →, ←, B, C, D",
+            "type": "code"
+        }
+    ],
+    "Fatal Fury Special": [
+        {
+            "name": "Jugar como Ryo Sakazaki",
+            "description": "En la pantalla de selección, resalta a Robert y pulsa Start.",
+            "code": "Start sobre Robert",
+            "type": "code"
+        },
+        {
+            "name": "Jugar como Tung Fu Rue",
+            "description": "En la pantalla de selección, resalta a Cheng y pulsa Start.",
+            "code": "Start sobre Cheng",
+            "type": "code"
+        }
+    ],
+    "Art of Fighting 3": [
+        {
+            "name": "Jugar como Jin",
+            "description": "Completa el modo arcade con todos los personajes.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Jugar como Sinclair",
+            "description": "Completa el modo arcade sin usar continues.",
+            "code": "",
+            "type": "unlock"
+        }
+    ]
+}

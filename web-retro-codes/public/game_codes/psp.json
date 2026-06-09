@@ -1,0 +1,451 @@
+{
+    "God of War: Chains of Olympus": [
+        {
+            "name": "Orbes Rojos Infinitos",
+            "description": "Mantén L + R y pulsa Triángulo, Cuadrado, Círculo, Triángulo. (Requiere CWCheat o similar, pero se incluye como referencia común).",
+            "code": "L+R + △, □, ○, △",
+            "type": "code"
+        },
+        {
+            "name": "Modo Dios",
+            "description": "Completa el juego en cualquier dificultad para desbloquear el modo de dificultad más difícil.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Traje Mime of War",
+            "description": "Completa el juego en dificultad Dios. Este traje proporciona 10x Orbes Rojos y hace invisibles las armas.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Grand Theft Auto: Liberty City Stories": [
+        {
+            "name": "Set de Armas 1",
+            "description": "Durante el juego introduce: Arriba, Cuadrado, Cuadrado, Abajo, Izquierda, Cuadrado, Cuadrado, Derecha.",
+            "code": "↑, □, □, ↓, ←, □, □, →",
+            "type": "code"
+        },
+        {
+            "name": "$250,000",
+            "description": "Durante el juego introduce: L, R, Triángulo, L, R, Círculo, L, R.",
+            "code": "L, R, △, L, R, ○, L, R",
+            "type": "code"
+        },
+        {
+            "name": "Salud Completa",
+            "description": "Durante el juego introduce: L, R, X, L, R, Cuadrado, L, R.",
+            "code": "L, R, X, L, R, □, L, R",
+            "type": "code"
+        },
+        {
+            "name": "Tanque Rhino",
+            "description": "Durante el juego introduce: L, L, Izquierda, L, L, Derecha, Triángulo, Círculo.",
+            "code": "L, L, ←, L, L, →, △, ○",
+            "type": "code"
+        }
+    ],
+    "Metal Gear Solid: Peace Walker": [
+        {
+            "name": "Reclutar soldados sin matar",
+            "description": "Si disparas accidentalmente a un soldado que querías reclutar, cambia a la Vara Aturdidora (Stun Rod) cuando aparezca la calavera de casi muerte y electrocútalo. Esto revertirá su estado a aturdido.",
+            "code": "",
+            "type": "action"
+        },
+        {
+            "name": "Desbloquear Batalla Real Final (Zeke)",
+            "description": "Completa todas las misiones 'Búsqueda de Zadornov' (1-6). Mejora la Base Madre a 2 plantas (Intel Nivel 40) y completa 13 Extra Ops.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Crisis Core: Final Fantasy VII": [
+        {
+            "name": "New Game++",
+            "description": "Termina el juego con un archivo de New Game+ y guarda despues de los creditos. Esto te permite jugar de nuevo con objetos, equipo y Materia de tu partida anterior.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Genji Helm",
+            "description": "Compralo en la tienda Network Shop Shade (mision 9-5-4) por un millon de Gil. Otorga PM y PA gratis y Libra permanente.",
+            "code": "",
+            "type": "action"
+        },
+        {
+            "name": "Mision de Minerva (Super Boss)",
+            "description": "Completa todas las misiones disponibles para desbloquear la mision 9-6-6 donde enfrentas a Minerva, el jefe mas poderoso.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Patapon": [
+        {
+            "name": "Canciones/Comandos Básicos",
+            "description": "Ataque: ○, ○, □, ○ Caminar: □, □, □, ○ Proteger: △, △, □, ○.",
+            "code": "Ataque: ○○□○ | Caminar: □□□○",
+            "type": "code"
+        },
+        {
+            "name": "Minijuego de Cocina",
+            "description": "Consigue el gorro Gashapon en la misión 17.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "LocoRoco": [
+        {
+            "name": "10,000 monedas",
+            "description": "Selecciona un nivel en el Mapa del Mundo, mantén L + R para mostrar el prompt de contraseña e introduce el código.",
+            "code": "STARSLOCOROCO",
+            "type": "code"
+        },
+        {
+            "name": "Todos los Muimui",
+            "description": "Selecciona un nivel, mantén L + R e introduce el código.",
+            "code": "ALLCOLORSLOCOROCO",
+            "type": "code"
+        }
+    ],
+    "Tekken Dark Resurrection": [
+        {
+            "name": "Jugar como Panda",
+            "description": "Selecciona a Kuma y pulsa Círculo en lugar de X.",
+            "code": "Seleccionar Kuma con ○",
+            "type": "code"
+        },
+        {
+            "name": "Dojo Celestial (Heaven Dojo)",
+            "description": "Completa el Void Dojo, derrota el Torneo de Ranking y vence a Jinpachi.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Jugar como Eddy",
+            "description": "Compra el traje extra de Christie (400,000G - 500,000G).",
+            "code": "",
+            "type": "action"
+        }
+    ],
+    "Ridge Racer": [
+        {
+            "name": "Coche Rally-X",
+            "description": "Consigue 50,000 puntos o más en el minijuego Rally-X y completa la carrera PRO-18.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Nitro Infinito",
+            "description": "Mantén Select cuando elijas 'OK' en la pantalla de confirmación de coche y pista (solo carrera simple y contrarreloj).",
+            "code": "Mantén Select al confirmar",
+            "type": "code"
+        },
+        {
+            "name": "Turbo en la salida",
+            "description": "Durante la cuenta atrás, acelera y mantén las RPM justo antes de la zona roja.",
+            "code": "",
+            "type": "action"
+        }
+    ],
+    "Wipeout Pure": [
+        {
+            "name": "Desbloquear Todo",
+            "description": "En el Menú Principal, introduce el código.",
+            "code": "←, →, ←, L, R, L, →, ←, →, R, L, R",
+            "type": "code"
+        },
+        {
+            "name": "Pistas Clásicas",
+            "description": "Gana medallas de oro para desbloquear pistas clásicas (Mandarshee: 60 oros, Manor Top: 40 oros, etc.).",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Turbo en la salida",
+            "description": "Pulsa el acelerador precisamente cuando la luz se ponga verde ('GO').",
+            "code": "Acelerar en 'GO'",
+            "type": "code"
+        }
+    ],
+    "Lumines": [
+        {
+            "name": "Desbloquear Skins",
+            "description": "45 Degrees: Completa todos los puzles normales.\nAuto Mobile Industry: Completa el nivel 2 vs CPU.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Personajes Desbloqueables",
+            "description": "Consigue un número determinado de 'deletes' en los modos Time Attack (50 en 60s, 150 en 180s, etc.).",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Daxter": [
+        {
+            "name": "Máscaras",
+            "description": "Encuentra las máscaras ocultas en los sueños para desbloquear minijuegos.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Monster Hunter Freedom Unite": [
+        {
+            "name": "Descargas Extra",
+            "description": "En el menú principal, ve a Descargas para obtener misiones y objetos extra gratis.",
+            "code": "",
+            "type": "action"
+        }
+    ],
+    "Kingdom Hearts: Birth by Sleep": [
+        {
+            "category": "Desbloquear personajes / episodios",
+            "list": [
+                {
+                    "name": "Episodio Final (Secret Episode)",
+                    "description": "Completa los tres escenarios (Terra, Ventus, Aqua) para desbloquear el Episodio Final.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Archivo Secreto (Secret Movie)",
+                    "description": "Completa el juego al 100% en dificultad Crítica (o Normal con todos los informes de Xehanort).",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Monstro (Mundo Secreto)",
+                    "description": "Completa los mundos de Terra para que aparezca Monstro en la nave.",
+                    "code": "",
+                    "type": "unlock"
+                }
+            ]
+        },
+        {
+            "name": "Comando Fusión (Melding)",
+            "description": "Combina dos comandos del mismo nivel para crear un comando más fuerte. El resultado depende del comando y nivel usado.",
+            "code": "",
+            "type": "action"
+        }
+    ],
+    "Grand Theft Auto: Vice City Stories": [
+        {
+            "name": "Tanque Rhino",
+            "description": "Durante el juego, pulsa: Círculo, Círculo, Abajo, Abajo, Círculo, Círculo, Cuadrado, Derecha.",
+            "code": "○, ○, ↓, ↓, ○, ○, □, →",
+            "type": "code"
+        },
+        {
+            "name": "Munición Infinita",
+            "description": "Durante el juego, pulsa: Derecha, Cuadrado, Cuadrado, Abajo, Arriba, Círculo, R, L.",
+            "code": "→, □, □, ↓, ↑, ○, R, L",
+            "type": "code"
+        },
+        {
+            "name": "Salud Completa + Blindaje",
+            "description": "Durante el juego, pulsa: Cuadrado, L, Círculo, R, Triángulo, L, Cuadrado, R.",
+            "code": "□, L, ○, R, △, L, □, R",
+            "type": "code"
+        },
+        {
+            "name": "Coche Invisible",
+            "description": "Durante el juego.",
+            "code": "L, ↓, R, ↑, L, ↓, R, ↑",
+            "type": "code"
+        }
+    ],
+    "Syphon Filter: Dark Mirror": [
+        {
+            "name": "Desbloquear todo (Armas, niveles, extras)",
+            "description": "En el menú principal.",
+            "code": "↑, ↑, ↓, ↓, ←, →, ←, →, L, R, L, R",
+            "type": "code"
+        },
+        {
+            "name": "Munición Infinita",
+            "description": "En el menú principal, pulsa: L, L, R, R, Abajo, Arriba, Abajo, Arriba, Cuadrado, Círculo.",
+            "code": "L, L, R, R, ↓, ↑, ↓, ↑, □, ○",
+            "type": "code"
+        },
+        {
+            "name": "Noche de Niebla (Nivel Extra)",
+            "description": "Completa el juego en dificultad Agente para desbloquear el nivel extra 'Foggy Night'.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Dissidia Final Fantasy": [
+        {
+            "name": "Desbloquear todos los personajes",
+            "description": "Completa el modo Historia de cada personaje para desbloquear a su rival y al siguiente personaje.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Desbloquear a Chaos y Cosmos",
+            "description": "Completa el modo Historia con todos los personajes para desbloquear a Chaos y Cosmos como personajes jugables.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Mascota de Shinryu",
+            "description": "Completa las 10 misiones del modo Shade Impulse para desbloquear la mascota de Shinryu.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Persona 3 Portable": [
+        {
+            "name": "Protagonista femenina (FeMC)",
+            "description": "Al comenzar un nuevo juego, selecciona el protagonista femenino para experimentar eventos y Social Links exclusivos.",
+            "code": "",
+            "type": "action"
+        },
+        {
+            "name": "Fusion de Personas especiales",
+            "description": "Usa la fusion de 3 o mas personas en la habitacion oscura para crear Personas especiales como Thanatos.",
+            "code": "",
+            "type": "action"
+        },
+        {
+            "name": "El mas alla (New Game+)",
+            "description": "Completa el juego una vez para comenzar un New Game+ con niveles, personas y dinero heredados.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Desbloquear la dificultad Mas Dificil (Maniax)",
+            "description": "Completa el juego una vez para desbloquear la dificultad Maniax (enemigos x2 de nivel).",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Patapon 2": [
+        {
+            "name": "Comandos de ritmo secretos",
+            "description": "Pon Pon Pata Pon: Carga de Heroe. Pata Pon Pata Pon: Lluvia de flechas (con Heroe).",
+            "code": "PonPonPataPon / PataPonPataPon",
+            "type": "code"
+        },
+        {
+            "name": "Desbloquear al Patapon Heroe",
+            "description": "Completa el nivel 5 de la mision de entrenamiento para desbloquear al Patapon Heroe.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Mision de jefe Gigante",
+            "description": "En la mision 'Great Giant', derrotalo con una combinacion perfecta de ritmo para recibir objetos raros.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Star Wars: Battlefront Renegade Squadron": [
+        {
+            "name": "Desbloquear todos los mapas",
+            "description": "Completa la campana para desbloquear todos los mapas en modo escaramuza.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Codigo de creditos",
+            "description": "En el menu principal, pulsa.",
+            "code": "↑, ↑, ↓, ↓, ←, →, ←, →, L, R, L, R",
+            "type": "code"
+        }
+    ],
+    "Ys Seven": [
+        {
+            "name": "Desbloquear Time Attack",
+            "description": "Completa el juego una vez para desbloquear el modo Time Attack.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Traje alternativo de Adol",
+            "description": "Completa el juego en dificultad Nightmare para desbloquear un traje alternativo.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Jefe oculto (Super Boss)",
+            "description": "Completa todas las misiones secundarias para enfrentarte al Super Boss oculto en la zona secreta.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Burnout Legends": [
+        {
+            "name": "Desbloquear coches clasicos",
+            "description": "Completa todos los eventos de la copa World Tour para desbloquear los coches clasicos de Burnout 1 y 2.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Modo de Carrera de la Muerte",
+            "description": "Completa el 50% del World Tour para desbloquear el evento de Carrera de la Muerte.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "GTA: Chinatown Wars": [
+        {
+            "name": "Dinero extra",
+            "description": "Lleva el coche de la mision a la tienda de garaje especial para venderlo por mucho dinero extra.",
+            "code": "",
+            "type": "action"
+        },
+        {
+            "name": "Desbloquear todos los barrios",
+            "description": "Completa todas las misiones de la historia principal para desbloquear todos los barrios del mapa.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Tanque Rhino",
+            "description": "Durante el juego.",
+            "code": "↑, △, ↑, △, ↓, ×, ↓, ×, ←, □, →, ○",
+            "type": "code"
+        }
+    ],
+    "Tekken 6": [
+        {
+            "name": "Desbloquear todos los personajes",
+            "description": "Completa el modo Arcade con todos los personajes iniciales para desbloquear al resto.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Modo Ghost Battle infinita",
+            "description": "Juega en el modo Ghost Battle para luchar contra los fantasmas de otros jugadores y subir de rango.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Articulos de personalizacion",
+            "description": "Gana dinero en los combates para comprar articulos de personalizacion en la tienda del juego.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Wipeout Pulse": [
+        {
+            "name": "Desbloquear todos los circuitos",
+            "description": "Completa todas las ligas en la campana para desbloquear todos los circuitos.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Nave secreta (Puma Class)",
+            "description": "Gana todas las medallas de oro en todas las ligas para desbloquear la nave Puma Class.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Turbo en la salida",
+            "description": "Pulsa el acelerador precisamente cuando la luz se ponga verde ('GO').",
+            "code": "Acelerar en 'GO'",
+            "type": "code"
+        }
+    ]
+}

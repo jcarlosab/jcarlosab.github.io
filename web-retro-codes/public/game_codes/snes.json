@@ -1,0 +1,291 @@
+{
+    "Super Mario World": [
+        {
+            "name": "Acceder a Star Road",
+            "description": "Busca salidas secretas en varios niveles. Donut Plains 1 lleva a Star Road 1.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Donkey Kong Country": [
+        {
+            "name": "50 vidas",
+            "description": "En el menú de File Select, selecciona Erase Game e introduce.",
+            "code": "B, A, R, R, A, L",
+            "type": "code"
+        }
+    ],
+    "Street Fighter II Turbo": [
+        {
+            "name": "Mismo personaje en VS",
+            "description": "En el logo de Capcom, introduce este código para que ambos jugadores puedan elegir el mismo personaje.",
+            "code": "↓, R, ↑, L, Y, B",
+            "type": "code"
+        }
+    ],
+    "The Legend of Zelda: A Link to the Past": [
+        {
+            "name": "Chris Houlihan Room",
+            "description": "Habitación secreta oculta en el bosque perdido.",
+            "code": "",
+            "type": "action"
+        }
+    ],
+    "Super Metroid": [
+        {
+            "name": "Salvar a los animales",
+            "description": "Antes de escapar de Zebes, regresa a la habitación con los animales encerrados y dispara la pared izquierda.",
+            "code": "",
+            "type": "action"
+        }
+    ],
+    "F-Zero": [
+        {
+            "name": "Master Class",
+            "description": "Gana el Queen League en Expert para desbloquear Master Class.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Mega Man X": [
+        {
+            "name": "Hadoken secreto",
+            "description": "Consigue todos los items. Luego ve a Armored Armadillo completado y salta 5 veces en el borde del acantilado.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Kirby's Dream Land 3": [
+        {
+            "name": "Modo Boss Rush",
+            "description": "Completa el juego al 100% para desbloquear el modo Boss Rush.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Chrono Trigger": [
+        {
+            "name": "Múltiples finales",
+            "description": "El juego tiene 13 finales diferentes dependiendo de cuándo derrotes a Lavos.",
+            "code": "",
+            "type": "action"
+        }
+    ],
+    "Super Mario RPG": [
+        {
+            "name": "Casino secreto",
+            "description": "En Seaside, entra y sale del Casino por la puerta trasera repetidamente.",
+            "code": "",
+            "type": "action"
+        }
+    ],
+    "Star Fox": [
+        {
+            "name": "Nivel Secreto: Out of This Dimension",
+            "description": "En el nivel 3 (Asteroid Belt), dispara al asteroide gigante hasta que se rompa, verás un pájaro espacial. Vuela hacia él.",
+            "code": "",
+            "type": "action"
+        }
+    ],
+    "NBA Jam": [
+        {
+            "name": "Personajes Ocultos",
+            "description": "Introduce iniciales y fecha de nacimiento. Ej: Clinton (ARK, 06 Oct).",
+            "code": "",
+            "type": "action"
+        }
+    ],
+    "Super Mario World 2: Yoshi's Island": [
+        {
+            "category": "Códigos de nivel (Passwords)",
+            "list": [
+                {
+                    "name": "Nivel 1-1 (World 1 inicio)",
+                    "description": "Introduce este password en la pantalla de selección.",
+                    "code": "BUMBLE",
+                    "type": "code"
+                },
+                {
+                    "name": "Nivel 2-1 (World 2 inicio)",
+                    "description": "Introduce este password.",
+                    "code": "LITTLE",
+                    "type": "code"
+                },
+                {
+                    "name": "Nivel 6-1 (World 6 inicio)",
+                    "description": "Introduce este password para ir al mundo 6.",
+                    "code": "MARIO",
+                    "type": "code"
+                }
+            ]
+        },
+        {
+            "name": "Bonus de monedas rojas",
+            "description": "Recoge las 20 monedas rojas en cada nivel para conseguir una flor extra al final.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Nivel secreto de Bola de Nieve",
+            "description": "En el nivel 4-2 (Touch Fuzzy, Get Dizzy), llega al final con la transformación de Bola de Nieve activa para abrir un camino secreto.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Donkey Kong Country 2: Diddy's Kong Quest": [
+        {
+            "name": "Mundo Perdido (Lost World)",
+            "description": "Recoge todas las medallas DK (una por nivel) para acceder al Mundo Perdido secreto.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Vidas extra con el Gallinero",
+            "description": "En el nivel 'Kannon's Klaim', golpea la gallina varias veces para que suelte huevos que dan vidas.",
+            "code": "",
+            "type": "action"
+        },
+        {
+            "name": "Pasaje secreto (Nivel 2-1)",
+            "description": "En el nivel 2-1 'Krem Quay', baja por la vid oculta detrás de la puerta del inicio para encontrar un área secreta.",
+            "code": "",
+            "type": "action"
+        }
+    ],
+    "EarthBound": [
+        {
+            "name": "Código de Sound Test",
+            "description": "En la pantalla de título.",
+            "code": "↓, B, ↓, B, ↑, A, ↑, A, ←, A, →, B",
+            "type": "code"
+        },
+        {
+            "name": "Videojuego 'Devil's Machine'",
+            "description": "En Fourside, ve al cine Arcade y juega en la máquina Devil's Machine para ganar objetos raros.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Poder del Gato de la Suerte",
+            "description": "Consigue el objeto 'Lucky Cat' en la feria de Fourside. Equípalos para aumentar la probabilidad de encontrar objetos raros.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Super Castlevania IV": [
+        {
+            "name": "99 Vidas",
+            "description": "En la pantalla de título.",
+            "code": "↑, ↑, ↓, ↓, ←, →, ←, →, A, B, A, B",
+            "type": "code"
+        },
+        {
+            "name": "Modo Invencible",
+            "description": "En la pantalla de título.",
+            "code": "↓, A, ↑, B, ←, Y, →, X, Start",
+            "type": "code"
+        },
+        {
+            "name": "Selección de nivel",
+            "description": "Completa el juego una vez para desbloquear la selección de nivel desde el menú principal.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Contra III: The Alien Wars": [
+        {
+            "name": "30 Vidas",
+            "description": "En la pantalla de título.",
+            "code": "↑, ↑, ↓, ↓, ←, →, ←, →, A, B, A, B, Start",
+            "type": "code"
+        },
+        {
+            "name": "Selección de nivel",
+            "description": "En la pantalla de título, pulsa: Derecha, Izquierda, Abajo, Arriba, A, B., Start.",
+            "code": "→, ←, ↓, ↑, A, B, Start",
+            "type": "code"
+        }
+    ],
+    "Final Fantasy VI (III)": [
+        {
+            "name": "Desbloquear el jefe oculto (Kaiser Dragon)",
+            "description": "Completa el Dragon's Den en la version Advance para enfrentarte al Kaiser Dragon. En la version de SNES, derrota a todos los dragones para conseguir los mejores objetos.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "El Coliseo (Apuesta de objetos)",
+            "description": "En el Coliseo de Jidoor, apuesta objetos raros para recibir objetos exclusivos y armas especiales.",
+            "code": "",
+            "type": "action"
+        },
+        {
+            "name": "Invocacion Raiden",
+            "description": "Encuentra a los 8 dragones en el Mundo de los Ruinos para desbloquear la invocacion Raiden (Palidor en otras versiones).",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Secret of Mana": [
+        {
+            "name": "Desbloquear la Espada de Mana (mas fuerte)",
+            "description": "Consigue todas las 8 herreras semillas de Mana para forjar la Espada de Mana, el arma mas poderosa.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Mana Fortress (Nivel Final Secreto)",
+            "description": "Completa el juego una vez para desbloquear la Fortaleza de Mana y explorar todas sus areas.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Orbes de Dragon",
+            "description": "Consigue los orbes de dragon en las cuevas para invocar a los dragones de Mana en combate.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Super Punch-Out!!": [
+        {
+            "name": "Desbloquar modo Head to Head",
+            "description": "En la pantalla de titulo, pulsa.",
+            "code": "↑, ↑, ↓, ↓, ←, →, ←, →, L, R, L, R, Start",
+            "type": "code"
+        },
+        {
+            "name": "Pelear contra el Super Boss",
+            "description": "Completa el circuito de campeones sin perder un asalto para enfrentarte al luchador secreto.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Tetris Attack": [
+        {
+            "name": "Modo de juego Time Attack",
+            "description": "Completa el modo facil para desbloquear Time Attack.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Desbloquear todos los puzzles",
+            "description": "Completa todos los puzzles del modo Puzzle para desbloquear el puzzle final.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Mega Man X2": [
+        {
+            "name": "Hadoken Secreto (Shoryuken)",
+            "description": "Recoge todas las partes de Zero (cabeza, cuerpo, brazos, piernas) en las etapas de los X-Hunters. Luego ve a la etapa de Burning Nouveau y busca la capsula oculta de Dr. Light.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Golpe de Giga Crush (Armadura completa)",
+            "description": "Consigue todas las partes de la armadura (cascos, botas, cuerpo, buster) para activar el Giga Crush.",
+            "code": "",
+            "type": "unlock"
+        }
+    ]
+}

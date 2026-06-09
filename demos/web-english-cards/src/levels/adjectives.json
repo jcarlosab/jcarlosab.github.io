@@ -1,0 +1,103 @@
+{
+    "title": "Adjetivos",
+    "icon": "🟩",
+    "words": [
+        {
+            "word": "bonito",
+            "translation": ["pretty", "beautiful"],
+            "description": "Pleasing to the senses or mind aesthetically.",
+            "type": "adjective"
+        },
+        {
+            "word": "feo",
+            "translation": ["ugly"],
+            "description": "Unpleasant or repulsive in appearance.",
+            "type": "adjective"
+        },
+        {
+            "word": "bueno",
+            "translation": ["good"],
+            "description": "To be desired or approved of; having the required qualities; of a high standard.",
+            "type": "adjective"
+        },
+        {
+            "word": "malo",
+            "translation": ["bad"],
+            "description": "Of poor quality; inferior or defective.",
+            "type": "adjective"
+        },
+        {
+            "word": "nuevo",
+            "translation": ["new"],
+            "description": "Not existing before; made, introduced, or discovered recently or now for the first time.",
+            "type": "adjective"
+        },
+        {
+            "word": "viejo",
+            "translation": ["old"],
+            "description": "Having lived for a long time; no longer young.",
+            "type": "adjective"
+        },
+        {
+            "word": "simpático",
+            "translation": ["nice", "friendly"],
+            "description": "Having or showing pleasant, good-natured personal qualities.",
+            "type": "adjective"
+        },
+        {
+            "word": "antiguo",
+            "translation": ["ancient"],
+            "description": "Belonging to the very distant past and no longer in existence.",
+            "type": "adjective"
+        },
+        {
+            "word": "claro",
+            "translation": ["clear"],
+            "description": "Easy to perceive, understand, or interpret.",
+            "type": "adjective"
+        },
+        {
+            "word": "oscuro",
+            "translation": ["dark"],
+            "description": "With little or no light.",
+            "type": "adjective"
+        },
+        {
+            "word": "alto",
+            "translation": ["tall", "high"],
+            "description": "Of great vertical extent.",
+            "type": "adjective"
+        },
+        {
+            "word": "bajo",
+            "translation": ["short", "low"],
+            "description": "Of less than normal height.",
+            "type": "adjective"
+        },
+        {
+            "word": "rápido",
+            "translation": ["fast", "quick"],
+            "description": "Moving or able to move at high speed.",
+            "type": "adjective"
+        },
+        {
+            "word": "lento",
+            "translation": ["slow"],
+            "description": "Moving or operating at a slow speed.",
+            "type": "adjective"
+        },
+        {
+            "word": "fuerte",
+            "translation": ["strong"],
+            "description": "Having the power to move heavy weights or perform other physically demanding tasks.",
+            "type": "adjective"
+        },
+        {
+            "word": "débil",
+            "translation": ["weak"],
+            "description": "Lacking the power to perform physically demanding tasks; lacking physical strength.",
+            "type": "adjective"
+        }
+    ]
+}
+  

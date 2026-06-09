@@ -1,0 +1,433 @@
+{
+    "Shenmue": [
+        {
+            "category": "Extras ocultos / modos desbloqueables",
+            "list": [
+                {
+                    "name": "Modo 70 Person Battle",
+                    "description": "Juega el juego completo y guarda partida. Luego, cuando insertes el tercer disco —aparece la opción de batalla con 70 personas.",
+                    "code": "",
+                    "type": "unlock"
+                }
+            ]
+        }
+    ],
+    "Sonic Adventure": [
+        {
+            "name": "Jugar como Super Sonic",
+            "description": "Completa el juego con los seis personajes iniciales. Super Sonic estará disponible en el modo Aventura.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Pausa limpia",
+            "description": "Pausa el juego y mantén X + Y para eliminar el menú de pausa y ver la pantalla limpia.",
+            "code": "Pausa + X + Y",
+            "type": "code"
+        }
+    ],
+    "Crazy Taxi": [
+        {
+            "name": "Bicicleta secreta (Rickshaw)",
+            "description": "En la selección de personaje, mantén L + R, luego pulsa L, R, L, R, L, R. Suelta y vuelve a mantener L + R mientras seleccionas personaje.",
+            "code": "L+R, L, R, L, R, L, R...",
+            "type": "code"
+        },
+        {
+            "name": "Modo Experto",
+            "description": "En la selección de personaje Aparecerá 'Expert' y no habrá flechas ni indicadores.",
+            "code": "L + R + Start",
+            "type": "code"
+        }
+    ],
+    "Jet Set Radio": [
+        {
+            "name": "Desbloquear a Gum y Garam",
+            "description": "Completa sus desafíos al principio del juego.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Jugar como Poison Jam desenmascarado",
+            "description": "En la selección de personaje, resalta a Poison Jam y mantén X antes de seleccionarlo.",
+            "code": "Mantener X",
+            "type": "code"
+        }
+    ],
+    "Soul Calibur": [
+        {
+            "name": "Desbloquear a Inferno",
+            "description": "Desbloquea todos los personajes y escenarios, consigue todas las imagenes en modo mision y completa el juego con Sophitia.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Resident Evil Code: Veronica": [
+        {
+            "name": "Lanzacohetes Infinito",
+            "description": "Consigue rango A en el juego normal (sin guardar, sin sprays, sin reintentos, salvar a Steve rápido, dar medicina a Rodrigo, < 4:30h).",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Jugar como Wesker en Battle Mode",
+            "description": "Completa el Battle Game con Chris.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Marvel vs. Capcom 2": [
+        {
+            "name": "Cambiar personaje en juego",
+            "description": "Mantén L para el segundo personaje o R para el tercero en la pantalla de versus.",
+            "code": "L o R",
+            "type": "code"
+        },
+        {
+            "name": "Colores alternativos",
+            "description": "Elige un luchador con otro color.",
+            "code": "Y o A",
+            "type": "code"
+        }
+    ],
+    "Power Stone": [
+        {
+            "name": "Jugar como Kraken",
+            "description": "Completa el juego una vez con cada personaje (excepto Valgas).",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Jugar como Final Valgas",
+            "description": "Desbloquea a Valgas, luego completa el juego en cualquier dificultad sin continuar.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Skies of Arcadia": [
+        {
+            "name": "Audio oculto de desarrolladores",
+            "description": "Enciende la Dreamcast sin disco, ve al reproductor de CD, inserta el juego y dale a Play.",
+            "code": "",
+            "type": "action"
+        },
+        {
+            "name": "Secuencia FMV secreta de Aika",
+            "description": "Tras la parte de la nave de Alfonso, vuelve a Pirate Isle. Ve a casa de Aika, mira a la izquierda hacia el tendedero e inspecciona el pañuelo en la pared.",
+            "code": "",
+            "type": "action"
+        }
+    ],
+    "Dead or Alive 2": [
+        {
+            "name": "Rebobinar repetición",
+            "description": "Tras ganar rápidamente antes de que empiece la repetición. Durante la repetición, pulsa Puño para rebobinar.",
+            "code": "A + Y",
+            "type": "code"
+        },
+        {
+            "name": "Pausa a pantalla completa",
+            "description": "Pausa el juego y pulsa X + Y.",
+            "code": "Pausa, luego X + Y",
+            "type": "code"
+        }
+    ],
+    "Virtua Tennis": [
+        {
+            "name": "Saque por debajo (Underhand Serve)",
+            "description": "Pulsa Abajo + A + X (parte inferior de la pista) o Arriba + A + X (parte superior) simultáneamente al sacar.",
+            "code": "Abajo/Arriba + A + X",
+            "type": "code"
+        },
+        {
+            "name": "Desbloquear a Master y King",
+            "description": "Gana a Master en Arcade para desbloquearlo. Completa World Circuit como número 1 y vence a King para desbloquearlo.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Power Stone 2": [
+        {
+            "name": "Jugar como Pride",
+            "description": "Completa el modo Arcade con un personaje.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Jugar como Mel",
+            "description": "Completa el modo Arcade con Pride.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Rez": [
+        {
+            "name": "Modo Más Allá (Beyond Mode)",
+            "description": "Completa las 5 áreas del modo de juego normal.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Space Channel 5": [
+        {
+            "name": "Modo Automático",
+            "description": "Durante el juego, mantén presionado L + R y pulsa Arriba, Izquierda, A, Izquierda, A, Abajo, Derecha, B, Derecha, B. El ordenador jugará por ti con 100% de audiencia.",
+            "code": "Mantener L+R: ↑, ←, A, ←, A, ↓, →, B, →, B",
+            "type": "code"
+        },
+        {
+            "name": "Ulala en llamas",
+            "description": "Consigue una clasificación del 95% o superior al completar el juego.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "ChuChu Rocket!": [
+        {
+            "name": "Desbloquear Modo Hard",
+            "description": "Completa los 25 puzzles del modo Normal.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Pausa Limpia",
+            "description": "Pausa el juego y pulsa X + Y.",
+            "code": "Pausa + X + Y",
+            "type": "code"
+        }
+    ],
+    "The House of the Dead 2": [
+        {
+            "name": "Mostrar puntuación",
+            "description": "En la pantalla de título: Izquierda, Izquierda, Derecha, Derecha, Derecha, Izquierda, Derecha, Start.",
+            "code": "←, ←, →, →, →, ←, →, Start",
+            "type": "code"
+        },
+        {
+            "name": "Sangre Roja",
+            "description": "Completa el juego en modo original para desbloquear la opción.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Legacy of Kain: Soul Reaver": [
+        {
+            "name": "Atravesar Muros",
+            "description": "Pausa, mantén L o R y pulsa: Abajo, B, B, Izquierda, Derecha, Y, Arriba.",
+            "code": "Pausa (hold L/R): ↓, B, B, ←, →, Y, ↑",
+            "type": "code"
+        },
+        {
+            "name": "Recargar Magia",
+            "description": "Pausa, mantén L o R y pulsa: Derecha, Derecha, Izquierda, Y, Derecha, Abajo.",
+            "code": "Pausa (hold L/R): →, →, ←, Y, →, ↓",
+            "type": "code"
+        }
+    ],
+    "Ready 2 Rumble Boxing": [
+        {
+            "name": "Desbloquear boxeadores de bronce",
+            "description": "En Championship mode, introduce como nombre de gimnasio.",
+            "code": "RUMBLE POWER",
+            "type": "code"
+        },
+        {
+            "name": "Trajes alternativos",
+            "description": "En la selección de personaje, pulsa.",
+            "code": "X + Y",
+            "type": "code"
+        }
+    ],
+    "Samba de Amigo": [
+        {
+            "name": "Desbloquear todas las canciones",
+            "description": "En Arcade (selección de altura), agita la maraca izquierda hacia arriba 15 veces rápido (o mantén botón superior maraca izq).",
+            "code": "Maraca Izq Arriba x15",
+            "type": "code"
+        },
+        {
+            "name": "Modo Super Hard",
+            "description": "En el menú principal, mantén Arriba hasta que aparezca Super Hard.",
+            "code": "Mantener ↑",
+            "type": "code"
+        }
+    ],
+    "Seaman": [
+        {
+            "name": "Evolución rápida (Reloj)",
+            "description": "Adelanta el reloj de la Dreamcast 2 días para acelerar el crecimiento (no más de 2 días o morirán).",
+            "code": "",
+            "type": "action"
+        },
+        {
+            "name": "Cara de Seaman enojada",
+            "description": "Gira el stick analógico rápidamente en círculos.",
+            "code": "Girar Stick",
+            "type": "code"
+        }
+    ],
+    "Hydro Thunder": [
+        {
+            "name": "Super Salida (Turbo Start)",
+            "description": "Cuenta atrás: 3 (Mantén R), 2 (Mantén L), 1 (Mantén R). ¡Sal con turbo!",
+            "code": "3→R, 2→L, 1→R",
+            "type": "code"
+        },
+        {
+            "name": "Pausa Limpia",
+            "description": "Pausa el juego y pulsa X + Y.",
+            "code": "Pausa + X + Y",
+            "type": "code"
+        }
+    ],
+    "Metropolis Street Racer": [
+        {
+            "name": "Kudos Extra (Derrape final)",
+            "description": "Termina una carrera derrapando con el freno de mano al cruzar la meta.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Desbloquear todos los circuitos",
+            "description": "Mantén Start durante la secuencia de introducción.",
+            "code": "Mantener Start (Intro)",
+            "type": "code"
+        }
+    ],
+    "Rayman 2: The Great Escape": [
+        {
+            "name": "Globox Disc (Multijugador)",
+            "description": "En título, pulsa Start, luego mantén L + R y pulsa B, B, B, B.",
+            "code": "Start, (hold L+R) B, B, B, B",
+            "type": "code"
+        },
+        {
+            "name": "Vida completa",
+            "description": "Pausa el juego y pulsa R repetidamente a un ritmo constante.",
+            "code": "Pausa + R repetidamente",
+            "type": "code"
+        }
+    ],
+    "Shenmue II": [
+        {
+            "name": "Desbloquear el modo de batalla en la arena",
+            "description": "Al comenzar la parte de Kowloon, ve a la arena de lucha y gana varios combates para desbloquear más luchadores.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Escena extra de Shenmue I resumen",
+            "description": "Si tienes datos de guardado de Shenmue I en la VMU, al empezar Shenmue II verás un resumen detallado con escenas extendidas.",
+            "code": "",
+            "type": "action"
+        }
+    ],
+    "Sonic Adventure 2": [
+        {
+            "name": "Desbloquear todos los personajes",
+            "description": "Completa el modo historia con todos los personajes para desbloquear el Final Definitivo y personajes para el multijugador.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Modo Bola de Nieve (Cannons Core)",
+            "description": "Al llegar al nivel Cannons Core, aprovecha los cañones para encontrar atajos secretos.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Green Hill Zone (Nivel secreto)",
+            "description": "Consigue 180 emblemas para desbloquear Green Hill Zone en el modo 2 jugadores.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Capcom vs. SNK 2": [
+        {
+            "name": "6 Slots de combate (Custom Groove)",
+            "description": "En la selección de personaje, pulsa Start para elegir 'Custom Groove' y personalizar tu estilo de pelea con 6 slots de habilidades.",
+            "code": "Start en Groove",
+            "type": "code"
+        },
+        {
+            "name": "Color edit de personajes",
+            "description": "En la selección de personaje, mantén Start + A + B y pulsa arriba/abajo para cambiar los colores del personaje.",
+            "code": "Start + A + B + ↑/↓",
+            "type": "code"
+        },
+        {
+            "name": "Desbloquear a Shin Akuma (God Rugal)",
+            "description": "Completa el modo Arcade en dificultad Muy Difícil sin perder un round para luchar contra Shin Akuma (o God Rugal).",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Daytona USA 2001": [
+        {
+            "name": "Desbloquear todos los coches",
+            "description": "Completa el campeonato en todas las dificultades para desbloquear todos los coches y pinturas.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Modo de control manual",
+            "description": "En las opciones de control, selecciona 'Manual' para tener control total de la transmision y marchas.",
+            "code": "",
+            "type": "action"
+        }
+    ],
+    "Virtua Tennis 2": [
+        {
+            "name": "Desbloquear pistas ocultas",
+            "description": "Completa el World Circuit para desbloquear pistas de tenis ocultas.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Jugadores secretos",
+            "description": "Gana todos los torneos del World Circuit con diferentes personajes para desbloquear jugadores ocultos.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Grandia II": [
+        {
+            "name": "Mana Eggs (Mejora de habilidades)",
+            "description": "Encuentra los Mystic Eggs escondidos en las mazmorras del juego para mejorar las habilidades especiales de cada personaje.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Desbloquear el modo Hard (Dificil)",
+            "description": "Completa el juego una vez para desbloquear la dificultad Hard.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Street Fighter III: 3rd Strike": [
+        {
+            "name": "Desbloquar a Gill (jefe final)",
+            "description": "Completa el modo Arcade sin perder un round en dificultad 8 estrellas para desbloquear a Gill.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Personaje oculto (Shin Akuma)",
+            "description": "Completa el juego con Akuma en una partida perfecta en la ultima ronda para luchar contra Shin Akuma.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Colores alternativos",
+            "description": "En la seleccion de personaje para cambiar los colores del personaje seleccionado.",
+            "code": "Start",
+            "type": "code"
+        },
+        {
+            "name": "Modo de seleccion de personaje con EX",
+            "description": "Selecciona a cualquier personaje y pulsa cualquier boton de puño + cualquier boton de patada para elegir el modo EX.",
+            "code": "Puño + Patada",
+            "type": "code"
+        }
+    ]
+}

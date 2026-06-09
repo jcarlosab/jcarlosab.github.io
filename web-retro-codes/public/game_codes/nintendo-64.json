@@ -1,0 +1,593 @@
+{
+    "Conker's Bad Fur Day": [
+        {
+            "name": "50 continues",
+            "description": "Introduce el siguiente código.",
+            "code": "DUTCHOVENS",
+            "type": "password"
+        },
+        {
+            "name": "Dinero extra",
+            "description": "Introduce el siguiente código.",
+            "code": "chocolatestarfish",
+            "type": "code"
+        },
+        {
+            "name": "Modo fácil",
+            "description": "Intruce el siguiente código.",
+            "code": "VERYEASY",
+            "type": "code"
+        },
+        {
+            "name": "Jugar como \"neo\"",
+            "description": "Intruce el siguiente código.",
+            "code": "eastereggsrus",
+            "type": "code"
+        },
+        {
+            "name": "Todos los capítulos y escenas",
+            "description": "Intruce el siguiente código.",
+            "code": "WELDERSBENCH",
+            "type": "code"
+        }
+    ],
+    "Super Smash Bros.": [
+        {
+            "category": "Desbloquear personajes",
+            "list": [
+                {
+                    "name": "Captain Falcon",
+                    "description": "Completa el modo 1Jugador (modo clásico) con cualquier personaje en cualquier dificultad **en menos de 20 minutos**. Al terminar, derrota a Captain Falcon en un combate para desbloquearlo.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Jigglypuff",
+                    "description": "Completa el modo 1Jugador con cualquier personaje en cualquier dificultad, derrota a Jigglypuff al final del juego para desbloquearla.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Luigi",
+                    "description": "Completa el Bonus Práctica 1 (Break the Targets) con los 8 personajes iniciales. Después, derrota a Luigi cuando te desafíe para desbloquearlo.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Ness",
+                    "description": "Completa el modo 1Jugador en dificultad Normal con 3 vidas y sin continuar. Luego derrota a Ness cuando aparezca al final para desbloquearlo.",
+                    "code": "",
+                    "type": "unlock"
+                }
+            ]
+        },
+        {
+            "category": "Desbloquear escenarios",
+            "list": [
+                {
+                    "name": "Mushroom Kingdom",
+                    "description": "Gana el modo 1Jugador con los 8 personajes iniciales, luego juega al menos una vez en cada escenario multijugador para desbloquear este escenario secreto.",
+                    "code": "",
+                    "type": "unlock"
+                }
+            ]
+        },
+        {
+            "category": "Opciones / extras",
+            "list": [
+                {
+                    "name": "Alternar vestuario / disfraces alternativos",
+                    "description": "En la pantalla de selección de personaje, resalta un personaje y pulsa uno de los botones de C (C-Arriba, C-Abajo, C-Izquierda o C-Derecha) para cambiar su traje.",
+                    "code": "C-↑ / C-↓ / C-← / C-→",
+                    "type": "code"
+                },
+                {
+                    "name": "Item Switch",
+                    "description": "Juega 100 combates en modo Versus; esto desbloquea el menú “Item Switch” que te permite ajustar los objetos en los combates Versus.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Sound Test (prueba de sonidos)",
+                    "description": "Completa Bonus Práctica 1 y Bonus Práctica 2 con los 12 personajes; la opción aparecerá en el menú Datos / Opciones.",
+                    "code": "",
+                    "type": "unlock"
+                }
+            ]
+        }
+    ],
+    "Wave Race 64": [
+        {
+            "category": "Desbloqueables / modos extra",
+            "list": [
+                {
+                    "name": "Circuito Glacier Coast",
+                    "description": "Gana el juego en dificultad Expert para desbloquear Glacier Coast para todos los modos.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Circuito Twilight City",
+                    "description": "Gana el juego en dificultad Hard para desbloquear Twilight City para todos los modos.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Modo Experto (Expert)",
+                    "description": "Gana todos los circuitos en dificultad Hard consiguiendo el primer puesto en cada uno para desbloquear Expert Mode.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Modo Hard",
+                    "description": "Gana todos los circuitos en dificultad Normal consiguiendo el primer puesto en cada uno para desbloquear el modo Hard.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Reverse Courses (Modo inverso / espejo)",
+                    "description": "Consigue el primer puesto en Expert en todos los circuitos para desbloquear las versiones invertidas de los circuitos.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Reverse Time Trials",
+                    "description": "Consigue primero en Expert para que en la sección de Time Trials aparezca la opción de Reverse Time Trials.",
+                    "code": "",
+                    "type": "unlock"
+                }
+            ]
+        },
+        {
+            "category": "Truco especial / secreto",
+            "list": [
+                {
+                    "name": "Cambio de color del vehículo",
+                    "description": "En la pantalla de selección de vehículo, al destacar el Jet Ski, mantén pulsado Joystick ↑ para cambiar su color.",
+                    "code": "↑",
+                    "type": "code"
+                },
+                {
+                    "name": "Montarte sobre un delfín",
+                    "description": "En Stunt Mode, en el circuito Dolphin Park, realiza todos los trucos pasando por todos los anillos: handstand, ir marcha atrás, backflip, barrel roll izquierda, barrel roll derecha, flip, y sumergirse (submarine). Si lo haces bien, al terminar oirás un chillido de delfín. Luego ve al menú principal, selecciona Championship en dificultad Normal → Warm Up, y en la pantalla de selección de vehículo mantén pulsado Joystick ↓ (o dirección abajo) y pulsa Start; podrás montar sobre un delfín.",
+                    "code": "↓ + Start (después de haber realizado todos los trucos en Dolphin Park)",
+                    "type": "action"
+                },
+                {
+                    "name": "Quick Start / Salida rápida",
+                    "description": "Justo antes de que el locutor diga “GO!”, mantén pulsados ambos botones de aceleración para salir con velocidad máxima.",
+                    "code": "A + B (o botones de aceleración) justo antes de “GO!”",
+                    "type": "code"
+                }
+            ]
+        },
+        {
+            "category": "Intro alternativo",
+            "list": [
+                {
+                    "name": "Intro con delfines",
+                    "description": "Completa todos los trucos en Dolphin Park para desbloquear una intro alternativa que alterna entre jugadores montando motos de agua y sobre delfines al inicio del juego.",
+                    "code": "",
+                    "type": "action"
+                }
+            ]
+        }
+    ],
+    "Super Mario 64": [
+        {
+            "name": "Desbloquear a Yoshi y 99 Vidas",
+            "description": "Consigue las 120 estrellas, ve a los jardines del castillo. Se abrirá un cañón cerca del estanque. Úsalo para llegar al techo y encontrar a Yoshi.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Sombrero infinito (Glitch)",
+            "description": "En Whomp's Fortress, deja que el pájaro te quite el sombrero. Golpéalo para que lo suelte pero no lo recojas. Teletranspórtate y vuelve para duplicarlo.",
+            "code": "",
+            "type": "action"
+        }
+    ],
+    "The Legend of Zelda: Ocarina of Time": [
+        {
+            "name": "Glitch de la estocada infinita",
+            "description": "Encuentra un cartel de madera, mantén el escudo, pulsa ataque e inmediatamente Confirmar. Link atacará sin parar.",
+            "code": "Escudo + Ataque + Confirmar",
+            "type": "code"
+        },
+        {
+            "name": "Reparar carteles rotos",
+            "description": "Frente a un cartel roto para repararlo.",
+            "code": "Zelda's Lullaby",
+            "type": "code"
+        }
+    ],
+    "GoldenEye 007": [
+        {
+            "name": "Desbloquear todos los personajes (Multiplayer)",
+            "description": "En la pantalla de selección de modo multijugador, introduce el código.",
+            "code": "L+R+C-Izquierda, L+C-Arriba, L+R+Izquierda, L+Derecha, R+Abajo, L+R+C-Izquierda, L+C-Arriba, L+R+Derecha, L+R+C-Abajo, L+Abajo",
+            "type": "code"
+        },
+        {
+            "name": "Invisibilidad (Multiplayer)",
+            "description": "Introduce el código en el menú multijugador.",
+            "code": "L+C-Arriba, L+R+C-Izquierda, R+Arriba, L+C-Derecha, R+C-Izquierda, L+Derecha, L+R+C-Izquierda, L+C-Derecha, L+Arriba, L+R+C-Abajo",
+            "type": "code"
+        }
+    ],
+    "Mario Kart 64": [
+        {
+            "name": "Turbo en la salida",
+            "description": "Pulsa A justo cuando la última luz del semáforo se apague/cambie a azul.",
+            "code": "A (en el momento justo)",
+            "type": "code"
+        },
+        {
+            "name": "Escudo de objetos",
+            "description": "Mantén pulsado Z para llevar plátanos o caparazones detrás de ti como protección.",
+            "code": "Mantener Z",
+            "type": "code"
+        }
+    ],
+    "Star Fox 64": [
+        {
+            "name": "Modo Experto",
+            "description": "Consigue medallas en los 15 niveles para desbloquear el Modo Experto.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Jugar a pie / Tanque en Vs.",
+            "description": "Gana una medalla en Venom (Experto) para jugar a pie. Gana una medalla en Venom (Normal) para usar el Landmaster.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Banjo-Kazooie": [
+        {
+            "name": "Huevos infinitos",
+            "description": "En Treasure Trove Cove, dentro del castillo de arena, escribe el código golpeando las letras.",
+            "code": "BANJO BEGS FOR PLENTY OF EGGS",
+            "type": "code"
+        },
+        {
+            "name": "Vidas infinitas",
+            "description": "En el castillo de arena de Treasure Trove Cove.",
+            "code": "LOTS OF GOES WITH MANY BANJOS",
+            "type": "code"
+        }
+    ],
+    "Perfect Dark": [
+        {
+            "name": "Dificultad Perfect Darkness",
+            "description": "Completa todas las misiones en dificultad Perfect Agent.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Desbloquear armas clásicas",
+            "description": "Gana medallas de oro en la galería de tiro con todas las armas para desbloquear armas de GoldenEye.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Pokemon Stadium": [
+        {
+            "name": "Modo R-2 (Más difícil)",
+            "description": "Vence a Mewtwo tras completar el modo Stadium y el Castillo de Líderes. en la pantalla de título para alternar.",
+            "code": "C-Derecha",
+            "type": "code"
+        },
+        {
+            "name": "Velocidad Doduo/Dodrio (GB)",
+            "description": "Gana la Poké Cup o Prime Cup para desbloquear modos de velocidad x2 y x4 para el juego de Game Boy.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Donkey Kong 64": [
+        {
+            "name": "Modo Trucos",
+            "description": "Fotografía a las 20 Hadas Banana para desbloquear el menú de trucos (Mystery Menu).",
+            "code": "",
+            "type": "action"
+        },
+        {
+            "name": "Movimientos especiales",
+            "description": "Compra las pociones de Cranky: Simian Slam, Baboon Blast, Gorilla Grab, etc.",
+            "code": "",
+            "type": "action"
+        }
+    ],
+    "F-Zero X": [
+        {
+            "name": "Desbloquear todo (Pistas, Naves, Dificultad)",
+            "description": "En la pantalla de título, introduce el código.",
+            "code": "L, Z, R, C-Arriba, C-Abajo, C-Izquierda, C-Derecha, Start",
+            "type": "code"
+        },
+        {
+            "name": "Naves pequeñas",
+            "description": "En la selección de nave, mantén L+R y pulsa C-Izquierda + C-Abajo.",
+            "code": "L+R + C-Izquierda + C-Abajo",
+            "type": "code"
+        }
+    ],
+    "Banjo-Tooie": [
+        {
+            "name": "Modo Cine",
+            "description": "Completa el juego una vez para desbloquear el modo 'Cinema' en el menú principal.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Diddy Kong Racing": [
+        {
+            "name": "Desbloquear a Drumstick",
+            "description": "En la zona central, atropella a la rana con cresta roja.",
+            "code": "",
+            "type": "action"
+        },
+        {
+            "name": "Desbloquear a T.T.",
+            "description": "Bate el récord de T.T. en todos los circuitos en modo Time Trial.",
+            "code": "",
+            "type": "action"
+        }
+    ],
+    "Paper Mario": [
+        {
+            "category": "Objetos especiales / badges",
+            "list": [
+                {
+                    "name": "Attack FX B - Badge",
+                    "description": "Cambia el sonido de ataque. Cómpralo en el sótano del Merry Mare (cerca de la salida del bosque) por 30 monedas.",
+                    "code": "",
+                    "type": "action"
+                },
+                {
+                    "name": "All or Nothing - Badge",
+                    "description": "Saltas o bloqueas justo cuando te atacan para recibir daño 0. Se compra en Shy Guy's Toy Box.",
+                    "code": "",
+                    "type": "action"
+                },
+                {
+                    "name": "D-Down Pound - Badge",
+                    "description": "Golpe que inflige 1 de daño pero baja la defensa del enemigo. Se consigue en Kooper's Shell.",
+                    "code": "",
+                    "type": "unlock"
+                }
+            ]
+        },
+        {
+            "name": "Carta de la princesa Peach",
+            "description": "Al terminar el capítulo 6, vuelve al castillo y habla con Peach. Te dará una carta que puedes usar contra Bowser.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Yoshi's Story": [
+        {
+            "name": "Desbloquear todos los niveles",
+            "description": "En la pantalla de selección de archivo, mantén L + R y pulsa C-Arriba, C-Abajo, C-Izquierda, C-Derecha.",
+            "code": "L+R + C-↑, C-↓, C-←, C-→",
+            "type": "code"
+        },
+        {
+            "name": "Modo sin lágrimas (No Crying)",
+            "description": "En la pantalla de título, mantén L + R y pulsa A + B + Start.",
+            "code": "L+R + A+B+Start",
+            "type": "code"
+        },
+        {
+            "name": "Yoshi Negro / Yoshi Blanco",
+            "description": "Completa el juego al 100% para desbloquear a Yoshi Negro. Completa el modo Time Attack para Yoshi Blanco.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Jet Force Gemini": [
+        {
+            "name": "Código de armas completa",
+            "description": "En la pantalla de opciones > Cheats, introduce el código.",
+            "code": "C-Derecha, R, C-Izquierda, L, R, C-Derecha, C-Derecha, C-Abajo, Start",
+            "type": "code"
+        },
+        {
+            "name": "Inmunidad",
+            "description": "En Opciones > Cheats.",
+            "code": "C-Derecha, R, C-Izquierda, R, C-Izquierda, C-Derecha, C-Arriba, C-Derecha, Start",
+            "type": "code"
+        },
+        {
+            "name": "Munición infinita",
+            "description": "En Opciones > Cheats.",
+            "code": "C-Izquierda, C-Derecha, C-Izquierda, L, C-Abajo, R, R, C-Arriba, Start",
+            "type": "code"
+        }
+    ],
+    "Bomberman 64": [
+        {
+            "name": "Selección de nivel",
+            "description": "En la pantalla de título, pulsa: C-Arriba, C-Arriba, C-Abajo, C-Abajo, C-Izquierda, C-Derecha, C-Izquierda, C-Derecha.",
+            "code": "C-↑, C-↑, C-↓, C-↓, C-←, C-→, C-←, C-→",
+            "type": "code"
+        },
+        {
+            "name": "Vidas infinitas",
+            "description": "En la pantalla de título: Arriba, Arriba, Abajo, Abajo, Izquierda, Derecha, Izquierda, Derecha, A, B.",
+            "code": "↑, ↑, ↓, ↓, ←, →, ←, →, A, B",
+            "type": "code"
+        }
+    ],
+    "Pokémon Snap": [
+        {
+            "name": "Desbloquear Mew",
+            "description": "Saca una foto de 999 puntos en la pantalla de Rainbow Cloud (detrás de la cabaña en la cueva). Prof. Oak te dará acceso al modo Mew.",
+            "code": "",
+            "type": "action"
+        },
+        {
+            "name": "Desbloquear todas las mejoras del vehículo",
+            "description": "Completa todos los niveles con 4 estrellas para desbloquear Turbo, Rastreo y otras mejoras.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Mario Party": [
+        {
+            "name": "Desbloquear tablero Eternal Star",
+            "description": "Compra todos los items de la tienda de Mystery Land para desbloquear Eternal Star.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Desbloquear tablero Wario's Battle Canyon",
+            "description": "Termina el modo Saga por primera vez.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Minijuegos ocultos (Skateboarding, etc.)",
+            "description": "Completa todos los minijuegos en Mini-Game House para desbloquear los ocultos.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Kirby 64: The Crystal Shards": [
+        {
+            "name": "Desbloquear minijuego (100-Yard Hop)",
+            "description": "Completa el juego una vez para desbloquear 100-Yard Hop en el menu.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Desbloquear minijuego (Checkerboard Chase)",
+            "description": "Consigue todos los fragmentos de cristal para desbloquear Checkerboard Chase.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Boss Rush",
+            "description": "Completa el juego al 100% para desbloquear el Boss Rush.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Harvest Moon 64": [
+        {
+            "name": "Novia oculta (Karen)",
+            "description": "Dale a Karen 60 de sus objetos favoritos durante el festival.",
+            "code": "",
+            "type": "action"
+        },
+        {
+            "name": "Pozo de los deseos",
+            "description": "Tira monedas al pozo de la ciudad para aumentar tu popularidad y recibir objetos raros.",
+            "code": "",
+            "type": "action"
+        },
+        {
+            "name": "Foto familiar especial",
+            "description": "Casate y ten un hijo. En el ano 4, Primavera 1, tu esposa te dara una foto especial.",
+            "code": "",
+            "type": "action"
+        }
+    ],
+    "Star Wars: Rogue Squadron": [
+        {
+            "name": "Codigo de naves completas",
+            "description": "En Opciones > Cheats, introduce.",
+            "code": "C-Arriba, C-Derecha, C-Izquierda, C-Abajo, R, L, R, L, C-Arriba",
+            "type": "code"
+        },
+        {
+            "name": "Invencibilidad",
+            "description": "En Opciones > Cheats.",
+            "code": "C-Izquierda, R, C-Derecha, L, C-Izquierda, R, C-Derecha, L, C-Arriba",
+            "type": "code"
+        },
+        {
+            "name": "Nivel Dorado (Gold Medal en todos)",
+            "description": "Consigue medalla de oro en todas las misiones para desbloquear el nivel secreto.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Sin & Punishment": [
+        {
+            "name": "Seleccion de nivel",
+            "description": "Completa el juego una vez para desbloquear la seleccion de nivel.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Dificultad Ultra Hard",
+            "description": "Completa el juego en Hard para desbloquear el modo Ultra Hard.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Excitebike 64": [
+        {
+            "name": "Moto oculta (Rocket Bike)",
+            "description": "Gana todas las copas en Experto para desbloquear la Rocket Bike.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Circuito de Tierra (Desbloquear pistas)",
+            "description": "Completa el modo Campeonato en todas las dificultades para desbloquear todas las pistas.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Mario Golf": [
+        {
+            "name": "Desbloquear personajes (Mario, etc.)",
+            "description": "Gana todos los torneos para desbloquear personajes y campos adicionales.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Modo Juego de Habilidades",
+            "description": "En el menu principal, pulsa.",
+            "code": "C-Arriba, C-Abajo, C-Izquierda, C-Derecha, Start",
+            "type": "code"
+        }
+    ],
+    "Turok: Dinosaur Hunter": [
+        {
+            "name": "Invencibilidad (Invincibility)",
+            "description": "En la pantalla de titulo, pulsa: C-Arriba, C-Arriba, C-Arriba, C-Abajo, C-Abajo, C-Abajo, C-Izquierda, C-Derecha, C-Izquierda, C-Derecha.",
+            "code": "C-Arriba x3, C-Abajo x3, C-Izquierda, C-Derecha, C-Izquierda, C-Derecha",
+            "type": "code"
+        },
+        {
+            "name": "Todas las armas",
+            "description": "En la pantalla de titulo, pulsa: C-Arriba, C-Abajo, C-Izquierda, C-Derecha, C-Arriba, C-Abajo, C-Izquierda, C-Derecha.",
+            "code": "C-Arriba, C-Abajo, C-Izquierda, C-Derecha x2",
+            "type": "code"
+        }
+    ],
+    "Zelda: Ocarina of Time": [
+        {
+            "name": "Bomba infinita (Glitch)",
+            "description": "Coloca una bomba, pausa justo cuando explota y ve al menú de objetos. El contador no bajará.",
+            "code": "",
+            "type": "glitch"
+        },
+        {
+            "name": "Montar a Epona de niño",
+            "description": "Usa el glitch de la valla en Hyrule Field para montar a Epona antes de tiempo.",
+            "code": "",
+            "type": "glitch"
+        },
+        {
+            "name": "Estocada infinita",
+            "description": "Mantén escudo + ataque + confirmar junto a un cartel de madera.",
+            "code": "Escudo + A + Confirmar",
+            "type": "code"
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+:root {
+  --color-text-secondary: #333;
+}
+
+/* Container */
+.menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Button */
+.menu-container_button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  width: 3rem;
+  cursor: pointer;
+  transition: transform 350ms ease;
+}
+
+.dot {
+  width: 0.25rem;
+  height: 0.25rem;
+  background-color: var(--color-text-secondary);
+  border-radius: 2px;
+  transition: all 350ms ease;
+}
+
+/* Animation when open */
+.menu-container--open .dot:not(.static) {
+  width: 1.5rem;
+}
+
+.menu-container--open .dot:first-child {
+  transform: translateY(0.5rem) rotate(135deg);
+}
+
+.menu-container--open .dot:last-child {
+  transform: translateY(-0.5rem) rotate(-135deg);
+}

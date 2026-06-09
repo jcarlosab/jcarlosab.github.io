@@ -1,0 +1,502 @@
+{
+    "Super Smash Bros. Melee": [
+        {
+            "category": "Desbloquear personajes",
+            "list": [
+                {
+                    "name": "Mewtwo",
+                    "description": "Juega 20 horas en modo VS (el tiempo se suma por cada controlador humano) o juega 700 combates VS.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Luigi",
+                    "description": "Termina el primer nivel del modo Aventura con un tiempo que termine en '2' (ej. xx:x2) para que aparezca Luigi en lugar de Mario. Véncelo en menos de 1 minuto.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Marth",
+                    "description": "Usa los 14 personajes iniciales en modo VS o completa el modo Clásico con los 14.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Roy",
+                    "description": "Completa el modo Clásico o Aventura con Marth sin continuar.",
+                    "code": "",
+                    "type": "unlock"
+                }
+            ]
+        },
+        {
+            "name": "Desbloquear Final Destination",
+            "description": "Completa los 51 eventos del modo Event Match.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Metroid Prime": [
+        {
+            "name": "Galería de imágenes 1",
+            "description": "Escanea el 50% de los datos del Log Book.",
+            "code": "",
+            "type": "action"
+        },
+        {
+            "name": "Modo Difícil",
+            "description": "Completa el juego una vez para desbloquear la dificultad Hard.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Traje de Fusión (Metroid Fusion)",
+            "description": "Conecta el cable GBA con una copia de Metroid Fusion completada para desbloquear el Fusion Suit.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "The Legend of Zelda: The Wind Waker": [
+        {
+            "name": "Segunda vuelta (Second Quest)",
+            "description": "Completa el juego y guarda. En la nueva partida, Link llevará su pijama azul, entenderá el idioma Hylian y tendrá la cámara a color desde el inicio.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Galería Nintendo",
+            "description": "Toma una foto de cualquier personaje y llévasela a Carlov en Forest Haven para que haga una figura.",
+            "code": "",
+            "type": "action"
+        }
+    ],
+    "Mario Kart: Double Dash!!": [
+        {
+            "category": "Desbloqueables",
+            "list": [
+                {
+                    "name": "Toad y Toadette",
+                    "description": "Gana la Copa Especial en 100cc.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Petey Piranha y King Boo",
+                    "description": "Gana la Copa Estrella en modo Espejo.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Kart Dorado",
+                    "description": "Gana todas las copas en todas las velocidades (50cc, 100cc, 150cc y Espejo) con rango Oro.",
+                    "code": "",
+                    "type": "unlock"
+                }
+            ]
+        },
+        {
+            "name": "Pantalla de título alternativa",
+            "description": "Gana todas las copas en todas las clases para cambiar la pantalla de título.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Luigi's Mansion": [
+        {
+            "name": "Mansión Oculta (Hidden Mansion)",
+            "description": "Completa el juego una vez para desbloquear una versión más difícil del juego (PAL version: toda la mansión está invertida y es más difícil).",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Rango A",
+            "description": "Termina el juego con más de 100,000,000G para obtener la mejor mansión al final.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Animal Crossing": [
+        {
+            "name": "Hacha de Oro",
+            "description": "Mantén tu pueblo perfecto durante 15 días seguidos y habla con el espíritu del pozo (Farley).",
+            "code": "",
+            "type": "action"
+        },
+        {
+            "name": "Red de Oro",
+            "description": "Atrapa todos los insectos y habla con Tortimer.",
+            "code": "",
+            "type": "action"
+        },
+        {
+            "name": "Caña de Oro",
+            "description": "Pesca todos los peces y habla con Tortimer.",
+            "code": "",
+            "type": "action"
+        },
+        {
+            "name": "Juegos de NES",
+            "description": "Puedes conseguir juegos de NES mediante códigos de Tom Nook, sorteos o encontrándolos.",
+            "code": "",
+            "type": "action"
+        }
+    ],
+    "Super Mario Sunshine": [
+        {
+            "name": "Camisa Hawaiana",
+            "description": "Completa el juego y guarda. En tu siguiente partida, Mario llevará una camisa hawaiana y gafas de sol.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Final 100%",
+            "description": "Consigue los 120 Shines para ver una imagen final especial con todos los personajes.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Resident Evil 4": [
+        {
+            "category": "Desbloqueables",
+            "list": [
+                {
+                    "name": "Modo Mercenarios",
+                    "description": "Completa el juego principal una vez.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Assignment Ada",
+                    "description": "Completa el juego principal una vez.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Separate Ways",
+                    "description": "Completa el juego principal una vez.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Lanzacohetes Infinito",
+                    "description": "Completa el juego una vez. Disponible para comprar por 1,000,000 pesetas en la segunda vuelta.",
+                    "code": "",
+                    "type": "unlock"
+                },
+                {
+                    "name": "Chicago Typewriter",
+                    "description": "Completa Separate Ways para desbloquearla en el juego principal (cuesta 1,000,000).",
+                    "code": "",
+                    "type": "unlock"
+                }
+            ]
+        }
+    ],
+    "Pikmin": [
+        {
+            "name": "Modo Desafío (Challenge Mode)",
+            "description": "Consigue los tres tipos de Pikmin (Rojo, Amarillo, Azul) en el juego principal.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Final Bueno",
+            "description": "Recupera las 30 piezas de la nave antes de que se acaben los 30 días.",
+            "code": "",
+            "type": "action"
+        }
+    ],
+    "F-Zero GX": [
+        {
+            "category": "Desbloquear Copas",
+            "list": [
+                {
+                    "name": "Copa Diamante",
+                    "description": "Queda primero en las copas Rubí, Zafiro y Esmeralda en dificultad Standard o superior.",
+                    "code": "",
+                    "type": "action"
+                },
+                {
+                    "name": "Copa AX",
+                    "description": "Queda primero en todas las copas (Rubí, Zafiro, Esmeralda, Diamante) en dificultad Master.",
+                    "code": "",
+                    "type": "action"
+                }
+            ]
+        },
+        {
+            "name": "Desbloquear naves AX",
+            "description": "Completa los capítulos del modo historia en dificultad Very Hard.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Tales of Symphonia": [
+        {
+            "name": "Skit Viewer",
+            "description": "Completa el juego y guarda un 'Clear Data'. Cárgalo para ver las escenas (skits) en Katz Village.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "The Legend of Zelda: Twilight Princess": [
+        {
+            "name": "Técnica de Combate Escondida (Back Slice)",
+            "description": "Ve al Bosque Perdido (Faron Woods) y habla con el Maestro Espadachín. Aprueba su prueba para aprender el Back Slice.",
+            "code": "",
+            "type": "action"
+        },
+        {
+            "name": "Muestra de Almas Poe",
+            "description": "Hay 60 almas Poe escondidas en Hyrule. Lleva 20 a Jovani en Castle Town para recibir la Botella de Hielo. Lleva 60 para que Jovani te dé la Gran Hada.",
+            "code": "",
+            "type": "action"
+        },
+        {
+            "name": "Armadura de Pescador (Magic Armor)",
+            "description": "En Castle Town, gasta 600 rupias para comprar la Magic Armor que consume rupias en lugar de corazones al recibir daño.",
+            "code": "",
+            "type": "action"
+        },
+        {
+            "name": "Gancho (Clawshot) doble",
+            "description": "Consigue el Clawshot en el Templo del Lago. Luego consigue el Doble Clawshot en el Templo de la Ciudadela.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Eternal Darkness: Sanity's Requiem": [
+        {
+            "name": "Desbloquedar modo difícil",
+            "description": "Completa el juego una vez para desbloquear el modo 'Darkness' donde los enemigos son mucho más fuertes.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Final secreto",
+            "description": "Completa el juego con las tres runas (Roja, Verde, Azul) guardianas para desbloquear el final del Anciano.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Efecto de Sanity infinito",
+            "description": "Mantén tu barra de Sanity por debajo de 10 para ver escenas de cordura únicas (sillas que hablan, voces susurrantes, etc.).",
+            "code": "",
+            "type": "action"
+        }
+    ],
+    "Paper Mario: The Thousand-Year Door": [
+        {
+            "name": "Poción de la Supernova (Power-up oculto)",
+            "description": "En el Capítulo 3 (La Feria del Bounty), gana el torneo para recibir la Llave del Castillo. Luego explora el castillo de Hooktail para encontrar la Supernova.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Platinum Card (Descuento en tiendas)",
+            "description": "Gasta 250 monedas en Pianta Parlor y luego derrota al jefe del Capítulo 5. Aparecerá un PNJ que te dará la Platinum Card.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Muñeca de la Suerte (Super Lucky)",
+            "description": "En el sótano de Rogueport, compra la 'Lucky Doll' en el mercado negro. Equípala para aumentar la probabilidad de ataque duplicado.",
+            "code": "",
+            "type": "action"
+        }
+    ],
+    "Fire Emblem: Path of Radiance": [
+        {
+            "name": "Desbloquear modo Hard",
+            "description": "Completa el juego una vez para desbloquear la dificultad Hard (Mas Dificil).",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Conversaciones de apoyo secretas",
+            "description": "Coloca a personajes compatibles juntos en batalla para activar conversaciones de apoyo que mejoran sus estadisticas.",
+            "code": "",
+            "type": "action"
+        },
+        {
+            "name": "Desbloquear personajes ocultos (Petrine, etc.)",
+            "description": "Completa misiones secundarias y recluta a los personajes especiales como Petrine y Shinon.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Pikmin 2": [
+        {
+            "name": "Desbloquear modos de juego",
+            "description": "Completa el modo Historia una vez para desbloquear el modo Desafio y Versus.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Pikmin Purpura",
+            "description": "Encuentra las flores de la vida en las cuevas subterraneas para convertir Pikmin normales en Purpura (10x fuerza).",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Pikmin Blanco",
+            "description": "Encuentra al Pikmin Blanco en las cuevas. Son ultra rapidos y ven objetos enterrados.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Metroid Prime 2: Echoes": [
+        {
+            "name": "Modo Hard (Mas Dificil)",
+            "description": "Completa el juego una vez para desbloquear el modo Dificil.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Galeria de imagenes",
+            "description": "Escanea el 100% de los objetos en el juego para desbloquear todas las imagenes de la galeria.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Traje de Samus oscura (Dark Suit)",
+            "description": "Completa el templo de Agon Wastes para obtener el Dark Suit, resistente a la atmosfera oscura.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Soulcalibur II": [
+        {
+            "name": "Desbloquear a Link (GC exclusivo)",
+            "description": "Completa el Modo Weapon Master con todos los personajes disponibles para desbloquear a Link como luchador.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Desbloquear arma de Link (Master Sword)",
+            "description": "Completa el capitulo 9 en Weapon Master con Link para conseguir la Master Sword.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Traje alternativo",
+            "description": "Pulsa el botón en la pantalla de selección de personaje.",
+            "code": "Y",
+            "type": "code"
+        }
+    ],
+    "Star Fox Adventures": [
+        {
+            "name": "Mejora completa de baston",
+            "description": "Recoge todos los objetos de mejora del baston (Fire, Ice, Light) en las diferentes misiones.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Monedas Scarab (Secretos)",
+            "description": "Recoge todas las Scarab Coins escondidas en cada nivel para desbloquear galeria de arte.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Pokemon XD: Gale of Darkness": [
+        {
+            "name": "Purificar Pokemon Oscuros",
+            "description": "Usa la maquina de purificacion en el Laboratorio de Cipher para purificar los Pokemon Oscuros capturados.",
+            "code": "",
+            "type": "action"
+        },
+        {
+            "name": "Desbloquear Lugia (XD001)",
+            "description": "Completa la historia principal para enfrentarte y capturar al Lugia Oscuro (XD001).",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Modo Batalla en el Mt. Battle",
+            "description": "Completa el Mt. Battle para recibir un Pokemon especial de regalo de las personas que rescates.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Baten Kaitos: Eternal Wings and the Lost Ocean": [
+        {
+            "name": "Desbloquear New Game+",
+            "description": "Completa el juego una vez para desbloquear el modo New Game+ donde conservas tus cartas.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Jefe oculto (Mizuki)",
+            "description": "Completa la mazmorra de las almas con todas las cartas de Magnus para enfrentarte al jefe oculto.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Carta especial de curación",
+            "description": "Encuentra la carta de curacion 'Holy Water' en el santuario oculto del Bosque de la Niebla.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Resident Evil (Remake)": [
+        {
+            "name": "Modo Real Survival",
+            "description": "Completa el juego una vez para desbloquear el modo Real Survival (camaras fijas, sin auto-aim, objetos en posiciones diferentes).",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Modo Invisible Enemy",
+            "description": "Completa el juego con rango A para desbloquear el modo Invisible Enemy (enemigos invisibles).",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Lanzacohetes infinito",
+            "description": "Completa el juego en menos de 3 horas con rango A para recibir el lanzacohetes infinito.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Resident Evil 0": [
+        {
+            "name": "Modo Dificil (Hard)",
+            "description": "Completa el juego una vez para desbloquear la dificultad Hard.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Traje de Rebecca (Bikini)",
+            "description": "Completa el modo Dificil con rango A para desbloquear el traje de Rebecca.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Fin de entrenamiento (Modo Wesker)",
+            "description": "Completa el juego al 100% para desbloquear el modo Wesker en el mercenario.",
+            "code": "",
+            "type": "unlock"
+        }
+    ],
+    "Star Fox Assault": [
+        {
+            "name": "Desbloquear naves clasicas (Arwing clasica)",
+            "description": "Completa el juego al 100% para desbloquear la Arwing clasica de Star Fox 64.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Modo Batalla de tanques",
+            "description": "En el modo multijugador, completa ciertas misiones para desbloquear el Landmaster.",
+            "code": "",
+            "type": "unlock"
+        },
+        {
+            "name": "Misiones de bonificacion",
+            "description": "Completa cada mision con rango S para desbloquear misiones de bonificacion.",
+            "code": "",
+            "type": "unlock"
+        }
+    ]
+}

@@ -1,0 +1,72 @@
+{
+    "Alex Kidd in Miracle World": [
+        {
+            "name": "Saltar niveles",
+            "description": "En la pantalla de título:",
+            "code": "↑, ↑, ↓, ↓, ←, →, ←, →, 1",
+            "type": "code"
+        },
+        {
+            "name": "Vidas infinitas",
+            "description": "En la pantalla de título:",
+            "code": "↑, ↓, ←, →, ↑, ↓, ←, →, 2",
+            "type": "code"
+        }
+    ],
+    "Sonic the Hedgehog (Master System)": [
+        {
+            "name": "Selección de nivel",
+            "description": "En la pantalla de título:",
+            "code": "↑, ↑, ↓, ↓, ↑, ↑, ↓, ↓",
+            "type": "code"
+        },
+        {
+            "name": "Vidas infinitas",
+            "description": "En la pantalla de título:",
+            "code": "↓, ↓, ↑, ↑, ←, →, ←, →",
+            "type": "code"
+        }
+    ],
+    "Wonder Boy": [
+        {
+            "name": "Vidas extra",
+            "description": "En la pantalla de título:",
+            "code": "↑, ↑, ↓, ↓, ←, →, ←, →, A",
+            "type": "code"
+        },
+        {
+            "name": "Selección de nivel",
+            "description": "En la pantalla de título:",
+            "code": "↑, ↓, ←, →, ↑, ↓, ←, →, B",
+            "type": "code"
+        }
+    ],
+    "Castle of Illusion Starring Mickey Mouse": [
+        {
+            "name": "Selección de nivel",
+            "description": "En la pantalla de título:",
+            "code": "↑, ↑, ↓, ↓, ←, →, ←, →",
+            "type": "code"
+        },
+        {
+            "name": "10 vidas",
+            "description": "En la pantalla de título:",
+            "code": "↑, ↓, ↑, ↓, ←, →, ←, →",
+            "type": "code"
+        }
+    ],
+    "Phantasy Star": [
+        {
+            "name": "Dinero infinito",
+            "description": "Compra y vende objetos repetidamente en la tienda de Camineet para acumular dinero.",
+            "code": "",
+            "type": "action"
+        },
+        {
+            "name": "Curar al equipo completo",
+            "description": "Usa el objeto 'Trunk' para curar a todo el equipo.",
+            "code": "",
+            "type": "action"
+        }
+    ]
+}

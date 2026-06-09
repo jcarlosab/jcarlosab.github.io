@@ -1,0 +1,511 @@
+{
+    "title": "Verbos",
+    "icon": "🟥",
+    "words": [
+        {
+            "word": "estar",
+            "translation": ["be"],
+            "description": "To exist or live; to be present in a place.",
+            "type": "verb",
+            "tense": "present"
+        },
+        {
+            "word": "estuvo",
+            "translation": ["was"],
+            "description": "Existed or lived; was present in a place (past tense).",
+            "type": "verb",
+            "tense": "past"
+        },
+        {
+            "word": "estará",
+            "translation": ["will be"],
+            "description": "Will exist or live; will be present in a place (future tense).",
+            "type": "verb",
+            "tense": "future"
+        },
+        {
+            "word": "estando",
+            "translation": ["being"],
+            "description": "In the act of existing or living; being present in a place (present participle).",
+            "type": "verb",
+            "tense": "present participle"
+        },
+        {
+            "word": "estado",
+            "translation": ["been"],
+            "description": "Having existed or lived; having been present in a place (past participle).",
+            "type": "verb",
+            "tense": "past participle"
+        },
+        {
+            "word": "estaríamos",
+            "translation": ["would be"],
+            "description": "Would exist or live; would be present in a place (conditional tense).",
+            "type": "verb",
+            "tense": "conditional"
+        },
+        {
+            "word": "estate",
+            "translation": ["be"],
+            "description": "Exist or live; be present in a place (imperative form).",
+            "type": "verb",
+            "tense": "imperative"
+        },
+        {
+            "word": "está",
+            "translation": ["is"],
+            "description": "Exists or lives; is present in a place (present third person singular).",
+            "type": "verb",
+            "tense": "present third person singular"
+        },
+        {
+            "word": "estaremos",
+            "translation": ["will be"],
+            "description": "We will exist or live; we will be present in a place (future first person plural).",
+            "type": "verb",
+            "tense": "future first person plural"
+        },
+        {
+            "word": "estemos",
+            "translation": ["let's be"],
+            "description": "Let's exist or live; let's be present in a place (present subjunctive).",
+            "type": "verb",
+            "tense": "present subjunctive"
+        },
+        {
+            "word": "estaba",
+            "translation": ["was"],
+            "description": "Was existing or living; was present in a place (past imperfect).",
+            "type": "verb",
+            "tense": "past imperfect"
+        },
+        {
+            "word": "había estado",
+            "translation": ["had been"],
+            "description": "Had existed or lived; had been present in a place (past perfect).",
+            "type": "verb",
+            "tense": "past perfect"
+        },
+        {
+            "word": "tener",
+            "translation": ["have"],
+            "description": "To own, possess, or hold something.",
+            "type": "verb",
+            "tense": "present"
+        },
+        {
+            "word": "tuvo",
+            "translation": ["had"],
+            "description": "Owned, possessed, or held something (past tense).",
+            "type": "verb",
+            "tense": "past"
+        },
+        {
+            "word": "tendrá",
+            "translation": ["will have"],
+            "description": "Will own, possess, or hold something (future tense).",
+            "type": "verb",
+            "tense": "future"
+        },
+        {
+            "word": "teniendo",
+            "translation": ["having"],
+            "description": "In the act of owning, possessing, or holding something (present participle).",
+            "type": "verb",
+            "tense": "present participle"
+        },
+        {
+            "word": "tenido",
+            "translation": ["had"],
+            "description": "Having owned, possessed, or held something (past participle).",
+            "type": "verb",
+            "tense": "past participle"
+        },
+        {
+            "word": "tendría",
+            "translation": ["would have"],
+            "description": "Would own, possess, or hold something (conditional tense).",
+            "type": "verb",
+            "tense": "conditional"
+        },
+        {
+            "word": "ten",
+            "translation": ["have"],
+            "description": "Own, possess, or hold something (imperative form).",
+            "type": "verb",
+            "tense": "imperative"
+        },
+        {
+            "word": "tiene",
+            "translation": ["has"],
+            "description": "Owns, possesses, or holds something (present third person singular).",
+            "type": "verb",
+            "tense": "present third person singular"
+        },
+        {
+            "word": "tendremos",
+            "translation": ["will have"],
+            "description": "We will own, possess, or hold something (future first person plural).",
+            "type": "verb",
+            "tense": "future first person plural"
+        },
+        {
+            "word": "tengamos",
+            "translation": ["let's have"],
+            "description": "Let's own, possess, or hold something (present subjunctive).",
+            "type": "verb",
+            "tense": "present subjunctive"
+        },
+        {
+            "word": "tenía",
+            "translation": ["had"],
+            "description": "Was owning, possessing, or holding something (past imperfect).",
+            "type": "verb",
+            "tense": "past imperfect"
+        },
+        {
+            "word": "había tenido",
+            "translation": ["had had"],
+            "description": "Had owned, possessed, or held something (past perfect).",
+            "type": "verb",
+            "tense": "past perfect"
+        },
+        {
+            "word": "hablar",
+            "translation": ["speak", "talk"],
+            "description": "To say something in order to convey information or to express a feeling.",
+            "type": "verb",
+            "tense": "present"
+        },
+        {
+            "word": "habló",
+            "translation": ["spoke", "talked"],
+            "description": "Said something in order to convey information or to express a feeling (past tense).",
+            "type": "verb",
+            "tense": "past"
+        },
+        {
+            "word": "hablará",
+            "translation": ["will speak", "will talk"],
+            "description": "Will say something in order to convey information or to express a feeling (future tense).",
+            "type": "verb",
+            "tense": "future"
+        },
+        {
+            "word": "hablando",
+            "translation": ["speaking", "talking"],
+            "description": "In the act of saying something in order to convey information or to express a feeling (present participle).",
+            "type": "verb",
+            "tense": "present participle"
+        },
+        {
+            "word": "hablado",
+            "translation": ["spoken", "talked"],
+            "description": "Having said something in order to convey information or to express a feeling (past participle).",
+            "type": "verb",
+            "tense": "past participle"
+        },
+        {
+            "word": "hablaría",
+            "translation": ["would speak", "would talk"],
+            "description": "Would say something in order to convey information or to express a feeling (conditional tense).",
+            "type": "verb",
+            "tense": "conditional"
+        },
+        {
+            "word": "habla",
+            "translation": ["speak", "talk"],
+            "description": "Say something in order to convey information or to express a feeling (imperative form).",
+            "type": "verb",
+            "tense": "imperative"
+        },
+        {
+            "word": "habla",
+            "translation": ["speaks", "talks"],
+            "description": "Says something in order to convey information or to express a feeling (present third person singular).",
+            "type": "verb",
+            "tense": "present third person singular"
+        },
+        {
+            "word": "hablaremos",
+            "translation": ["will speak", "will talk"],
+            "description": "We will say something in order to convey information or to express a feeling (future first person plural).",
+            "type": "verb",
+            "tense": "future first person plural"
+        },
+        {
+            "word": "hablemos",
+            "translation": ["let's speak", "let's talk"],
+            "description": "Let's say something in order to convey information or to express a feeling (present subjunctive).",
+            "type": "verb",
+            "tense": "present subjunctive"
+        },
+        {
+            "word": "hablaba",
+            "translation": ["was speaking", "was talking"],
+            "description": "Was saying something in order to convey information or to express a feeling (past imperfect).",
+            "type": "verb",
+            "tense": "past imperfect"
+        },
+        {
+            "word": "había hablado",
+            "translation": ["had spoken", "had talked"],
+            "description": "Had said something in order to convey information or to express a feeling (past perfect).",
+            "type": "verb",
+            "tense": "past perfect"
+        },
+        {
+            "word": "comer",
+            "translation": ["eat"],
+            "description": "To put food into the mouth, chew, and swallow it.",
+            "type": "verb",
+            "tense": "present"
+        },
+        {
+            "word": "comió",
+            "translation": ["ate"],
+            "description": "Put food into the mouth, chewed, and swallowed it (past tense).",
+            "type": "verb",
+            "tense": "past"
+        },
+        {
+            "word": "comerá",
+            "translation": ["will eat"],
+            "description": "Will put food into the mouth, chew, and swallow it (future tense).",
+            "type": "verb",
+            "tense": "future"
+        },
+        {
+            "word": "comiendo",
+            "translation": ["eating"],
+            "description": "In the act of putting food into the mouth, chewing, and swallowing it (present participle).",
+            "type": "verb",
+            "tense": "present participle"
+        },
+        {
+            "word": "comido",
+            "translation": ["eaten"],
+            "description": "Having put food into the mouth, chewed, and swallowed it (past participle).",
+            "type": "verb",
+            "tense": "past participle"
+        },
+        {
+            "word": "comería",
+            "translation": ["would eat"],
+            "description": "Would put food into the mouth, chew, and swallow it (conditional tense).",
+            "type": "verb",
+            "tense": "conditional"
+        },
+        {
+            "word": "come",
+            "translation": ["eat"],
+            "description": "Put food into the mouth, chew, and swallow it (imperative form).",
+            "type": "verb",
+            "tense": "imperative"
+        },
+        {
+            "word": "come",
+            "translation": ["eats"],
+            "description": "Puts food into the mouth, chews, and swallows it (present third person singular).",
+            "type": "verb",
+            "tense": "present third person singular"
+        },
+        {
+            "word": "comeremos",
+            "translation": ["will eat"],
+            "description": "We will put food into the mouth, chew, and swallow it (future first person plural).",
+            "type": "verb",
+            "tense": "future first person plural"
+        },
+        {
+            "word": "comamos",
+            "translation": ["let's eat"],
+            "description": "Let's put food into the mouth, chew, and swallow it (present subjunctive).",
+            "type": "verb",
+            "tense": "present subjunctive"
+        },
+        {
+            "word": "comía",
+            "translation": ["was eating"],
+            "description": "Was putting food into the mouth, chewing, and swallowing it (past imperfect).",
+            "type": "verb",
+            "tense": "past imperfect"
+        },
+        {
+            "word": "había comido",
+            "translation": ["had eaten"],
+            "description": "Had put food into the mouth, chewed, and swallowed it (past perfect).",
+            "type": "verb",
+            "tense": "past perfect"
+        },
+        {
+            "word": "correr",
+            "translation": ["run"],
+            "description": "Move at a speed faster than a walk, never having both or all the feet on the ground at the same time.",
+            "type": "verb",
+            "tense": "present"
+        },
+        {
+            "word": "corrió",
+            "translation": ["ran"],
+            "description": "Moved at a speed faster than a walk, never having both or all the feet on the ground at the same time (past tense).",
+            "type": "verb",
+            "tense": "past"
+        },
+        {
+            "word": "correrá",
+            "translation": ["will run"],
+            "description": "Will move at a speed faster than a walk, never having both or all the feet on the ground at the same time (future tense).",
+            "type": "verb",
+            "tense": "future"
+        },
+        {
+            "word": "corriendo",
+            "translation": ["running"],
+            "description": "In the act of moving at a speed faster than a walk, never having both or all the feet on the ground at the same time (present participle).",
+            "type": "verb",
+            "tense": "present participle"
+        },
+        {
+            "word": "corrido",
+            "translation": ["run"],
+            "description": "Having moved at a speed faster than a walk, never having both or all the feet on the ground at the same time (past participle).",
+            "type": "verb",
+            "tense": "past participle"
+        },
+        {
+            "word": "correría",
+            "translation": ["would run"],
+            "description": "Would move at a speed faster than a walk, never having both or all the feet on the ground at the same time (conditional tense).",
+            "type": "verb",
+            "tense": "conditional"
+        },
+        {
+            "word": "corre",
+            "translation": ["run"],
+            "description": "Move at a speed faster than a walk, never having both or all the feet on the ground at the same time (imperative form).",
+            "type": "verb",
+            "tense": "imperative"
+        },
+        {
+            "word": "corre",
+            "translation": ["runs"],
+            "description": "Moves at a speed faster than a walk, never having both or all the feet on the ground at the same time (present third person singular).",
+            "type": "verb",
+            "tense": "present third person singular"
+        },
+        {
+            "word": "correremos",
+            "translation": ["will run"],
+            "description": "We will move at a speed faster than a walk, never having both or all the feet on the ground at the same time (future first person plural).",
+            "type": "verb",
+            "tense": "future first person plural"
+        },
+        {
+            "word": "corramos",
+            "translation": ["let's run"],
+            "description": "Let's move at a speed faster than a walk, never having both or all the feet on the ground at the same time (present subjunctive).",
+            "type": "verb",
+            "tense": "present subjunctive"
+        },
+        {
+            "word": "corría",
+            "translation": ["ran"],
+            "description": "Was moving at a speed faster than a walk, never having both or all the feet on the ground at the same time (past imperfect).",
+            "type": "verb",
+            "tense": "past imperfect"
+        },
+        {
+            "word": "corriera",
+            "translation": ["had run"],
+            "description": "Had moved at a speed faster than a walk, never having both or all the feet on the ground at the same time (past perfect).",
+            "type": "verb",
+            "tense": "past perfect"
+        },
+        {
+            "word": "ir",
+            "translation": ["go"],
+            "description": "To move or travel; to proceed or advance in a direction.",
+            "type": "verb",
+            "tense": "present"
+        },
+        {
+            "word": "fui",
+            "translation": ["went"],
+            "description": "Moved or traveled; proceeded or advanced in a direction (past tense).",
+            "type": "verb",
+            "tense": "past"
+        },
+        {
+            "word": "irá",
+            "translation": ["will go"],
+            "description": "Will move or travel; will proceed or advance in a direction (future tense).",
+            "type": "verb",
+            "tense": "future"
+        },
+        {
+            "word": "yendo",
+            "translation": ["going"],
+            "description": "In the act of moving or traveling; in the act of proceeding or advancing in a direction (present participle).",
+            "type": "verb",
+            "tense": "present participle"
+        },
+        {
+            "word": "ido",
+            "translation": ["gone"],
+            "description": "Having moved or traveled; having proceeded or advanced in a direction (past participle).",
+            "type": "verb",
+            "tense": "past participle"
+        },
+        {
+            "word": "iría",
+            "translation": ["would go"],
+            "description": "Would move or travel; would proceed or advance in a direction (conditional tense).",
+            "type": "verb",
+            "tense": "conditional"
+        },
+        {
+            "word": "ve",
+            "translation": ["go"],
+            "description": "Move or travel; proceed or advance in a direction (imperative form).",
+            "type": "verb",
+            "tense": "imperative"
+        },
+        {
+            "word": "va",
+            "translation": ["goes"],
+            "description": "Moves or travels; proceeds or advances in a direction (present third person singular).",
+            "type": "verb",
+            "tense": "present third person singular"
+        },
+        {
+            "word": "iremos",
+            "translation": ["will go"],
+            "description": "We will move or travel; we will proceed or advance in a direction (future first person plural).",
+            "type": "verb",
+            "tense": "future first person plural"
+        },
+        {
+            "word": "vamos",
+            "translation": ["let's go"],
+            "description": "Let's move or travel; let's proceed or advance in a direction (present subjunctive).",
+            "type": "verb",
+            "tense": "present subjunctive"
+        },
+        {
+            "word": "iba",
+            "translation": ["was going"],
+            "description": "Was moving or traveling; was proceeding or advancing in a direction (past imperfect).",
+            "type": "verb",
+            "tense": "past imperfect"
+        },
+        {
+            "word": "había ido",
+            "translation": ["had gone"],
+            "description": "Had moved or traveled; had proceeded or advanced in a direction (past perfect).",
+            "type": "verb",
+            "tense": "past perfect"
+        }
+    ]
+  }
+  

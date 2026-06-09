@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TERMINUS // SPACE SECTOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="hud">
+            <div class="hud-left">
+                <span class="blink">◉</span> TERMINUS // SECTOR-7
+            </div>
+            <div class="hud-right">
+                <span>SCORE: <span id="score">0</span></span>
+                <span>WAVE: <span id="wave">1</span></span>
+            </div>
+        </div>
+        <div class="canvas-wrap">
+            <canvas id="gameCanvas"></canvas>
+            <div class="joystick" id="joystick">
+                <div class="joystick-base">
+                    <div class="joystick-knob" id="joystick-knob"></div>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <span class="controls-desk">← ↑ → ↓</span> NAVIGATE
+            <span class="controls-mob">TOUCH & DRAG</span>
+        </div>
+    </div>
+
+    <div id="gameover-overlay" class="gameover-overlay">
+        <div class="gameover-box">
+            <div class="gameover-header">◉ DEFEAT ◉</div>
+            <div class="gameover-content">
+                <p class="gameover-score">SCORE: <span id="final-score">0</span></p>
+                <p class="gameover-wave">WAVE: <span id="final-wave">1</span></p>
+                <button id="restart-btn" class="terminal-btn">► RESTART</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
