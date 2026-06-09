@@ -179,22 +179,22 @@ button { font-family:inherit; cursor:pointer; }
     justify-content:center;
     gap:8px;
     margin-top:16px;
-    font-size:9px;
+    font-size:11px;
     letter-spacing:3px;
-    color:var(--text3);
-    opacity:.5;
-    animation: swipe-fade 3s ease-in-out infinite;
+    color:var(--green);
+    opacity:.8;
+    animation: swipe-fade 2s ease-in-out infinite;
 }
 .swipe-arrow {
-    font-size:14px;
-    animation: swipe-bounce 1.5s ease-in-out infinite;
+    font-size:18px;
+    animation: swipe-bounce 1.2s ease-in-out infinite;
 }
 .swipe-arrow:first-child { animation-delay:0s; }
 .swipe-arrow:last-child { animation-delay:.15s; }
 .swipe-text { margin:0 4px; }
 
 @keyframes swipe-fade {
-    0%,100%{opacity:.3} 50%{opacity:.7}
+    0%,100%{opacity:.5} 50%{opacity:1}
 }
 @keyframes swipe-bounce {
     0%,100%{transform:translateX(0)} 50%{transform:translateX(4px)}
