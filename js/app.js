@@ -67,6 +67,7 @@ function boot() {
     initExperience();
     initCTA();
     initHeaderBrand();
+    initProjectFilters();
 }
 
 // ============================================
@@ -383,4 +384,31 @@ function initHeaderBrand() {
         el.addEventListener('click', () => goTo(0));
         el.addEventListener('keydown', e => { if (e.key === 'Enter') goTo(0); });
     }
+}
+
+// ============================================
+// PROJECT FILTERS
+// ============================================
+function initProjectFilters() {
+    $$('.pf-item').forEach(btn => {
+        btn.addEventListener('click', () => {
+            $$('.pf-item').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const filter = btn.dataset.filter;
+            $$('.project-card').forEach(card => {
+                if (filter === 'all' || card.dataset.category === filter) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        });
+    });
+
+    $$('.project-card').forEach(card => {
+        card.addEventListener('click', () => {
+            const link = card.querySelector('.pc-link');
+            if (link) link.click();
+        });
+    });
 }

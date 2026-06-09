@@ -402,6 +402,20 @@ button { font-family:inherit; cursor:pointer; }
 /* ============================================
    PROJECTS
    ============================================ */
+.project-filters {
+    display:flex; gap:6px; margin-bottom:16px; flex-wrap:wrap;
+}
+.pf-item {
+    font-size:11px; letter-spacing:2px; padding:6px 12px;
+    background:none; border:1px solid var(--border);
+    color:var(--text3); cursor:pointer;
+    transition:all .2s;
+}
+.pf-item:hover { border-color:var(--green-dim); color:var(--text2); }
+.pf-item.active { border-color:var(--green); color:var(--green); background:rgba(0,255,136,.06); }
+
+.project-card.hidden { display:none; }
+
 .projects-grid {
     display:grid;
     grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
