@@ -16,7 +16,7 @@
         }
         .dumi-title {
             font-size:24px; font-weight:bold; letter-spacing:4px;
-            color:var(--green); margin-bottom:8px;
+            color:var(--accent); margin-bottom:8px;
         }
         .dumi-subtitle {
             font-size:12px; letter-spacing:2px; color:var(--text3);
@@ -81,14 +81,14 @@
                 <div style="width:60px;height:60px;background:var(--bg-hover);border:1px solid var(--border);display:flex;align-items:end;justify-content:center;padding:4px">
                     <span style="font-size:8px;color:var(--text3)">--bg-hover</span>
                 </div>
-                <div style="width:60px;height:60px;background:var(--green);display:flex;align-items:end;justify-content:center;padding:4px">
-                    <span style="font-size:8px;color:var(--bg)">--green</span>
+                <div style="width:60px;height:60px;background:var(--accent);display:flex;align-items:end;justify-content:center;padding:4px">
+                    <span style="font-size:8px;color:var(--bg)">--accent</span>
                 </div>
-                <div style="width:60px;height:60px;background:var(--green-mid);display:flex;align-items:end;justify-content:center;padding:4px">
-                    <span style="font-size:8px;color:var(--bg)">--green-mid</span>
+                <div style="width:60px;height:60px;background:var(--accent);display:flex;align-items:end;justify-content:center;padding:4px">
+                    <span style="font-size:8px;color:var(--bg)">--accent</span>
                 </div>
-                <div style="width:60px;height:60px;background:var(--green-dim);display:flex;align-items:end;justify-content:center;padding:4px">
-                    <span style="font-size:8px;color:var(--bg)">--green-dim</span>
+                <div style="width:60px;height:60px;background:var(--accent-dim);display:flex;align-items:end;justify-content:center;padding:4px">
+                    <span style="font-size:8px;color:var(--bg)">--accent-dim</span>
                 </div>
                 <div style="width:60px;height:60px;background:var(--amber);display:flex;align-items:end;justify-content:center;padding:4px">
                     <span style="font-size:8px;color:var(--bg)">--amber</span>
@@ -117,12 +117,12 @@
                 <div style="font-size:clamp(32px,5.5vw,64px);font-weight:bold;line-height:1.1;letter-spacing:3px;color:var(--text)">
                     NOMBRE APELLIDO
                 </div>
-                <div style="font-size:clamp(32px,5.5vw,64px);font-weight:bold;line-height:1.1;letter-spacing:3px;color:var(--green);text-shadow:0 0 24px var(--green-glow)">
+                <div style="font-size:clamp(32px,5.5vw,64px);font-weight:bold;line-height:1.1;letter-spacing:3px;color:var(--text)">
                     NOMBRE ACENTO
                 </div>
             </div>
             <div style="font-size:18px;color:var(--amber);margin-bottom:12px">
-                <span style="color:var(--green)">►</span> ROL TYPEWRITER
+                <span style="color:var(--accent)">►</span> ROL TYPEWRITER
             </div>
             <div style="font-size:14px;color:var(--text2);margin-bottom:8px">
                 Texto de ejemplo con --text2 para contenido general y descripciones.
@@ -158,7 +158,7 @@
         <div class="dumi-block">
             <div class="dumi-label">SECTION TITLE BAR</div>
             <div class="section-title-bar">
-                <h2 class="section-name">TÍTULO</h2>
+                <h2 class="section-name" style="color:var(--text)">TÍTULO</h2>
                 <span class="section-rule"></span>
                 <span class="section-tag">ETIQUETA</span>
             </div>
@@ -199,6 +199,8 @@
                         <a href="#" class="pc-link" data-type="web">▸ WEB</a>
                         <a href="#" class="pc-link" data-type="descarga">▸ DESCARGA</a>
                     </div>
+                </article>
+            </div>
                 </article>
             </div>
         </div>
@@ -281,7 +283,7 @@
         <!-- BOTTOM NAV -->
         <div class="dumi-block">
             <div class="dumi-label">BOTTOM NAV</div>
-            <div style="background:rgba(3,3,5,.95);border:1px solid var(--border);padding:8px;display:flex;justify-content:center;gap:4px;backdrop-filter:blur(8px)">
+            <div style="background:rgba(10,10,10,.95);border:1px solid var(--border);padding:8px;display:flex;justify-content:center;gap:4px;backdrop-filter:blur(8px)">
                 <button class="bn-item active">
                     <span class="bn-icon">⬡</span>
                     <span class="bn-text">INICIO</span>
@@ -307,22 +309,12 @@
             <div style="display:flex;justify-content:space-between;align-items:center;padding:0 20px;height:50px;border:1px solid var(--border);background:var(--bg)">
                 <div class="header-brand">
                     <span class="brand-hex"></span>
-                    <span class="brand-text">JCARLOS-AB</span>
+                    <span class="brand-text" style="color:var(--text)">JCARLOS-AB</span>
                 </div>
                 <div class="header-status">
                     <span class="status-dot"></span>
                     <span class="header-date">2026.06.10 // 12:00:00</span>
                 </div>
-            </div>
-        </div>
-
-        <!-- SWIPE HINT -->
-        <div class="dumi-block">
-            <div class="dumi-label">SWIPE HINT (MÓVIL)</div>
-            <div style="display:flex;align-items:center;justify-content:center;gap:8px;font-size:11px;letter-spacing:3px;color:var(--green);opacity:.8">
-                <span style="font-size:18px">←</span>
-                <span>DESLIZA</span>
-                <span style="font-size:18px">→</span>
             </div>
         </div>
 
@@ -342,7 +334,7 @@
             <div class="dumi-row">
                 <button class="pf-item active">ACTIVO</button>
                 <button class="pf-item">INACTIVO</button>
-                <button style="font-size:11px;letter-spacing:2px;padding:6px 12px;background:rgba(0,255,136,.06);border:1px solid var(--green);color:var(--green);cursor:pointer;transition:all .2s">HOVER ME</button>
+                <button style="font-size:11px;letter-spacing:2px;padding:6px 12px;background:rgba(74,158,255,.06);border:1px solid var(--accent);color:var(--accent);cursor:pointer;transition:all .2s">HOVER ME</button>
             </div>
         </div>
 

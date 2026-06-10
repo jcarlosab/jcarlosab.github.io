@@ -1,9 +1,7 @@
 const CFG = {
     loadTime: 2400,
     typeSpeed: 35,
-    roleText: 'DESARROLLADOR SENIOR',
-    roleSpeed: 60,
-    bioText: 'Desarrollador Senior especializado en Magnolia CMS, trabajando a diario con Java, YAML, FreeMarker (FTL), JavaScript, HTML y CSS. Experiencia también en React, Next.js, Node.js y Python para proyectos personales.',
+    bioText: 'Desarrollador Full Stack especializado en Magnolia CMS, trabajando a diario con Java, YAML, FreeMarker (FTL), JavaScript, HTML y CSS. Experiencia también en React, Next.js, Node.js y Python para proyectos personales.',
     startDate: new Date('2017-11-01'),
     swipeThreshold: 50,
     swipeCooldown: 600,
@@ -56,11 +54,8 @@ document.addEventListener('DOMContentLoaded', () => {
 function boot() {
     initNav();
     initSwipe();
-    initRadar();
     initDate();
-    initRole();
     initExperience();
-    initCTA();
     initHeaderBrand();
     initProjectFilters();
 }
@@ -70,10 +65,6 @@ function boot() {
 // ============================================
 function initNav() {
     $$('.bn-item').forEach(b => {
-        b.addEventListener('click', () => goTo(+b.dataset.screen));
-    });
-
-    $$('.blip').forEach(b => {
         b.addEventListener('click', () => goTo(+b.dataset.screen));
     });
 
@@ -202,94 +193,6 @@ function activateNav() {
 }
 
 // ============================================
-// RADAR CANVAS
-// ============================================
-function initRadar() {
-    const canvas = $('#radar-canvas');
-    if (!canvas) return;
-    const ctx = canvas.getContext('2d');
-    const W = canvas.width;
-    const H = canvas.height;
-    const cx = W / 2;
-    const cy = H / 2;
-    const R = Math.min(cx, cy) - 10;
-
-    let angle = 0;
-
-    function draw() {
-        ctx.clearRect(0, 0, W, H);
-
-        // Rings
-        for (let i = 1; i <= 3; i++) {
-            ctx.beginPath();
-            ctx.arc(cx, cy, R * (i / 3), 0, Math.PI * 2);
-            ctx.strokeStyle = 'rgba(0,255,136,0.08)';
-            ctx.lineWidth = 1;
-            ctx.stroke();
-        }
-
-        // Cross lines
-        ctx.strokeStyle = 'rgba(0,255,136,0.05)';
-        ctx.beginPath();
-        ctx.moveTo(cx, cy - R); ctx.lineTo(cx, cy + R);
-        ctx.moveTo(cx - R, cy); ctx.lineTo(cx + R, cy);
-        ctx.stroke();
-
-        // Sweep
-        const sweepGrad = ctx.createConicGradient(-angle, cx, cy);
-        sweepGrad.addColorStop(0, 'rgba(0,255,136,0.18)');
-        sweepGrad.addColorStop(0.08, 'rgba(0,255,136,0)');
-        sweepGrad.addColorStop(1, 'rgba(0,255,136,0)');
-
-        ctx.beginPath();
-        ctx.arc(cx, cy, R, 0, Math.PI * 2);
-        ctx.fillStyle = sweepGrad;
-        ctx.fill();
-
-        // Sweep line
-        ctx.beginPath();
-        ctx.moveTo(cx, cy);
-        ctx.lineTo(cx + Math.cos(-angle) * R, cy + Math.sin(-angle) * R);
-        ctx.strokeStyle = 'rgba(0,255,136,0.5)';
-        ctx.lineWidth = 1.5;
-        ctx.stroke();
-
-        // Center dot
-        ctx.beginPath();
-        ctx.arc(cx, cy, 3, 0, Math.PI * 2);
-        ctx.fillStyle = '#00ff88';
-        ctx.fill();
-
-        angle += 0.012;
-        requestAnimationFrame(draw);
-    }
-
-    draw();
-    positionBlips();
-}
-
-function positionBlips() {
-    const radar = $('#radar');
-    if (!radar) return;
-    const W = radar.offsetWidth;
-    const H = radar.offsetHeight;
-    const cx = W / 2;
-    const cy = H / 2;
-    const R = Math.min(cx, cy) * 0.72;
-
-    const blips = $$('.blip');
-    const angles = [-Math.PI / 2, Math.PI / 2, Math.PI]; // top, bottom, left
-
-    blips.forEach((b, i) => {
-        const a = angles[i];
-        const x = cx + Math.cos(a) * R;
-        const y = cy + Math.sin(a) * R;
-        b.style.left = x + 'px';
-        b.style.top = y + 'px';
-    });
-}
-
-// ============================================
 // DATE
 // ============================================
 function initDate() {
@@ -302,23 +205,6 @@ function initDate() {
     }
     upd();
     setInterval(upd, 1000);
-}
-
-// ============================================
-// TYPEWRITER ROLE
-// ============================================
-let roleDone = false;
-function initRole() {
-    const el = $('#role-typewriter');
-    if (!el || roleDone) return;
-    roleDone = true;
-    let i = 0;
-    (function type() {
-        if (i < CFG.roleText.length) {
-            el.textContent += CFG.roleText.charAt(i++);
-            setTimeout(type, CFG.roleSpeed + Math.random() * 30);
-        }
-    })();
 }
 
 // ============================================
@@ -355,19 +241,6 @@ function initExperience() {
     }
     calc();
     setInterval(calc, 3600000);
-}
-
-// ============================================
-// CTA
-// ============================================
-function initCTA() {
-    const el = $('#cta-access');
-    if (el) {
-        el.addEventListener('click', e => {
-            e.preventDefault();
-            goTo(3);
-        });
-    }
 }
 
 // ============================================
