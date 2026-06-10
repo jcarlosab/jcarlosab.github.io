@@ -1,13 +1,23 @@
-# Proyectos principales
+# jcarlosab.github.io
 
-| Proyecto | Descripción | Tecnologías | Demo |
-|---------|-------------|-------------|------|
-| [task-points-app](https://github.com/jcarlosab/task-points-app) | Planificación ágil con cartas tipo poker | React, Socket.io | [🌐 Vercel](#) |
+Portfolio personal de Jose Carlos Anton Barros alojado en GitHub Pages. Interfaz estilo sci-fi con efectos de terminal, radar y animaciones CSS.
 
-# Zona de pruebas
+## Estructura
 
-| Proyecto | Descripción | Tecnologías | Demo |
-|---------|-------------|-------------|------|
-| [english-cards](https://github.com/jcarlosab/dev-playground/tree/main/react-apps/english-cards-app) | Flashcards para practicar inglés | React |  [🌐 Vercel](#) |
+```
+├── css/            # Estilos (CRT scanlines, radar, typewriter)
+├── js/             # Logica (navegacion, animaciones, radar canvas)
+├── repo/           # Demos desplegadas de juegos y proyectos
+└── index.html      # Pagina principal (SPA)
+```
 
-[jcarlosab-dev-playground](https://github.com/jcarlosab/dev-playground) para cursos y experimentos.
+## Tecnologias
+
+- HTML5 / CSS3 / JavaScript vanilla
+- Canvas API (radar animado)
+- Efectos CRT, typewriter, animaciones CSS
+- GitHub Pages (hosting)
+
+## Despliegue
+
+Automatico via GitHub Pages al hacer push a `main`.
