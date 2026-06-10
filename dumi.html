@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DUMI — Weyland-Yutani Component Examples</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body { overflow:auto; }
+        .dumi-section {
+            max-width:900px; margin:0 auto;
+            padding:40px 20px;
+        }
+        .dumi-title {
+            font-size:24px; font-weight:bold; letter-spacing:4px;
+            color:var(--green); margin-bottom:8px;
+        }
+        .dumi-subtitle {
+            font-size:12px; letter-spacing:2px; color:var(--text3);
+            margin-bottom:32px; padding-bottom:12px;
+            border-bottom:1px solid var(--border);
+        }
+        .dumi-block {
+            margin-bottom:40px;
+        }
+        .dumi-label {
+            font-size:11px; letter-spacing:3px; color:var(--text3);
+            margin-bottom:12px; text-transform:uppercase;
+        }
+        .dumi-row {
+            display:flex; flex-wrap:wrap; gap:12px; align-items:center;
+        }
+        .dumi-grid {
+            display:grid;
+            grid-template-columns:repeat(auto-fill, minmax(260px, 1fr));
+            gap:12px;
+        }
+
+        /* Loading screen visible for demo */
+        .dumi-loading {
+            position:relative; width:100%; height:200px;
+            background:var(--bg); border:1px solid var(--border);
+            display:flex; align-items:center; justify-content:center;
+            overflow:hidden;
+        }
+        .dumi-loading .loading-content { position:relative; z-index:1; }
+
+        /* Radar demo */
+        .dumi-radar {
+            width:200px; height:200px; position:relative;
+            border:1px solid var(--border); background:var(--bg-card);
+            display:flex; align-items:center; justify-content:center;
+        }
+        .dumi-radar canvas { width:100%; height:100%; }
+
+        /* Screen scroll demo */
+        .dumi-scroll-demo {
+            height:200px; overflow-y:auto; border:1px solid var(--border);
+            background:var(--bg-card);
+        }
+    </style>
+</head>
+<body>
+    <div class="dumi-section">
+        <h1 class="dumi-title">WEYLAND-YUTANI UI KIT</h1>
+        <p class="dumi-subtitle">TODOS LOS COMPONENTES DEL SISTEMA // DUMI</p>
+
+        <!-- COLORS -->
+        <div class="dumi-block">
+            <div class="dumi-label">COLORES DEL SISTEMA</div>
+            <div class="dumi-row">
+                <div style="width:60px;height:60px;background:var(--bg);border:1px solid var(--border);display:flex;align-items:end;justify-content:center;padding:4px">
+                    <span style="font-size:8px;color:var(--text3)">--bg</span>
+                </div>
+                <div style="width:60px;height:60px;background:var(--bg-card);border:1px solid var(--border);display:flex;align-items:end;justify-content:center;padding:4px">
+                    <span style="font-size:8px;color:var(--text3)">--bg-card</span>
+                </div>
+                <div style="width:60px;height:60px;background:var(--bg-hover);border:1px solid var(--border);display:flex;align-items:end;justify-content:center;padding:4px">
+                    <span style="font-size:8px;color:var(--text3)">--bg-hover</span>
+                </div>
+                <div style="width:60px;height:60px;background:var(--green);display:flex;align-items:end;justify-content:center;padding:4px">
+                    <span style="font-size:8px;color:var(--bg)">--green</span>
+                </div>
+                <div style="width:60px;height:60px;background:var(--green-mid);display:flex;align-items:end;justify-content:center;padding:4px">
+                    <span style="font-size:8px;color:var(--bg)">--green-mid</span>
+                </div>
+                <div style="width:60px;height:60px;background:var(--green-dim);display:flex;align-items:end;justify-content:center;padding:4px">
+                    <span style="font-size:8px;color:var(--bg)">--green-dim</span>
+                </div>
+                <div style="width:60px;height:60px;background:var(--amber);display:flex;align-items:end;justify-content:center;padding:4px">
+                    <span style="font-size:8px;color:var(--bg)">--amber</span>
+                </div>
+                <div style="width:60px;height:60px;background:var(--red);display:flex;align-items:end;justify-content:center;padding:4px">
+                    <span style="font-size:8px;color:#fff">--red</span>
+                </div>
+            </div>
+            <div class="dumi-row" style="margin-top:12px">
+                <div style="padding:8px 16px;background:var(--bg-card);border:1px solid var(--border)">
+                    <span style="color:var(--text)">--text (principal)</span>
+                </div>
+                <div style="padding:8px 16px;background:var(--bg-card);border:1px solid var(--border)">
+                    <span style="color:var(--text2)">--text2 (secundario)</span>
+                </div>
+                <div style="padding:8px 16px;background:var(--bg-card);border:1px solid var(--border)">
+                    <span style="color:var(--text3)">--text3 (terciario)</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- TYPOGRAPHY -->
+        <div class="dumi-block">
+            <div class="dumi-label">TIPOGRAFÍA</div>
+            <div style="margin-bottom:12px">
+                <div style="font-size:clamp(32px,5.5vw,64px);font-weight:bold;line-height:1.1;letter-spacing:3px;color:var(--text)">
+                    NOMBRE APELLIDO
+                </div>
+                <div style="font-size:clamp(32px,5.5vw,64px);font-weight:bold;line-height:1.1;letter-spacing:3px;color:var(--green);text-shadow:0 0 24px var(--green-glow)">
+                    NOMBRE ACENTO
+                </div>
+            </div>
+            <div style="font-size:18px;color:var(--amber);margin-bottom:12px">
+                <span style="color:var(--green)">►</span> ROL TYPEWRITER
+            </div>
+            <div style="font-size:14px;color:var(--text2);margin-bottom:8px">
+                Texto de ejemplo con --text2 para contenido general y descripciones.
+            </div>
+            <div style="font-size:14px;color:var(--text3);margin-bottom:8px">
+                Texto de ejemplo con --text3 para etiquetas y metadatos.
+            </div>
+            <div style="font-size:11px;letter-spacing:4px;color:var(--text3)">
+                ETIQUETA CON LETTER-SPACING
+            </div>
+        </div>
+
+        <!-- LOADING SCREEN -->
+        <div class="dumi-block">
+            <div class="dumi-label">LOADING SCREEN</div>
+            <div class="dumi-loading">
+                <div class="loading-content">
+                    <div class="weyland-logo" style="width:80px;height:80px">
+                        <span class="logo-ring"></span>
+                        <span class="logo-ring ring-2"></span>
+                        <span class="logo-ring ring-3"></span>
+                        <span class="logo-core" style="font-size:24px">⬡</span>
+                    </div>
+                    <div class="loading-bar-container" style="width:180px">
+                        <div class="loading-bar" style="width:75%"></div>
+                    </div>
+                    <p class="loading-text">CARGANDO EJEMPLO...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION TITLE BAR -->
+        <div class="dumi-block">
+            <div class="dumi-label">SECTION TITLE BAR</div>
+            <div class="section-title-bar">
+                <h2 class="section-name">TÍTULO</h2>
+                <span class="section-rule"></span>
+                <span class="section-tag">ETIQUETA</span>
+            </div>
+        </div>
+
+        <!-- PROJECT CARDS -->
+        <div class="dumi-block">
+            <div class="dumi-label">PROJECT CARDS</div>
+            <div class="dumi-grid">
+                <article class="project-card" data-category="juego">
+                    <span class="pc-badge">JUEGO</span>
+                    <h3 class="pc-name">GAMEHUB</h3>
+                    <p class="pc-desc">Hub centralizado de todos mis juegos retro. Explora y accede a cada título desde un único panel.</p>
+                    <div class="pc-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+                    <a href="#" class="pc-link" data-type="github">▸ GITHUB</a>
+                </article>
+                <article class="project-card" data-category="web">
+                    <span class="pc-badge">WEB</span>
+                    <h3 class="pc-name">WEB RETRO CODES</h3>
+                    <p class="pc-desc">Explorador de códigos y trucos para videojuegos retro. Base de datos JSON con búsqueda por plataforma.</p>
+                    <div class="pc-tags"><span>Next.js</span><span>React</span><span>JSON</span></div>
+                    <a href="#" class="pc-link" data-type="web">▸ WEB</a>
+                </article>
+                <article class="project-card" data-category="herramienta">
+                    <span class="pc-badge">HERRAMIENTA</span>
+                    <h3 class="pc-name">RETRO M3U ORGANIZER</h3>
+                    <p class="pc-desc">Generador de archivos .m3u para juegos multidisco de PSX, Saturn y Dreamcast.</p>
+                    <div class="pc-tags"><span>Python</span><span>Tkinter</span></div>
+                    <a href="#" class="pc-link" data-type="github">▸ GITHUB</a>
+                </article>
+                <article class="project-card" data-category="herramienta">
+                    <span class="pc-badge">HERRAMIENTA</span>
+                    <h3 class="pc-name">EJEMPLO COMPLETO</h3>
+                    <p class="pc-desc">Card con los tres tipos de enlace: github, web y descarga.</p>
+                    <div class="pc-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+                    <div class="pc-links">
+                        <a href="#" class="pc-link" data-type="github">▸ GITHUB</a>
+                        <a href="#" class="pc-link" data-type="web">▸ WEB</a>
+                        <a href="#" class="pc-link" data-type="descarga">▸ DESCARGA</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <!-- FILTER BUTTONS -->
+        <div class="dumi-block">
+            <div class="dumi-label">FILTROS</div>
+            <div class="dumi-row">
+                <button class="pf-item active">TODOS</button>
+                <button class="pf-item">JUEGOS</button>
+                <button class="pf-item">HERRAMIENTAS</button>
+                <button class="pf-item">WEBS</button>
+                <button class="pf-item">HARDWARE</button>
+            </div>
+        </div>
+
+        <!-- DIAGNOSTICS / SKILL BARS -->
+        <div class="dumi-block">
+            <div class="dumi-label">SKILL BARS</div>
+            <div class="diag-list">
+                <div class="diag-row visible"><span class="dn">JAVA</span><span class="dp">95%</span><div class="db"><div class="df animated" style="--fw:95%"></div></div><span class="ds">ÓPTIMO</span></div>
+                <div class="diag-row visible"><span class="dn">JAVASCRIPT</span><span class="dp">90%</span><div class="db"><div class="df animated" style="--fw:90%"></div></div><span class="ds">ÓPTIMO</span></div>
+                <div class="diag-row visible"><span class="dn">REACT</span><span class="dp">85%</span><div class="db"><div class="df animated" style="--fw:85%"></div></div><span class="ds">NOMINAL</span></div>
+                <div class="diag-row visible"><span class="dn">PYTHON</span><span class="dp">50%</span><div class="db"><div class="df animated" style="--fw:50%"></div></div><span class="ds">APRENDIZAJE</span></div>
+            </div>
+        </div>
+
+        <!-- MANIFEST / BIO -->
+        <div class="dumi-block">
+            <div class="dumi-label">BIO / MANIFEST</div>
+            <div class="manifest-content">
+                <div class="manifest-avatar">
+                    <div class="avatar-box">
+                        <span class="avatar-glyph">◈</span>
+                        <div class="avatar-scan"></div>
+                    </div>
+                    <span class="avatar-id">JC-1992-AB</span>
+                </div>
+                <div class="manifest-text">
+                    <p class="bio-text" style="animation:none">Desarrollador Full Stack especializado en Magnolia CMS.</p>
+                    <div class="bio-details">
+                        <div class="detail"><span class="dk">// CARGO:</span> <span class="dv">Desarrollador Senior</span></div>
+                        <div class="detail"><span class="dk">// ESPECIALIZACIÓN:</span> <span class="dv">Magnolia CMS</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTACT CARDS -->
+        <div class="dumi-block">
+            <div class="dumi-label">CONTACT CARDS</div>
+            <div class="contact-cards">
+                <a href="mailto:test@test.com" class="ccard">
+                    <span class="ccard-icon">✉</span>
+                    <div class="ccard-body">
+                        <span class="ccard-label">EMAIL</span>
+                        <span class="ccard-value">josecarlos.dev@outlook.es</span>
+                    </div>
+                    <span class="ccard-arrow">→</span>
+                </a>
+                <a href="#" class="ccard">
+                    <span class="ccard-icon">◆</span>
+                    <div class="ccard-body">
+                        <span class="ccard-label">LINKEDIN</span>
+                        <span class="ccard-value">/in/jose-carlos-anton-barros</span>
+                    </div>
+                    <span class="ccard-arrow">→</span>
+                </a>
+                <a href="#" class="ccard">
+                    <span class="ccard-icon">⬡</span>
+                    <div class="ccard-body">
+                        <span class="ccard-label">GITHUB</span>
+                        <span class="ccard-value">/jcarlosab</span>
+                    </div>
+                    <span class="ccard-arrow">→</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- BOTTOM NAV -->
+        <div class="dumi-block">
+            <div class="dumi-label">BOTTOM NAV</div>
+            <div style="background:rgba(3,3,5,.95);border:1px solid var(--border);padding:8px;display:flex;justify-content:center;gap:4px;backdrop-filter:blur(8px)">
+                <button class="bn-item active">
+                    <span class="bn-icon">⬡</span>
+                    <span class="bn-text">INICIO</span>
+                </button>
+                <button class="bn-item">
+                    <span class="bn-icon">◈</span>
+                    <span class="bn-text">SOBRE MÍ</span>
+                </button>
+                <button class="bn-item">
+                    <span class="bn-icon">▣</span>
+                    <span class="bn-text">PROYECTOS</span>
+                </button>
+                <button class="bn-item">
+                    <span class="bn-icon">◉</span>
+                    <span class="bn-text">CONTACTO</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- HEADER -->
+        <div class="dumi-block">
+            <div class="dumi-label">HEADER</div>
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:0 20px;height:50px;border:1px solid var(--border);background:var(--bg)">
+                <div class="header-brand">
+                    <span class="brand-hex"></span>
+                    <span class="brand-text">JCARLOS-AB</span>
+                </div>
+                <div class="header-status">
+                    <span class="status-dot"></span>
+                    <span class="header-date">2026.06.10 // 12:00:00</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- SWIPE HINT -->
+        <div class="dumi-block">
+            <div class="dumi-label">SWIPE HINT (MÓVIL)</div>
+            <div style="display:flex;align-items:center;justify-content:center;gap:8px;font-size:11px;letter-spacing:3px;color:var(--green);opacity:.8">
+                <span style="font-size:18px">←</span>
+                <span>DESLIZA</span>
+                <span style="font-size:18px">→</span>
+            </div>
+        </div>
+
+        <!-- LINK TYPES -->
+        <div class="dumi-block">
+            <div class="dumi-label">LINK TYPES (CARD LINKS)</div>
+            <div class="dumi-row">
+                <a href="#" class="pc-link" data-type="github">▸ GITHUB</a>
+                <a href="#" class="pc-link" data-type="web">▸ WEB</a>
+                <a href="#" class="pc-link" data-type="descarga">▸ DESCARGA</a>
+            </div>
+        </div>
+
+        <!-- BUTTONS -->
+        <div class="dumi-block">
+            <div class="dumi-label">BOTONES</div>
+            <div class="dumi-row">
+                <button class="pf-item active">ACTIVO</button>
+                <button class="pf-item">INACTIVO</button>
+                <button style="font-size:11px;letter-spacing:2px;padding:6px 12px;background:rgba(0,255,136,.06);border:1px solid var(--green);color:var(--green);cursor:pointer;transition:all .2s">HOVER ME</button>
+            </div>
+        </div>
+
+        <!-- SCROLLBAR -->
+        <div class="dumi-block">
+            <div class="dumi-label">SCROLLBAR (CON SCROLL)</div>
+            <div class="dumi-scroll-demo" style="padding:16px">
+                <p style="color:var(--text2);margin-bottom:12px">Contenido de ejemplo para demostrar el scrollbar personalizado...</p>
+                <p style="color:var(--text2);margin-bottom:12px">Línea 2 de contenido de ejemplo.</p>
+                <p style="color:var(--text2);margin-bottom:12px">Línea 3 de contenido de ejemplo.</p>
+                <p style="color:var(--text2);margin-bottom:12px">Línea 4 de contenido de ejemplo.</p>
+                <p style="color:var(--text2);margin-bottom:12px">Línea 5 de contenido de ejemplo.</p>
+                <p style="color:var(--text2);margin-bottom:12px">Línea 6 de contenido de ejemplo.</p>
+                <p style="color:var(--text2);margin-bottom:12px">Línea 7 de contenido de ejemplo.</p>
+                <p style="color:var(--text2);margin-bottom:12px">Línea 8 de contenido de ejemplo.</p>
+                <p style="color:var(--text2)">Línea 9 — fin del contenido.</p>
+            </div>
+        </div>
+
+        <!-- META INFO -->
+        <div class="dumi-block">
+            <div class="dumi-label">INFORMACIÓN DEL SISTEMA</div>
+            <div style="padding:16px;background:var(--bg-card);border:1px solid var(--border);font-size:13px;color:var(--text2);line-height:1.8">
+                <div><span style="color:var(--text3)">FUENTE:</span> Jost, Courier New, Consolas, monospace</div>
+                <div><span style="color:var(--text3)">SCROLLBAR:</span> 3px, verde oscuro</div>
+                <div><span style="color:var(--text3)">SELECCIÓN:</span> verde oscuro con fondo oscuro</div>
+                <div><span style="color:var(--text3)">ANIMACIONES:</span> slide, fade, blink, pulse, spin, flicker, scan, swipe</div>
+                <div><span style="color:var(--text3)">EFECTOS:</span> CRT scanlines, vignette, hex grid background</div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

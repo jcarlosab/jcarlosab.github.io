@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <title>JCARLOS-AB // CREW INTERFACE</title>
+    <title>jcarlos-ab</title>
+    <meta name="description" content="Portfolio de Jose Carlos Antón Barros — Desarrollador Senior especializado en Magnolia CMS, Java, JavaScript y React. Proyectos, skills y contacto.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -83,7 +84,6 @@
                                 <span class="swipe-text">DESLIZA</span>
                                 <span class="swipe-arrow">→</span>
                             </div>
-                        </div>
 
                         <!-- RADAR NAV -->
                         <div class="radar" id="radar">
@@ -159,7 +159,7 @@
                     <div class="section-title-bar">
                         <h2 class="section-name">PROYECTOS</h2>
                         <span class="section-rule"></span>
-                        <span class="section-tag">11 ARCHIVOS</span>
+                        <span class="section-tag">7 ARCHIVOS</span>
                     </div>
                     <div class="project-filters">
                         <button class="pf-item active" data-filter="all">TODOS</button>
@@ -169,72 +169,60 @@
                         <button class="pf-item" data-filter="hardware">HARDWARE</button>
                     </div>
                     <div class="projects-grid">
-                        <article class="project-card" data-category="juego">
-                            <h3 class="pc-name">GAMEHUB</h3>
-                            <p class="pc-desc">Hub centralizado de todos mis juegos retro. Explora y accede a cada título desde un único panel.</p>
-                            <div class="pc-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
-                            <a href="#" target="_blank" class="pc-link">◉ GITHUB</a>
-                        </article>
-                        <article class="project-card" data-category="juego">
-                            <h3 class="pc-name">TERMINUS</h3>
-                            <p class="pc-desc">Space shooter ambientado en el universo TERMINUS. Esquiva asteroides y naves enemigas.</p>
-                            <div class="pc-tags"><span>HTML</span><span>CSS</span><span>Canvas</span><span>IA</span></div>
-                            <a href="#" target="_blank" class="pc-link">◉ ACCESO</a>
-                        </article>
-                        <article class="project-card" data-category="herramienta">
-                            <h3 class="pc-name">LINK VIEWER</h3>
-                            <p class="pc-desc">Plugin para gestionar y previsualizar enlaces de forma rápida y sencilla.</p>
-                            <div class="pc-tags"><span>Plugin</span></div>
-                            <a href="#" target="_blank" class="pc-link">◉ GITHUB</a>
-                        </article>
-                        <article class="project-card" data-category="herramienta">
-                            <h3 class="pc-name">IMG TO COMIC</h3>
-                            <p class="pc-desc">Plugin que transforma imágenes en estilo cómic con un solo clic.</p>
-                            <div class="pc-tags"><span>Plugin</span></div>
-                            <a href="#" target="_blank" class="pc-link">◉ GITHUB</a>
-                        </article>
-                        <article class="project-card" data-category="hardware">
-                            <h3 class="pc-name">BARTOP PROJECT</h3>
-                            <p class="pc-desc">Proyecto de bartop arcade. Construcción completa desde cero con hardware y software.</p>
-                            <div class="pc-tags"><span>Hardware</span><span>Retro</span></div>
-                            <a href="#" target="_blank" class="pc-link">◉ GITHUB</a>
-                        </article>
                         <article class="project-card" data-category="web">
+                            <span class="pc-badge">WEB</span>
                             <h3 class="pc-name">WEB RETRO CODES</h3>
                             <p class="pc-desc">Explorador de códigos y trucos para videojuegos retro. Base de datos JSON con búsqueda por plataforma.</p>
                             <div class="pc-tags"><span>Next.js</span><span>React</span><span>JSON</span></div>
-                            <a href="#" target="_blank" class="pc-link">◉ ACCESO</a>
+                            <a href="https://www.retrokodes.es/" target="_blank" class="pc-link" data-type="web">▸ WEB</a>
                         </article>
-                        <article class="project-card" data-category="web">
-                            <h3 class="pc-name">WEB EMPTY WALLET</h3>
-                            <p class="pc-desc">App para gestión de finanzas personales y control de gastos.</p>
-                            <div class="pc-tags"><span>React</span><span>Vite</span></div>
-                            <a href="#" target="_blank" class="pc-link">◉ ACCESO</a>
+                        <article class="project-card" data-category="juego">
+                            <span class="pc-badge">JUEGO</span>
+                            <h3 class="pc-name">GAMEHUB</h3>
+                            <p class="pc-desc">Hub centralizado de todos mis juegos retro. Explora y accede a cada título desde un único panel.</p>
+                            <div class="pc-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+                            <a href="https://github.com/jcarlosab/gamehub" target="_blank" class="pc-link" data-type="github">▸ GITHUB</a>
+                            <a href="https://gamehub-eight-mauve.vercel.app/" target="_blank" class="pc-link" data-type="web">▸ WEB</a>
+                        </article>
+                        <article class="project-card" data-category="juego">
+                            <span class="pc-badge">JUEGO</span>
+                            <h3 class="pc-name">TERMINUS</h3>
+                            <p class="pc-desc">Demo space shooter para testeo de IA usando opencode. Esquiva asteroides y naves enemigas.</p>
+                            <div class="pc-tags"><span>HTML</span><span>CSS</span><span>Canvas</span><span>IA</span></div>
+                            <a href="https://github.com/jcarlosab/gamehub/tree/main/web-game-terminus-ia" target="_blank" class="pc-link" data-type="github">▸ GITHUB</a>
+                            <a href="https://gamehub-eight-mauve.vercel.app/web-game-terminus-ia/index.html" target="_blank" class="pc-link" data-type="web">▸ WEB</a>
                         </article>
                         <article class="project-card" data-category="herramienta">
+                            <span class="pc-badge">HERRAMIENTA</span>
                             <h3 class="pc-name">RETRO M3U ORGANIZER</h3>
                             <p class="pc-desc">Generador de archivos .m3u para juegos multidisco de PSX, Saturn y Dreamcast.</p>
                             <div class="pc-tags"><span>Python</span><span>Tkinter</span></div>
-                            <a href="https://github.com/jcarlosab/retro-m3u-organizer" target="_blank" class="pc-link">◉ GITHUB</a>
+                            <a href="https://github.com/jcarlosab/app-retro-m3u-organizer" target="_blank" class="pc-link" data-type="github">▸ GITHUB</a>
+                            <a href="https://github.com/jcarlosab/app-retro-m3u-organizer/releases/download/v1.0.0/Retro.M3U.Organizer.exe" class="pc-link" data-type="descarga">▸ DESCARGA</a>
                         </article>
                         <article class="project-card" data-category="herramienta">
-                            <h3 class="pc-name">CHEAT VAULT</h3>
-                            <p class="pc-desc">Herramienta para crear y gestionar bases de datos JSON de códigos de trucos.</p>
-                            <div class="pc-tags"><span>Python</span><span>JSON</span></div>
-                            <a href="https://github.com/jcarlosab/app-cheat-vault" target="_blank" class="pc-link">◉ GITHUB</a>
+                            <span class="pc-badge">HERRAMIENTA</span>
+                            <h3 class="pc-name">LINK VIEWER</h3>
+                            <p class="pc-desc">Plugin para gestionar y previsualizar enlaces de forma rápida y sencilla.</p>
+                            <div class="pc-tags"><span>Plugin</span></div>
+                            <a href="https://github.com/jcarlosab/plugins/tree/main/link-viewer" target="_blank" class="pc-link" data-type="github">▸ GITHUB</a>
                         </article>
-                        <article class="project-card" data-category="juego">
-                            <h3 class="pc-name">MEMORY</h3>
-                            <p class="pc-desc">Juego de memoria con tarjetas retro. Diseños pixel art y puntuación por tiempo.</p>
-                            <div class="pc-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
-                            <a href="https://jcarlosab.github.io/repo/memory" target="_blank" class="pc-link">◉ ACCESO</a>
+                        <article class="project-card" data-category="herramienta">
+                            <span class="pc-badge">HERRAMIENTA</span>
+                            <h3 class="pc-name">IMG TO COMIC</h3>
+                            <p class="pc-desc">Plugin que transforma imágenes en estilo cómic con un solo clic.</p>
+                            <div class="pc-tags"><span>Plugin</span></div>
+                            <a href="https://github.com/jcarlosab/plugins/tree/main/img-to-comic" target="_blank" class="pc-link" data-type="github">▸ GITHUB</a>
                         </article>
-                        <article class="project-card" data-category="juego">
-                            <h3 class="pc-name">SLIDE PUZZLE</h3>
-                            <p class="pc-desc">Juego de deslizar piezas para formar una imagen. Múltiples dificultades.</p>
-                            <div class="pc-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
-                            <a href="https://jcarlosab.github.io/repo/slide-puzzle" target="_blank" class="pc-link">◉ ACCESO</a>
+                        <article class="project-card" data-category="hardware">
+                            <span class="pc-badge">HARDWARE</span>
+                            <h3 class="pc-name">BARTOP PROJECT</h3>
+                            <p class="pc-desc">Proyecto de bartop arcade. Construcción completa desde cero con hardware y software.</p>
+                            <div class="pc-tags"><span>Hardware</span><span>Retro</span></div>
+                            <a href="https://github.com/jcarlosab/bartop-project" target="_blank" class="pc-link" data-type="github">▸ GITHUB</a>
+                            <a href="https://bartop-project.vercel.app/" target="_blank" class="pc-link" data-type="web">▸ WEB</a>
                         </article>
+
                     </div>
                 </div>
             </section>

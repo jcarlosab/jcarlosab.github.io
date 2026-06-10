@@ -1,14 +1,9 @@
-/**
- * WEYLAND-YUTANI CREW INTERFACE
- * Radar navigation + screen system + swipe + transitions
- */
-
 const CFG = {
     loadTime: 2400,
     typeSpeed: 35,
-    roleText: 'DESARROLLADOR FULL STACK',
+    roleText: 'DESARROLLADOR SENIOR',
     roleSpeed: 60,
-    bioText: 'Desarrollador Full Stack especializado en Magnolia CMS, trabajando a diario con Java, YAML, FreeMarker (FTL), JavaScript, HTML y CSS. Experiencia también en React, Next.js, Node.js y Python para proyectos personales.',
+    bioText: 'Desarrollador Senior especializado en Magnolia CMS, trabajando a diario con Java, YAML, FreeMarker (FTL), JavaScript, HTML y CSS. Experiencia también en React, Next.js, Node.js y Python para proyectos personales.',
     startDate: new Date('2017-11-01'),
     swipeThreshold: 50,
     swipeCooldown: 600,
@@ -405,10 +400,4 @@ function initProjectFilters() {
         });
     });
 
-    $$('.project-card').forEach(card => {
-        card.addEventListener('click', () => {
-            const link = card.querySelector('.pc-link');
-            if (link) link.click();
-        });
-    });
 }

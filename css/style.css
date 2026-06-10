@@ -13,8 +13,8 @@
     --amber-dim: #996600;
     --red: #ff3344;
     --text: #e8f0f8;
-    --text2: #a0b0c0;
-    --text3: #7a8a9a;
+    --text2: #c0ccd8;
+    --text3: #94a3b4;
     --border: rgba(0,255,136,.1);
     --border2: rgba(0,255,136,.2);
     --mono: 'Jost', 'Courier New', Consolas, monospace;
@@ -427,12 +427,22 @@ button { font-family:inherit; cursor:pointer; }
     border:1px solid var(--border);
     background:var(--bg-card);
     transition:all .25s;
-    cursor:pointer;
+    position:relative;
 }
 .project-card:hover {
     border-color:var(--green-dim);
     background:var(--bg-hover);
     transform:translateY(-1px);
+}
+
+.pc-badge {
+    position:absolute; top:0; right:0;
+    font-size:9px; letter-spacing:1px; padding:3px 8px;
+    background:rgba(0,255,136,.1);
+    border:1px solid var(--border);
+    border-left:1px solid var(--border);
+    border-bottom:1px solid var(--border);
+    color:var(--green-dim);
 }
 
 .pc-top { display:flex; justify-content:space-between; margin-bottom:6px; font-size:11px; }
@@ -451,8 +461,10 @@ button { font-family:inherit; cursor:pointer; }
     color:var(--text3);
 }
 
-.pc-link { font-size:11px; color:var(--green); }
-.pc-link:hover { text-shadow:0 0 8px var(--green-glow); }
+.pc-link { font-size:11px; color:var(--green); display:inline-block; transition:all .2s; }
+.pc-link:hover { text-decoration:underline; text-underline-offset:3px; text-shadow:0 0 8px var(--green-glow); }
+
+.pc-links { display:flex; gap:12px; }
 
 /* ============================================
    CONTACT
@@ -570,7 +582,6 @@ button { font-family:inherit; cursor:pointer; }
     .contact-cards { gap:8px; }
 
     .bn-item { padding:6px 10px; }
-    .bn-text { display:none; }
 
     .sys-footer { display:none; }
 
