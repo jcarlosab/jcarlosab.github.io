@@ -4,270 +4,289 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <title>jcarlos-ab</title>
+    <title>Jose Carlos Antón — Desarrollador Senior</title>
     <meta name="description" content="Portfolio de Jose Carlos Antón Barros — Desarrollador Senior especializado en Magnolia CMS, Java, JavaScript y React. Proyectos, skills y contacto.">
+    <meta property="og:title" content="Jose Carlos Antón — Desarrollador Senior">
+    <meta property="og:description" content="Desarrollador Senior especializado en Magnolia CMS, Java, JavaScript y React.">
+    <meta property="og:type" content="website">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- LOADING SCREEN -->
-    <div class="loading-screen" id="loading-screen">
-        <div class="loading-content">
-            <div class="weyland-logo">
-                <span class="logo-ring"></span>
-                <span class="logo-ring ring-2"></span>
-                <span class="logo-ring ring-3"></span>
-                <span class="logo-core">⬡</span>
-            </div>
-            <div class="loading-bar-container">
-                <div class="loading-bar" id="loading-bar"></div>
-            </div>
-            <p class="loading-text" id="loading-text">INICIALIZANDO SISTEMA...</p>
-        </div>
+    <!-- FONDO -->
+    <div class="bg" aria-hidden="true">
+        <div class="bg-grid"></div>
+        <div class="bg-blob blob-a"></div>
+        <div class="bg-blob blob-b"></div>
     </div>
 
-    <!-- CRT OVERLAY -->
-    <div class="crt-overlay">
-        <div class="scanlines"></div>
-        <div class="vignette"></div>
-    </div>
-
-    <!-- HEX GRID -->
-    <div class="hex-grid-bg"></div>
-
-    <!-- MAIN INTERFACE -->
-    <div class="interface" id="interface">
-        <!-- HEADER -->
-        <header class="sys-header">
-            <div class="header-brand" id="header-brand" role="button" tabindex="0">
-                <span class="brand-hex"></span>
-                <span class="brand-text">JCARLOS-AB</span>
-            </div>
-            <div class="header-status">
-                <span class="status-dot"></span>
-                <span class="header-date" id="header-date"></span>
-            </div>
-        </header>
-
-        <!-- SCREENS -->
-        <div class="screens-wrapper">
-
-            <!-- SCREEN 0: HERO -->
-            <section class="screen active" data-index="0">
-                <div class="screen-center">
-                    <div class="hero-layout">
-                        <div class="hero-text">
-                            <h1 class="hero-name">
-                                <span class="name-line">JOSE CARLOS</span>
-                                <span class="name-line name-accent">ANTON BARROS</span>
-                            </h1>
-                            <p class="hero-role">Desarrollador Senior</p>
-                            <div class="hero-meta">
-                                <div class="meta-row">
-                                    <span class="meta-label">UBICACIÓN</span>
-                                    <span class="meta-value">Galicia, España</span>
-                                </div>
-                                <div class="meta-row">
-                                    <span class="meta-label">EXPERIENCIA</span>
-                                    <span class="meta-value" id="experience-display">...</span>
-                                </div>
-                            </div>
-                </div>
-            </section>
-
-            <!-- SCREEN 1: MANIFEST + SPECS -->
-            <section class="screen" data-index="1">
-                <div class="screen-scroll">
-                    <div class="section-title-bar">
-                        <h2 class="section-name">SOBRE MÍ</h2>
-                        <span class="section-rule"></span>
-                        <span class="section-tag">PERFIL</span>
-                    </div>
-                    <div class="manifest-content">
-                        <div class="manifest-avatar">
-                            <div class="avatar-box">
-                                <span class="avatar-glyph">◈</span>
-                                <div class="avatar-scan"></div>
-                            </div>
-                            <span class="avatar-id">JC-1992-AB</span>
-                        </div>
-                        <div class="manifest-text">
-                            <p class="bio-text" id="bio-typewriter"></p>
-                            <div class="bio-details">
-                                <div class="detail"><span class="dk">CARGO:</span> <span class="dv">Desarrollador Senior</span></div>
-                                <div class="detail"><span class="dk">ESPECIALIZACIÓN:</span> <span class="dv">Magnolia CMS</span></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="section-title-bar" style="margin-top:32px">
-                        <h2 class="section-name">SKILLS</h2>
-                        <span class="section-rule"></span>
-                        <span class="section-tag">EXPERIENCIA</span>
-                    </div>
-                    <div class="diag-list">
-                        <div class="diag-row" data-level="95"><span class="dn">JAVA</span><span class="dp">95%</span><div class="db"><div class="df" style="--fw:95%"></div></div><span class="ds">ÓPTIMO</span></div>
-                        <div class="diag-row" data-level="95"><span class="dn">MAGNOLIA CMS</span><span class="dp">95%</span><div class="db"><div class="df" style="--fw:95%"></div></div><span class="ds">ÓPTIMO</span></div>
-                        <div class="diag-row" data-level="95"><span class="dn">HTML / CSS</span><span class="dp">95%</span><div class="db"><div class="df" style="--fw:95%"></div></div><span class="ds">ÓPTIMO</span></div>
-                        <div class="diag-row" data-level="90"><span class="dn">JAVASCRIPT</span><span class="dp">90%</span><div class="db"><div class="df" style="--fw:90%"></div></div><span class="ds">ÓPTIMO</span></div>
-                        <div class="diag-row" data-level="90"><span class="dn">FREEMARKER</span><span class="dp">90%</span><div class="db"><div class="df" style="--fw:90%"></div></div><span class="ds">ÓPTIMO</span></div>
-                        <div class="diag-row" data-level="85"><span class="dn">YAML</span><span class="dp">85%</span><div class="db"><div class="df" style="--fw:85%"></div></div><span class="ds">NOMINAL</span></div>
-                        <div class="diag-row" data-level="85"><span class="dn">REACT</span><span class="dp">85%</span><div class="db"><div class="df" style="--fw:85%"></div></div><span class="ds">NOMINAL</span></div>
-                        <div class="diag-row" data-level="75"><span class="dn">NODE.JS</span><span class="dp">75%</span><div class="db"><div class="df" style="--fw:75%"></div></div><span class="ds">ESTABLE</span></div>
-                        <div class="diag-row" data-level="70"><span class="dn">NEXT.JS</span><span class="dp">70%</span><div class="db"><div class="df" style="--fw:70%"></div></div><span class="ds">ESTABLE</span></div>
-                        <div class="diag-row" data-level="50"><span class="dn">PYTHON</span><span class="dp">50%</span><div class="db"><div class="df" style="--fw:50%"></div></div><span class="ds">APRENDIZAJE</span></div>
-                        <div class="diag-row" data-level="75"><span class="dn">IA</span><span class="dp">75%</span><div class="db"><div class="df" style="--fw:75%"></div></div><span class="ds">ESTABLE</span></div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- SCREEN 2: PROJECTS -->
-            <section class="screen" data-index="2">
-                <div class="screen-scroll">
-                    <div class="section-title-bar">
-                        <h2 class="section-name">PROYECTOS</h2>
-                        <span class="section-rule"></span>
-                        <span class="section-tag">7 ARCHIVOS</span>
-                    </div>
-                    <div class="project-filters">
-                        <button class="pf-item active" data-filter="all">TODOS</button>
-                        <button class="pf-item" data-filter="juego">JUEGOS</button>
-                        <button class="pf-item" data-filter="herramienta">HERRAMIENTAS</button>
-                        <button class="pf-item" data-filter="web">WEBS</button>
-                        <button class="pf-item" data-filter="hardware">HARDWARE</button>
-                    </div>
-                    <div class="projects-grid">
-                        <article class="project-card" data-category="web">
-                            <span class="pc-badge">WEB</span>
-                            <h3 class="pc-name">WEB RETRO CODES</h3>
-                            <p class="pc-desc">Explorador de códigos y trucos para videojuegos retro. Base de datos JSON con búsqueda por plataforma.</p>
-                            <div class="pc-tags"><span>Next.js</span><span>React</span><span>JSON</span></div>
-                            <a href="https://www.retrokodes.es/" target="_blank" class="pc-link" data-type="web">▸ WEB</a>
-                        </article>
-                        <article class="project-card" data-category="juego">
-                            <span class="pc-badge">JUEGO</span>
-                            <h3 class="pc-name">GAMEHUB</h3>
-                            <p class="pc-desc">Hub centralizado de todos mis juegos retro. Explora y accede a cada título desde un único panel.</p>
-                            <div class="pc-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
-                            <a href="https://github.com/jcarlosab/gamehub" target="_blank" class="pc-link" data-type="github">▸ GITHUB</a>
-                            <a href="https://gamehub-eight-mauve.vercel.app/" target="_blank" class="pc-link" data-type="web">▸ WEB</a>
-                        </article>
-                        <article class="project-card" data-category="juego">
-                            <span class="pc-badge">JUEGO</span>
-                            <h3 class="pc-name">TERMINUS</h3>
-                            <p class="pc-desc">Demo space shooter para testeo de IA usando opencode. Esquiva asteroides y naves enemigas.</p>
-                            <div class="pc-tags"><span>HTML</span><span>CSS</span><span>Canvas</span><span>IA</span></div>
-                            <a href="https://github.com/jcarlosab/gamehub/tree/main/web-game-terminus-ia" target="_blank" class="pc-link" data-type="github">▸ GITHUB</a>
-                            <a href="https://gamehub-eight-mauve.vercel.app/web-game-terminus-ia/index.html" target="_blank" class="pc-link" data-type="web">▸ WEB</a>
-                        </article>
-                        <article class="project-card" data-category="herramienta">
-                            <span class="pc-badge">HERRAMIENTA</span>
-                            <h3 class="pc-name">RETRO M3U ORGANIZER</h3>
-                            <p class="pc-desc">Generador de archivos .m3u para juegos multidisco de PSX, Saturn y Dreamcast.</p>
-                            <div class="pc-tags"><span>Python</span><span>Tkinter</span></div>
-                            <a href="https://github.com/jcarlosab/app-retro-m3u-organizer" target="_blank" class="pc-link" data-type="github">▸ GITHUB</a>
-                            <a href="https://github.com/jcarlosab/app-retro-m3u-organizer/releases/download/v1.0.0/Retro.M3U.Organizer.exe" class="pc-link" data-type="descarga">▸ DESCARGA</a>
-                        </article>
-                        <article class="project-card" data-category="herramienta">
-                            <span class="pc-badge">HERRAMIENTA</span>
-                            <h3 class="pc-name">LINK VIEWER</h3>
-                            <p class="pc-desc">Plugin para gestionar y previsualizar enlaces de forma rápida y sencilla.</p>
-                            <div class="pc-tags"><span>Plugin</span></div>
-                            <a href="https://github.com/jcarlosab/plugins/tree/main/link-viewer" target="_blank" class="pc-link" data-type="github">▸ GITHUB</a>
-                        </article>
-                        <article class="project-card" data-category="herramienta">
-                            <span class="pc-badge">HERRAMIENTA</span>
-                            <h3 class="pc-name">IMG TO COMIC</h3>
-                            <p class="pc-desc">Plugin que transforma imágenes en estilo cómic con un solo clic.</p>
-                            <div class="pc-tags"><span>Plugin</span></div>
-                            <a href="https://github.com/jcarlosab/plugins/tree/main/img-to-comic" target="_blank" class="pc-link" data-type="github">▸ GITHUB</a>
-                        </article>
-                        <article class="project-card" data-category="hardware">
-                            <span class="pc-badge">HARDWARE</span>
-                            <h3 class="pc-name">BARTOP PROJECT</h3>
-                            <p class="pc-desc">Proyecto de bartop arcade. Construcción completa desde cero con hardware y software.</p>
-                            <div class="pc-tags"><span>Hardware</span><span>Retro</span></div>
-                            <a href="https://github.com/jcarlosab/bartop-project" target="_blank" class="pc-link" data-type="github">▸ GITHUB</a>
-                            <a href="https://bartop-project.vercel.app/" target="_blank" class="pc-link" data-type="web">▸ WEB</a>
-                        </article>
-
-                    </div>
-                </div>
-            </section>
-
-            <!-- SCREEN 3: CONTACT -->
-            <section class="screen" data-index="3">
-                <div class="screen-scroll">
-                    <div class="contact-wrap">
-                        <div class="section-title-bar">
-                            <h2 class="section-name">CONTACTO</h2>
-                        </div>
-                        <div class="contact-cards">
-                            <a href="mailto:josecarlos.dev@outlook.es" class="ccard" target="_blank">
-                                <span class="ccard-icon">✉</span>
-                                <div class="ccard-body">
-                                    <span class="ccard-label">EMAIL</span>
-                                    <span class="ccard-value">josecarlos.dev@outlook.es</span>
-                                </div>
-                                <span class="ccard-arrow">→</span>
-                            </a>
-                            <a href="https://www.linkedin.com/in/jose-carlos-anton-barros-b90b82233" class="ccard" target="_blank">
-                                <span class="ccard-icon">◆</span>
-                                <div class="ccard-body">
-                                    <span class="ccard-label">LINKEDIN</span>
-                                    <span class="ccard-value">/in/jose-carlos-anton-barros</span>
-                                </div>
-                                <span class="ccard-arrow">→</span>
-                            </a>
-                            <a href="https://github.com/jcarlosab" class="ccard" target="_blank">
-                                <span class="ccard-icon">⬡</span>
-                                <div class="ccard-body">
-                                    <span class="ccard-label">GITHUB</span>
-                                    <span class="ccard-value">/jcarlosab</span>
-                                </div>
-                                <span class="ccard-arrow">→</span>
-                            </a>
-                            <a href="https://x.com/jcabarros" class="ccard" target="_blank">
-                                <span class="ccard-icon">𝕏</span>
-                                <div class="ccard-body">
-                                    <span class="ccard-label">X (TWITTER)</span>
-                                    <span class="ccard-value">@jcabarros</span>
-                                </div>
-                                <span class="ccard-arrow">→</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <!-- BOTTOM NAV -->
-        <nav class="bottom-nav" id="bottom-nav">
-            <button class="bn-item active" data-screen="0">
-                <span class="bn-icon">⬡</span>
-                <span class="bn-text">INICIO</span>
+    <!-- HEADER -->
+    <header class="site-header" id="site-header">
+        <nav class="nav container" aria-label="Navegación principal">
+            <a href="#inicio" class="brand">
+                <span class="brand-mark"></span>
+                jcarlos<span class="brand-accent">-ab</span>
+            </a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links">
+                <span></span>
+                <span></span>
             </button>
-            <button class="bn-item" data-screen="1">
-                <span class="bn-icon">◈</span>
-                <span class="bn-text">SOBRE MÍ</span>
-            </button>
-            <button class="bn-item" data-screen="2">
-                <span class="bn-icon">▣</span>
-                <span class="bn-text">PROYECTOS</span>
-            </button>
-            <button class="bn-item" data-screen="3">
-                <span class="bn-icon">◉</span>
-                <span class="bn-text">CONTACTO</span>
-            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+                <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
         </nav>
+    </header>
 
-        <!-- FOOTER -->
-        <footer class="sys-footer">
-            <span>© 2026 Jose Carlos Antón Barros.</span>
-        </footer>
-    </div>
+    <main>
+        <!-- HERO -->
+        <section class="hero" id="inicio">
+            <div class="container hero-inner">
+                <p class="hero-eyebrow reveal">Hola, soy</p>
+                <h1 class="hero-name reveal" style="--d:.08s">
+                    Jose Carlos<br>
+                    <span class="grad-text">Antón Barros</span>
+                </h1>
+                <p class="hero-role reveal" style="--d:.16s">Desarrollador Senior · Magnolia CMS</p>
+                <p class="hero-desc reveal" style="--d:.24s">
+                    Especializado en Magnolia CMS, trabajando a diario con Java, JavaScript,
+                    HTML y CSS. También construyo proyectos personales con React, Next.js,
+                    Node.js y Python.
+                </p>
+                <div class="hero-meta reveal" style="--d:.32s">
+                    <span class="chip">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        Galicia, España
+                    </span>
+                    <span class="chip">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+                        <span class="js-experience">…</span> de experiencia
+                    </span>
+                </div>
+                <div class="hero-cta reveal" style="--d:.4s">
+                    <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+                    <a href="#contacto" class="btn btn-ghost">Contactar</a>
+                </div>
+                <div class="hero-socials reveal" style="--d:.48s">
+                    <a href="https://github.com/jcarlosab" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jose-carlos-anton-barros-b90b82233" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4V8h4"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                    <a href="https://x.com/jcabarros" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+                    </a>
+                    <a href="mailto:josecarlos.dev@outlook.es" aria-label="Email">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+                    </a>
+                </div>
+            </div>
+            <a href="#sobre-mi" class="scroll-hint" aria-label="Bajar a Sobre mí">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+            </a>
+        </section>
+
+        <!-- SOBRE MÍ + SKILLS -->
+        <section class="section" id="sobre-mi">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="kicker">01 · Perfil</span>
+                    <h2>Sobre mí</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-card reveal">
+                        <div class="about-avatar" aria-hidden="true">JC</div>
+                        <div class="about-facts">
+                            <div class="fact"><span class="fk">Cargo</span><span class="fv">Desarrollador Senior</span></div>
+                            <div class="fact"><span class="fk">Especialización</span><span class="fv">Magnolia CMS</span></div>
+                            <div class="fact"><span class="fk">Ubicación</span><span class="fv">Galicia, España</span></div>
+                            <div class="fact"><span class="fk">Experiencia</span><span class="fv js-experience">…</span></div>
+                        </div>
+                    </div>
+                    <div class="about-text reveal" style="--d:.1s">
+                        <p>
+                            Desarrollador Full Stack especializado en Magnolia CMS, trabajando a diario con
+                            Java, YAML, FreeMarker (FTL), JavaScript, HTML y CSS. Experiencia también en
+                            React, Next.js, Node.js y Python para proyectos personales.
+                        </p>
+                        <p>
+                            También dedico tiempo a proyectos personales: herramientas, juegos
+                            y experimentos con inteligencia artificial.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="section-head reveal" style="margin-top:72px">
+                    <span class="kicker">02 · Experiencia</span>
+                    <h2>Skills</h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill reveal" data-level="95"><div class="skill-top"><span class="skill-name">Java</span><span class="skill-pct">95%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+                    <div class="skill reveal" data-level="95"><div class="skill-top"><span class="skill-name">Magnolia CMS</span><span class="skill-pct">95%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+                    <div class="skill reveal" data-level="95"><div class="skill-top"><span class="skill-name">HTML / CSS</span><span class="skill-pct">95%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+                    <div class="skill reveal" data-level="90"><div class="skill-top"><span class="skill-name">JavaScript</span><span class="skill-pct">90%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+                    <div class="skill reveal" data-level="90"><div class="skill-top"><span class="skill-name">FreeMarker</span><span class="skill-pct">90%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+                    <div class="skill reveal" data-level="85"><div class="skill-top"><span class="skill-name">YAML</span><span class="skill-pct">85%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+                    <div class="skill reveal" data-level="85"><div class="skill-top"><span class="skill-name">React</span><span class="skill-pct">85%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+                    <div class="skill reveal" data-level="75"><div class="skill-top"><span class="skill-name">Node.js</span><span class="skill-pct">75%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+                    <div class="skill reveal" data-level="75"><div class="skill-top"><span class="skill-name">IA</span><span class="skill-pct">75%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+                    <div class="skill reveal" data-level="70"><div class="skill-top"><span class="skill-name">Next.js</span><span class="skill-pct">70%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+                    <div class="skill reveal" data-level="50"><div class="skill-top"><span class="skill-name">Python</span><span class="skill-pct">50%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROYECTOS -->
+        <section class="section" id="proyectos">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="kicker">03 · Portfolio</span>
+                    <h2>Proyectos</h2>
+                </div>
+                <div class="project-filters reveal" role="group" aria-label="Filtrar proyectos">
+                    <button class="pf-item active" data-filter="all">Todos</button>
+                    <button class="pf-item" data-filter="juego">Juegos</button>
+                    <button class="pf-item" data-filter="herramienta">Herramientas</button>
+                    <button class="pf-item" data-filter="web">Webs</button>
+                    <button class="pf-item" data-filter="hardware">Hardware</button>
+                </div>
+                <div class="projects-grid">
+                    <article class="project-card reveal" data-category="web">
+                        <span class="pc-badge">Web</span>
+                        <h3 class="pc-name">Web Retro Codes</h3>
+                        <p class="pc-desc">Explorador de códigos y trucos para videojuegos retro. Base de datos JSON con búsqueda por plataforma.</p>
+                        <div class="pc-tags"><span>Next.js</span><span>React</span><span>JSON</span></div>
+                        <div class="pc-links">
+                            <a href="https://www.retrokodes.es/" target="_blank" rel="noopener noreferrer" class="pc-link">Web <span aria-hidden="true">→</span></a>
+                        </div>
+                    </article>
+                    <article class="project-card reveal" data-category="juego">
+                        <span class="pc-badge">Juego</span>
+                        <h3 class="pc-name">GameHub</h3>
+                        <p class="pc-desc">Hub centralizado de todos mis juegos retro. Explora y accede a cada título desde un único panel.</p>
+                        <div class="pc-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+                        <div class="pc-links">
+                            <a href="https://github.com/jcarlosab/gamehub" target="_blank" rel="noopener noreferrer" class="pc-link">GitHub <span aria-hidden="true">→</span></a>
+                            <a href="https://gamehub-eight-mauve.vercel.app/" target="_blank" rel="noopener noreferrer" class="pc-link">Web <span aria-hidden="true">→</span></a>
+                        </div>
+                    </article>
+                    <article class="project-card reveal" data-category="juego">
+                        <span class="pc-badge">Juego</span>
+                        <h3 class="pc-name">Terminus</h3>
+                        <p class="pc-desc">Demo space shooter para testeo de IA usando opencode. Esquiva asteroides y naves enemigas.</p>
+                        <div class="pc-tags"><span>HTML</span><span>CSS</span><span>Canvas</span><span>IA</span></div>
+                        <div class="pc-links">
+                            <a href="https://github.com/jcarlosab/gamehub/tree/main/web-game-terminus-ia" target="_blank" rel="noopener noreferrer" class="pc-link">GitHub <span aria-hidden="true">→</span></a>
+                            <a href="https://gamehub-eight-mauve.vercel.app/web-game-terminus-ia/index.html" target="_blank" rel="noopener noreferrer" class="pc-link">Web <span aria-hidden="true">→</span></a>
+                        </div>
+                    </article>
+                    <article class="project-card reveal" data-category="herramienta">
+                        <span class="pc-badge">Herramienta</span>
+                        <h3 class="pc-name">Retro M3U Organizer</h3>
+                        <p class="pc-desc">Generador de archivos .m3u para juegos multidisco de PSX, Saturn y Dreamcast.</p>
+                        <div class="pc-tags"><span>Python</span><span>Tkinter</span></div>
+                        <div class="pc-links">
+                            <a href="https://github.com/jcarlosab/app-retro-m3u-organizer" target="_blank" rel="noopener noreferrer" class="pc-link">GitHub <span aria-hidden="true">→</span></a>
+                            <a href="https://github.com/jcarlosab/app-retro-m3u-organizer/releases/download/v1.0.0/Retro.M3U.Organizer.exe" class="pc-link">Descarga <span aria-hidden="true">→</span></a>
+                        </div>
+                    </article>
+                    <article class="project-card reveal" data-category="herramienta">
+                        <span class="pc-badge">Herramienta</span>
+                        <h3 class="pc-name">Link Viewer</h3>
+                        <p class="pc-desc">Plugin para gestionar y previsualizar enlaces de forma rápida y sencilla.</p>
+                        <div class="pc-tags"><span>Plugin</span></div>
+                        <div class="pc-links">
+                            <a href="https://github.com/jcarlosab/plugins/tree/main/link-viewer" target="_blank" rel="noopener noreferrer" class="pc-link">GitHub <span aria-hidden="true">→</span></a>
+                        </div>
+                    </article>
+                    <article class="project-card reveal" data-category="herramienta">
+                        <span class="pc-badge">Herramienta</span>
+                        <h3 class="pc-name">Img to Comic</h3>
+                        <p class="pc-desc">Plugin que transforma imágenes en estilo cómic con un solo clic.</p>
+                        <div class="pc-tags"><span>Plugin</span></div>
+                        <div class="pc-links">
+                            <a href="https://github.com/jcarlosab/plugins/tree/main/img-to-comic" target="_blank" rel="noopener noreferrer" class="pc-link">GitHub <span aria-hidden="true">→</span></a>
+                        </div>
+                    </article>
+                    <article class="project-card reveal" data-category="hardware">
+                        <span class="pc-badge">Hardware</span>
+                        <h3 class="pc-name">Bartop Project</h3>
+                        <p class="pc-desc">Proyecto de bartop arcade. Construcción completa desde cero con hardware y software.</p>
+                        <div class="pc-tags"><span>Hardware</span><span>Retro</span></div>
+                        <div class="pc-links">
+                            <a href="https://github.com/jcarlosab/bartop-project" target="_blank" rel="noopener noreferrer" class="pc-link">GitHub <span aria-hidden="true">→</span></a>
+                            <a href="https://bartop-project.vercel.app/" target="_blank" rel="noopener noreferrer" class="pc-link">Web <span aria-hidden="true">→</span></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section class="section" id="contacto">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="kicker">04 · Contacto</span>
+                    <h2>Hablemos</h2>
+                </div>
+                <p class="contact-intro reveal">¿Tienes un proyecto en mente o quieres saludar? Escríbeme por donde prefieras.</p>
+                <div class="contact-grid">
+                    <a href="mailto:josecarlos.dev@outlook.es" class="ccard reveal">
+                        <span class="ccard-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+                        </span>
+                        <span class="ccard-body">
+                            <span class="ccard-label">Email</span>
+                            <span class="ccard-value">josecarlos.dev@outlook.es</span>
+                        </span>
+                        <span class="ccard-arrow" aria-hidden="true">→</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jose-carlos-anton-barros-b90b82233" target="_blank" rel="noopener noreferrer" class="ccard reveal" style="--d:.08s">
+                        <span class="ccard-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4V8h4"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                        </span>
+                        <span class="ccard-body">
+                            <span class="ccard-label">LinkedIn</span>
+                            <span class="ccard-value">/in/jose-carlos-anton-barros</span>
+                        </span>
+                        <span class="ccard-arrow" aria-hidden="true">→</span>
+                    </a>
+                    <a href="https://github.com/jcarlosab" target="_blank" rel="noopener noreferrer" class="ccard reveal" style="--d:.16s">
+                        <span class="ccard-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                        </span>
+                        <span class="ccard-body">
+                            <span class="ccard-label">GitHub</span>
+                            <span class="ccard-value">/jcarlosab</span>
+                        </span>
+                        <span class="ccard-arrow" aria-hidden="true">→</span>
+                    </a>
+                    <a href="https://x.com/jcabarros" target="_blank" rel="noopener noreferrer" class="ccard reveal" style="--d:.24s">
+                        <span class="ccard-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+                        </span>
+                        <span class="ccard-body">
+                            <span class="ccard-label">X (Twitter)</span>
+                            <span class="ccard-value">@jcabarros</span>
+                        </span>
+                        <span class="ccard-arrow" aria-hidden="true">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>© <span id="footer-year">2026</span> Jose Carlos Antón Barros · Hecho con HTML, CSS y JavaScript</p>
+        </div>
+    </footer>
 
     <script src="js/app.js"></script>
 </body>
