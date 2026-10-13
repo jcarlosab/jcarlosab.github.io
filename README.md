@@ -1,23 +1,18 @@
-# jcarlosab.github.io
+# Portfolio de Jose Carlos Antón Barros
 
-Portfolio personal de Jose Carlos Antón Barros alojado en GitHub Pages. Diseño moderno de página única con scroll, animaciones de aparición y estética oscura con acentos en degradado.
+Portfolio de desarrollador Senior especializado en Magnolia CMS. Diseño responsive con tipografía Manrope, experiencia profesional, proyectos personales y contacto.
 
-## Estructura
+## Archivos
 
-```
-├── css/style.css   # Sistema de diseño (tokens, componentes, responsive)
-├── js/app.js       # Interacciones (scroll spy, reveal, filtros, menú móvil)
-├── index.html      # Página principal
-└── favicon.svg
-```
+- `index.html`: página oficial con ocho proyectos.
+- `css/style.css`: diseño y adaptación a móvil.
+- `js/app.js`: búsqueda, filtros accesibles, contador de resultados y año del pie.
+- `favicon.svg`: icono del sitio.
 
-## Tecnologías
+## Desarrollo
 
-- HTML5 / CSS3 / JavaScript vanilla
-- IntersectionObserver (animaciones reveal y scroll spy)
-- Tipografías: Space Grotesk + Inter (Google Fonts)
-- GitHub Pages (hosting)
+HTML, CSS y JavaScript sin dependencias de compilación. Abrir `index.html` en el navegador para ver el portfolio. La tipografía Manrope se carga desde Google Fonts.
 
-## Despliegue
+## Publicación
 
-Automático via GitHub Pages al hacer push a `main`.
+Alojado en GitHub Pages. La publicación se realiza al subir los cambios a `main`.
