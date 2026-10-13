@@ -8,3 +8,15 @@
 
 /* Contact links share one row and wrap on smaller screens. */
 .contact{display:flex;align-items:center;justify-content:space-between;gap:25px;flex-wrap:wrap}.contact .label{margin:0}.contact .socials{display:flex;align-items:center;flex-wrap:wrap;gap:20px 25px;margin:0}.contact .mail{font:inherit;display:inline;color:inherit;overflow-wrap:anywhere}
+
+/* Theme selection */
+:root{color-scheme:light}.top nav{margin-left:auto}.theme-toggle{display:flex;align-items:center;gap:7px;font:600 11px 'Manrope',Arial,sans-serif;border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:6px;padding:8px 11px;cursor:pointer}.theme-toggle span:first-child{font-size:16px;line-height:1}
+:root[data-theme="dark"]{color-scheme:dark;--paper:#111722;--ink:#e7edf8;--muted:#a5b0c3;--accent:#8aaaff;--line:#303b4d}
+[data-theme="dark"] .dev-summary,[data-theme="dark"] .project-card,[data-theme="dark"] .project-card:first-child{background:#192230;box-shadow:none}
+[data-theme="dark"] .summary-main{background:#202e46}[data-theme="dark"] .summary-label{color:#a8bce8}
+[data-theme="dark"] .pc-badge,[data-theme="dark"] .filters button[aria-pressed="true"]{background:#263859;color:#b4cbff}
+[data-theme="dark"] .pc-tags span,[data-theme="dark"] .project-card:first-child .pc-tags span{background:#263142;color:#b6c2d6}
+[data-theme="dark"] .hero .text-link{background:#9cbbff;color:#111b2d}
+[data-theme="dark"] .contact{background:#1b2a43;color:#e7edf8}[data-theme="dark"] .contact .label{color:#aebcd3}
+[data-theme="dark"] .skip:focus{background:#192230;color:#e7edf8}
+@media(max-width:700px){.top{gap:16px}.top nav{order:3;width:100%;justify-content:space-between;margin:0}.theme-toggle{margin-left:auto}}
