@@ -38,3 +38,6 @@
 }
 .hero .text-link:active,.theme-toggle:active,.filters button:active{transform:translateY(1px)}
 @media(prefers-reduced-motion:reduce){.hero .text-link,.theme-toggle,.filters button,.top nav a,.secondary-link,.pc-link,.summary-link,.socials a,.project-card{transition:none}.hero .text-link:hover,.filters button:hover,.hero .text-link:active,.theme-toggle:active,.filters button:active{transform:none}}
+
+/* A single introduction replaces the redundant technical summary. */
+.hero-grid{display:block;max-width:1000px}.hero .intro{max-width:620px}.hero h1{font-size:clamp(40px,5.2vw,65px)}
